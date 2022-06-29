@@ -1,27 +1,3 @@
-{
-  "workbench.colorTheme": "Dracula Soft",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "git.autofetch": true,
-  "php.validate.executablePath": "D:\\php\\php\\php.exe",
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "~/../css/"
-    }
-  ],
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.unicodeHighlight.invisibleCharacters": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "editor.codeActionsOnSave": {},
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "window.zoomLevel": -1,
-  "editor.fontLigatures": false
-}
+# nullchemy
+
+template for building the nullchemy website
