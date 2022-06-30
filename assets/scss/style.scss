@@ -7,7 +7,6 @@
 	font-weight: 300;
 	font-style: normal
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-LightItalic.eot);
@@ -15,7 +14,6 @@
 	font-weight: 300;
 	font-style: italic
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-Regular.eot);
@@ -23,7 +21,6 @@
 	font-weight: 400;
 	font-style: normal
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-Italic.eot);
@@ -31,7 +28,6 @@
 	font-weight: 400;
 	font-style: italic
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-Medium.eot);
@@ -39,7 +35,6 @@
 	font-weight: 500;
 	font-style: normal
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-MediumItalic.eot);
@@ -47,7 +42,6 @@
 	font-weight: 500;
 	font-style: italic
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-Bold.eot);
@@ -55,7 +49,6 @@
 	font-weight: 700;
 	font-style: normal
 }
-
 @font-face {
 	font-family: Apercu;
 	src: url(../fonts/apercu/Apercu-BoldItalic.eot);
@@ -63,16 +56,13 @@
 	font-weight: 700;
 	font-style: italic
 }
-
 :root{
     --color: #eaeaea;
 }
-
 *{
     padding: 0;
     margin: 0;
 }
-
 html,body{
     border-style: border-box;
     font-family: Apercu,source sans pro,system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
@@ -106,12 +96,10 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 //vertical scrollbar
 body::-webkit-scrollbar {
   width: 5px;
@@ -382,7 +370,6 @@ body::-webkit-scrollbar {
         }
     }
 }
-
 /* ======newsletter subscribe stylings====== */
 .secNewsletter{
     margin-top: 150px;
@@ -469,7 +456,6 @@ body::-webkit-scrollbar {
         }
     }
 }
-
 /* ======Footer stylings====== */
 .footer{
     height: min-content;
@@ -590,7 +576,6 @@ body::-webkit-scrollbar {
         }
     }
 }
-
 /*=== About Our Leaders===*/
 .leaders{
     .leaders-wrapper{
@@ -637,18 +622,15 @@ body::-webkit-scrollbar {
         .mission-texts{
             width: 50%;
             .sec-text{
-
             }
             h1{
-
+                color: inherit;
             }
             p{
-
             }
         }
     }
 }
-
 /*=== Our Blog ===*/
 .blog-sec-top{
     text-align: center;
@@ -721,6 +703,120 @@ body::-webkit-scrollbar {
                             font-size: 0.7rem;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.blogs-showcase{
+    margin: 0 5%;
+    .bloghighHeader{
+        display: flex;
+        margin: 3%;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .blogsFileters{
+            display: flex;
+            .filter{
+                padding: 8px 15px;
+                border-radius: 23px;
+                font-size: .9rem;
+                text-decoration: none;
+                color: #eaeaea;
+                margin-right: 20px;
+                cursor: pointer;
+                &:nth-child(1){
+                    margin-left: -20px !important;
+                }
+                &:hover{
+                    background-color: #505050;
+                }
+            }
+            .activeFilter{
+                background-color: #0088f0;
+                &:hover{
+                    background-color: #0088f0 !important;
+                }
+            }
+        }
+        .viewIcon{
+            cursor: pointer;
+        }
+    }
+    .highflex{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 4%;
+        .highblogcard{
+            width: 380px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            cursor: pointer !important;
+            .bloghighImage{
+                flex: 0 0 100%;
+                max-width: 100%;
+                border-radius: 8px;
+                overflow: hidden !important;
+                img{
+                    max-height: 250px;
+                    height: auto!important;
+                    border-radius: 0;
+                    box-shadow: initial;
+                    padding: 0!important;
+                    width: 100%;
+                    object-fit: cover;
+                    filter: brightness(90%);
+                    transition: 0.5s;
+                    vertical-align: middle;
+                    border-style: none;
+                    &:hover{
+                        margin-top: 0;
+                        filter: initial;
+                        box-shadow: initial;
+                        transform: scale(1.05);
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .bloghighTitle{
+                padding: 10px;
+                a{
+                    color: inherit;
+                    h2{
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        max-height: 4rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        word-break: break-word;
+                        cursor: pointer;
+                        &:hover{
+                            transition: .3s;
+                            color: #0088f0;
+                        }
+                    }
+                    p{
+                        margin-top: 10px;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
+                        max-height: 6rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        word-break: break-word;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .bloghighInfo{
+                p{
+                    margin-left: 10px;
                 }
             }
         }
