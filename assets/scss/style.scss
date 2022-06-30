@@ -621,6 +621,18 @@ body::-webkit-scrollbar {
         display: flex;
         .mission-images{
             width: 50%;
+            .miss-image-wrapper{
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+                overflow: hidden;
+                border-radius: 0% 50% 50% 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
         .mission-texts{
             width: 50%;
@@ -632,6 +644,84 @@ body::-webkit-scrollbar {
             }
             p{
 
+            }
+        }
+    }
+}
+
+/*=== Our Blog ===*/
+.blog-sec-top{
+    text-align: center;
+    padding: 5% 20%;
+    h1{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+.blog-landing{
+    .blog-landing-wrapper{
+        margin: 20px 5%;
+        .spot-blog{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            .spot-image{
+                width: 49%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .spot-texts{
+                width: 49%;
+                .spot-category{
+                    padding: 5px;
+                    border-radius: 6px;
+                    background-color: #42636fc8;
+                    cursor: pointer;
+                }
+                .spot-date{
+                    text-transform: uppercase;
+                    margin-left: 10px;
+                }
+                h2{
+                    font-size: 28px;
+                    line-height: 34px;
+                    letter-spacing: -.48px;
+                    margin: 0 0 16px;
+                    font-weight: 700;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+                p{
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+                .spot-author{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    img{
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                    }
+                    .spot-author-name{
+                        margin-left: 10px;
+                        p{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
             }
         }
     }

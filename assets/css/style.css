@@ -604,6 +604,94 @@ body::-webkit-scrollbar {
 .mission .mission-wrapper .mission-images {
   width: 50%;
 }
+.mission .mission-wrapper .mission-images .miss-image-wrapper {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0% 50% 50% 50%;
+}
+.mission .mission-wrapper .mission-images .miss-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .mission .mission-wrapper .mission-texts {
   width: 50%;
+}
+/*=== Our Blog ===*/
+.blog-sec-top {
+  text-align: center;
+  padding: 5% 20%;
+}
+.blog-sec-top h1 {
+  font-size: 6rem;
+}
+.blog-sec-top p {
+  font-size: 1.2rem;
+}
+
+.blog-landing .blog-landing-wrapper {
+  margin: 20px 5%;
+}
+.blog-landing .blog-landing-wrapper .spot-blog {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-image {
+  width: 49%;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts {
+  width: 49%;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts .spot-category {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(66, 99, 111, 0.7843137255);
+  cursor: pointer;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts .spot-date {
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts h2 {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.48px;
+  margin: 0 0 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts p a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts .spot-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts .spot-author img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts .spot-author .spot-author-name {
+  margin-left: 10px;
+}
+.blog-landing .blog-landing-wrapper .spot-blog .spot-texts .spot-author .spot-author-name p {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=style.css.map */
