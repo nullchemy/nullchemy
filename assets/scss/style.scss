@@ -115,7 +115,7 @@ input[type=number] {
 //vertical scrollbar
 body::-webkit-scrollbar {
   width: 5px;
-  background-color: #2f3239;
+  background-color: #2f323900;
 }
 @media(max-width: 600px){
   *{
@@ -594,11 +594,11 @@ body::-webkit-scrollbar {
 /*=== About Our Leaders===*/
 .leaders{
     .leaders-wrapper{
-        margin: 0 5%;
+        margin: 5% 5%;
         display: flex;
+        align-items: center;
         .leaders-texts{
             width: 50%;
-            padding-top: 10%;
             p{
                 width: 90%;
             }
