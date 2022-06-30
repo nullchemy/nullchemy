@@ -592,4 +592,18 @@ body::-webkit-scrollbar {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*=== Our Mission ===*/
+.mission {
+  margin: 0 5%;
+}
+.mission .mission-wrapper {
+  display: flex;
+}
+.mission .mission-wrapper .mission-images {
+  width: 50%;
+}
+.mission .mission-wrapper .mission-texts {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

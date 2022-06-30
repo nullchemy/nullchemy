@@ -614,3 +614,25 @@ body::-webkit-scrollbar {
         }
     }
 }
+/*=== Our Mission ===*/
+.mission{
+    margin: 0 5%;
+    .mission-wrapper{
+        display: flex;
+        .mission-images{
+            width: 50%;
+        }
+        .mission-texts{
+            width: 50%;
+            .sec-text{
+
+            }
+            h1{
+
+            }
+            p{
+
+            }
+        }
+    }
+}
