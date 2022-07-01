@@ -744,11 +744,23 @@ body::-webkit-scrollbar {
   color: #0088f0;
 }
 
+/*=== About us header===*/
+.about-header {
+  margin: 5% 0;
+}
+.about-header .about-header-wrapper {
+  text-align: center;
+}
+.about-header .about-header-wrapper h2 {
+  font-size: 5rem;
+}
+
 /*=== About Our Leaders===*/
 .leaders .leaders-wrapper {
-  margin: 5% 5%;
+  margin: 0 10%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .leaders .leaders-wrapper .leaders-texts {
   width: 50%;
@@ -769,7 +781,7 @@ body::-webkit-scrollbar {
 
 /*=== Our Mission ===*/
 .mission {
-  margin: 0 5%;
+  margin: 5% 10%;
 }
 .mission .mission-wrapper {
   display: flex;
@@ -796,6 +808,123 @@ body::-webkit-scrollbar {
 .mission .mission-wrapper .mission-texts h1 {
   color: inherit;
 }
+/*-=-=-=-=what we do-=-=-=-=*/
+.whatwedo .whatwedocontainer {
+  margin: 40px 5%;
+}
+.whatwedo .whatwedocontainer .whatwedotitle {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+.whatwedo .whatwedocontainer .whatwedopreview {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 0.9rem !important;
+  line-height: 1.4rem !important;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0px;
+}
+.whatwedo .whatwedocontainer .whatwedogrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+.whatwedo .whatwedocontainer .whatwedogrid .whatwedoitems {
+  display: flex;
+  padding: 10px;
+  border: 1px solid rgb(252, 217, 195);
+  box-shadow: rgba(0, 0, 0, 0.548);
+  transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  border-radius: 5px;
+}
+.whatwedo .whatwedocontainer .whatwedogrid .whatwedoitems .wwditemimage {
+  margin: 10px;
+  margin-top: 15px;
+}
+.whatwedo .whatwedocontainer .whatwedogrid .whatwedoitems .wwditemtexts {
+  padding-right: 20px;
+}
+.whatwedo .whatwedocontainer .whatwedogrid .whatwedoitems .wwditemtexts .wwdititle {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+.whatwedo .whatwedocontainer .whatwedogrid .whatwedoitems .wwditemtexts .wwdicontext {
+  margin-right: 10px;
+  font-size: 1rem !important;
+  line-height: 1.4rem !important;
+  font-family: "canada-type-gibson", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0px;
+}
+
+/* ======frequently asked questions stylings====== */
+.faqmainSection {
+  margin: 4rem 0;
+}
+.faqmainSection .faqsection .faqcontainer {
+  margin: 0 15%;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper {
+  padding: 6rem;
+  padding-bottom: 4rem;
+  border-radius: 23px;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  transition: 0.3s;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqtitle {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: #f6f6f6;
+  text-transform: uppercase;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle .faqText, .faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle i {
+  color: #f6f6f6;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: 1.4;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle .angleDown {
+  transform: rotate(90deg);
+  display: unset;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdropcontents {
+  display: none;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdropcontents .faqdroptexts {
+  color: #f6f6f6;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqShow {
+  display: unset;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
 /*=== Our Blog ===*/
 .blog-sec-top {
   text-align: center;

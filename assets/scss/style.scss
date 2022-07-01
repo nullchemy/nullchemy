@@ -751,12 +751,23 @@ body::-webkit-scrollbar {
         }
     }
 }
+/*=== About us header===*/
+.about-header{
+    margin: 5% 0;
+    .about-header-wrapper{
+        text-align: center;
+        h2{
+            font-size: 5rem;
+        }
+    }
+}
 /*=== About Our Leaders===*/
 .leaders{
     .leaders-wrapper{
-        margin: 5% 5%;
+        margin: 0 10%;
         display: flex;
         align-items: center;
+        justify-content: space-around;
         .leaders-texts{
             width: 50%;
             p{
@@ -776,7 +787,7 @@ body::-webkit-scrollbar {
 }
 /*=== Our Mission ===*/
 .mission{
-    margin: 0 5%;
+    margin: 5% 10%;
     .mission-wrapper{
         display: flex;
         .mission-images{
@@ -806,6 +817,131 @@ body::-webkit-scrollbar {
         }
     }
 }
+/*-=-=-=-=what we do-=-=-=-=*/
+.whatwedo{
+    .whatwedocontainer{
+        margin: 40px 5%;
+        .whatwedotitle{
+            text-align: center;
+            font-size: 3rem;
+            line-height: 1.4rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+        .whatwedopreview{
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 0.9rem !important;
+            line-height: 1.4rem !important;
+            font-weight: 300;
+            font-style: normal;
+            margin-top: 0px;
+        }
+        .whatwedogrid{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            .whatwedoitems{
+                display: flex;
+                padding: 10px;
+                border: 1px solid rgb(252, 217, 195);
+                box-shadow: rgba(0, 0, 0, 0.548);
+                transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+                border-radius: 5px;
+                .wwditemimage{
+                    margin: 10px;
+                    margin-top: 15px;
+                    img{
+
+                    }
+                }
+                .wwditemtexts{
+                    padding-right: 20px;
+                    .wwdititle{
+                        font-size: 1.4rem;
+                        line-height: 1.4rem;
+                        margin-bottom: 0.8rem;
+                        position: relative;
+                    }
+                    .wwdicontext{
+                        margin-right: 10px;
+                        font-size: 1rem !important;
+                        line-height: 1.4rem !important;
+                        font-family: "canada-type-gibson", sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======frequently asked questions stylings====== */
+.faqmainSection{
+    margin: 4rem 0;
+    .faqsection{
+        .faqcontainer{
+            margin: 0 15%;
+            .faqwrapper{
+                padding: 6rem;
+                padding-bottom: 4rem;
+                border-radius: 23px;
+                background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
+                transition: 0.3s;
+                .faqflex{
+                    .faqtitle{
+                        margin-bottom: 40px;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 32px;
+                        color: #f6f6f6;
+                        text-transform: uppercase;
+                    }
+                    .faqdrop{
+                        .faqdroptitle{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+                            cursor: pointer;
+                            .faqText, i{
+                                color: #f6f6f6;
+                                font-size: 20px;
+                                font-weight: 700;
+                                user-select: none;
+                                letter-spacing: 1.4;
+                            }
+                            .angleDown{
+                                transform: rotate(90deg);
+                                display: unset;
+                                transition-property: all;
+                                transition-timing-function: cubic-bezier(.4,0,.2,1);
+                                transition-duration: .15s;
+                            }
+                        }
+                        .faqdropcontents{
+                            display: none;
+                            .faqdroptexts{
+                                color: #f6f6f6;
+                                line-height: 1.5;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .faqShow{
+                            display: unset;
+                            transition-property: all;
+                            transition-timing-function: cubic-bezier(.4,0,.2,1);
+                            transition-duration: .15s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*=== Our Blog ===*/
 .blog-sec-top{
     text-align: center;
