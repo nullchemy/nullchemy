@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Code Review</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="75.4765625%" y1="91.8652344%" x2="23.3007812%" y2="9.76367188%" id="linearGradient-1">
+            <stop stop-color="#63D5FF" offset="0%"></stop>
+            <stop stop-color="#D3F3FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-8.7%" y="-15.3%" width="117.5%" height="130.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-V2-Copy" transform="translate(-359.000000, -230.000000)">
+            <g id="Code-Review" transform="translate(359.000000, 230.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="25" cy="25" r="25"></circle>
+                <path d="M40.182377,34.36 L41.16,34.36 C41.7122847,34.36 42.16,34.8077153 42.16,35.36 L42.16,36.3 C42.16,36.8522847 41.7122847,37.3 41.16,37.3 L8.84,37.3 C8.28771525,37.3 7.84,36.8522847 7.84,36.3 L7.84,35.36 C7.84,34.8077153 8.28771525,34.36 8.84,34.36 L9.90002401,34.36 L9.90002401,18.7 C9.90002401,18.1477153 10.3477393,17.7 10.900024,17.7 L39.182377,17.7 C39.7346617,17.7 40.182377,18.1477153 40.182377,18.7 L40.182377,34.36 Z" id="Combined-Shape" fill="#69D0F5" filter="url(#filter-2)"></path>
+                <g id="Group" transform="translate(8.000000, 15.000000)" fill="#FFFFFF">
+                    <path d="M3,0 L31,0 C31.5522847,-1.01453063e-16 32,0.44771525 32,1 L32,19 C32,19.5522847 31.5522847,20 31,20 L3,20 C2.44771525,20 2,19.5522847 2,19 L2,1 C2,0.44771525 2.44771525,1.01453063e-16 3,0 Z" id="Rectangle"></path>
+                    <path d="M1,17 L33,17 C33.5522847,17 34,17.4477153 34,18 L34,19 C34,19.5522847 33.5522847,20 33,20 L1,20 C0.44771525,20 -4.44021574e-13,19.5522847 -4.4408921e-13,19 L-4.4408921e-13,18 C-4.44156845e-13,17.4477153 0.44771525,17 1,17 Z" id="Rectangle"></path>
+                </g>
+                <g id="Group-4" transform="translate(17.000000, 16.000000)" fill="#63D5FF">
+                    <path d="M9.39017716,11.0678711 L16.3901772,11.0678711 C17.4947467,11.0678711 18.3901772,11.9633016 18.3901772,13.0678711 L18.3901772,13.0678711 C18.3901772,14.1724406 17.4947467,15.0678711 16.3901772,15.0678711 L9.39017716,15.0678711 C8.28560766,15.0678711 7.39017716,14.1724406 7.39017716,13.0678711 L7.39017716,13.0678711 C7.39017716,11.9633016 8.28560766,11.0678711 9.39017716,11.0678711 Z" id="Rectangle" transform="translate(12.890177, 13.067871) rotate(45.000000) translate(-12.890177, -13.067871) "></path>
+                    <circle id="Oval" cx="8" cy="8" r="8"></circle>
+                </g>
+                <g id="Group-5" transform="translate(17.000000, 21.000000)" fill="#FFFFFF">
+                    <polygon id="Path" points="2.97447997 6 0 3.50007929 2.97447997 1 4 1.86190492 2.05066281 3.50007929 4 5.13825365"></polygon>
+                    <polygon id="Path" points="13.0253314 6 12 5.13825365 13.9491485 3.50007929 12 1.86190492 13.0253314 1 16 3.50007929"></polygon>
+                    <polygon id="Path" points="8.89869007 0 10 0.607143716 7.10147019 7 6 6.39267955"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

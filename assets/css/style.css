@@ -366,7 +366,7 @@ body::-webkit-scrollbar {
 .passCard {
   transform: skew(0deg, -5deg);
   height: 50vh;
-  background: #0088f0;
+  background: rgb(9, 20, 26);
   position: relative;
   margin-top: 80px;
   margin-bottom: 170px;
@@ -378,7 +378,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   bottom: 0;
-  background: linear-gradient(to top, #14a9ff, #0088f0) !important;
+  background: linear-gradient(to top, rgb(9, 28, 37), rgb(9, 20, 26)) !important;
 }
 .passCard .passCardWrapper .passCardContainer {
   margin: 0 5%;
@@ -394,7 +394,7 @@ body::-webkit-scrollbar {
   width: 450px;
   height: 200px;
   padding: 20px;
-  background-color: rgba(55, 55, 55, 0.5725490196);
+  background-color: rgba(23, 35, 104, 0.5725490196);
   overflow: hidden;
   border-radius: 10px;
   display: flex;
@@ -765,6 +765,9 @@ body::-webkit-scrollbar {
 .leaders .leaders-wrapper .leaders-texts {
   width: 50%;
 }
+.leaders .leaders-wrapper .leaders-texts h2 {
+  font-size: 3rem;
+}
 .leaders .leaders-wrapper .leaders-texts p {
   width: 90%;
 }
@@ -875,7 +878,7 @@ body::-webkit-scrollbar {
   padding: 6rem;
   padding-bottom: 4rem;
   border-radius: 23px;
-  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  background: linear-gradient(to bottom right, rgb(11, 30, 41), rgb(9, 20, 26)) !important;
   transition: 0.3s;
 }
 .faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqtitle {
