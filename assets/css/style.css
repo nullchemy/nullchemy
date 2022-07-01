@@ -285,7 +285,7 @@ body::-webkit-scrollbar {
 /* ======Jumbotron stylings====== */
 .landing {
   overflow: hidden;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 .landing .landcontainer {
   margin: 0 5%;
@@ -293,7 +293,6 @@ body::-webkit-scrollbar {
 .landing .landcontainer .landflex {
   display: flex;
   width: 100%;
-  height: 90vh;
 }
 .landing .landcontainer .landflex .landtexts {
   width: 50%;
@@ -361,6 +360,180 @@ body::-webkit-scrollbar {
 }
 .landing .landcontainer .landflex .landing-right .landing-blogs .landing-blog .author-blog .author-name {
   margin: 0;
+}
+
+/* ======pass card stylings====== */
+.passCard {
+  transform: skew(0deg, -5deg);
+  height: 50vh;
+  background: #0088f0;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 170px;
+}
+.passCard .passCardWrapper {
+  transform: skew(0deg, 5deg);
+  margin-bottom: -100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: linear-gradient(to top, #14a9ff, #0088f0) !important;
+}
+.passCard .passCardWrapper .passCardContainer {
+  margin: 0 5%;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex {
+  display: flex;
+  padding-top: 80px;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler {
+  width: 50%;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard {
+  width: 450px;
+  height: 200px;
+  padding: 20px;
+  background-color: rgba(55, 55, 55, 0.5725490196);
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  box-shadow: rgba(111, 0, 255, 0.2509803922) 0px 54px 55px, rgba(125, 3, 255, 0.1215686275) 0px -12px 30px, rgba(136, 0, 255, 0.1215686275) 0px 4px 6px, rgba(127, 7, 255, 0.168627451) 0px 12px 13px, rgba(123, 0, 255, 0.0901960784) 0px -3px 5px;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardImage {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardImage img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts {
+  width: 65%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: -5%;
+  color: #f6f6f6;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div {
+  margin-bottom: 40px;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div h1, .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p {
+  color: #f6f6f6;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div h1 span, .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p span {
+  font-weight: 500;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div h1 .apikey, .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p .apikey {
+  background-color: rgba(53, 53, 53, 0.5137254902);
+  padding: 5px;
+  border-radius: 5px;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p {
+  margin-bottom: 10px;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div h2 {
+  line-height: 1.25;
+  font-size: 2rem;
+  color: #f6f6f6;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div p {
+  color: #e0e1ea;
+  line-height: 1.25;
+  letter-spacing: 1.2;
+}
+
+/* ======for the developers stylings====== */
+.forthedevs {
+  margin: 3rem 0;
+}
+.forthedevs .devswrapper .devcontainer {
+  margin: 0 10%;
+}
+.forthedevs .devswrapper .devcontainer .devflex {
+  display: flex;
+  justify-content: space-between;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext {
+  width: 50%;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .fordestxt {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devstitle {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devtext {
+  margin-bottom: 20px;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devtext a {
+  color: #0088f0;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devlearn {
+  padding: 1.5rem 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  border-radius: 0.75rem;
+  border-style: none;
+  border: none;
+  outline: none;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devdocs {
+  color: #0088f0;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstech {
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstech .devtechcard {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstech .devtechcard .devIcon {
+  font-size: 1rem !important;
+  width: 100%;
+  height: 100%;
+}
+.forthedevs .devswrapper .devcontainer .devflex .devstech .devtechcard .devbrandIc {
+  font-size: 6rem !important;
+  width: 100%;
+  height: 100%;
 }
 
 /* ======newsletter subscribe stylings====== */

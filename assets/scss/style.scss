@@ -280,13 +280,12 @@ body::-webkit-scrollbar {
 /* ======Jumbotron stylings====== */
 .landing{
     overflow: hidden;
-    margin-top: 3%;
+    margin-top: 5%;
     .landcontainer{
         margin: 0 5%;
         .landflex{
             display: flex;
             width: 100%;
-            height: 90vh;
             .landtexts{
                 width: 50%;
                 padding-top: 40px;
@@ -363,6 +362,182 @@ body::-webkit-scrollbar {
                             .author-name{
                                 margin: 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======pass card stylings====== */
+.passCard{
+    transform:skew(0deg, -5deg);
+    height: 50vh;
+    background: #0088f0;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 170px;
+    .passCardWrapper{
+        transform:skew(0deg, 5deg);
+        margin-bottom: -100px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        background: linear-gradient(to top,#14a9ff,#0088f0)!important;
+        .passCardContainer{
+            margin: 0 5%;
+            .passCardFlex{
+                display: flex;
+                padding-top: 80px;
+                .passCardTiler{
+                    width: 50%;
+                    .passTiltCard{
+                        width: 450px;
+                        height: 200px;
+                        padding: 20px;
+                        background-color: #37373792;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        display: flex;
+                        position: relative;
+                        box-shadow: #6f00ff40 0px 54px 55px, #7d03ff1f 0px -12px 30px, #8800ff1f 0px 4px 6px, #7f07ff2b 0px 12px 13px, #7b00ff17 0px -3px 5px;
+                        .passTiltCardImage{
+                            width: 40%;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width: 80%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+                        }
+                        .passTiltCardTexts{
+                            width: 65%; 
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            margin-left: -5%;
+                            color: #f6f6f6;
+                            div{
+                                margin-bottom: 40px;
+                                h1,p{
+                                    color: #f6f6f6;
+                                    span{
+                                        font-weight: 500;
+                                    }
+                                    .apikey{
+                                        background-color: #35353583;
+                                        padding: 5px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                                p{
+                                    margin-bottom: 10px;
+                                }
+                            }                        
+                        }
+                    }
+                }
+                .passOutroTexts{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        h2{
+                            line-height: 1.25;
+                            font-size: 2rem;
+                            color: #f6f6f6;
+                            font-weight: 700;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            color: #e0e1ea;
+                            line-height: 1.25;
+                            letter-spacing: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ======for the developers stylings====== */
+.forthedevs{
+    margin: 3rem 0;
+    .devswrapper{
+        .devcontainer{
+            margin: 0 10%;
+            .devflex{
+                display: flex;
+                justify-content: space-between;
+                .devstext{
+                    width: 50%;
+                    .fordestxt{
+                        text-transform: uppercase;
+                        font-size: .875rem;
+                        line-height: 1.25rem;
+                        font-weight: 700;
+                    }
+                    .devstitle{
+                        font-size: 2rem;
+                        line-height: 2.25rem;
+                        font-weight: 700;
+                        margin-top: 1rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .devtext{
+                        margin-bottom: 20px;
+                        a{
+                            color: #0088f0;
+                        }
+                    }
+                    .devbtns{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-top: 2rem;
+                        .devlearn{
+                            padding: 1.5rem 2rem;
+                            line-height: 1.25;
+                            font-weight: 600;
+                            font-size: .875rem;
+                            background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
+                            border-radius: 0.75rem;
+                            border-style: none;
+                            border: none;
+                            outline: none;
+                        }
+                        .devdocs{
+                            color: #0088f0;
+                            line-height: 1.25;
+                            font-weight: 600;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .devstech{
+                    width: 40%;
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 4rem;
+                    .devtechcard{
+                        height: 100px;
+                        width: 100px;
+                        overflow: hidden;
+                        .devIcon{
+                            font-size: 1rem !important;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .devbrandIc{
+                            font-size: 6rem !important;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }
