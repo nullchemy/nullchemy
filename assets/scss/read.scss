@@ -1,0 +1,105 @@
+:root{
+    --color: #eaeaea;
+}
+.read-article{
+    margin: 5% 10%;
+    margin-bottom: 2%;
+    .article-breadcrumb{
+        .breadcrumb-wrapper{
+            -webkit-tap-highlight-color: transparent;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color);
+            line-height: 1.5;
+            text-align: left;
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            align-items: center;
+            span{
+                a{
+                    font-size: 15px!important;
+                    line-height: 26px!important;
+                    letter-spacing: .5px;
+                    font-weight: 500;
+                    margin-right: 8px;
+                    transition: all 0.3s ease;
+                    color: inherit;
+                }
+            }
+            i{
+                margin: 0 10px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .read-top{
+        margin-top: 4%;
+        .read-top-wrapper{
+            display: flex;
+            .read-top-texts{
+                width: 50%;
+                .read-meta{
+                    .category{
+                        padding: 5px;
+                        border-radius: 6px;
+                        background-color: #42636fc8;
+                        cursor: pointer;
+                    }
+                    .date{
+                        text-transform: uppercase;
+                        margin-left: 10px;
+                    }
+                }
+                h1{
+                    font-size: 3rem;
+                    line-height: 1.2;
+                    font-weight: 900;
+                }
+                .spot-author{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    img{
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                    }
+                    .spot-author-name{
+                        margin-left: 10px;
+                        p{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+            .read-top-image{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    hr{
+        margin: 8% 0;
+        border: 1px solid rgb(80, 80, 80);
+    }
+    .blog-read-section{
+        margin-top: 25px;
+        .blogr-wrapper{
+            p{
+                -webkit-text-size-adjust: 100%;
+                line-height: 1.52em;
+                font-size: 1.5em;
+                margin-top: 0;
+                box-sizing: inherit;
+                margin-bottom: 1.3em;
+            }
+        }
+    }
+}

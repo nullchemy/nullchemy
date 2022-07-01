@@ -357,7 +357,11 @@ body::-webkit-scrollbar {
                         }
                         .author-blog{
                             .blog-author-image{
-                                img{}
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
                             }
                             .author-name{
                                 margin: 0;
