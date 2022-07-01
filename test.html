@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <script>
+        //Use lastIndexOf to get the last \ as an index and use substr to get the remaining string starting from the last index of \
+        function getFile(filePath) {
+            return filePath.substr(filePath.lastIndexOf('\\') + 1);
+        }
+
+        function getoutput() {
+            console.log(getFile(inputfile.value));
+            outputfile.value = getFile(inputfile.value)+'.'+inputfile.value.split('.')[1];
+            extension.value = inputfile.value.split('.')[1];
+        }
+    </script>
+<input id='inputfile' type='file' name='inputfile' onChange='getoutput()'><br>
+    Output Filename <input id='outputfile' type='text' name='outputfile'><br>
+    Extension <input id='extension' type='text' name='extension'>
+</body>
+</html>

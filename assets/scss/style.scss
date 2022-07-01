@@ -1238,6 +1238,32 @@ body::-webkit-scrollbar {
                                         letter-spacing: -0.17px;
                                         line-height: 22px;
                                         color: var(--color);
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: nowrap;
+                                        width: 800px;
+                                        overflow-x: scroll;
+                                        &::-webkit-scrollbar {
+                                            scrollbar-color: rgb(35, 42, 46);
+                                            width: 5px;
+                                            max-height: 3px;
+                                            border-radius: 23px;
+                                            background-color: #ffffff00;
+                                        }
+                                        .filenames-list{
+                                            padding: 8px 15px;
+                                            border-radius: 23px;
+                                            font-size: .9rem;
+                                            text-decoration: none;
+                                            color: #eaeaea;
+                                            background-color: #505050;
+                                            margin-right: 3px;
+                                            width: min-content;
+                                            white-space: nowrap;
+                                            &:hover{
+                                                background-color: #797979;
+                                            }
+                                        }
                                     }
                                 }
                                 .row-wrap{

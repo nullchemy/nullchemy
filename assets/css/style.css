@@ -1210,6 +1210,34 @@ body::-webkit-scrollbar {
   letter-spacing: -0.17px;
   line-height: 22px;
   color: var(--color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 800px;
+  overflow-x: scroll;
+}
+.contact .contact-wrapper .contFormSec form .cont-group .input-field-row .input-file-row .project_brief .file-content .content-label::-webkit-scrollbar {
+  scrollbar-color: rgb(35, 42, 46);
+  width: 5px;
+  max-height: 3px;
+  border-radius: 23px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.contact .contact-wrapper .contFormSec form .cont-group .input-field-row .input-file-row .project_brief .file-content .content-label .filenames-list {
+  padding: 8px 15px;
+  border-radius: 23px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #eaeaea;
+  background-color: #505050;
+  margin-right: 3px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+}
+.contact .contact-wrapper .contFormSec form .cont-group .input-field-row .input-file-row .project_brief .file-content .content-label .filenames-list:hover {
+  background-color: #797979;
 }
 .contact .contact-wrapper .contFormSec form .cont-group .input-field-row .input-file-row .project_brief .row-wrap {
   display: flex;

@@ -124,14 +124,14 @@
                                             <img src="./assets/svg/icon-download.svg" alt="">
                                         </div>
                                         <div class="content-label">
-                                            Drag or browse your project brief
+                                            Drag or browse your project brief (you can upload multipe files)
                                         </div>
                                     </div>
                                     <div class="row-wrap">
                                         <div id="filePush" class="button">upload</div>
                                     </div>
                                 </label>
-                                <input class="file-field" type="file" accept="application/pdf, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint" name="upload[]" multiple="multiple">
+                                <input class="file-field" type="file" accept="application/pdf, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint" name="upload[]" multiple="multiple" onChange='getFile()'>
                             </div>
                             <span id="id-err fileErr"></span>
                         </div>
@@ -221,6 +221,24 @@
             <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> | built by <a title="Developer" target="blank" href="https://denniskibet.com">DennisRono</a> <a href="https://github.com/DennisRono" title="Github"><i class="fa-brands fa-github"></i></a></p>
         </div>
     </footer>
+    <script>
+        const getFile = () => {
+            const files = document.querySelector('.file-field').files
+            let label = document.querySelector('.content-label')
+            let finlabel = ""
+            let filenames = []
+            for (var i = 0; i < files.length; ++i) {
+                var name = files.item(i).name;
+                filenames.push(name)
+            }
+            filenames.map(i=>{
+                finlabel = finlabel + "<span class='filenames-list'>"+i+"</span>"
+            })
+            label.innerHTML = finlabel
+            //let filename = files.substr(files.lastIndexOf('\\') + 1);
+            //document.querySelector('.content-label').innerHTML = filename
+        }
+    </script>
     <script src="https://kit.fontawesome.com/6d5a084346.js" crossorigin="anonymous"></script>
 </body>
 </html>
