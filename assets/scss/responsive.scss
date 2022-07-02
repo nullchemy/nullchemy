@@ -1,0 +1,61 @@
+/*
+    320px => mobile devices
+    768px => tablets
+    1200px => large screen devices (pcs and Tvs)
+*/
+/*====== responsive header ========*/
+
+@media(max-width: 320px){
+    .header{
+        padding-top: 10px;
+        .header-container{
+            .header-flex{
+                flex-direction: column;
+                .header-left{
+                    width: 100%;
+                    .header-left-flex{
+                        .header-left-top{
+                            flex-direction: column;
+                            .header-brand{
+                                width: 100%;
+                                h1{
+                                }
+                                img{
+
+                                }
+                            }
+                            .header-brand-texts{
+                                width: 100%;
+                                text-align: center;
+                                padding-top: 0;
+                                p{
+                                    font-size: .8rem;
+                                }
+                            }
+                        }
+                        .header-left-bottom{
+                            margin-top: 30px;
+                            .header-nav{
+                                ul{
+                                    justify-content: space-evenly;
+                                    .header-nav-links{
+                                        padding: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }.header-right{
+                    width: 100%;
+                    .header-right-flex{
+                        justify-content: center;
+                        flex-direction: column;
+                        .header-search{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

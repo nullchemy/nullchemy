@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
 :root {
   --color: #eaeaea;
 }
@@ -89,11 +90,71 @@
 .read-article .blog-read-section {
   margin-top: 25px;
 }
+.read-article .blog-read-section .blogr-wrapper h1 {
+  text-align: left;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+  max-width: 100%;
+  color: #e7e7e7;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.read-article .blog-read-section .blogr-wrapper h1 .highlighted {
+  position: relative;
+  background: linear-gradient(-225deg, transparent 5px, #fbcfd5 0) bottom left, linear-gradient(-45deg, transparent 5px, #fbcfd5 0) bottom right;
+  background-size: 51% 7px;
+  background-repeat: no-repeat;
+}
 .read-article .blog-read-section .blogr-wrapper p {
   -webkit-text-size-adjust: 100%;
   line-height: 1.52em;
   font-size: 1.5em;
+  font-weight: 200;
   margin-top: 0;
   box-sizing: inherit;
   margin-bottom: 1.3em;
+  max-width: initial;
+}
+.read-article .blog-read-section .blogr-wrapper p strong {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.6em;
+}
+.read-article .blog-read-section .blogr-wrapper img {
+  width: 93%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.read-article .blog-read-section .blogr-wrapper ul {
+  margin: 20px 0;
+  margin-left: 40px;
+}
+.read-article .blog-read-section .blogr-wrapper ul li {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.52em;
+  font-size: 1.5em;
+  font-family: "merriweatheritalic";
+  font-style: italic;
+  margin-top: 0;
+  box-sizing: inherit;
+  margin-bottom: 0.4em;
+}
+.read-article .blog-read-section .blogr-wrapper ul li::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  content: "\f058";
+  margin-right: 20px;
+  margin-left: -40px;
+  color: #cfcfcf;
+}
+.read-article .blog-read-section .blogr-wrapper ul li strong {
+  font-weight: 800;
+  color: #ffffff;
 }/*# sourceMappingURL=read.css.map */
