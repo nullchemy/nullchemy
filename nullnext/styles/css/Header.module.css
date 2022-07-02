@@ -1,0 +1,160 @@
+/*======= header stylings ==========*/
+.header {
+  padding-top: 40px;
+}
+.header .headercontainer {
+  margin: 0 5%;
+}
+.header .headercontainer .headerflex {
+  display: flex;
+}
+.header .headercontainer .headerflex .headerleft {
+  width: 50%;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex {
+  display: flex;
+  flex-direction: column;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerlefttop {
+  display: flex;
+  justify-content: space-between;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerlefttop .headerbrand {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerlefttop .headerbrand h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #0088f0;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerlefttop .headerbrand .logoImage {
+  height: 35px !important;
+  width: 35px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerlefttop .headerbrandtexts {
+  width: 50%;
+  padding-top: 10px;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerlefttop .headerbrandtexts p {
+  font-size: 0.9rem;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom {
+  margin-top: 10px;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom .headernav ul {
+  display: flex;
+  padding-left: 0;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom .headernav ul .headernavlinks {
+  padding: 5px;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom .headernav ul .headernavlinks a {
+  padding: 8px 15px;
+  border-radius: 23px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #eaeaea;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom .headernav ul .headernavlinks a:hover {
+  background-color: #505050;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom .headernav ul .headernavlinks .selected {
+  background-color: #0088f0;
+}
+.header .headercontainer .headerflex .headerleft .headerleftflex .headerleftbottom .headernav ul .headernavlinks .selected:hover {
+  background-color: #0088f0 !important;
+}
+.header .headercontainer .headerflex .headerright {
+  padding-top: 25px;
+  width: 50%;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headersearch .headersearchform {
+  position: relative;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headersearch .headersearchform .headersearchinput {
+  outline: none;
+  border: none;
+  padding: 10px;
+  padding-left: 35px;
+  background-color: transparent;
+  color: var(--color);
+  width: 200px;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headersearch .headersearchform .headersearchinput:focus ~ .searchinputplaceholder,
+.header .headercontainer .headerflex .headerright .headerrightflex .headersearch .headersearchform .headersearchinput:not([value=""]) ~ .searchinputplaceholder {
+  visibility: hidden;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headersearch .headersearchform .headersearchicon {
+  position: absolute;
+  fill: var(--color);
+  top: 10px;
+  left: 10px;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headersearch .headersearchform .searchinputplaceholder {
+  position: absolute;
+  left: 35px;
+  top: 5px;
+  pointer-events: none;
+  color: #9d9d9d;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks {
+  margin-left: 20px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks a {
+  margin-bottom: -10px;
+  margin-right: 15px;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks a .headermailicon {
+  fill: #9d9d9d;
+  cursor: pointer;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks a .headermailicon:hover {
+  fill: var(--color);
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks .themecontrols {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks .themecontrols svg {
+  stroke: #9d9d9d;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks .themecontrols svg:hover {
+  stroke: var(--color);
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks .themecontrols .themeToggle {
+  height: 20px;
+  width: 35px;
+  border-radius: 30px;
+  background-color: #9d9d9d;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+.header .headercontainer .headerflex .headerright .headerrightflex .headerrightlinks .themecontrols .themeToggle .toggleButton {
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+  transition: all 0.2s ease-in-out 0s;
+}/*# sourceMappingURL=Header.module.css.map */

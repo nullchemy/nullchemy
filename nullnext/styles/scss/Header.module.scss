@@ -1,0 +1,164 @@
+/*======= header stylings ==========*/
+.header{
+    padding-top: 40px;
+    .headercontainer{
+        margin: 0 5%;
+        .headerflex{
+            display: flex;
+            .headerleft{
+                width: 50%;
+                .headerleftflex{
+                    display: flex;
+                    flex-direction: column;
+                    .headerlefttop{
+                        display: flex;
+                        justify-content: space-between;
+                        .headerbrand{
+                            width: 30%;
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            h1{
+                                margin: 0;
+                                font-size: 3rem;
+                                color: #0088f0;
+                            }
+                            .logoImage{
+                                height: 35px !important;
+                                width: 35px !important;
+                                object-fit: cover;
+                            }
+                        }
+                        .headerbrandtexts{
+                            width: 50%;
+                            padding-top: 10px;
+                            p{
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                    .headerleftbottom{
+                        margin-top: 10px;
+                        .headernav{
+                            ul{
+                                display: flex;
+                                padding-left: 0;
+                                .headernavlinks{
+                                    padding: 5px;
+                                    a{
+                                        padding: 8px 15px;
+                                        border-radius: 23px;
+                                        font-size: .9rem;
+                                        text-decoration: none;
+                                        color: #eaeaea;
+                                        &:hover{
+                                            background-color: #505050;
+                                        }
+                                    }
+                                    .selected{
+                                        background-color: #0088f0;
+                                        &:hover{
+                                            background-color: #0088f0 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .headerright{
+                padding-top: 25px;
+                width: 50%;
+                .headerrightflex{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .headersearch{
+                        .headersearchform{
+                            position: relative;
+                            border: 1px solid var(--color);
+                            border-radius: 5px;
+                            .headersearchinput{
+                                outline: none;
+                                border: none;
+                                padding: 10px;
+                                padding-left: 35px;
+                                background-color: transparent;
+                                color: var(--color);
+                                width: 200px;
+                            }
+                            .headersearchinput:focus~.searchinputplaceholder,
+                            .headersearchinput:not([value=""])~.searchinputplaceholder{
+                                visibility: hidden;
+                                // transition: 0.2s ease all;
+                            }
+                            .headersearchicon{
+                                position: absolute;
+                                fill: var(--color);
+                                top: 10px;
+                                left: 10px;
+                            }
+                            .searchinputplaceholder{
+                                position: absolute;
+                                left: 35px;
+                                top: 5px;
+                                pointer-events: none;
+                                color: #9d9d9d;
+                            }
+                        }
+                    }
+                    .headerrightlinks{
+                        margin-left: 20px;
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        a{
+                            margin-bottom: -10px;
+                            margin-right: 15px;
+                            .headermailicon{
+                                fill: #9d9d9d;
+                                cursor: pointer;
+                                &:hover{
+                                    fill: var(--color);
+                                }
+                            }
+                        }
+                        .themecontrols{
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            svg{
+                                stroke: #9d9d9d;
+                                &:hover{
+                                    stroke: var(--color);
+                                }
+                            }
+                            .themeToggle{
+                                height: 20px;
+                                width: 35px;
+                                border-radius: 30px;
+                                background-color: #9d9d9d;
+                                margin: 0 10px;
+                                position: relative;
+                                cursor: pointer;
+                                .toggleButton{
+                                    height: 16px;
+                                    width: 16px;
+                                    margin: 2px;
+                                    border-radius: 50%;
+                                    background-color: #fff;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    transform: translate(0);
+                                    transition: all 0.2s ease-in-out 0s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

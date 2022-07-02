@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Proven Experience and Expertise</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="75.4765625%" y1="91.8652344%" x2="23.3007812%" y2="9.76367188%" id="linearGradient-1">
+            <stop stop-color="#F6B684" offset="0%"></stop>
+            <stop stop-color="#FFEFCB" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-8.7%" y="-15.3%" width="117.5%" height="130.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-V2-Copy" transform="translate(-198.000000, -230.000000)">
+            <g id="Proven-Experience-and-Expertise" transform="translate(198.000000, 230.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="25" cy="25" r="25"></circle>
+                <path d="M40.342377,33.66 L41.32,33.66 C41.8722847,33.66 42.32,34.1077153 42.32,34.66 L42.32,35.6 C42.32,36.1522847 41.8722847,36.6 41.32,36.6 L9,36.6 C8.44771525,36.6 8,36.1522847 8,35.6 L8,34.66 C8,34.1077153 8.44771525,33.66 9,33.66 L10.060024,33.66 L10.060024,18 C10.060024,17.4477153 10.5077393,17 11.060024,17 L39.342377,17 C39.8946617,17 40.342377,17.4477153 40.342377,18 L40.342377,33.66 Z" id="Combined-Shape" fill="#F6B684" filter="url(#filter-2)"></path>
+                <g id="Group" transform="translate(8.000000, 15.000000)">
+                    <path d="M3,0 L31,0 C31.5522847,-1.01453063e-16 32,0.44771525 32,1 L32,19 C32,19.5522847 31.5522847,20 31,20 L3,20 C2.44771525,20 2,19.5522847 2,19 L2,1 C2,0.44771525 2.44771525,1.01453063e-16 3,0 Z" id="Rectangle" fill="#FFFFFF"></path>
+                    <path d="M1,17 L33,17 C33.5522847,17 34,17.4477153 34,18 L34,19 C34,19.5522847 33.5522847,20 33,20 L1,20 C0.44771525,20 -4.44021574e-13,19.5522847 -4.4408921e-13,19 L-4.4408921e-13,18 C-4.44156845e-13,17.4477153 0.44771525,17 1,17 Z" id="Rectangle" fill="#FFFFFF"></path>
+                    <g id="medal" transform="translate(12.000000, 3.000000)" fill="#F78761" fill-rule="nonzero" opacity="0.698683966">
+                        <path d="M5.5,6 C3.0146875,6 1,8.0146875 1,10.5 C1,12.9853125 3.0146875,15 5.5,15 C7.9853125,15 10,12.9853125 10,10.5 C10,8.0146875 7.9853125,6 5.5,6 Z M7.21210936,12.8567578 L5.5,11.9773828 L3.78789064,12.8567578 L4.1153125,10.993125 L2.7165625,9.66246093 L4.64792968,9.38777343 L5.5,7.70238282 L6.35207032,9.38777343 L8.2834375,9.66234375 L6.8846875,10.9930078 L7.21210936,12.8567578 Z" id="Shape"></path>
+                        <path d="M1.50990331e-14,-4.4408921e-16 L1.50990331e-14,3.07124895 L4.01940918,5 C4.61975098,5 5.15302421,5 5.5,5 C5.84697579,5 6.50947582,5 7.00671387,5 L11,3.07124895 L11,-4.4408921e-16 L7.43548387,-1.36175793e-16 L6.50947582,-4.4408921e-16 L5.5,-4.4408921e-16 L3.56451613,-1.36175793e-16 L1.50990331e-14,-4.4408921e-16 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Security</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="75.4765625%" y1="91.8652344%" x2="23.3007812%" y2="9.76367188%" id="linearGradient-1">
+            <stop stop-color="#6CBAF7" offset="0%"></stop>
+            <stop stop-color="#C8E7FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-10.0%" y="-15.0%" width="120.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-V2-Copy" transform="translate(-279.000000, -230.000000)">
+            <g id="Security" transform="translate(279.000000, 230.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="25" cy="25" r="25"></circle>
+                <path d="M11,17 L39,17 C39.5522847,17 40,17.4477153 40,18 L40,36 C40,36.5522847 39.5522847,37 39,37 L11,37 C10.4477153,37 10,36.5522847 10,36 L10,18 C10,17.4477153 10.4477153,17 11,17 Z" id="Rectangle" fill="#6CBAF7" filter="url(#filter-2)"></path>
+                <g id="Group" transform="translate(9.932642, 14.658031)">
+                    <path d="M1,0 L29,0 C29.5522847,-1.01453063e-16 30,0.44771525 30,1 L30,19 C30,19.5522847 29.5522847,20 29,20 L1,20 C0.44771525,20 6.76353751e-17,19.5522847 0,19 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle" fill="#FFFFFF"></path>
+                    <g id="security-on" transform="translate(9.067358, 2.341969)" fill="#6CBAF7" fill-rule="nonzero" opacity="0.699999988">
+                        <path d="M12.5791316,2.34360047 C9.98064195,2.34360047 7.98993702,1.61233264 6.30658175,0 C4.62340152,1.61233264 2.63278412,2.34360047 0.0345133254,2.34360047 C0.0345133254,6.54244176 -0.847535957,12.5572533 6.30653798,15 C13.4611371,12.5572964 12.5791316,6.54248486 12.5791316,2.34360047 Z M5.7869801,9.73240586 L3.69732636,7.67378603 L4.63294192,6.75224372 L5.7869801,7.88923502 L7.98044039,5.72862394 L8.91601218,6.65016625 L5.7869801,9.73240586 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
