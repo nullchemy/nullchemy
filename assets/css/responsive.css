@@ -4,7 +4,7 @@
     1200px => large screen devices (pcs and Tvs)
 */
 /*====== responsive header ========*/
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .header {
     padding-top: 10px;
   }
