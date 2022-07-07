@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import styles from '../styles/css/Header.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import Logo from '../public/icons/android-chrome-192x192.png'
 
 const header = () => {
@@ -27,10 +28,10 @@ const header = () => {
                             <div className={styles.headerleftbottom}>
                                 <nav className={styles.headernav}>
                                     <ul>
-                                        <li className={styles.headernavlinks}><a className={styles.selected} href="index.html">Home</a></li>
-                                        <li className={styles.headernavlinks}><a href="blog.html">Blog</a></li>
-                                        <li className={styles.headernavlinks}><a href="about.html">About</a></li>
-                                        <li className={styles.headernavlinks}><a href="contact.html">Contact</a></li>
+                                        <li className={styles.headernavlinks}><Link className={styles.selected} href="index.html">Home</Link></li>
+                                        <li className={styles.headernavlinks}><Link href="blog.html">Blog</Link></li>
+                                        <li className={styles.headernavlinks}><Link href="about.html">About</Link></li>
+                                        <li className={styles.headernavlinks}><Link href="contact.html">Contact</Link></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -46,9 +47,9 @@ const header = () => {
                                 </form>
                             </div>
                             <div className={styles.headerrightlinks}>
-                                <a href="#newsletter" title="Subscribe to our newsletter">
+                                <Link href="#newsletter" className={styles.dirnewsletter} title="Subscribe to our newsletter">
                                     <svg className={styles.headermailicon} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
-                                </a>
+                                </Link>
                                 <div className={styles.themecontrols}>
                                     <svg title="Change to light theme" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" x2="12" y1="1" y2="3"/><line x1="12" x2="12" y1="21" y2="23"/><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"/><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"/><line x1="1" x2="3" y1="12" y2="12"/><line x1="21" x2="23" y1="12" y2="12"/><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"/><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"/></svg>
                                     <div className={styles.themeToggle}>

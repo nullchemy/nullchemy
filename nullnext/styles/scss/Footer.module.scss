@@ -1,0 +1,91 @@
+/* ======Footer stylings====== */
+.footer{
+    height: min-content;
+    .fcontainer{
+        margin: 0 5%;
+        position: relative;
+        height: 100%;
+        .fdet{
+            .fdetflex{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .fflexsecs{
+                    width: 22%;
+                    height: min-content;
+                    margin-bottom: 40px;
+                    h2{
+                        margin-bottom: 20px;
+                    }
+                    ul{
+                        li{
+                            margin-bottom: 10px;
+                            a{
+                                color: var(--color);
+                            }
+                            a:hover{
+                                color: #0088f0;
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        .flogo{
+                            display: flex;
+                            align-items: baseline;
+                            margin-bottom: 20px;
+                            img{
+                                height: 25px;
+                                width: 25px;
+                                margin-right: 10px;
+                            }
+                            h3{
+                                font-size: 2rem;
+                            }
+                        }
+                        .fsocials{
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 20px;
+                            i{
+                                margin-right: 20px;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .siteProtection{
+                            display: flex;
+                            flex-direction: column;
+                            img{
+                                margin-bottom: 10px;
+                                &:nth-child(1){
+                                    width: 50%;
+                                }
+                                &:nth-child(2){
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fcopyright{
+        height: min-content;
+        display: block;
+        padding: 10px 0px;
+        width: 100%;
+        p{
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--color) !important;
+            font-family: 'Roboto', sans-serif;
+            a{
+                cursor: pointer;
+                color: var(--color);
+            }
+        }
+    }
+}

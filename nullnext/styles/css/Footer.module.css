@@ -1,0 +1,91 @@
+/* ======Footer stylings====== */
+.footer {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.footer .fcontainer {
+  margin: 0 5%;
+  position: relative;
+  height: 100%;
+}
+.footer .fcontainer .fdet .fdetflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs {
+  width: 22%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-bottom: 40px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs h2 {
+  margin-bottom: 20px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs ul li {
+  margin-bottom: 10px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs ul li a {
+  color: var(--color);
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs ul li a:hover {
+  color: #0088f0;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo h3 {
+  font-size: 2rem;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .fsocials {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .fsocials i {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection {
+  display: flex;
+  flex-direction: column;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img {
+  margin-bottom: 10px;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(1) {
+  width: 50%;
+}
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(2) {
+  width: 40%;
+}
+.footer .fcopyright {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: block;
+  padding: 10px 0px;
+  width: 100%;
+}
+.footer .fcopyright p {
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color) !important;
+  font-family: "Roboto", sans-serif;
+}
+.footer .fcopyright p a {
+  cursor: pointer;
+  color: var(--color);
+}/*# sourceMappingURL=Footer.module.css.map */
