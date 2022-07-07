@@ -28,10 +28,10 @@ const header = () => {
                             <div className={styles.headerleftbottom}>
                                 <nav className={styles.headernav}>
                                     <ul>
-                                        <li className={styles.headernavlinks}><Link className={styles.selected} href="index.html">Home</Link></li>
-                                        <li className={styles.headernavlinks}><Link href="blog.html">Blog</Link></li>
-                                        <li className={styles.headernavlinks}><Link href="about.html">About</Link></li>
-                                        <li className={styles.headernavlinks}><Link href="contact.html">Contact</Link></li>
+                                        <li className={styles.headernavlinks}><Link className={styles.selected} href="/index">Home</Link></li>
+                                        <li className={styles.headernavlinks}><Link href="/blog">Blog</Link></li>
+                                        <li className={styles.headernavlinks}><Link href="/about">About</Link></li>
+                                        <li className={styles.headernavlinks}><Link href="/contact">Contact</Link></li>
                                     </ul>
                                 </nav>
                             </div>
