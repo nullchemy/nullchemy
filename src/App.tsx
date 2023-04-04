@@ -1,14 +1,12 @@
 import React, { Fragment } from 'react'
-//import Header from './components/Header'
-import Maintainance from './components/Maintainance'
+import Routes from './Routes'
 
 const App = () => {
   return (
     <Fragment>
-      {/* <div className="app">
-        <Header />
-      </div> */}
-      <Maintainance />
+      <div className="app">
+        <Routes />
+      </div>
     </Fragment>
   )
 }
