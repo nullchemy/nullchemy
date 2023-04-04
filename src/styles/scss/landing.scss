@@ -1,23 +1,62 @@
 .landing{
+    height: 100vh;
     .landingWrapper{
+        height: 100%;
         .landingContainer{
             margin: 0 5%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
+            height: 100%;
             .landingtexts{
                 flex: 1;
-                .ct_lnd_text{
-                    font-size: 2.75rem;
-                    line-height: 2.5625rem;
-                    letter-spacing: -0.125rem;
-                    color: #005151;
-                    font-weight: 800;
+                height: 100%;
+                position: relative;
+                .lndingtextswrapper{
+                    position: absolute;
+                    top: 30%;
+                    transform: translateY(-30%);
+                    .ct_lnd_text{
+                        font-size: 5.375rem;
+                        line-height: 5rem;
+                        letter-spacing: -0.25rem;
+                        color: #005151;
+                        font-family: Volte Rounded;
+                        font-weight: 800 !important;
+                        margin-bottom: 2rem;
+                    }
+                    .ct_lnd_text_p{
+                        font-size: 1.375rem;
+                        line-height: 1.64;
+                        letter-spacing: -.015em;
+                        margin-bottom: 20px;
+                    }
+                    .cta_get_started{
+                        margin: 20px 0;
+                        background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+                        border-radius: 23px;
+                        color: #fff !important;
+                        font-size: 1.5rem;
+                        line-height: 1.4rem;
+                        padding: 10px 20px;
+                        text-align: center;
+                        transition: .4s;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
                 }
             }
             .landingImage{
                 width: 50%;
+                height: 100%;
+                position: relative;
+                .lndingImageWrapper{
+                    position: absolute;
+                    top: 30%;
+                    transform: translateY(-30%);
+                }
             }
         }
     }
