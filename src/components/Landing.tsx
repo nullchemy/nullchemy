@@ -11,7 +11,7 @@ const Landing = () => {
         <div className="landingWrapper">
           <div className="landingContainer">
             <div className="landingtexts">
-              <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolorem.</h1>
+              <h1 className="ct_lnd_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolorem.</h1>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquid aut ducimus temporibus ratione debitis earum molestiae commodi cupiditate. Excepturi.</p>
             </div>
             <div className="landingImage">

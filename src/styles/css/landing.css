@@ -8,6 +8,13 @@
 .landing .landingWrapper .landingContainer .landingtexts {
   flex: 1;
 }
+.landing .landingWrapper .landingContainer .landingtexts .ct_lnd_text {
+  font-size: 2.75rem;
+  line-height: 2.5625rem;
+  letter-spacing: -0.125rem;
+  color: #005151;
+  font-weight: 800;
+}
 .landing .landingWrapper .landingContainer .landingImage {
   width: 50%;
 }/*# sourceMappingURL=landing.css.map */

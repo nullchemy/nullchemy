@@ -8,6 +8,13 @@
             justify-content: space-evenly;
             .landingtexts{
                 flex: 1;
+                .ct_lnd_text{
+                    font-size: 2.75rem;
+                    line-height: 2.5625rem;
+                    letter-spacing: -0.125rem;
+                    color: #005151;
+                    font-weight: 800;
+                }
             }
             .landingImage{
                 width: 50%;
