@@ -1,6 +1,3 @@
-.header {
-  height: 70px;
-}
 .header .hcontainer {
   margin: 0 5%;
 }
@@ -13,7 +10,10 @@
   align-items: center;
 }
 .header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
-  width: 200px;
+  width: 70px;
+}
+.header .hcontainer .hwrapper .hleft .hbranding .headerlogo .headerLogoLink {
+  width: 50px;
 }
 .header .hcontainer .hwrapper .hleft .headerNavigation {
   display: flex;

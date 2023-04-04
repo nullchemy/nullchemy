@@ -20,7 +20,7 @@ const Landing = () => {
             </div>
             <div className="landingImage">
               <div className="lndingImageWrapper">
-                <img src={MadDesigner} alt="" />
+                <img src={MadDesigner} title="mad developer" alt="" />
               </div>
             </div>
           </div>

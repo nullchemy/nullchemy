@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import '../styles/css/header.css'
-import Logo from '../assets/images/nullchemy-logo.png'
+import Logo from '../assets/images/nullchemy_logo.png'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
