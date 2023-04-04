@@ -12,7 +12,9 @@ const Header = () => {
               <div className="hleft">
                 <div className="hbranding">
                   <div className="headerlogo">
-                    <img src={Logo} alt="" />
+                    <Link to="/" className="headerLogoLink">
+                      <img src={Logo} alt="" />
+                    </Link>
                   </div>
                 </div>
                 <div className="headerNavigation">
@@ -20,19 +22,19 @@ const Header = () => {
                     <Link to="/" >Home</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/" >About us</Link>
+                    <Link to="/about" >About us</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/" >Resources</Link>
+                    <Link to="/resources" >Resources</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/" >Services</Link>
+                    <Link to="/services" >Services</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/" >Blog</Link>
+                    <Link to="/blogs" >Blog</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/" >Contact us</Link>
+                    <Link to="/contact" >Contact us</Link>
                   </li>
                 </div>
               </div>

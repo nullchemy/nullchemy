@@ -1,0 +1,266 @@
+.footer {
+  height: 70vh;
+  width: 100%;
+  background-color: #000;
+  background: url(../../assets/images/black-felt.png), #000;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .footer {
+    height: calc(100vh - 110px);
+  }
+}
+.footer .fBackToTop {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  background-color: #242424;
+  cursor: pointer;
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-radius: 5px;
+}
+.footer .fBackToTop p {
+  font-family: Roboto;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+.footer .fontainer {
+  margin: 0 5%;
+  height: 85%;
+  position: relative;
+}
+.footer .fontainer .fmiddle {
+  padding-top: 3rem;
+}
+@media (max-width: 480px) {
+  .footer .fontainer .fmiddle {
+    padding-top: 10px;
+  }
+}
+.footer .fontainer .fmiddle .fmidWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .footer .fontainer .fmiddle .fmidWrapper {
+    flex-direction: column;
+  }
+}
+.footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+@media (max-width: 480px) {
+  .footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle h2 {
+    font-size: 1rem;
+  }
+}
+.footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle .ftrangledown {
+  height: 20px;
+  width: 20px;
+  fill: #fff;
+}
+@media (min-width: 480px) {
+  .footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle .ftrangledown {
+    display: none;
+  }
+}
+.footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnav .fnavLink {
+  margin: 10px 0;
+}
+.footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnav .fnavLink .fnavLnk {
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavhide {
+    display: none;
+  }
+}
+.footer .fontainer .fcenter {
+  display: flex;
+  margin-top: 30px;
+}
+@media (max-width: 480px) {
+  .footer .fontainer .fcenter {
+    flex-direction: column;
+  }
+}
+.footer .fontainer .fcenter .paymentMethods {
+  flex: 1;
+}
+.footer .fontainer .fcenter .paymentMethods h2 {
+  color: #fff;
+  font-family: Roboto;
+  margin-bottom: 10px;
+}
+.footer .fontainer .fcenter .paymentMethods .paymentMethods {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .fontainer .fcenter .paymentMethods .paymentMethods .lnktoDeliv {
+  margin-right: 20px;
+}
+.footer .fontainer .fcenter .paymentMethods .paymentMethods .lnktoDeliv .PaymentOnDelivery {
+  display: block;
+  height: 25px;
+  width: 40px;
+  fill: #fff;
+}
+.footer .fontainer .fcenter .paymentMethods .paymentMethods .lnktoDeliv .mpesaIc {
+  display: block;
+  height: 45px !important;
+  width: 45px !important;
+}
+.footer .fontainer .fcenter .paymentMethods .paymentMethods .lnktoDeliv .mastercardIc,
+.footer .fontainer .fcenter .paymentMethods .paymentMethods .lnktoDeliv .visa {
+  width: 40px !important;
+}
+.footer .fontainer .fcenter .fnewsletter {
+  width: 47%;
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  .footer .fontainer .fcenter .fnewsletter {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.footer .fontainer .fcenter .fnewsletter h2 {
+  color: #fff;
+  font-family: Roboto;
+  margin-bottom: 10px;
+}
+.footer .fontainer .fcenter .fnewsletter p {
+  color: #fff;
+  font-family: Roboto;
+  margin-bottom: 10px;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .newsinfobox {
+  width: 78.5%;
+  margin-bottom: 5px;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .newsinfobox .subsuccess {
+  background-color: rgba(0, 255, 34, 0.5450980392);
+  padding: 5px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .newsinfobox .subsuccess P {
+  margin-bottom: 0;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .newsinfobox .subError {
+  background-color: rgba(255, 0, 0, 0.3725490196);
+  padding: 5px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .newsinfobox .subError P {
+  margin-bottom: 0;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .subformgroup {
+  display: flex;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .subformgroup input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+}
+.footer .fontainer .fcenter .fnewsletter .fnewsletterform .subformgroup .fsubbtn {
+  padding: 0 20px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: rgb(90, 142, 255);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.footer .fBottom {
+  margin: 0 5%;
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+}
+.footer .fBottom .fBrand {
+  margin: 20px 10px;
+}
+.footer .fBottom .fBrand h3 {
+  color: #fff;
+  font-family: "Itim", cursive;
+}
+@media (max-width: 480px) {
+  .footer .fBottom .fBrand {
+    display: none;
+  }
+}
+.footer .fBottom .flanguage,
+.footer .fBottom .fCurrency,
+.footer .fBottom .fcountry {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 7px 20px;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.footer .fBottom .flanguage .fLangIc,
+.footer .fBottom .fCurrency .fLangIc,
+.footer .fBottom .fcountry .fLangIc {
+  height: 15px;
+  width: 15px;
+  fill: #fff;
+  margin-right: 10px;
+  margin-left: -5px;
+}
+.footer .fBottom .flanguage p,
+.footer .fBottom .fCurrency p,
+.footer .fBottom .fcountry p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: Roboto;
+  text-transform: capitalize;
+}
+@media (max-width: 480px) {
+  .footer .fBottom .fcountry {
+    display: none;
+  }
+}
+
+.fbtmcystomize {
+  padding-bottom: 115px;
+}/*# sourceMappingURL=footer.css.map */
