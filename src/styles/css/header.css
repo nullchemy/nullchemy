@@ -1,6 +1,21 @@
 .header {
-  height: 45px;
+  height: 70px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.header .hcontainer {
+  margin: 0 5%;
+}
+.header .hcontainer .hwrapper .hleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
   width: 200px;
+}
+.header .hcontainer .hwrapper .hleft .headerNavigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }/*# sourceMappingURL=header.css.map */

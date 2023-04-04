@@ -1,0 +1,17 @@
+.landing{
+    .landingWrapper{
+        .landingContainer{
+            margin: 0 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            .landingtexts{
+                flex: 1;
+            }
+            .landingImage{
+                width: 50%;
+            }
+        }
+    }
+}

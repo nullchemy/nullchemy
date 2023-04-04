@@ -1,0 +1,13 @@
+.landing .landingWrapper .landingContainer {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.landing .landingWrapper .landingContainer .landingtexts {
+  flex: 1;
+}
+.landing .landingWrapper .landingContainer .landingImage {
+  width: 50%;
+}/*# sourceMappingURL=landing.css.map */

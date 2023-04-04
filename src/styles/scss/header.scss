@@ -1,11 +1,25 @@
 .header{
-    height: 45px;
+    height: 70px;
+    background-color: #000000;
+    color: #ffffff;
     .hcontainer{
+        margin: 0 5%;
         .hwrapper{
             .hleft{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 .hbranding{
                     .headerlogo{
                         width: 200px;
+                    }
+                }
+                .headerNavigation{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .headerLink{
+
                     }
                 }
             }

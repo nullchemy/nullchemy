@@ -28,5 +28,11 @@ html, body{
     text-rendering: optimizeLegibility;
     text-size-adjust: none;
     direction: ltr;
-    background: white;
+    background: url('../../assets/images/asfalt-light.png'),linear-gradient(to right top,#d5faff,#d5faff);
+}
+
+// Light theme
+:root{
+    --background-color: #fff;
+    --text-color: #fff;
 }
