@@ -1,9 +1,9 @@
 .footer {
-  height: 70vh;
   width: 100%;
   background-color: #000;
   background: url(../../assets/images/black-felt.png), #000;
   position: relative;
+  padding-bottom: 103px;
 }
 @media (max-width: 480px) {
   .footer {

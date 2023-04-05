@@ -31,6 +31,8 @@ html, body{
     text-rendering: optimizeLegibility;
     text-size-adjust: none;
     direction: ltr;
-    background: var(--background-color);
+}
+.app{
+    background: url("../../assets/images/asfalt-dark.png"), linear-gradient(to right top, var(--back-grad-right), var(--background-color));
 }
 

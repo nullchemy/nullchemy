@@ -1,7 +1,8 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import '../styles/css/header.css'
 import Logo from '../assets/images/nullchemy_logo.png'
 import { Link } from 'react-router-dom'
+import { ReactComponent as Github } from '../assets/svg/github.svg'
 
 const Header = () => {
   const SCROLL_OFFSET: number = 100
@@ -50,7 +51,90 @@ const Header = () => {
                 </li>
               </div>
             </div>
-            <div className="hright"></div>
+            <div className="hright">
+              <div className="header-right">
+                <div className="header-right-flex">
+                  <div className="header-search">
+                    <form className="header-search-form">
+                      <svg
+                        className="header-search-icon"
+                        aria-hidden="true"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 18 18"
+                      >
+                        <path d="M18 16.5l-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0z"></path>
+                      </svg>
+                      <input
+                        className="header-search-input"
+                        type="text"
+                        name="search"
+                        value=""
+                        autoComplete="off"
+                      />
+                      <span className="search-input-placeholder">
+                        search for something
+                      </span>
+                    </form>
+                  </div>
+                  <div className="header-right-links">
+                    <a
+                      href="https://github.com/nullchemy"
+                      title="Follow us on github and give us a star"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <Github className="header-mail-icon" />
+                    </a>
+                    <a href="#newsletter" title="Subscribe to our newsletter">
+                      <svg
+                        aria-hidden="true"
+                        className="header-mail-icon"
+                        viewBox="0 0 18 18"
+                      >
+                        <path d="M1 6l8 5 8-5V4L9 9 1 4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6z"></path>
+                      </svg>
+                    </a>
+                    <div className="theme-controls">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" x2="12" y1="1" y2="3" />
+                        <line x1="12" x2="12" y1="21" y2="23" />
+                        <line x1="4.22" x2="5.64" y1="4.22" y2="5.64" />
+                        <line x1="18.36" x2="19.78" y1="18.36" y2="19.78" />
+                        <line x1="1" x2="3" y1="12" y2="12" />
+                        <line x1="21" x2="23" y1="12" y2="12" />
+                        <line x1="4.22" x2="5.64" y1="19.78" y2="18.36" />
+                        <line x1="18.36" x2="19.78" y1="5.64" y2="4.22" />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-} from "react-router-dom"
+} from 'react-router-dom'
 import Home from './routes/Home'
 import Contact from './routes/Contact'
 import NotFound from './routes/NotFound'
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
 const Routes = () => {
   return (
     <Fragment>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </Fragment>
   )
 }

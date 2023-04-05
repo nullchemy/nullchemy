@@ -36,6 +36,13 @@
   line-height: 1.64;
   letter-spacing: -0.015em;
   margin-bottom: 3rem;
+  color: var(--text-color);
+}
+@media (max-width: 1300px) {
+  .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text_p {
+    font-size: 1rem;
+    color: red;
+  }
 }
 .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .cta_get_started {
   margin: 20px 0;

@@ -5,7 +5,7 @@
 
 .notfoundcontainer .notfoundwrapper {
   display: flex;
-  height: 92.5vh;
+  height: 100vh;
 }
 @media (max-width: 1100px) {
   .notfoundcontainer .notfoundwrapper {

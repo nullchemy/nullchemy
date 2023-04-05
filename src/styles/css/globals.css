@@ -113,16 +113,16 @@
   font-style: normal;
 }
 :root {
-  --background-color: url("../../assets/images/asfalt-light.png"),
-      linear-gradient(to right top, #d5faff, #d5faff);
+  --back-grad-right: #d5faff;
+  --background-color: #d5faff;
   --text-color: #2b2b2b;
   --text-color-inv: #e6e6e6;
   --background-modals: #fff;
 }
 
 [data-theme=dark] {
-  --background-color: url("../../assets/images/asfalt-light.png"),
-      linear-gradient(to right top, #292f30, #141718);
+  --back-grad-right: #374151;
+  --background-color: #020011;
   --text-color: #e6e6e6;
   --text-color-inv: #2b2b2b;
   --background-modals: #2e2e2e;
@@ -163,5 +163,8 @@ html, body {
      -moz-text-size-adjust: none;
           text-size-adjust: none;
   direction: ltr;
-  background: var(--background-color);
+}
+
+.app {
+  background: url("../../assets/images/asfalt-dark.png"), linear-gradient(to right top, var(--back-grad-right), var(--background-color));
 }/*# sourceMappingURL=globals.css.map */
