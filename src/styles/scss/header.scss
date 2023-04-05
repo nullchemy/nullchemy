@@ -33,3 +33,42 @@
         }
     }
 }
+.sticky_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--background-modals);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    .hcontainer {
+        margin: 0 5%;
+        .hwrapper {
+            padding: 10px !important;
+            padding-top: 15px !important;
+            .hleft {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .hbranding {
+                    .headerlogo {
+                        width: 40px;
+                        .headerLogoLink {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes fadeInDown {
+        0% {
+            top: -70px;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+}

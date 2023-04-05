@@ -12,12 +12,10 @@ const Blogs = () => {
         <section className="blog-sec-top">
           <h1>Our Blog</h1>
           <p>
-            In a software-defined world, the Simform Blog is your place to
-            navigate through the renaissance in technology. Our publication aims
-            to provide you the full scoop on the groundbreaking research,
-            thought-leadership, and perspective on tech innovation in the world
-            of software development, with a deep context to help tech leaders
-            make intelligent decisions.
+            welcome to the nullchemy Tech Blog - your go-to source for
+            insightful articles on the latest trends and innovations in the
+            ever-evolving world of technology. Stay up-to-date with our in-depth
+            analyses and expert opinions.
           </p>
         </section>
         <section className="blog-landing">

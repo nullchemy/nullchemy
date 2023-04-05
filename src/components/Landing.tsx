@@ -13,9 +13,21 @@ const Landing = () => {
           <div className="landingContainer">
             <div className="landingtexts">
               <div className="lndingtextswrapper">
-                <h1 className="ct_lnd_text">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                <p className="ct_lnd_text_p">Our purpose is people™ and we provide HR, payroll, and workforce management technology and services that inspire your people and elevate the work experience.</p>
-                <Link to="/contact" className="cta_get_started">get started</Link>
+                <h1 className="ct_lnd_text">
+                  {/* Revolutionize your business with nullchemy's innovative
+                  software solutions today! */}
+                  Transforming ideas into digital reality.
+                </h1>
+                <p className="ct_lnd_text_p">
+                  At nullchemy, we are dedicated to providing our clients with
+                  high-quality software development services that are tailored
+                  to meet their unique needs. Our team of expert developers work
+                  tirelessly to ensure that your project is completed on time,
+                  within budget, and to your exact specifications.
+                </p>
+                <Link to="/contact" className="cta_get_started">
+                  get started
+                </Link>
               </div>
             </div>
             <div className="landingImage">

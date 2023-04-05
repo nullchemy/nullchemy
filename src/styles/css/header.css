@@ -28,4 +28,41 @@
   font-size: 1.2rem;
   font-weight: 300;
   font-family: Apercu, Roboto;
+}
+
+.sticky_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--background-modals);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+.sticky_header .hcontainer {
+  margin: 0 5%;
+}
+.sticky_header .hcontainer .hwrapper {
+  padding: 10px !important;
+  padding-top: 15px !important;
+}
+.sticky_header .hcontainer .hwrapper .hleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sticky_header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
+  width: 40px;
+}
+.sticky_header .hcontainer .hwrapper .hleft .hbranding .headerlogo .headerLogoLink {
+  width: 50px;
+}
+@keyframes fadeInDown {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 0;
+  }
 }/*# sourceMappingURL=header.css.map */
