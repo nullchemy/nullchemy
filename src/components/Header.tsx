@@ -19,22 +19,16 @@ const Header = () => {
                 </div>
                 <div className="headerNavigation">
                   <li className="headerLink">
-                    <Link to="/" >Home</Link>
+                    <Link to="/" className="header_link_anchor" >Home</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/about" >About us</Link>
+                    <Link to="/about" className="header_link_anchor" >About us</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/resources" >Resources</Link>
+                    <Link to="/blogs" className="header_link_anchor" >Blog</Link>
                   </li>
                   <li className="headerLink">
-                    <Link to="/services" >Services</Link>
-                  </li>
-                  <li className="headerLink">
-                    <Link to="/blogs" >Blog</Link>
-                  </li>
-                  <li className="headerLink">
-                    <Link to="/contact" >Contact us</Link>
+                    <Link to="/contact" className="header_link_anchor" >Contact us</Link>
                   </li>
                 </div>
               </div>

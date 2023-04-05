@@ -152,10 +152,12 @@ html, body {
 
 :root {
   --background-color: #fff;
-  --text-color: #fff;
+  --text-color: #2b2b2b;
+  --text-color-inv: #e6e6e6;
 }
 
 [data-theme=dark] {
-  --background-color: #fff;
-  --text-color: #fff;
+  --background-color: #1a1a1a;
+  --text-color: #e6e6e6;
+  --text-color-inv: #2b2b2b;
 }/*# sourceMappingURL=globals.css.map */

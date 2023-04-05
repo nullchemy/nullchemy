@@ -19,8 +19,14 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    margin-top: -10px;
                     .headerLink{
                         margin: 0 20px;
+                        .header_link_anchor{
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            font-family: Apercu, Roboto;
+                        }
                     }
                 }
             }

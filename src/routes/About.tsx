@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Maintainance from '../components/Maintainance'
+import Footer from '../components/Footer'
 
-const Contact = () => {
+const About = () => {
   return (
     <Fragment>
         <Header />
@@ -13,4 +13,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default About

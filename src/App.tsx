@@ -4,7 +4,7 @@ import Routes from './Routes'
 const App = () => {
   return (
     <Fragment>
-      <div className="app">
+      <div className="app" data-theme="light">
         <Routes />
       </div>
     </Fragment>
