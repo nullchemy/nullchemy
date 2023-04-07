@@ -32,6 +32,9 @@
   font-weight: 300;
   font-family: Apercu, Roboto;
   color: var(--text-color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .header .hcontainer .hwrapper .hright {
   margin-top: -20px;

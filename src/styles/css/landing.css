@@ -1,5 +1,8 @@
 .landing {
   height: 100vh;
+  background: var(--landing-url);
+  background-position: center center;
+  background-size: cover;
 }
 .landing .landingWrapper {
   height: 100%;
@@ -30,6 +33,9 @@
   font-family: Volte Rounded;
   font-weight: 800 !important;
   margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1900px) {
   .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text {
@@ -42,6 +48,9 @@
   letter-spacing: -0.015em;
   margin-bottom: 3rem;
   color: var(--text-color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1900px) {
   .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text_p {
@@ -72,4 +81,13 @@
   position: absolute;
   top: 30%;
   transform: translateY(-30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1700px) {
+  .landing .landingWrapper .landingContainer .landingImage .lndingImageWrapper img {
+    width: 85%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=landing.css.map */

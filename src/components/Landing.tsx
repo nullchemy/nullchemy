@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import '../styles/css/landing.css'
 import { Link } from 'react-router-dom'
 import Header from './Header'
-import MadDesigner from '../assets/images/mad-designer.png'
+import MadDesigner from '../assets/images/landing_group.png'
 
 const Landing = () => {
   return (

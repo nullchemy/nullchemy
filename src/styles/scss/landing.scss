@@ -1,5 +1,8 @@
 .landing {
   height: 100vh;
+  background: var(--landing-url);
+  background-position: center center;
+  background-size: cover;
   .landingWrapper {
     height: 100%;
     .landingContainer {
@@ -25,6 +28,7 @@
             font-family: Volte Rounded;
             font-weight: 800 !important;
             margin-bottom: 2rem;
+            user-select: none;
             @media (max-width: 1900px) {
               font-size: 4rem;
             }
@@ -35,6 +39,7 @@
             letter-spacing: -0.015em;
             margin-bottom: 3rem;
             color: var(--text-color);
+            user-select: none;
             @media (max-width: 1900px) {
               font-size: 1rem;
             }
@@ -68,6 +73,15 @@
           position: absolute;
           top: 30%;
           transform: translateY(-30%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            @media (max-width: 1700px) {
+              width: 85%;
+              margin: 0 auto;
+            }
+          }
         }
       }
     }
