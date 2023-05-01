@@ -57,7 +57,7 @@
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contformgroup .conttextarea {
   width: calc(95% - 20px) !important;
-  height: 200px !important;
+  height: 125px !important;
   outline: none;
   border: none;
   border-radius: 5px;
