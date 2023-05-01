@@ -1,0 +1,82 @@
+.contact {
+  height: 100vh;
+  .contactContainer {
+    margin: 0 5%;
+    .contactWrapper {
+      .contHeader {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 4rem;
+        color: #232f3e;
+        text-transform: capitalize;
+        margin-left: 50px;
+        font-family: AEmb, Helvetica, Hiragino Kaku Gothic Pro, sans-serif;
+      }
+      .contform {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        .contactForm {
+          width: 55%;
+          .contflex {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .contformgroup {
+              width: 100% !important;
+              label {
+                span {
+                  color: red !important;
+                }
+              }
+              .continput {
+                width: calc(90% - 20px);
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 5px;
+              }
+            }
+          }
+          .contformgroup {
+            width: 100%;
+            margin-top: 20px;
+            label {
+              span {
+                color: red !important;
+              }
+            }
+            .conttextarea {
+              width: calc(95% - 20px) !important;
+              height: 200px !important;
+              outline: none;
+              border: none;
+              border-radius: 5px;
+              padding: 10px;
+              margin-top: 5px;
+              resize: none;
+            }
+          }
+          .contsendbutton {
+            outline: none;
+            border: none;
+            background-color: #000000;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 10px 0;
+            padding: 10px 20px;
+            width: 200px;
+            cursor: pointer;
+          }
+        }
+        .contInfoBox {
+          width: 35%;
+          height: 500px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

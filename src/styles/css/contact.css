@@ -1,0 +1,76 @@
+.contact {
+  height: 100vh;
+}
+.contact .contactContainer {
+  margin: 0 5%;
+}
+.contact .contactContainer .contactWrapper .contHeader {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4rem;
+  color: #232f3e;
+  text-transform: capitalize;
+  margin-left: 50px;
+  font-family: AEmb, Helvetica, Hiragino Kaku Gothic Pro, sans-serif;
+}
+.contact .contactContainer .contactWrapper .contform {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm {
+  width: 55%;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contflex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contflex .contformgroup {
+  width: 100% !important;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contflex .contformgroup label span {
+  color: red !important;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contflex .contformgroup .continput {
+  width: calc(90% - 20px);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contformgroup {
+  width: 100%;
+  margin-top: 20px;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contformgroup label span {
+  color: red !important;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contformgroup .conttextarea {
+  width: calc(95% - 20px) !important;
+  height: 200px !important;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  resize: none;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contsendbutton {
+  outline: none;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+}
+.contact .contactContainer .contactWrapper .contform .contInfoBox {
+  width: 35%;
+  height: 500px;
+  background-color: #fff;
+}/*# sourceMappingURL=contact.css.map */
