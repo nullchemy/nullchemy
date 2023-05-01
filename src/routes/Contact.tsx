@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import { ReactComponent as Envelop } from '../assets/svg/envelope.svg'
 import { ReactComponent as Phone } from '../assets/svg/phone.svg'
 import { ReactComponent as Location } from '../assets/svg/location.svg'
+import Newsletter from '../components/Newsletter'
 
 const Contact = () => {
   return (
@@ -71,6 +72,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <Newsletter />
       </div>
       <Footer />
     </Fragment>
