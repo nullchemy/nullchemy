@@ -170,6 +170,6 @@ body {
 }
 
 .app {
-  background: url("../../assets/images/asfalt-dark.png"), linear-gradient(to right top, var(--back-grad-right), var(--background-color));
+  background-color: #f2f1ff;
   transition: all 0.3s ease-in-out 0s;
 }/*# sourceMappingURL=globals.css.map */

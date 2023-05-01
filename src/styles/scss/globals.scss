@@ -35,11 +35,12 @@ body {
   transition: background 2s;
 }
 .app {
-  background: url('../../assets/images/asfalt-dark.png'),
-    linear-gradient(
-      to right top,
-      var(--back-grad-right),
-      var(--background-color)
-    );
+  background-color: #f2f1ff;
+  //background: url('../../assets/images/asfalt-dark.png'),
+  // linear-gradient(
+  //   to right top,
+  //   var(--back-grad-right),
+  //   var(--background-color)
+  // );
   transition: all 0.3s ease-in-out 0s;
 }
