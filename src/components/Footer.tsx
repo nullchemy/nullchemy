@@ -44,8 +44,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/contact-us" className="fnavLnk">
-                      Contact Us
+                    <Link to="/contact" className="fnavLnk">
+                      Feedback
                     </Link>
                   </li>
                   <li className="fnavLink">
@@ -184,8 +184,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/currency-converter" className="fnavLnk">
-                      Currency Coverter
+                    <Link to="/contact" className="fnavLnk">
+                      Contact Us
                     </Link>
                   </li>
                 </ul>

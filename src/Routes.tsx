@@ -10,6 +10,7 @@ import Contact from './routes/Contact'
 import NotFound from './routes/NotFound'
 import Blogs from './routes/Blogs'
 import About from './routes/About'
+import Join from './routes/Join'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/blogs" element={<Blogs />} />
+      <Route path="/join" element={<Join />} />
       <Route path="*" element={<NotFound />} />
     </>
   )

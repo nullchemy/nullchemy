@@ -1,0 +1,17 @@
+.joingithub {
+  height: 50vh;
+  .jgcontainer {
+    margin: 0 5%;
+    .jgwrapper {
+      .jgTitle {
+        text-align: center;
+        font-size: 4rem;
+        color: var(--text-color);
+        font-weight: 600;
+        line-height: 4rem;
+        text-transform: capitalize;
+        margin-left: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.joingithub {
+  height: 50vh;
+}
+.joingithub .jgcontainer {
+  margin: 0 5%;
+}
+.joingithub .jgcontainer .jgwrapper .jgTitle {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 4rem;
+  text-transform: capitalize;
+  margin-left: 45px;
+}/*# sourceMappingURL=join.css.map */
