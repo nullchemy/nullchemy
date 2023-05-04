@@ -50,12 +50,12 @@ const Footer = () => {
                   </li>
                   <li className="fnavLink">
                     <Link to="/shipping-and-delivery" className="fnavLnk">
-                      Shipping and Delivery
+                      Deployment and Launch
                     </Link>
                   </li>
                   <li className="fnavLink">
                     <Link to="/return-policy" className="fnavLnk">
-                      Return Policy
+                      Refund Policy
                     </Link>
                   </li>
                   <li className="fnavLink">
@@ -65,7 +65,7 @@ const Footer = () => {
                   </li>
                   <li className="fnavLink">
                     <Link to="/report-product" className="fnavLnk">
-                      Report a Product
+                      Report a Product/service
                     </Link>
                   </li>
                 </ul>
@@ -122,23 +122,33 @@ const Footer = () => {
                     setFsubdrop(fsubdrop === 'money' ? '' : 'money')
                   }}
                 >
-                  <h2>make money with us</h2>
+                  <h2>Quick links</h2>
                   <AngleDown className="ftrangledown" />
                 </div>
                 <ul className={fsubdrop === 'money' ? 'fnav' : 'fnav fnavhide'}>
                   <li className="fnavLink">
                     <Link to="/sell" className="fnavLnk">
-                      sell products with us
+                      Web Design & Development
                     </Link>
                   </li>
                   <li className="fnavLink">
                     <Link to="/advertise-with-us" className="fnavLnk">
-                      Advertise your Products
+                      Mobile Application Development
                     </Link>
                   </li>
                   <li className="fnavLink">
                     <Link to="/feedback" className="fnavLnk">
-                      Share improvement ideas
+                      Desktop Application Development
+                    </Link>
+                  </li>
+                  <li className="fnavLink">
+                    <Link to="/feedback" className="fnavLnk">
+                      API dev
+                    </Link>
+                  </li>
+                  <li className="fnavLink">
+                    <Link to="/feedback" className="fnavLnk">
+                      Graphic Design
                     </Link>
                   </li>
                 </ul>
@@ -150,7 +160,7 @@ const Footer = () => {
                     setFsubdrop(fsubdrop === 'payment' ? '' : 'payment')
                   }}
                 >
-                  <h2>our payment products</h2>
+                  <h2>Get in Touch</h2>
                   <AngleDown className="ftrangledown" />
                 </div>
                 <ul
@@ -158,17 +168,19 @@ const Footer = () => {
                 >
                   <li className="fnavLink">
                     <Link to="/gift-cards" className="fnavLnk">
-                      Gift Cards
+                      1st Floor, nullchemy building, <br />
+                      Parklands Road, <br />
+                      P.O Box 10065 - 00400, Nairobi.
                     </Link>
                   </li>
                   <li className="fnavLink">
                     <Link to="/vouchers-and-promotions" className="fnavLnk">
-                      Vouchers and Promo Codes
+                      +254798116710
                     </Link>
                   </li>
                   <li className="fnavLink">
                     <Link to="/my-points" className="fnavLnk">
-                      Shop with Points
+                      contact@nullchemy.com
                     </Link>
                   </li>
                   <li className="fnavLink">
