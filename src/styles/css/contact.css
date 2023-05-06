@@ -39,6 +39,7 @@
   border-radius: 5px;
   padding: 10px;
   margin-top: 5px;
+  border: 1px solid #424242;
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contformgroup {
   width: 100%;
@@ -54,6 +55,7 @@
   border-radius: 5px;
   padding: 10px;
   margin-top: 5px;
+  border: 1px solid #424242;
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contformgroup .conttextarea {
   width: calc(95% - 20px) !important;
@@ -64,6 +66,7 @@
   padding: 10px;
   margin-top: 5px;
   resize: none;
+  border: 1px solid #424242;
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contsendbutton {
   outline: none;
