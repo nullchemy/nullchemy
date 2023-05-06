@@ -5,12 +5,14 @@
 }
 .aboutus .about-header {
   margin: 5% 0;
+  margin-top: 2% !important;
 }
 .aboutus .about-header .about-header-wrapper {
   text-align: center;
 }
 .aboutus .about-header .about-header-wrapper h2 {
   font-size: 5rem;
+  color: var(--text-color);
 }
 .aboutus .mission {
   margin: 5% 10%;
@@ -37,8 +39,14 @@
 .aboutus .mission .mission-wrapper .mission-texts {
   width: 50%;
 }
+.aboutus .mission .mission-wrapper .mission-texts .sec-text {
+  color: var(--text-color);
+}
 .aboutus .mission .mission-wrapper .mission-texts h1 {
-  color: inherit;
+  color: var(--text-color);
+}
+.aboutus .mission .mission-wrapper .mission-texts p {
+  color: var(--text-color);
 }
 .aboutus .faqmainSection {
   margin: 4rem 0;

@@ -28,6 +28,7 @@
 .contact .contactContainer .contactWrapper .contform .contactForm .contflex .contformgroup label {
   font-weight: 600;
   margin-left: 3px;
+  color: var(--text-color);
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contflex .contformgroup label span {
   color: red !important;
@@ -44,6 +45,9 @@
 .contact .contactContainer .contactWrapper .contform .contactForm .contformgroup {
   width: 100%;
   margin-top: 20px;
+}
+.contact .contactContainer .contactWrapper .contform .contactForm .contformgroup label {
+  color: var(--text-color);
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contformgroup label span {
   color: red !important;
@@ -98,9 +102,14 @@
   display: flex;
   align-items: center;
   margin: 40px;
+  color: var(--text-color);
 }
 .contact .contactContainer .contactWrapper .contform .contInfoBox .continfodirect .continfoTouch .contInfoIc {
   height: 20px;
   width: 20px;
   margin-right: 20px;
+  fill: var(--text-color);
+}
+.contact .contactContainer .contactWrapper .contform .contInfoBox .continfodirect .continfoTouch .contInfoIc span {
+  color: var(--text-color);
 }/*# sourceMappingURL=contact.css.map */

@@ -2,10 +2,12 @@
   /*=== About us header===*/
   .about-header {
     margin: 5% 0;
+    margin-top: 2% !important;
     .about-header-wrapper {
       text-align: center;
       h2 {
         font-size: 5rem;
+        color: var(--text-color);
       }
     }
   }
@@ -32,11 +34,13 @@
       .mission-texts {
         width: 50%;
         .sec-text {
+          color: var(--text-color);
         }
         h1 {
-          color: inherit;
+          color: var(--text-color);
         }
         p {
+          color: var(--text-color);
         }
       }
     }

@@ -1,8 +1,5 @@
 .landing {
   height: 100vh;
-  background-color: #f3f6ff !important;
-  background-position: center center;
-  background-size: cover;
 }
 .landing .landingWrapper {
   height: 100%;

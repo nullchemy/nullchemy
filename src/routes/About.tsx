@@ -28,9 +28,13 @@ const About = () => {
                 development process
               </h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                sit omnis, accusamus quos tempore sint quaerat, quas veritatis
-                magnam repellendus distinctio nihil totam libero quis?
+                our mission is to provide the best developer experience across
+                the development process, building highly efficient and
+                performant software for our diverse customers. We prioritize
+                user experience, focus on performance, and offer the tools,
+                documentation, and collaboration opportunities that developers
+                need to succeed. We are dedicated to continuous improvement and
+                innovation in delivering a high-quality developer experience.
               </p>
             </div>
           </div>
@@ -61,7 +65,7 @@ const About = () => {
                         We share the revenue from sales of the NFTs with our
                         partner apps and worlds, helping them monetize and build
                         better experiences. Partners don’t need to implement
-                        blockchain tech into their products – everything is
+                        blockchain tech into our products – everything is
                         integrated directly into Ready Player Me.
                       </p>
                     </div>
@@ -84,7 +88,7 @@ const About = () => {
                         We share the revenue from sales of the NFTs with our
                         partner apps and worlds, helping them monetize and build
                         better experiences. Partners don’t need to implement
-                        blockchain tech into their products – everything is
+                        blockchain tech into our products – everything is
                         integrated directly into Ready Player Me.
                       </p>
                     </div>
@@ -107,7 +111,7 @@ const About = () => {
                         We share the revenue from sales of the NFTs with our
                         partner apps and worlds, helping them monetize and build
                         better experiences. Partners don’t need to implement
-                        blockchain tech into their products – everything is
+                        blockchain tech into our products – everything is
                         integrated directly into Ready Player Me.
                       </p>
                     </div>
@@ -131,7 +135,7 @@ const About = () => {
                         We share the revenue from sales of the NFTs with our
                         partner apps and worlds, helping them monetize and build
                         better experiences. Partners don’t need to implement
-                        blockchain tech into their products – everything is
+                        blockchain tech into our products – everything is
                         integrated directly into Ready Player Me.
                       </p>
                     </div>
@@ -154,7 +158,7 @@ const About = () => {
                         We share the revenue from sales of the NFTs with our
                         partner apps and worlds, helping them monetize and build
                         better experiences. Partners don’t need to implement
-                        blockchain tech into their products – everything is
+                        blockchain tech into our products – everything is
                         integrated directly into Ready Player Me.
                       </p>
                     </div>

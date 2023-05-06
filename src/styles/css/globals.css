@@ -113,8 +113,7 @@
   font-style: normal;
 }
 :root {
-  --back-grad-right: #d5faff;
-  --background-color: #d5faff;
+  --background-color: #f2f1ff;
   --text-color: #2b2b2b;
   --text-color-inv: #e6e6e6;
   --background-modals: #fff;
@@ -122,7 +121,6 @@
 }
 
 [data-theme=dark] {
-  --back-grad-right: #374151;
   --background-color: #020011;
   --text-color: #e6e6e6;
   --text-color-inv: #2b2b2b;
@@ -170,6 +168,6 @@ body {
 }
 
 .app {
-  background-color: #f2f1ff;
+  background-color: var(--background-color);
   transition: all 0.3s ease-in-out 0s;
 }/*# sourceMappingURL=globals.css.map */

@@ -25,6 +25,7 @@
               label {
                 font-weight: 600;
                 margin-left: 3px;
+                color: var(--text-color);
                 span {
                   color: red !important;
                 }
@@ -44,6 +45,7 @@
             width: 100%;
             margin-top: 20px;
             label {
+              color: var(--text-color);
               span {
                 color: red !important;
               }
@@ -98,11 +100,14 @@
               display: flex;
               align-items: center;
               margin: 40px;
+              color: var(--text-color);
               .contInfoIc {
                 height: 20px;
                 width: 20px;
                 margin-right: 20px;
+                fill: var(--text-color);
                 span {
+                  color: var(--text-color);
                 }
               }
             }
