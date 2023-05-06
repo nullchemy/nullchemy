@@ -117,6 +117,9 @@
 .blogs-showcase .bloghighHeader .viewIcon {
   cursor: pointer;
 }
+.blogs-showcase .bloghighHeader .viewIcon .bgfilterIc {
+  fill: var(--text-color);
+}
 .blogs-showcase .highflex {
   display: flex;
   justify-content: space-evenly;

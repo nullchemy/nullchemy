@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react'
 import '../styles/css/blog.css'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import agility from '../assets/images/agility.png'
+import { ReactComponent as Filter } from '../assets/svg/filter.svg'
 import Newsletter from '../components/Newsletter'
 
 const Blogs = () => {
@@ -29,12 +31,12 @@ const Blogs = () => {
                 <span className="spot-category">Web Development</span>{' '}
                 <span className="spot-date">june 22 2022</span>
                 <h2>
-                  <a href="read.html">
+                  <Link to="/read">
                     7 Frontend JavaScript Frameworks Loved by Developers in 2022
-                  </a>
+                  </Link>
                 </h2>
                 <p>
-                  <a href="read.html">
+                  <Link to="/read">
                     is undoubtedly quite popular in building interactive and
                     multimedia content. In 2021, it completed the ninth year in
                     a row as the most commonly used programming language. A
@@ -44,7 +46,7 @@ const Blogs = () => {
                     reusable code components, a universal development
                     environment, compilers, toolsets, code libraries, APIs,
                     etc., to facilitate the app.
-                  </a>
+                  </Link>
                 </p>
                 <div className="spot-author">
                   <img src={agility} alt="" />
@@ -80,17 +82,7 @@ const Blogs = () => {
               </div>
             </div>
             <div className="viewIcon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                data-supported-dps="16x16"
-                fill="currentColor"
-                width="16"
-                height="16"
-                focusable="false"
-              >
-                <path d="M15 2v2H6.72a2 2 0 01-3.44 0H1V2h2.28a2 2 0 013.44 0H15zm-4 4a2 2 0 00-1.72 1H1v2h8.28a2 2 0 003.45 0H15V7h-2.28A2 2 0 0011 6zm-6 5a2 2 0 00-1.72 1H1v2h2.28a2 2 0 003.45 0H15v-2H6.72A2 2 0 005 11z"></path>
-              </svg>
+              <Filter className="bgfilterIc" />
             </div>
           </div>
           <div className="highflex">
@@ -99,13 +91,13 @@ const Blogs = () => {
                 <img src={agility} alt="" />
               </div>
               <div className="bloghighTitle">
-                <a href="read.html">
+                <Link to="/read">
                   <h2>
                     Wolf3D & Rovio Talking About 3D Avatars and Virtual
                     Identities in Games and Metaverses
                   </h2>
-                </a>
-                <a href="read.html">
+                </Link>
+                <Link to="/read">
                   <p>
                     Building your business’s web presence has become a mandate
                     in today’s world of scrolling social media and often landing
@@ -113,7 +105,7 @@ const Blogs = () => {
                     application helps your business achieve industry standards
                     and engage your customers with the company’s offerings.
                   </p>
-                </a>
+                </Link>
               </div>
               <div className="bloghighInfo">
                 <p>April 15, 2022 . 5min read</p>
