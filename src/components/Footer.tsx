@@ -104,7 +104,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/privacy-policy" className="fnavLnk">
+                    <Link to="/privacy" className="fnavLnk">
                       Privacy Policy
                     </Link>
                   </li>

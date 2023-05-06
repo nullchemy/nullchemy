@@ -11,6 +11,8 @@ import NotFound from './routes/NotFound'
 import Blogs from './routes/Blogs'
 import About from './routes/About'
 import Join from './routes/Join'
+import Privacy from './routes/Privacy'
+import CookiePolicy from './routes/CookiePolicy'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +22,8 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/join" element={<Join />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/cookie-policy" element={<CookiePolicy />} />
       <Route path="*" element={<NotFound />} />
     </>
   )

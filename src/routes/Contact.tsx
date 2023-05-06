@@ -2,12 +2,14 @@ import React, { Fragment } from 'react'
 import '../styles/css/contact.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import useAnalyticsEventTracker from '../components/useAnalyticsEventTracker'
 import { ReactComponent as Envelop } from '../assets/svg/envelope.svg'
 import { ReactComponent as Phone } from '../assets/svg/phone.svg'
 import { ReactComponent as Location } from '../assets/svg/location.svg'
 import Newsletter from '../components/Newsletter'
 
 const Contact = () => {
+  const gaEventTracker = useAnalyticsEventTracker('Contact us')
   return (
     <Fragment>
       <Header />
@@ -48,7 +50,11 @@ const Contact = () => {
                   <br />
                   <textarea className="conttextarea"></textarea>
                 </div>
-                <button type="submit" className="contsendbutton">
+                <button
+                  type="submit"
+                  className="contsendbutton"
+                  onClick={() => gaEventTracker('contact')}
+                >
                   send
                 </button>
               </form>
