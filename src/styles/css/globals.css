@@ -168,6 +168,6 @@ body {
 }
 
 .app {
-  background-color: var(--background-color);
+  background: linear-gradient(180deg, #d2d0ff 0%, #e3edff 20%, #fff 100%);
   transition: all 0.3s ease-in-out 0s;
 }/*# sourceMappingURL=globals.css.map */

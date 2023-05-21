@@ -36,7 +36,9 @@ const Header = () => {
               <img src={Logo} alt="" />
             </Link>
           </div>
-          <div className={mobi ? 'hwrapper' : 'hwrapper  hidemobinav'}>
+          <div
+            className={mobi ? 'hwrapper openmobinav' : 'hwrapper hidemobinav'}
+          >
             <Times className="mobiNavTimes" onClick={() => setMobi(false)} />
             <div className="hleft">
               <div className="hbranding">

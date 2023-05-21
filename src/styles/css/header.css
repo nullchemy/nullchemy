@@ -31,8 +31,16 @@
     display: none;
   }
 }
-.header .hcontainer .hidemobinav {
-  margin-left: -100vh;
+@media (max-width: 480px) {
+  .header .hcontainer .hidemobinav {
+    margin-left: -100vh;
+    animation: slideOut 1s forwards;
+  }
+}
+@media (max-width: 480px) {
+  .header .hcontainer .openmobinav {
+    animation: slideIn 1s forwards;
+  }
 }
 .header .hcontainer .hwrapper {
   padding: 20px 0;
@@ -222,6 +230,22 @@
   stroke: var(--text-color);
 }
 
+@keyframes slideIn {
+  0% {
+    margin-left: -100vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+@keyframes slideOut {
+  0% {
+    margin-left: 0vw;
+  }
+  100% {
+    margin-left: -100vw;
+  }
+}
 .sticky_header {
   position: fixed;
   top: 0;
