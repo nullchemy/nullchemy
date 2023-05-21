@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import '../styles/css/contact.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -7,9 +7,35 @@ import { ReactComponent as Envelop } from '../assets/svg/envelope.svg'
 import { ReactComponent as Phone } from '../assets/svg/phone.svg'
 import { ReactComponent as Location } from '../assets/svg/location.svg'
 import Newsletter from '../components/Newsletter'
+import api from '../api/axios'
 
 const Contact = () => {
   const gaEventTracker = useAnalyticsEventTracker('Contact us')
+  const [status, setStatus] = useState('send')
+  const [data, setData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+
+  const contact = async (e: any) => {
+    e.preventDefault()
+    setStatus('sending...')
+    const res = await api('POST', 'contact', data)
+    console.log(res)
+    setStatus('sent')
+    // clear the form
+    setData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
+    setTimeout(() => {
+      setStatus('send')
+    }, 2000)
+  }
   return (
     <Fragment>
       <Header />
@@ -19,21 +45,42 @@ const Contact = () => {
             <h2 className="contHeader">love to hear from you,</h2>
             <h2 className="contHeader">get in touch</h2>
             <div className="contform">
-              <form className="contactForm">
+              <form
+                className="contactForm"
+                onSubmit={(e) => {
+                  contact(e)
+                }}
+              >
                 <div className="contflex">
                   <div className="contformgroup">
                     <label htmlFor="your name">
                       Your Name <span>*</span>
                     </label>
                     <br />
-                    <input type="text" className="continput" />
+                    <input
+                      type="text"
+                      className="continput"
+                      name="name"
+                      value={data.name}
+                      onChange={(e) => {
+                        setData({ ...data, [e.target.name]: e.target.value })
+                      }}
+                    />
                   </div>
                   <div className="contformgroup">
                     <label htmlFor="your name">
                       Your Email <span>*</span>
                     </label>
                     <br />
-                    <input type="email" className="continput" />
+                    <input
+                      type="email"
+                      className="continput"
+                      name="email"
+                      value={data.email}
+                      onChange={(e) => {
+                        setData({ ...data, [e.target.name]: e.target.value })
+                      }}
+                    />
                   </div>
                 </div>
                 <div className="contformgroup">
@@ -41,21 +88,36 @@ const Contact = () => {
                     Subject <span>*</span>
                   </label>
                   <br />
-                  <input type="text" className="continput" />
+                  <input
+                    type="text"
+                    className="continput"
+                    name="subject"
+                    value={data.subject}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value })
+                    }}
+                  />
                 </div>
                 <div className="contformgroup">
                   <label htmlFor="your name">
                     Message <span>*</span>
                   </label>
                   <br />
-                  <textarea className="conttextarea"></textarea>
+                  <textarea
+                    className="conttextarea"
+                    name="message"
+                    value={data.message}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value })
+                    }}
+                  ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="contsendbutton"
                   onClick={() => gaEventTracker('contact')}
                 >
-                  send
+                  {status}
                 </button>
               </form>
               <div className="contInfoBox">

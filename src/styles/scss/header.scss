@@ -1,18 +1,76 @@
 .header {
   .hcontainer {
     margin: 0 5%;
+    @media (max-width: 480px) {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .mobiNavBars {
+      height: 30px;
+      width: 30px;
+      margin: 20px;
+      @media (min-width: 480px) {
+        display: none;
+      }
+    }
+    .Mobiheaderlogo {
+      width: 60px;
+      height: 40px;
+      margin: 10px 20px;
+      .MobiheaderLogoLink {
+        width: 30px;
+      }
+      @media (min-width: 480px) {
+        display: none;
+      }
+    }
+    .hidemobinav {
+      margin-left: -100vh;
+      //display: none !important;
+    }
     .hwrapper {
       padding: 20px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        background-color: #fff;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .mobiNavTimes {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        top: 0;
+        right: 0;
+        @media (min-width: 480px) {
+          display: none;
+        }
+      }
       .hleft {
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media (max-width: 480px) {
+          flex-direction: column;
+          align-items: unset;
+          order: 2;
+        }
         .hbranding {
           .headerlogo {
             width: 70px;
+            @media (max-width: 480px) {
+              margin: 20px 40px;
+            }
             .headerLogoLink {
               width: 50px;
             }
@@ -23,26 +81,49 @@
           flex-direction: row;
           align-items: center;
           margin-top: -10px;
+          @media (max-width: 480px) {
+            flex-direction: column;
+            align-items: unset;
+          }
           .headerLink {
             margin: 0 20px;
+            @media (max-width: 480px) {
+              margin: 20px 40px;
+              &:nth-last-child(1) {
+                margin-bottom: 40px;
+              }
+            }
             .header_link_anchor {
               font-size: 1.2rem;
               font-weight: 300;
               font-family: Apercu, Roboto;
               color: var(--text-color);
               user-select: none;
+              @media (max-width: 480px) {
+                font-size: 2.5rem;
+              }
             }
           }
         }
       }
       .hright {
         margin-top: -20px;
+        @media (max-width: 480px) {
+          order: 1;
+        }
         .header-right {
           .header-right-flex {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            @media (max-width: 480px) {
+              flex-direction: column;
+              margin: 20px;
+            }
             .header-search {
+              @media (max-width: 480px) {
+                margin: 20px;
+              }
               .header-search-form {
                 position: relative;
                 border: 1px solid var(--text-color);
@@ -86,6 +167,9 @@
               display: flex;
               align-content: center;
               align-items: center;
+              @media (max-width: 480px) {
+                margin-left: -30px;
+              }
               a {
                 margin-bottom: -10px;
                 margin-right: 15px;

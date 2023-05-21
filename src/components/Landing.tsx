@@ -16,7 +16,7 @@ const Landing = () => {
                 <h1 className="ct_lnd_text">
                   {/* Revolutionize your business with nullchemy's innovative
                   software solutions today! */}
-                  Transforming ideas into digital reality.
+                  Transforming ideas into a digital reality.
                 </h1>
                 <p className="ct_lnd_text_p">
                   At nullchemy, we are dedicated to providing our clients with

@@ -5,14 +5,19 @@ import { setTheme } from '../state/actions/themeAction'
 import Logo from '../assets/images/nullchemy_logo.png'
 import { Link } from 'react-router-dom'
 import { ReactComponent as Github } from '../assets/svg/github.svg'
+import { ReactComponent as Bars } from '../assets/svg/bars.svg'
+import { ReactComponent as Times } from '../assets/svg/x-mark.svg'
 
 const Header = () => {
   const SCROLL_OFFSET: number = 100
 
+  const [mobi, setMobi] = useState(false)
   const [stick, setStick] = useState(false)
   window.addEventListener('scroll', () => {
     if (window.scrollY > SCROLL_OFFSET) {
-      setStick(true)
+      if (window.innerWidth >= 480) {
+        setStick(true)
+      }
     } else {
       setStick(false)
     }
@@ -25,7 +30,14 @@ const Header = () => {
     <Fragment>
       <div className={stick ? 'header sticky_header' : 'header'}>
         <div className="hcontainer">
-          <div className="hwrapper">
+          <Bars className="mobiNavBars" onClick={() => setMobi(true)} />
+          <div className="Mobiheaderlogo">
+            <Link to="/" className="MobiheaderLogoLink">
+              <img src={Logo} alt="" />
+            </Link>
+          </div>
+          <div className={mobi ? 'hwrapper' : 'hwrapper  hidemobinav'}>
+            <Times className="mobiNavTimes" onClick={() => setMobi(false)} />
             <div className="hleft">
               <div className="hbranding">
                 <div className="headerlogo">

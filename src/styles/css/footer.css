@@ -29,11 +29,11 @@
 }
 .footer .fontainer {
   margin: 0 5%;
-  height: 85%;
+  height: 90%;
   position: relative;
 }
 .footer .fontainer .fmiddle {
-  padding-top: 3rem;
+  padding-top: 3.6rem;
 }
 @media (max-width: 480px) {
   .footer .fontainer .fmiddle {
