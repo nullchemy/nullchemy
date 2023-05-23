@@ -113,7 +113,9 @@
   font-style: normal;
 }
 :root {
-  --background-color: #f2f1ff;
+  --background-color-one: #d2d0ff;
+  --background-color-two: #e3edff;
+  --background-color-three: #fff;
   --text-color: #2b2b2b;
   --text-color-inv: #e6e6e6;
   --background-modals: #fff;
@@ -121,7 +123,9 @@
 }
 
 [data-theme=dark] {
-  --background-color: #171c28;
+  --background-color-one: #000000;
+  --background-color-two: #090c14;
+  --background-color-three: #171c28;
   --text-color: #e6e6e6;
   --text-color-inv: #2b2b2b;
   --background-modals: #2e2e2e;
@@ -168,6 +172,6 @@ body {
 }
 
 .app {
-  background: linear-gradient(180deg, #d2d0ff 0%, #e3edff 20%, #fff 100%);
+  background: linear-gradient(180deg, var(--background-color-one) 0%, var(--background-color-two) 20%, var(--background-color-three) 100%);
   transition: all 0.3s ease-in-out 0s;
 }/*# sourceMappingURL=globals.css.map */
