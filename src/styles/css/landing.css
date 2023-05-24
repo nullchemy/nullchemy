@@ -6,6 +6,9 @@
 }
 .landing .landingWrapper .landingContainer {
   margin: 2% 5%;
+  height: 100%;
+}
+.landing .landingWrapper .landingContainer .landingTop {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,22 +16,22 @@
   height: 100%;
 }
 @media (max-width: 480px) {
-  .landing .landingWrapper .landingContainer {
+  .landing .landingWrapper .landingContainer .landingTop {
     flex-direction: column;
     align-items: unset !important;
   }
 }
-.landing .landingWrapper .landingContainer .landingtexts {
+.landing .landingWrapper .landingContainer .landingTop .landingtexts {
   flex: 1;
   height: 100%;
 }
 @media (max-width: 480px) {
-  .landing .landingWrapper .landingContainer .landingtexts {
+  .landing .landingWrapper .landingContainer .landingTop .landingtexts {
     width: 100%;
     height: unset;
   }
 }
-.landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text {
+.landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text {
   font-size: 5.375rem;
   line-height: 5rem;
   letter-spacing: -0.25rem;
@@ -41,17 +44,17 @@
           user-select: none;
 }
 @media (max-width: 1900px) {
-  .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text {
+  .landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text {
     font-size: 4rem;
   }
 }
 @media (max-width: 480px) {
-  .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text {
+  .landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text {
     font-size: 3.5rem;
     line-height: 4rem;
   }
 }
-.landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text_p {
+.landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text_p {
   font-size: 1.375rem;
   line-height: 1.64;
   letter-spacing: -0.015em;
@@ -62,11 +65,11 @@
           user-select: none;
 }
 @media (max-width: 1900px) {
-  .landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .ct_lnd_text_p {
+  .landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text_p {
     font-size: 1rem;
   }
 }
-.landing .landingWrapper .landingContainer .landingtexts .lndingtextswrapper .cta_get_started {
+.landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .cta_get_started {
   margin: 20px 0;
   background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
   border-radius: 23px;
@@ -81,25 +84,42 @@
   outline: none;
   cursor: pointer;
 }
-.landing .landingWrapper .landingContainer .landingImage {
+.landing .landingWrapper .landingContainer .landingTop .landingImage {
   width: 50%;
   height: 100%;
 }
 @media (max-width: 480px) {
-  .landing .landingWrapper .landingContainer .landingImage {
+  .landing .landingWrapper .landingContainer .landingTop .landingImage {
     width: 100%;
     height: unset;
     margin: 60px 0;
   }
 }
-.landing .landingWrapper .landingContainer .landingImage .lndingImageWrapper {
+.landing .landingWrapper .landingContainer .landingTop .landingImage .lndingImageWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media (max-width: 1700px) {
-  .landing .landingWrapper .landingContainer .landingImage .lndingImageWrapper img {
+  .landing .landingWrapper .landingContainer .landingTop .landingImage .lndingImageWrapper img {
     width: 85%;
     margin: 0 auto;
   }
+}
+.landing .landingWrapper .landingContainer .landingBottom {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.landing .landingWrapper .landingContainer .landingBottom .lndngpartnerdk {
+  height: 40px;
+  width: 40px;
+  margin-right: 40px;
+}
+.landing .landingWrapper .landingContainer .landingBottom .lndngpartnerTenAfric {
+  height: 40px;
+  width: 120px;
+  margin-right: 40px;
 }/*# sourceMappingURL=landing.css.map */
