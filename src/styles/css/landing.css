@@ -108,18 +108,28 @@
 }
 .landing .landingWrapper .landingContainer .landingBottom {
   height: 100px;
+}
+.landing .landingWrapper .landingContainer .landingBottom .landingbtmpartners {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  margin-top: 30px;
 }
-.landing .landingWrapper .landingContainer .landingBottom .lndngpartnerdk {
+.landing .landingWrapper .landingContainer .landingBottom .landingbtmpartners .lndngpartnerdk {
   height: 40px;
   width: 40px;
   margin-right: 40px;
 }
-.landing .landingWrapper .landingContainer .landingBottom .lndngpartnerTenAfric {
+.landing .landingWrapper .landingContainer .landingBottom .landingbtmpartners .lndngpartnerTenAfric {
   height: 40px;
   width: 120px;
-  margin-right: 40px;
+}
+.landing .landingWrapper .landingContainer .landingBottom .landingbtmtxt {
+  text-align: center;
+  margin-top: 30px;
+}
+.landing .landingWrapper .landingContainer .landingBottom .landingbtmtxt p {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 800;
 }/*# sourceMappingURL=landing.css.map */

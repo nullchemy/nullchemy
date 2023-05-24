@@ -44,6 +44,9 @@ const Landing = () => {
                 <img className="lndngpartnerdk" src={DennisKibet} alt="" />
                 <img className="lndngpartnerTenAfric" src={TenAfric} alt="" />
               </div>
+              <div className="landingbtmtxt">
+                <p>trusted by top brands</p>
+              </div>
             </div>
           </div>
         </div>
