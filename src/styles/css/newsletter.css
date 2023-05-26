@@ -30,8 +30,21 @@
   padding-right: 5rem;
   background-image: url(../../assets/svg/envelop.svg);
 }
+@media (max-width: 480px) {
+  .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex {
+    flex-direction: column;
+    padding: 2rem !important;
+    grid-gap: unset;
+    gap: unset;
+  }
+}
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subNewstexts {
   width: 50%;
+}
+@media (max-width: 480px) {
+  .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subNewstexts {
+    width: 100%;
+  }
 }
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subNewstexts .subNewstitle {
   font-size: 2rem;
@@ -48,6 +61,12 @@
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform {
   position: relative;
   width: 50%;
+}
+@media (max-width: 480px) {
+  .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform {
+    width: 100%;
+    margin: 40px 0 20px 0;
+  }
 }
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf {
   position: absolute;
@@ -72,6 +91,11 @@
   height: 3.5rem;
   margin-right: -10px;
   width: 300px;
+}
+@media (max-width: 480px) {
+  .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsinput {
+    width: unset;
+  }
 }
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsButton {
   cursor: pointer;

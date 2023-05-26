@@ -257,6 +257,9 @@
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
+.sticky_header ~ .landing {
+  padding-top: 54px !important;
+}
 .sticky_header .hcontainer {
   margin: 0 5%;
 }
