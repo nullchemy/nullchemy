@@ -9,13 +9,24 @@
         line-height: 4rem;
         text-transform: capitalize;
         margin-left: 45px;
+        @media (max-width: 480px) {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          margin-left: 5px;
+        }
       }
       .contform {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
         .contactForm {
           width: 55%;
+          @media (max-width: 480px) {
+            width: 100%;
+          }
           .contflex {
             display: flex;
             justify-content: space-between;
@@ -87,6 +98,11 @@
         .contInfoBox {
           width: 30%;
           height: 500px;
+          @media (max-width: 480px) {
+            width: 100%;
+            margin-top: 50px;
+            height: unset;
+          }
           h3 {
             font-size: 2rem;
             color: var(--text-color);
@@ -101,6 +117,9 @@
               align-items: center;
               margin: 40px;
               color: var(--text-color);
+              @media (max-width: 480px) {
+                margin: 20px;
+              }
               .contInfoIc {
                 height: 20px;
                 width: 20px;

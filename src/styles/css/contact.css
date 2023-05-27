@@ -9,13 +9,30 @@
   text-transform: capitalize;
   margin-left: 45px;
 }
+@media (max-width: 480px) {
+  .contact .contactContainer .contactWrapper .contHeader {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-left: 5px;
+  }
+}
 .contact .contactContainer .contactWrapper .contform {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 480px) {
+  .contact .contactContainer .contactWrapper .contform {
+    flex-direction: column;
+  }
+}
 .contact .contactContainer .contactWrapper .contform .contactForm {
   width: 55%;
+}
+@media (max-width: 480px) {
+  .contact .contactContainer .contactWrapper .contform .contactForm {
+    width: 100%;
+  }
 }
 .contact .contactContainer .contactWrapper .contform .contactForm .contflex {
   display: flex;
@@ -88,6 +105,13 @@
   width: 30%;
   height: 500px;
 }
+@media (max-width: 480px) {
+  .contact .contactContainer .contactWrapper .contform .contInfoBox {
+    width: 100%;
+    margin-top: 50px;
+    height: unset;
+  }
+}
 .contact .contactContainer .contactWrapper .contform .contInfoBox h3 {
   font-size: 2rem;
   color: var(--text-color);
@@ -103,6 +127,11 @@
   align-items: center;
   margin: 40px;
   color: var(--text-color);
+}
+@media (max-width: 480px) {
+  .contact .contactContainer .contactWrapper .contform .contInfoBox .continfodirect .continfoTouch {
+    margin: 20px;
+  }
 }
 .contact .contactContainer .contactWrapper .contform .contInfoBox .continfodirect .continfoTouch .contInfoIc {
   height: 20px;
