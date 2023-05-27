@@ -28,7 +28,7 @@ const Header = () => {
   const theme = useAppSelector((state) => state.theme)
   return (
     <Fragment>
-      <div className={stick ? 'header sticky_header' : 'header sticky_header'}>
+      <div className={stick ? 'header sticky_header' : 'header'}>
         <div className="hcontainer">
           <Bars className="mobiNavBars" onClick={() => setMobi(true)} />
           <div className="Mobiheaderlogo">

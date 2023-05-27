@@ -51,6 +51,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        width: 80vw;
       }
       .mobiNavTimes {
         position: absolute;
@@ -232,7 +233,7 @@
   }
 }
 .sticky_header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -251,9 +252,6 @@
       padding: 10px !important;
       padding-top: 15px !important;
       .hleft {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         .hbranding {
           .headerlogo {
             width: 40px;

@@ -59,6 +59,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    width: 80vw;
   }
 }
 .header .hcontainer .hwrapper .mobiNavTimes {
@@ -247,7 +248,7 @@
   }
 }
 .sticky_header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -266,11 +267,6 @@
 .sticky_header .hcontainer .hwrapper {
   padding: 10px !important;
   padding-top: 15px !important;
-}
-.sticky_header .hcontainer .hwrapper .hleft {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .sticky_header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
   width: 40px;
