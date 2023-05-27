@@ -65,12 +65,16 @@
               left: 50%;
               top: 50%;
               transform: translate(-50%, -50%);
-
+              @media (max-width: 480px) {
+                width: 100%;
+              }
               .subinputsFlex {
                 display: flex;
                 overflow: hidden;
                 border-radius: 0.75rem;
-
+                @media (max-width: 480px) {
+                  width: 100%;
+                }
                 .subnewsinput {
                   outline: none;
                   border: none;
@@ -84,7 +88,7 @@
                   margin-right: -10px;
                   width: 300px;
                   @media (max-width: 480px) {
-                    width: unset;
+                    width: 100%;
                   }
                 }
 
