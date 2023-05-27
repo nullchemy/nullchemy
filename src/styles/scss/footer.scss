@@ -4,10 +4,6 @@
   background: url(../../assets/images/black-felt.png), #000;
   position: relative;
   padding-bottom: 103px;
-  @media (max-width: 480px) {
-    height: calc(100vh - 110px);
-  }
-
   .fBackToTop {
     padding: 20px 0;
     margin-bottom: 20px;

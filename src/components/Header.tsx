@@ -11,7 +11,7 @@ import { ReactComponent as Times } from '../assets/svg/x-mark.svg'
 const Header = () => {
   const SCROLL_OFFSET: number = 100
 
-  const [mobi, setMobi] = useState(false)
+  const [mobi, setMobi] = useState('')
   const [stick, setStick] = useState(false)
   window.addEventListener('scroll', () => {
     if (window.scrollY > SCROLL_OFFSET) {
@@ -30,16 +30,22 @@ const Header = () => {
     <Fragment>
       <div className={stick ? 'header sticky_header' : 'header'}>
         <div className="hcontainer">
-          <Bars className="mobiNavBars" onClick={() => setMobi(true)} />
+          <Bars className="mobiNavBars" onClick={() => setMobi('open')} />
           <div className="Mobiheaderlogo">
             <Link to="/" className="MobiheaderLogoLink">
               <img src={Logo} alt="" />
             </Link>
           </div>
           <div
-            className={mobi ? 'hwrapper openmobinav' : 'hwrapper hidemobinav'}
+            className={
+              mobi === 'open'
+                ? 'hwrapper openmobinav'
+                : mobi === 'close'
+                ? 'hwrapper hidemobinav'
+                : 'hwrapper'
+            }
           >
-            <Times className="mobiNavTimes" onClick={() => setMobi(false)} />
+            <Times className="mobiNavTimes" onClick={() => setMobi('close')} />
             <div className="hleft">
               <div className="hbranding">
                 <div className="headerlogo">

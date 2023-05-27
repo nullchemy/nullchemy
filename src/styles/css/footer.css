@@ -5,11 +5,6 @@
   position: relative;
   padding-bottom: 103px;
 }
-@media (max-width: 480px) {
-  .footer {
-    height: calc(100vh - 110px);
-  }
-}
 .footer .fBackToTop {
   padding: 20px 0;
   margin-bottom: 20px;
