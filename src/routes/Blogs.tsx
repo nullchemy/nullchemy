@@ -31,12 +31,22 @@ const Blogs = () => {
                 <span className="spot-category">Web Development</span>{' '}
                 <span className="spot-date">june 22 2022</span>
                 <h2>
-                  <Link to="/read">
+                  <Link
+                    to="/read"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
                     7 Frontend JavaScript Frameworks Loved by Developers in 2022
                   </Link>
                 </h2>
                 <p>
-                  <Link to="/read">
+                  <Link
+                    to="/read"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
                     is undoubtedly quite popular in building interactive and
                     multimedia content. In 2021, it completed the ninth year in
                     a row as the most commonly used programming language. A
@@ -91,13 +101,93 @@ const Blogs = () => {
                 <img src={agility} alt="" />
               </div>
               <div className="bloghighTitle">
-                <Link to="/read">
+                <Link
+                  to="/read"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
                   <h2>
                     Wolf3D & Rovio Talking About 3D Avatars and Virtual
                     Identities in Games and Metaverses
                   </h2>
                 </Link>
-                <Link to="/read">
+                <Link
+                  to="/read"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
+                  <p>
+                    Building your business’s web presence has become a mandate
+                    in today’s world of scrolling social media and often landing
+                    straight on a shopping website. A professional web
+                    application helps your business achieve industry standards
+                    and engage your customers with the company’s offerings.
+                  </p>
+                </Link>
+              </div>
+              <div className="bloghighInfo">
+                <p>April 15, 2022 . 5min read</p>
+              </div>
+            </div>
+            <div className="highblogcard">
+              <div className="bloghighImage">
+                <img src={agility} alt="" />
+              </div>
+              <div className="bloghighTitle">
+                <Link
+                  to="/read"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
+                  <h2>
+                    Wolf3D & Rovio Talking About 3D Avatars and Virtual
+                    Identities in Games and Metaverses
+                  </h2>
+                </Link>
+                <Link
+                  to="/read"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
+                  <p>
+                    Building your business’s web presence has become a mandate
+                    in today’s world of scrolling social media and often landing
+                    straight on a shopping website. A professional web
+                    application helps your business achieve industry standards
+                    and engage your customers with the company’s offerings.
+                  </p>
+                </Link>
+              </div>
+              <div className="bloghighInfo">
+                <p>April 15, 2022 . 5min read</p>
+              </div>
+            </div>
+            <div className="highblogcard">
+              <div className="bloghighImage">
+                <img src={agility} alt="" />
+              </div>
+              <div className="bloghighTitle">
+                <Link
+                  to="/read"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
+                  <h2>
+                    Wolf3D & Rovio Talking About 3D Avatars and Virtual
+                    Identities in Games and Metaverses
+                  </h2>
+                </Link>
+                <Link
+                  to="/read"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
                   <p>
                     Building your business’s web presence has become a mandate
                     in today’s world of scrolling social media and often landing

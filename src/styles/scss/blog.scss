@@ -75,10 +75,15 @@
           font-weight: 700;
           margin-top: 15px;
           cursor: pointer;
-
+          &:hover {
+            color: #0088f0;
+          }
           a {
             text-decoration: none;
             color: var(--text-color);
+            &:hover {
+              color: #0088f0;
+            }
           }
         }
 
@@ -209,6 +214,9 @@
 
         a {
           color: var(--text-color);
+          &:hover {
+            color: #0088f0;
+          }
 
           h2 {
             display: -webkit-box;
@@ -220,10 +228,10 @@
             word-wrap: break-word;
             word-break: break-word;
             cursor: pointer;
-
+            color: var(--text-color);
             &:hover {
               transition: 0.3s;
-              color: var(--text-color);
+              color: #0088f0;
             }
           }
 

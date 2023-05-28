@@ -32,7 +32,13 @@ const Header = () => {
         <div className="hcontainer">
           <Bars className="mobiNavBars" onClick={() => setMobi('open')} />
           <div className="Mobiheaderlogo">
-            <Link to="/" className="MobiheaderLogoLink">
+            <Link
+              to="/"
+              className="MobiheaderLogoLink"
+              onClick={() => {
+                window.scrollTo(0, 0)
+              }}
+            >
               <img src={Logo} alt="" />
             </Link>
           </div>
@@ -56,22 +62,46 @@ const Header = () => {
               </div>
               <div className="headerNavigation">
                 <li className="headerLink">
-                  <Link to="/" className="header_link_anchor">
+                  <Link
+                    to="/"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="headerLink">
-                  <Link to="/about" className="header_link_anchor">
+                  <Link
+                    to="/about"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
                     About us
                   </Link>
                 </li>
                 <li className="headerLink">
-                  <Link to="/blogs" className="header_link_anchor">
+                  <Link
+                    to="/blogs"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
                     Blog
                   </Link>
                 </li>
                 <li className="headerLink">
-                  <Link to="/contact" className="header_link_anchor">
+                  <Link
+                    to="/contact"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
                     Contact us
                   </Link>
                 </li>
@@ -88,6 +118,7 @@ const Header = () => {
                         width="15"
                         height="15"
                         viewBox="0 0 18 18"
+                        onChange={() => {}}
                       >
                         <path d="M18 16.5l-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0z"></path>
                       </svg>
@@ -95,7 +126,9 @@ const Header = () => {
                         className="header-search-input"
                         type="text"
                         name="search"
+                        value=""
                         autoComplete="off"
+                        onChange={() => {}}
                       />
                       <span className="search-input-placeholder">
                         search for something
