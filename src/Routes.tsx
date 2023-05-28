@@ -13,6 +13,7 @@ import About from './routes/About'
 import Join from './routes/Join'
 import Privacy from './routes/Privacy'
 import CookiePolicy from './routes/CookiePolicy'
+import Read from './routes/Read'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/blogs" element={<Blogs />} />
+      <Route path="/read" element={<Read />} />
       <Route path="/join" element={<Join />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/cookie-policy" element={<CookiePolicy />} />

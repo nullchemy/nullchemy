@@ -1,3 +1,4 @@
 {
-  "plugins": ["transform-unicode-escapes"]
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["@babel/plugin-transform-unicode-escapes"]
 }

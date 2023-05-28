@@ -1,0 +1,62 @@
+.read {
+  .readContainer {
+    margin: 0 5%;
+    .readWrapper {
+      display: flex;
+      .readSidebarLeft {
+        width: 15%;
+      }
+      .readContent {
+        width: 70%;
+        .readBreadCrumb {
+          margin: 20px 0;
+          span {
+            font-size: 1rem;
+            margin-right: 10px;
+            font-weight: 800;
+          }
+          .arrowright {
+            height: 15px;
+            width: 15px;
+            margin-bottom: -2px;
+            margin-right: 10px;
+          }
+        }
+        .readtitle {
+          font-size: 3.5rem;
+          font-weight: 700;
+          font-family: 'Assistant', 'Arial';
+          margin-bottom: 30px;
+        }
+        .readSubTitle {
+          font-size: 2rem;
+          font-family: 'Assistant', 'Arial';
+          margin-bottom: 30px;
+          font-weight: 700;
+        }
+        .readImageContainer {
+          height: 250px;
+          width: 90%;
+          margin: 30px auto;
+          .readImage {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .readParagraph {
+          font-size: 1.2rem;
+          line-height: 32px;
+          font-family: Roboto;
+          font-weight: 400;
+          margin: 0 0 25px 0;
+          color: #000;
+          max-width: initial;
+        }
+      }
+      .readSidebarRight {
+        width: 15%;
+      }
+    }
+  }
+}

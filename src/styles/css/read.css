@@ -1,0 +1,61 @@
+.read .readContainer {
+  margin: 0 5%;
+}
+.read .readContainer .readWrapper {
+  display: flex;
+}
+.read .readContainer .readWrapper .readSidebarLeft {
+  width: 15%;
+}
+.read .readContainer .readWrapper .readContent {
+  width: 70%;
+}
+.read .readContainer .readWrapper .readContent .readBreadCrumb {
+  margin: 20px 0;
+}
+.read .readContainer .readWrapper .readContent .readBreadCrumb span {
+  font-size: 1rem;
+  margin-right: 10px;
+  font-weight: 800;
+}
+.read .readContainer .readWrapper .readContent .readBreadCrumb .arrowright {
+  height: 15px;
+  width: 15px;
+  margin-bottom: -2px;
+  margin-right: 10px;
+}
+.read .readContainer .readWrapper .readContent .readtitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Assistant", "Arial";
+  margin-bottom: 30px;
+}
+.read .readContainer .readWrapper .readContent .readSubTitle {
+  font-size: 2rem;
+  font-family: "Assistant", "Arial";
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.read .readContainer .readWrapper .readContent .readImageContainer {
+  height: 250px;
+  width: 90%;
+  margin: 30px auto;
+}
+.read .readContainer .readWrapper .readContent .readImageContainer .readImage {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.read .readContainer .readWrapper .readContent .readParagraph {
+  font-size: 1.2rem;
+  line-height: 32px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+  color: #000;
+  max-width: initial;
+}
+.read .readContainer .readWrapper .readSidebarRight {
+  width: 15%;
+}/*# sourceMappingURL=read.css.map */
