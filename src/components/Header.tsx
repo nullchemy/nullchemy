@@ -95,7 +95,6 @@ const Header = () => {
                         className="header-search-input"
                         type="text"
                         name="search"
-                        value=""
                         autoComplete="off"
                       />
                       <span className="search-input-placeholder">

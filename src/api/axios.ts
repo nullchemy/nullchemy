@@ -25,9 +25,9 @@ const api = async (
     }
     const res = await axios(config)
     return res
-  } catch (error) {
+  } catch (error: any) {
     console.error(error)
-    throw error
+    return error
   }
 }
 
