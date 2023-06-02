@@ -2,6 +2,9 @@ import React, { Fragment, useEffect } from 'react'
 import Routes from './Routes'
 import { useAppSelector } from './state/hooks'
 import * as ReactGA from 'react-ga'
+import 'animate.css/animate.min.css'
+import { ReactNotifications } from 'react-notifications-component'
+import 'react-notifications-component/dist/theme.css'
 
 const App = () => {
   useEffect(() => {
@@ -13,6 +16,7 @@ const App = () => {
   return (
     <Fragment>
       <div className="app" data-theme={theme}>
+        <ReactNotifications />
         <Routes />
       </div>
     </Fragment>

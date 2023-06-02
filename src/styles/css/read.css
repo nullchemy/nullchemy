@@ -4,11 +4,91 @@
 .read .readContainer .readWrapper {
   display: flex;
 }
+@media (max-width: 480px) {
+  .read .readContainer .readWrapper {
+    flex-direction: column;
+  }
+}
 .read .readContainer .readWrapper .readSidebarLeft {
   width: 15%;
 }
+@media (max-width: 480px) {
+  .read .readContainer .readWrapper .readSidebarLeft {
+    width: 100%;
+    order: 2;
+  }
+}
 .read .readContainer .readWrapper .readContent {
   width: 70%;
+  min-height: 70vh;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .read .readContainer .readWrapper .readContent {
+    width: 100%;
+    order: 1;
+  }
+}
+.read .readContainer .readWrapper .readContent .loadingAnim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.read .readContainer .readWrapper .readContent .loadingAnim .lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.read .readContainer .readWrapper .readContent .loadingAnim .lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #0088f0;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.read .readContainer .readWrapper .readContent .loadingAnim .lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.read .readContainer .readWrapper .readContent .loadingAnim .lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.read .readContainer .readWrapper .readContent .loadingAnim .lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.read .readContainer .readWrapper .readContent .loadingAnim .lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 .read .readContainer .readWrapper .readContent .readBreadCrumb {
   margin: 20px 0;
@@ -28,18 +108,30 @@
   font-size: 3.5rem;
   font-weight: 700;
   font-family: "Assistant", "Arial";
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .read .readContainer .readWrapper .readContent .readtitle {
+    font-size: 2rem;
+  }
 }
 .read .readContainer .readWrapper .readContent .readSubTitle {
   font-size: 2rem;
   font-family: "Assistant", "Arial";
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
 }
 .read .readContainer .readWrapper .readContent .readImageContainer {
   height: 250px;
   width: 90%;
   margin: 30px auto;
+}
+@media (max-width: 480px) {
+  .read .readContainer .readWrapper .readContent .readImageContainer {
+    height: 200px;
+    width: 100%;
+    margin: 20px auto;
+  }
 }
 .read .readContainer .readWrapper .readContent .readImageContainer .readImage {
   height: 100%;
@@ -52,10 +144,56 @@
   line-height: 32px;
   font-family: Roboto;
   font-weight: 400;
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
   color: #000;
   max-width: initial;
 }
 .read .readContainer .readWrapper .readSidebarRight {
   width: 15%;
+}
+@media (max-width: 480px) {
+  .read .readContainer .readWrapper .readSidebarRight {
+    width: 100;
+    order: 3;
+  }
+}
+
+.readContentInner {
+  margin-bottom: 20px;
+}
+.readContentInner h1,
+.readContentInner h2,
+.readContentInner h3,
+.readContentInner h4,
+.readContentInner h5,
+.readContentInner h6 {
+  font-size: 2rem;
+  font-family: "Assistant", "Arial";
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .readContentInner h1,
+  .readContentInner h2,
+  .readContentInner h3,
+  .readContentInner h4,
+  .readContentInner h5,
+  .readContentInner h6 {
+    font-size: 1.3rem;
+  }
+}
+.readContentInner p {
+  font-size: 1.2rem;
+  line-height: 32px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  color: #000;
+  max-width: initial;
+}
+@media (max-width: 480px) {
+  .readContentInner p {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=read.css.map */

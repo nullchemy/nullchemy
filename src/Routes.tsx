@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import Home from './routes/Home'
+import ErrorBoundary from './routes/ErrorBoundary'
 import Contact from './routes/Contact'
 import NotFound from './routes/NotFound'
 import Blogs from './routes/Blogs'
@@ -18,15 +19,35 @@ import Read from './routes/Read'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/blogs" element={<Blogs />} />
-      <Route path="/read" element={<Read />} />
-      <Route path="/join" element={<Join />} />
-      <Route path="/privacy" element={<Privacy />} />
-      <Route path="/cookie-policy" element={<CookiePolicy />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/" element={<Home />} errorElement={<ErrorBoundary />} />
+      <Route
+        path="/about"
+        element={<About />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/contact"
+        element={<Contact />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/blogs"
+        element={<Blogs />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route path="/read" element={<Read />} errorElement={<ErrorBoundary />} />
+      <Route path="/join" element={<Join />} errorElement={<ErrorBoundary />} />
+      <Route
+        path="/privacy"
+        element={<Privacy />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/cookie-policy"
+        element={<CookiePolicy />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route path="*" element={<NotFound />} errorElement={<ErrorBoundary />} />
     </>
   )
 )

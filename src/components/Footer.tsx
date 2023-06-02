@@ -39,32 +39,68 @@ const Footer = () => {
                 </div>
                 <ul className={fsubdrop === 'help' ? 'fnav' : 'fnav fnavhide'}>
                   <li className="fnavLink">
-                    <Link to="/help-center" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/help-center"
+                      className="fnavLnk"
+                    >
                       Help Center
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/contact" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/contact"
+                      className="fnavLnk"
+                    >
                       Feedback
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/shipping-and-delivery" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/shipping-and-delivery"
+                      className="fnavLnk"
+                    >
                       Deployment and Launch
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/return-policy" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/return-policy"
+                      className="fnavLnk"
+                    >
                       Refund Policy
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/dispute-resoution-center" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/dispute-resoution-center"
+                      className="fnavLnk"
+                    >
                       Dispute Resolution Center
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/report-product" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/report-product"
+                      className="fnavLnk"
+                    >
                       Report a Product/service
                     </Link>
                   </li>
@@ -84,32 +120,68 @@ const Footer = () => {
                   className={fsubdrop === 'company' ? 'fnav' : 'fnav fnavhide'}
                 >
                   <li className="fnavLink">
-                    <Link to="/about-us" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/about-us"
+                      className="fnavLnk"
+                    >
                       About Us
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/blog" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/blog"
+                      className="fnavLnk"
+                    >
                       Blog
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/careers" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/careers"
+                      className="fnavLnk"
+                    >
                       Careers
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/terms-and-conditions" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/terms-and-conditions"
+                      className="fnavLnk"
+                    >
                       Terms and Conditions
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/privacy" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/privacy"
+                      className="fnavLnk"
+                    >
                       Privacy Policy
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/cookie-policy" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/cookie-policy"
+                      className="fnavLnk"
+                    >
                       Cookie Policy
                     </Link>
                   </li>
@@ -127,27 +199,57 @@ const Footer = () => {
                 </div>
                 <ul className={fsubdrop === 'money' ? 'fnav' : 'fnav fnavhide'}>
                   <li className="fnavLink">
-                    <Link to="/sell" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/sell"
+                      className="fnavLnk"
+                    >
                       Web Design & Development
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/advertise-with-us" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/advertise-with-us"
+                      className="fnavLnk"
+                    >
                       Mobile Application Development
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/feedback" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/feedback"
+                      className="fnavLnk"
+                    >
                       Desktop Application Development
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/feedback" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/feedback"
+                      className="fnavLnk"
+                    >
                       API dev
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/feedback" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/feedback"
+                      className="fnavLnk"
+                    >
                       Graphic Design
                     </Link>
                   </li>
@@ -167,24 +269,48 @@ const Footer = () => {
                   className={fsubdrop === 'payment' ? 'fnav' : 'fnav fnavhide'}
                 >
                   <li className="fnavLink">
-                    <Link to="/gift-cards" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/gift-cards"
+                      className="fnavLnk"
+                    >
                       1st Floor, nullchemy building, <br />
                       Parklands Road, <br />
                       P.O Box 10065 - 00400, Nairobi.
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/vouchers-and-promotions" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/vouchers-and-promotions"
+                      className="fnavLnk"
+                    >
                       +254798116710
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/my-points" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/my-points"
+                      className="fnavLnk"
+                    >
                       contact@nullchemy.com
                     </Link>
                   </li>
                   <li className="fnavLink">
-                    <Link to="/contact" className="fnavLnk">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/contact"
+                      className="fnavLnk"
+                    >
                       Contact Us
                     </Link>
                   </li>
@@ -196,16 +322,40 @@ const Footer = () => {
             <div className="paymentMethods">
               <h2>our payment methods</h2>
               <div className="paymentMethods">
-                <Link to="/payment" className="lnktoDeliv">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                  to="/payment"
+                  className="lnktoDeliv"
+                >
                   <PaymentOnDelivery className="PaymentOnDelivery" />
                 </Link>
-                <Link to="/payment" className="lnktoDeliv">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                  to="/payment"
+                  className="lnktoDeliv"
+                >
                   <Visa className="PaymentOnDelivery visa" />
                 </Link>
-                <Link to="/payment" className="lnktoDeliv">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                  to="/payment"
+                  className="lnktoDeliv"
+                >
                   <Mpesa className="PaymentOnDelivery mpesaIc" />
                 </Link>
-                <Link to="/payment" className="lnktoDeliv">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                  to="/payment"
+                  className="lnktoDeliv"
+                >
                   <MasterCard className="PaymentOnDelivery mastercardIc" />
                 </Link>
               </div>
@@ -233,11 +383,21 @@ const Footer = () => {
               reserved
             </h3>
           </div>
-          <div className="flanguage">
+          <div
+            className="flanguage"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
             <Language className="fLangIc" />
             <p>English</p>
           </div>
-          <div className="fCurrency">
+          <div
+            className="fCurrency"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
             <Dollar className="fLangIc" />
             <p>Ksh</p>
           </div>

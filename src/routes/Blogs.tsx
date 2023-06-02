@@ -1,13 +1,36 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import '../styles/css/blog.css'
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import agility from '../assets/images/agility.png'
 import { ReactComponent as Filter } from '../assets/svg/filter.svg'
+import { useNavigate } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
+import api from '../api/axios'
 
 const Blogs = () => {
+  let navigate = useNavigate()
+  const [blogs, setBlogs] = useState({
+    data: [],
+  })
+  useEffect(() => {
+    const fetchBlog = async () => {
+      const res = await api('GET', 'blog/all', {})
+      setBlogs(res.data)
+      console.log(res.data)
+    }
+    fetchBlog()
+  }, [])
+  console.log(blogs)
+
+  //handle blog click
+  const handleBlogRed = (blogid: string) => {
+    window.sessionStorage.setItem('blogid', blogid)
+    navigate('/read')
+    window.scrollTo(0, 0)
+  }
+
   return (
     <Fragment>
       <Header />
@@ -96,111 +119,44 @@ const Blogs = () => {
             </div>
           </div>
           <div className="highflex">
-            <div className="highblogcard">
-              <div className="bloghighImage">
-                <img src={agility} alt="" />
+            {blogs.data.length === 0 ? (
+              <div className="loadingAnim">
+                <div className="lds-ellipsis">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
               </div>
-              <div className="bloghighTitle">
-                <Link
-                  to="/read"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  <h2>
-                    Wolf3D & Rovio Talking About 3D Avatars and Virtual
-                    Identities in Games and Metaverses
-                  </h2>
-                </Link>
-                <Link
-                  to="/read"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  <p>
-                    Building your business’s web presence has become a mandate
-                    in today’s world of scrolling social media and often landing
-                    straight on a shopping website. A professional web
-                    application helps your business achieve industry standards
-                    and engage your customers with the company’s offerings.
-                  </p>
-                </Link>
-              </div>
-              <div className="bloghighInfo">
-                <p>April 15, 2022 . 5min read</p>
-              </div>
-            </div>
-            <div className="highblogcard">
-              <div className="bloghighImage">
-                <img src={agility} alt="" />
-              </div>
-              <div className="bloghighTitle">
-                <Link
-                  to="/read"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  <h2>
-                    Wolf3D & Rovio Talking About 3D Avatars and Virtual
-                    Identities in Games and Metaverses
-                  </h2>
-                </Link>
-                <Link
-                  to="/read"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  <p>
-                    Building your business’s web presence has become a mandate
-                    in today’s world of scrolling social media and often landing
-                    straight on a shopping website. A professional web
-                    application helps your business achieve industry standards
-                    and engage your customers with the company’s offerings.
-                  </p>
-                </Link>
-              </div>
-              <div className="bloghighInfo">
-                <p>April 15, 2022 . 5min read</p>
-              </div>
-            </div>
-            <div className="highblogcard">
-              <div className="bloghighImage">
-                <img src={agility} alt="" />
-              </div>
-              <div className="bloghighTitle">
-                <Link
-                  to="/read"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  <h2>
-                    Wolf3D & Rovio Talking About 3D Avatars and Virtual
-                    Identities in Games and Metaverses
-                  </h2>
-                </Link>
-                <Link
-                  to="/read"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  <p>
-                    Building your business’s web presence has become a mandate
-                    in today’s world of scrolling social media and often landing
-                    straight on a shopping website. A professional web
-                    application helps your business achieve industry standards
-                    and engage your customers with the company’s offerings.
-                  </p>
-                </Link>
-              </div>
-              <div className="bloghighInfo">
-                <p>April 15, 2022 . 5min read</p>
-              </div>
-            </div>
+            ) : (
+              blogs.data.map((i: any) => {
+                if (blogs.data.length !== 0) {
+                  return (
+                    <div
+                      className="highblogcard"
+                      onClick={() => {
+                        handleBlogRed(i.BlogID)
+                      }}
+                      key={i.BlogID}
+                    >
+                      <div className="bloghighImage">
+                        <img src={agility} alt="" />
+                      </div>
+                      <div className="bloghighTitle">
+                        <h2>{i.Title}</h2>
+                        {/* <p>{i.Summary}</p> */}
+                      </div>
+                      <div className="bloghighInfo">
+                        <p>
+                          {i.TimeStamp} . {i.ReadLength}min read
+                        </p>
+                      </div>
+                    </div>
+                  )
+                }
+                return ''
+              })
+            )}
           </div>
         </section>
         <Newsletter />

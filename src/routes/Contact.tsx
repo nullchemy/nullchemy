@@ -8,6 +8,7 @@ import { ReactComponent as Phone } from '../assets/svg/phone.svg'
 import { ReactComponent as Location } from '../assets/svg/location.svg'
 import Newsletter from '../components/Newsletter'
 import api from '../api/axios'
+import { Store } from 'react-notifications-component'
 
 const Contact = () => {
   const gaEventTracker = useAnalyticsEventTracker('Contact us')
@@ -25,6 +26,21 @@ const Contact = () => {
     const res = await api('POST', 'contact', data)
     console.log(res)
     setStatus('sent')
+    Store.addNotification({
+      title: 'Contact Success!',
+      message:
+        'your message was received successfully. you should get a response within a day or two',
+      type: 'success',
+      insert: 'top',
+      container: 'top-right',
+      animationIn: ['animate__animated', 'animate__fadeIn'],
+      animationOut: ['animate__animated', 'animate__fadeOut'],
+      dismiss: {
+        duration: 5000,
+        onScreen: true,
+      },
+    })
+    gaEventTracker('contact')
     // clear the form
     setData({
       name: '',
@@ -112,11 +128,7 @@ const Contact = () => {
                     }}
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="contsendbutton"
-                  onClick={() => gaEventTracker('contact')}
-                >
+                <button type="submit" className="contsendbutton">
                   {status}
                 </button>
               </form>

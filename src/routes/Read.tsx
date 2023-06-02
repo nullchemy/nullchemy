@@ -1,11 +1,38 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/read.css'
 import Header from '../components/Header'
 import agility from '../assets/images/agility.png'
 import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 import Footer from '../components/Footer'
+import api from '../api/axios'
+import { useNavigate } from 'react-router-dom'
 
 const Read = () => {
+  let navigate = useNavigate()
+  const [blog, setBlog] = useState({
+    Author: '',
+    BlogID: '',
+    Content: '',
+    ID: 1,
+    ReadLength: 5,
+    TimeStamp: '',
+    Title: '',
+  })
+  const blogid = window.sessionStorage.getItem('blogid')
+  console.log(blogid)
+  useEffect(() => {
+    const fetchBlog = async () => {
+      if (blogid !== '' || blogid !== undefined) {
+        const res = await api('POST', 'blog/get', {
+          blogid: blogid,
+        })
+        setBlog(res.data.data)
+      } else {
+        navigate('/blogs')
+      }
+    }
+    fetchBlog()
+  }, [blogid, navigate])
   return (
     <Fragment>
       <Header />
@@ -13,54 +40,36 @@ const Read = () => {
         <div className="readContainer">
           <div className="readWrapper">
             <div className="readSidebarLeft"></div>
-            <div className="readContent">
-              <div className="readBreadCrumb">
-                <span>Home</span>
-                <ArrowRight className="arrowright" />
-                <span>Blog</span>
-                <ArrowRight className="arrowright" />
-                <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </span>
+            {blog.BlogID === '' ? (
+              <div className="readContent">
+                <div className="loadingAnim">
+                  <div className="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
               </div>
-              <h1 className="readtitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h1>
-              <div className="readImageContainer">
-                <img className="readImage" src={agility} alt="" />
+            ) : (
+              <div className="readContent">
+                <div className="readBreadCrumb">
+                  <span>Home</span>
+                  <ArrowRight className="arrowright" />
+                  <span>Blog</span>
+                  <ArrowRight className="arrowright" />
+                  <span>{blog.Title}</span>
+                </div>
+                <h1 className="readtitle">{blog.Title}</h1>
+                <div className="readImageContainer">
+                  <img className="readImage" src={agility} alt="" />
+                </div>
+                <div
+                  className="readContentInner"
+                  dangerouslySetInnerHTML={{ __html: blog.Content }}
+                ></div>
               </div>
-              <p className="readParagraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                rerum vitae sit veniam id vel temporibus? Quibusdam ullam, et
-                saepe omnis inventore assumenda cumque odio, nisi eius beatae
-                laboriosam excepturi? Quam temporibus qui amet debitis ex
-                laboriosam accusamus eos aperiam facere, atque fuga esse
-                nesciunt, asperiores illo dignissimos vel. Debitis tenetur sed
-                iusto obcaecati, repellat culpa molestias earum hic quidem
-                dignissimos totam est doloremque eligendi fugiat vel magnam id!
-                Esse, odio veniam necessitatibus, quo libero debitis dolores
-                alias non, voluptate ipsum assumenda? Nostrum nulla harum magni
-                eum eaque ipsam iure. Inventore libero placeat quibusdam
-                veritatis quos suscipit culpa sapiente non.
-              </p>
-              <p className="readParagraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                rerum vitae sit veniam id vel temporibus? Quibusdam ullam, et
-                saepe omnis inventore assumenda cumque odio, nisi eius beatae
-                laboriosam excepturi? Quam temporibus qui amet debitis ex
-                laboriosam accusamus eos aperiam facere, atque fuga esse
-                nesciunt, asperiores illo dignissimos vel. Debitis tenetur sed
-                iusto obcaecati, repellat culpa molestias earum hic quidem
-                dignissimos totam est doloremque eligendi fugiat vel magnam id!
-                Esse, odio veniam necessitatibus, quo libero debitis dolores
-                alias non, voluptate ipsum assumenda? Nostrum nulla harum magni
-                eum eaque ipsam iure. Inventore libero placeat quibusdam
-                veritatis quos suscipit culpa sapiente non.
-              </p>
-              <h3 className="readSubTitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h3>
-            </div>
+            )}
             <div className="readSidebarRight"></div>
           </div>
         </div>

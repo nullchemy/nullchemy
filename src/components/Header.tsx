@@ -161,9 +161,9 @@ const Header = () => {
                           height="18"
                           fill="none"
                           stroke="#000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           viewBox="0 0 24 24"
                           onClick={() => {
                             dispatch(setTheme('light'))
@@ -186,9 +186,9 @@ const Header = () => {
                           height="18"
                           fill="none"
                           stroke="#000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           viewBox="0 0 24 24"
                           onClick={() => {
                             dispatch(setTheme('dark'))

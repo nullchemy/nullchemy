@@ -49,13 +49,13 @@
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subNewstexts .subNewstitle {
   font-size: 2rem;
   line-height: 2.25rem;
-  color: var(--text-color-inv);
+  color: #e6e6e6;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subNewstexts .subNewsTextsp {
   margin-top: 0.75rem;
-  color: var(--text-color-inv);
+  color: #e6e6e6;
   letter-spacing: 0.5px;
 }
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform {
@@ -97,7 +97,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: rgba(49, 49, 49, 0.707);
-  color: var(--text-color-inv);
+  color: #e6e6e6;
   height: 3.5rem;
   margin-right: -10px;
   width: 300px;

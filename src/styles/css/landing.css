@@ -133,4 +133,8 @@
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 800;
+  line-height: 32px;
+  font-family: Roboto;
+  color: #000;
+  max-width: initial;
 }/*# sourceMappingURL=landing.css.map */
