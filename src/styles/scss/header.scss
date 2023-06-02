@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 999;
   .hcontainer {
     margin: 0 5%;
     @media (max-width: 480px) {
@@ -42,6 +44,7 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
+      z-index: 999;
       @media (max-width: 480px) {
         flex-direction: column;
         align-items: unset;
