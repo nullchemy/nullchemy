@@ -263,13 +263,7 @@
 .blogs-showcase .highflex .highblogcard .bloghighTitle {
   padding: 10px;
 }
-.blogs-showcase .highflex .highblogcard .bloghighTitle a {
-  color: var(--text-color);
-}
-.blogs-showcase .highflex .highblogcard .bloghighTitle a:hover {
-  color: #0088f0;
-}
-.blogs-showcase .highflex .highblogcard .bloghighTitle a h2 {
+.blogs-showcase .highflex .highblogcard .bloghighTitle h2 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -281,11 +275,11 @@
   cursor: pointer;
   color: var(--text-color);
 }
-.blogs-showcase .highflex .highblogcard .bloghighTitle a h2:hover {
+.blogs-showcase .highflex .highblogcard .bloghighTitle h2:hover {
   transition: 0.3s;
   color: #0088f0;
 }
-.blogs-showcase .highflex .highblogcard .bloghighTitle a p {
+.blogs-showcase .highflex .highblogcard .bloghighTitle p {
   margin-top: 10px;
   display: -webkit-box;
   -webkit-box-orient: vertical;

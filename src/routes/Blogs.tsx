@@ -144,7 +144,7 @@ const Blogs = () => {
                       </div>
                       <div className="bloghighTitle">
                         <h2>{i.Title}</h2>
-                        {/* <p>{i.Summary}</p> */}
+                        <p>{i.Summary}</p>
                       </div>
                       <div className="bloghighInfo">
                         <p>

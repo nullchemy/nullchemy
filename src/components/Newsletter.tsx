@@ -10,9 +10,9 @@ const Newsletter = () => {
             <div className="subnewsletter">
               <div className="subnewsFlex">
                 <div className="subNewstexts">
-                  <h3 className="subNewstitle">Subscribe to my newsletter</h3>
+                  <h3 className="subNewstitle">Subscribe to our newsletter</h3>
                   <p className="subNewsTextsp">
-                    stay upto date with my latest blogs and news updates
+                    stay upto date with our latest blogs and news updates
                   </p>
                 </div>
                 <div className="subnewsform">

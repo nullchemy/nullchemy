@@ -273,42 +273,34 @@
 
       .bloghighTitle {
         padding: 10px;
-
-        a {
+        h2 {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          max-height: 4rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: break-word;
+          word-break: break-word;
+          cursor: pointer;
           color: var(--text-color);
           &:hover {
+            transition: 0.3s;
             color: #0088f0;
           }
+        }
 
-          h2 {
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            max-height: 4rem;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            word-wrap: break-word;
-            word-break: break-word;
-            cursor: pointer;
-            color: var(--text-color);
-            &:hover {
-              transition: 0.3s;
-              color: #0088f0;
-            }
-          }
-
-          p {
-            margin-top: 10px;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
-            max-height: 6rem;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            word-wrap: break-word;
-            word-break: break-word;
-            cursor: pointer;
-          }
+        p {
+          margin-top: 10px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+          max-height: 6rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: break-word;
+          word-break: break-word;
+          cursor: pointer;
         }
       }
 
