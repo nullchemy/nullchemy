@@ -14,8 +14,9 @@
         padding: 10px 30px;
         margin: 20px 0;
         .lnktosignin {
-          font-weight: 900;
+          font-weight: 400;
           color: #5934ff;
+          font-family: 'VolteRounded-Bold' !important;
         }
       }
       .signupform {
@@ -91,6 +92,7 @@
             text-align: center;
             color: #fff;
             cursor: pointer;
+            font-family: 'VolteRounded-Bold' !important;
           }
         }
       }

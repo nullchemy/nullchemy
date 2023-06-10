@@ -112,6 +112,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "VolteRounded-Bold";
+  src: url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.eot"); /* IE9*/
+  src: url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.woff2") format("woff2"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.woff") format("woff"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.ttf") format("truetype"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.svg#VolteRounded-Bold") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+}
 :root {
   --background-color-one: #e3e1ff;
   --background-color-two: #e3edff;
