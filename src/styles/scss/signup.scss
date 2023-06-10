@@ -1,0 +1,99 @@
+.signup {
+  .signupcontainer {
+    margin: 0 5%;
+    margin-bottom: 54px;
+    .signupwrapper {
+      width: 40%;
+      margin: 0 auto;
+      .signupred {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 23px;
+        padding: 10px 30px;
+        margin: 20px 0;
+        .lnktosignin {
+          font-weight: 900;
+          color: #5934ff;
+        }
+      }
+      .signupform {
+        .sform {
+          .signgroupflex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+          }
+          .signgroup {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 3px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: var(--text-color);
+            margin: 20px 0;
+            .signinput {
+              all: unset;
+              flex-grow: 1;
+              min-width: 0px;
+              color: var(--text-color);
+              font-size: 18px;
+              line-height: 26px;
+              transition-property: border-bottom-width;
+              transition-duration: 0.2s;
+              transition-timing-function: ease-out;
+              padding-top: 27px;
+              padding-bottom: 8px;
+              padding-left: 6px;
+              padding-right: 6px;
+              color-scheme: light;
+              &:focus + .sgnplholder {
+                top: 0px;
+                font-size: 12px;
+                line-height: 18px;
+              }
+            }
+            .sgnplholder {
+              position: absolute;
+              margin-top: 8px;
+              margin-left: 6px;
+              top: 22px;
+              transition-property: top, font-size, line-height;
+              transition-duration: 0.2s;
+              transition-timing-function: ease-out;
+              color: var(--text-color);
+              user-select: none;
+              pointer-events: none;
+              span {
+                color: red;
+              }
+            }
+          }
+          .termsofengagement {
+            margin-bottom: 20px;
+          }
+          .signupbtn {
+            all: unset;
+            padding: 20px;
+            background-color: #fff;
+            width: calc(100% - 40px);
+            background: linear-gradient(
+              to bottom right,
+              #14a9ff,
+              #0088f0
+            ) !important;
+            border-radius: 43px;
+            margin: 20px 0;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,8 @@ import Join from './routes/Join'
 import Privacy from './routes/Privacy'
 import CookiePolicy from './routes/CookiePolicy'
 import Read from './routes/Read'
+import Terms from './routes/Terms'
+import Signup from './routes/Signup'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -37,6 +39,16 @@ const router = createBrowserRouter(
       />
       <Route path="/read" element={<Read />} errorElement={<ErrorBoundary />} />
       <Route path="/join" element={<Join />} errorElement={<ErrorBoundary />} />
+      <Route
+        path="/signup"
+        element={<Signup />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/terms-and-conditions"
+        element={<Terms />}
+        errorElement={<ErrorBoundary />}
+      />
       <Route
         path="/privacy"
         element={<Privacy />}

@@ -4,6 +4,7 @@
   background: url(../../assets/images/black-felt.png), #000;
   position: relative;
   padding-bottom: 103px;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
 }
 .footer .fBackToTop {
   padding: 20px 0;
@@ -17,7 +18,7 @@
   border-radius: 5px;
 }
 .footer .fBackToTop p {
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   color: #fff;
   text-transform: capitalize;
   text-align: center;
@@ -53,7 +54,7 @@
 .footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle h2 {
   color: #fff;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
 }
 @media (max-width: 480px) {
   .footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnavTitle h2 {
@@ -76,7 +77,7 @@
 .footer .fontainer .fmiddle .fmidWrapper .fnavigation .fnav .fnavLink .fnavLnk {
   text-decoration: none;
   color: #fff;
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   cursor: pointer;
 }
 @media (max-width: 480px) {
@@ -98,7 +99,7 @@
 }
 .footer .fontainer .fcenter .paymentMethods h2 {
   color: #fff;
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   margin-bottom: 10px;
 }
 .footer .fontainer .fcenter .paymentMethods .paymentMethods {
@@ -137,12 +138,12 @@
 }
 .footer .fontainer .fcenter .fnewsletter h2 {
   color: #fff;
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   margin-bottom: 10px;
 }
 .footer .fontainer .fcenter .fnewsletter p {
   color: #fff;
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   margin-bottom: 10px;
 }
 .footer .fontainer .fcenter .fnewsletter .fnewsletterform .newsinfobox {
@@ -247,7 +248,7 @@
   color: #fff;
   font-size: 0.8rem;
   font-weight: 100;
-  font-family: Roboto;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   text-transform: capitalize;
 }
 @media (max-width: 480px) {

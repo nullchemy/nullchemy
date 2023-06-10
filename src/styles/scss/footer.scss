@@ -4,6 +4,7 @@
   background: url(../../assets/images/black-felt.png), #000;
   position: relative;
   padding-bottom: 103px;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   .fBackToTop {
     padding: 20px 0;
     margin-bottom: 20px;
@@ -16,7 +17,7 @@
     border-radius: 5px;
 
     p {
-      font-family: Roboto;
+      font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
       color: #fff;
       text-transform: capitalize;
       text-align: center;
@@ -53,7 +54,8 @@
             h2 {
               color: #fff;
               text-transform: uppercase;
-              font-family: Roboto;
+              font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+                sans-serif;
 
               @media (max-width: 480px) {
                 font-size: 1rem;
@@ -78,7 +80,8 @@
               .fnavLnk {
                 text-decoration: none;
                 color: #fff;
-                font-family: Roboto;
+                font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+                  sans-serif;
                 cursor: pointer;
               }
             }
@@ -106,7 +109,8 @@
 
         h2 {
           color: #fff;
-          font-family: Roboto;
+          font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+            sans-serif;
           margin-bottom: 10px;
         }
 
@@ -151,13 +155,15 @@
 
         h2 {
           color: #fff;
-          font-family: Roboto;
+          font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+            sans-serif;
           margin-bottom: 10px;
         }
 
         p {
           color: #fff;
-          font-family: Roboto;
+          font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+            sans-serif;
           margin-bottom: 10px;
         }
 
@@ -274,7 +280,7 @@
         color: #fff;
         font-size: 0.8rem;
         font-weight: 100;
-        font-family: Roboto;
+        font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
         text-transform: capitalize;
       }
     }
