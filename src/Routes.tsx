@@ -17,6 +17,9 @@ import CookiePolicy from './routes/CookiePolicy'
 import Read from './routes/Read'
 import Terms from './routes/Terms'
 import Signup from './routes/Signup'
+import Signin from './routes/Signin'
+import ConfirmEmail from './routes/ConfirmEmail'
+import ResetPassword from './routes/ResetPassword'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -42,6 +45,21 @@ const router = createBrowserRouter(
       <Route
         path="/signup"
         element={<Signup />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/signin"
+        element={<Signin />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/confirm-email"
+        element={<ConfirmEmail />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/reset-password"
+        element={<ResetPassword />}
         errorElement={<ErrorBoundary />}
       />
       <Route

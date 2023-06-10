@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { ReactComponent as Github } from '../assets/svg/github.svg'
 import { ReactComponent as Bars } from '../assets/svg/bars.svg'
 import { ReactComponent as Times } from '../assets/svg/x-mark.svg'
+import { ReactComponent as Lens } from '../assets/svg/lens.svg'
 
 const Header = () => {
   const SCROLL_OFFSET: number = 100
@@ -110,30 +111,12 @@ const Header = () => {
             <div className="hright">
               <div className="header-right">
                 <div className="header-right-flex">
+                  <Link to="/signin" className="ctahheadersignin">
+                    sign in
+                  </Link>
                   <div className="header-search">
-                    <form className="header-search-form">
-                      <svg
-                        className="header-search-icon"
-                        aria-hidden="true"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 18 18"
-                        onChange={() => {}}
-                      >
-                        <path d="M18 16.5l-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0z"></path>
-                      </svg>
-                      <input
-                        className="header-search-input"
-                        type="text"
-                        name="search"
-                        value=""
-                        autoComplete="off"
-                        onChange={() => {}}
-                      />
-                      <span className="search-input-placeholder">
-                        search for something
-                      </span>
-                    </form>
+                    {/* lens search icon to appear here */}
+                    <Lens className="searchLensh" />
                   </div>
                   <div className="header-right-links">
                     <a

@@ -1,6 +1,9 @@
+.signup {
+  min-height: calc(100vh - 54px) !important;
+}
 .signup .signupcontainer {
   margin: 0 5%;
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 }
 .signup .signupcontainer .signupwrapper {
   width: 40%;
@@ -52,8 +55,9 @@
   padding-left: 6px;
   padding-right: 6px;
   color-scheme: light;
+  background-color: transparent !important;
 }
-.signup .signupcontainer .signupwrapper .signupform .sform .signgroup .signinput:focus + .sgnplholder {
+.signup .signupcontainer .signupwrapper .signupform .sform .signgroup .signinput:focus + .sgnplholder, .signup .signupcontainer .signupwrapper .signupform .sform .signgroup .signinput:not([value=""]) + .sgnplholder {
   top: 0px;
   font-size: 12px;
   line-height: 18px;
@@ -75,8 +79,22 @@
 .signup .signupcontainer .signupwrapper .signupform .sform .signgroup .sgnplholder span {
   color: red;
 }
+.signup .signupcontainer .signupwrapper .signupform .sform .signgroup .sgnpassvisibility {
+  height: 20px;
+  width: 20px;
+  fill: var(--text-color);
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+}
+.signup .signupcontainer .signupwrapper .signupform .sform .sgnforgotpassword {
+  color: #0088f0;
+}
 .signup .signupcontainer .signupwrapper .signupform .sform .termsofengagement {
+  margin-top: 20px;
   margin-bottom: 20px;
+  color: var(--text-color);
 }
 .signup .signupcontainer .signupwrapper .signupform .sform .signupbtn {
   all: unset;

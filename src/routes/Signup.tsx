@@ -1,30 +1,79 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import '../styles/css/signup.css'
 import Header from '../components/Header'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { ReactComponent as Eye } from '../assets/svg/eye.svg'
+import { ReactComponent as EyeSlash } from '../assets/svg/eyeslash.svg'
+import api from '../api/axios'
+import session from '../utils/session'
 
 const Signup = () => {
+  const [data, setData] = useState({
+    fname: '',
+    lname: '',
+    username: '',
+    email: '',
+    password: '',
+    cpassword: '',
+  })
+  const [visi, setVisi] = useState(false)
+  const [response, setResponse] = useState({
+    message: '',
+  })
+  const [status, setStatus] = useState('sign up')
+  const navigate = useNavigate()
+
+  const handleSignup = async (e: any) => {
+    e.preventDefault()
+    setStatus('signing up...')
+    const res = await api('POST', 'auth/client/signup', data)
+    setResponse(res.data)
+    console.log(res.data)
+    setStatus('sign up')
+    if (res.data.type === 'success') {
+      session.saveem(res.headers.email)
+      navigate('/confirm-email')
+    }
+    setTimeout(() => {
+      setResponse({
+        message: '',
+      })
+    }, 3000)
+  }
   return (
     <Fragment>
       <Header />
       <div className="signup">
         <div className="signupcontainer">
-          <div className="signupwrapper">
+          <div className="signupwrapper" style={{ paddingBottom: '100px' }}>
             <div className="signupred">
               <p>already have an account?</p>
-              <Link className="lnktosignin" to="signin">
+              <Link className="lnktosignin" to="/signin">
                 sign in
               </Link>
             </div>
             <div className="signupform">
-              <form className="sform" autoComplete="off">
+              <form
+                className="sform"
+                autoComplete="off"
+                onSubmit={(e) => {
+                  handleSignup(e)
+                }}
+              >
+                <div className="sgninfo">
+                  <p>{response.message}</p>
+                </div>
                 <div className="signgroupflex">
                   <div className="signgroup">
                     <input
                       type="text"
                       className="signinput"
                       autoComplete="new-password"
-                      placeholder=""
+                      name="fname"
+                      value={data.fname}
+                      onChange={(e) => {
+                        setData({ ...data, [e.target.name]: e.target.value })
+                      }}
                     />
                     <span className="sgnplholder">First Name</span>
                   </div>
@@ -33,7 +82,11 @@ const Signup = () => {
                       type="text"
                       className="signinput"
                       autoComplete="new-password"
-                      placeholder=""
+                      name="lname"
+                      value={data.lname}
+                      onChange={(e) => {
+                        setData({ ...data, [e.target.name]: e.target.value })
+                      }}
                     />
                     <span className="sgnplholder">Last Name</span>
                   </div>
@@ -43,7 +96,11 @@ const Signup = () => {
                     type="text"
                     className="signinput"
                     autoComplete="new-password"
-                    placeholder=""
+                    name="username"
+                    value={data.username}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value })
+                    }}
                   />
                   <span className="sgnplholder">
                     Prefered username (optional)
@@ -54,7 +111,11 @@ const Signup = () => {
                     type="email"
                     className="signinput"
                     autoComplete="new-password"
-                    placeholder=""
+                    name="email"
+                    value={data.email}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value })
+                    }}
                   />
                   <span className="sgnplholder">
                     Email <span>*</span>
@@ -62,21 +123,40 @@ const Signup = () => {
                 </div>
                 <div className="signgroup">
                   <input
-                    type="password"
+                    type={visi ? 'text' : 'password'}
                     className="signinput"
                     autoComplete="new-password"
-                    placeholder=""
+                    name="password"
+                    value={data.password}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value })
+                    }}
                   />
                   <span className="sgnplholder">
                     password <span>*</span>
                   </span>
+                  {visi ? (
+                    <EyeSlash
+                      className="sgnpassvisibility"
+                      onClick={() => setVisi(false)}
+                    />
+                  ) : (
+                    <Eye
+                      className="sgnpassvisibility"
+                      onClick={() => setVisi(true)}
+                    />
+                  )}
                 </div>
                 <div className="signgroup">
                   <input
-                    type="password"
+                    type={visi ? 'text' : 'password'}
                     className="signinput"
                     autoComplete="new-password"
-                    placeholder=""
+                    name="cpassword"
+                    value={data.cpassword}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value })
+                    }}
                   />
                   <span className="sgnplholder">
                     confirm password <span>*</span>
@@ -86,7 +166,9 @@ const Signup = () => {
                   By clicking "Sign up", you agree to our Terms of Use and
                   acknowledge receipt of our Privacy Policy.
                 </p>
-                <button className="signupbtn">sign up</button>
+                <button className="signupbtn" type="submit">
+                  {status}
+                </button>
               </form>
             </div>
           </div>

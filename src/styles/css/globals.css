@@ -180,4 +180,26 @@ body {
 .app {
   background: linear-gradient(180deg, var(--background-color-one) 0%, var(--background-color-two) 20%, var(--background-color-three) 100%);
   transition: all 0.3s ease-in-out 0s;
+}
+
+/* Remove increment and decrement buttons from number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:-internal-autofill-selected {
+  -webkit-appearance: menulist-button;
+     -moz-appearance: menulist-button;
+          appearance: menulist-button;
+  background: linear-gradient(180deg, var(--background-color-one) 0%, var(--background-color-two) 20%, var(--background-color-three) 100%) !important;
+  transition: all 0.3s ease-in-out 0s;
+  color: fieldtext !important;
 }/*# sourceMappingURL=globals.css.map */

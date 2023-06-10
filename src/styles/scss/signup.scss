@@ -1,7 +1,8 @@
 .signup {
+  min-height: calc(100vh - 54px) !important;
   .signupcontainer {
     margin: 0 5%;
-    margin-bottom: 54px;
+    padding-bottom: 54px;
     .signupwrapper {
       width: 40%;
       margin: 0 auto;
@@ -52,7 +53,9 @@
               padding-left: 6px;
               padding-right: 6px;
               color-scheme: light;
-              &:focus + .sgnplholder {
+              background-color: transparent !important;
+              &:focus + .sgnplholder,
+              &:not([value='']) + .sgnplholder {
                 top: 0px;
                 font-size: 12px;
                 line-height: 18px;
@@ -73,9 +76,23 @@
                 color: red;
               }
             }
+            .sgnpassvisibility {
+              height: 20px;
+              width: 20px;
+              fill: var(--text-color);
+              position: absolute;
+              right: 20px;
+              top: 30px;
+              cursor: pointer;
+            }
+          }
+          .sgnforgotpassword {
+            color: #0088f0;
           }
           .termsofengagement {
+            margin-top: 20px;
             margin-bottom: 20px;
+            color: var(--text-color);
           }
           .signupbtn {
             all: unset;

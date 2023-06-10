@@ -26,9 +26,9 @@
             .ct_lnd_text {
               font-size: 5.375rem;
               line-height: 5rem;
-              letter-spacing: -0.25rem;
+              letter-spacing: -0.05rem;
               color: var(--text-color);
-              font-family: Volte Rounded;
+              font-family: 'VolteRounded-Bold', Volte Rounded;
               font-weight: 800 !important;
               margin-bottom: 2rem;
               user-select: none;
@@ -58,6 +58,7 @@
                 #14a9ff,
                 #0088f0
               ) !important;
+              font-family: Roboto, sans-serif;
               border-radius: 23px;
               color: #fff !important;
               font-size: 1.5rem;
@@ -119,7 +120,7 @@
             font-size: 0.9rem;
             font-weight: 800;
             line-height: 32px;
-            font-family: Roboto;
+            font-family: 'VolteRounded-Bold';
             color: var(--text-color);
             max-width: initial;
           }
