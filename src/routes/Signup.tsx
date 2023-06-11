@@ -20,16 +20,15 @@ const Signup = () => {
   const [response, setResponse] = useState({
     message: '',
   })
-  const [status, setStatus] = useState('sign up')
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
   const handleSignup = async (e: any) => {
     e.preventDefault()
-    setStatus('signing up...')
+    setIsLoading(true)
     const res = await api('POST', 'auth/client/signup', data)
     setResponse(res.data)
-    console.log(res.data)
-    setStatus('sign up')
+    setIsLoading(false)
     if (res.data.type === 'success') {
       session.saveem(res.headers.email)
       navigate('/confirm-email')
@@ -167,7 +166,7 @@ const Signup = () => {
                   acknowledge receipt of our Privacy Policy.
                 </p>
                 <button className="signupbtn" type="submit">
-                  {status}
+                  {isLoading ? <div className="dot-flashing"></div> : 'sign in'}
                 </button>
               </form>
             </div>

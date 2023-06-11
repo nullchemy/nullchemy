@@ -72,77 +72,54 @@ input:-internal-autofill-selected {
 //loading animation
 /**
  * ==============================================
- * Dot Pulse
+ * dot-flashing
  * ==============================================
  */
-.dot-pulse {
+.dot-flashing {
   position: relative;
-  left: -9999px;
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
-  box-shadow: 9999px 0 0 -5px;
-  animation: dot-pulse 1.5s infinite linear;
-  animation-delay: 0.25s;
+  background-color: #ffffff;
+  color: #ffffff;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  margin: 0 auto;
 }
-.dot-pulse::before,
-.dot-pulse::after {
+.dot-flashing::before,
+.dot-flashing::after {
   content: '';
   display: inline-block;
   position: absolute;
   top: 0;
+}
+.dot-flashing::before {
+  left: -15px;
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
-}
-.dot-pulse::before {
-  box-shadow: 9984px 0 0 -5px;
-  animation: dot-pulse-before 1.5s infinite linear;
+  background-color: #ffffff;
+  color: #ffffff;
+  animation: dot-flashing 1s infinite alternate;
   animation-delay: 0s;
 }
-.dot-pulse::after {
-  box-shadow: 10014px 0 0 -5px;
-  animation: dot-pulse-after 1.5s infinite linear;
-  animation-delay: 0.5s;
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ffffff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
 }
 
-@keyframes dot-pulse-before {
+@keyframes dot-flashing {
   0% {
-    box-shadow: 9984px 0 0 -5px;
+    background-color: #ffffff;
   }
-  30% {
-    box-shadow: 9984px 0 0 2px;
-  }
-  60%,
+  50%,
   100% {
-    box-shadow: 9984px 0 0 -5px;
-  }
-}
-@keyframes dot-pulse {
-  0% {
-    box-shadow: 9999px 0 0 -5px;
-  }
-  30% {
-    box-shadow: 9999px 0 0 2px;
-  }
-  60%,
-  100% {
-    box-shadow: 9999px 0 0 -5px;
-  }
-}
-@keyframes dot-pulse-after {
-  0% {
-    box-shadow: 10014px 0 0 -5px;
-  }
-  30% {
-    box-shadow: 10014px 0 0 2px;
-  }
-  60%,
-  100% {
-    box-shadow: 10014px 0 0 -5px;
+    background-color: #fff3f333;
   }
 }

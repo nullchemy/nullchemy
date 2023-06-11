@@ -3,6 +3,7 @@ import '../styles/css/signup.css'
 import Header from '../components/Header'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../api/axios'
+import session from '../utils/session'
 
 const ConfirmEmail = () => {
   const [data, setData] = useState({
@@ -11,15 +12,23 @@ const ConfirmEmail = () => {
   const [response, setResponse] = useState({
     message: '',
   })
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
   const handleSignin = async (e: any) => {
     e.preventDefault()
+    setIsLoading(true)
     const res = await api('POST', 'auth/client/confirmemail', data)
     setResponse(res.data)
+    setIsLoading(false)
     if (res.data.type === 'success') {
+      session.save(res.headers.authtoken, res.headers.refreshtoken)
+      setResponse({ message: 'Redirecting...' })
       navigate('/')
     }
+    setTimeout(() => {
+      setResponse({ message: '' })
+    }, 2000)
   }
   return (
     <Fragment>
@@ -69,7 +78,11 @@ const ConfirmEmail = () => {
                   Enter the code sent to your email on sign up
                 </p>
                 <button className="signupbtn" type="submit">
-                  confirm email
+                  {isLoading ? (
+                    <div className="dot-flashing"></div>
+                  ) : (
+                    'confirm email'
+                  )}
                 </button>
               </form>
             </div>

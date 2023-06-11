@@ -15,12 +15,15 @@ const Signup = () => {
   const [response, setResponse] = useState({
     message: '',
   })
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
   const handleSignin = async (e: any) => {
     e.preventDefault()
+    setIsLoading(true)
     const res = await api('POST', 'auth/client/signin', data)
     setResponse(res.data)
+    setIsLoading(false)
     if (res.data.type === 'success') {
       navigate('/')
     }
@@ -89,7 +92,7 @@ const Signup = () => {
                     />
                   )}
                 </div>
-                <Link to="/forgot-password" className="sgnforgotpassword">
+                <Link to="/reset-password" className="sgnforgotpassword">
                   forgot password?
                 </Link>
                 <p className="termsofengagement">
@@ -97,7 +100,7 @@ const Signup = () => {
                   acknowledge receipt of our Privacy Policy.
                 </p>
                 <button className="signupbtn" type="submit">
-                  sign in
+                  {isLoading ? <div className="dot-flashing"></div> : 'sign in'}
                 </button>
               </form>
             </div>

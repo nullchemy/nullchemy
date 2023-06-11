@@ -3,11 +3,13 @@ import '../styles/css/signup.css'
 import Header from '../components/Header'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../api/axios'
+import session from '../utils/session'
 
 const ConfirmEmail = () => {
   const [data, setData] = useState({
     email: '',
   })
+  const [code, setCode] = useState('')
   const [reset, setReset] = useState({
     password: '',
     cpassword: '',
@@ -29,20 +31,42 @@ const ConfirmEmail = () => {
     setResponse(res.data)
     setIsLoading({ ...isLoading, email: false })
     if (res.data.type === 'success') {
-      setTab('reset')
-      navigate('/')
+      setTab('confirm')
     }
   }
+
+  const handleConfirmCode = async (e: any) => {
+    e.preventDefault()
+    setIsLoading({ ...isLoading, email: true })
+    const res = await api('POST', 'auth/client/confirmresetcode', {
+      code: code,
+      email: data.email,
+    })
+    setResponse(res.data)
+    setIsLoading({ ...isLoading, email: false })
+    if (res.data.type === 'success') {
+      setTab('reset')
+    }
+  }
+
   const handleReset = async (e: any) => {
     e.preventDefault()
     setIsLoading({ ...isLoading, reset: true })
-    const res = await api('POST', 'auth/client/resetpassword', data)
+    const res = await api('POST', 'auth/client/resetpassword', {
+      ...reset,
+      email: data.email,
+    })
     setResponse(res.data)
     setIsLoading({ ...isLoading, reset: false })
     if (res.data.type === 'success') {
-      setTab('reset')
+      session.save(res.headers.authtoken, res.headers.refreshtoken)
+      setResponse({ message: 'Redirecting...' })
+      setTab('email')
       navigate('/')
     }
+    setTimeout(() => {
+      setResponse({ message: '' })
+    }, 2000)
   }
   return (
     <Fragment>
@@ -90,11 +114,54 @@ const ConfirmEmail = () => {
                     Enter your email for the reset code to be sent to you
                   </p>
                   <button className="signupbtn" type="submit">
-                    {isLoading.email ? 'requesting...' : 'request'}
+                    {isLoading.email ? (
+                      <div className="dot-flashing"></div>
+                    ) : (
+                      'request'
+                    )}
                   </button>
                 </form>
               </div>
-            ) : (
+            ) : tab === 'confirm' ? (
+              <div className="signupform">
+                <form
+                  className="sform"
+                  autoComplete="off"
+                  onSubmit={(e) => {
+                    handleConfirmCode(e)
+                  }}
+                >
+                  <div className="sgninfo">
+                    <p>{response.message}</p>
+                  </div>
+                  <div className="signgroup">
+                    <input
+                      type="number"
+                      className="signinput"
+                      autoComplete="new-password"
+                      name="code"
+                      value={code}
+                      onChange={(e) => {
+                        setCode(e.target.value)
+                      }}
+                    />
+                    <span className="sgnplholder">
+                      Code <span>*</span>
+                    </span>
+                  </div>
+                  <p className="termsofengagement">
+                    Enter the code that was sent to your Email
+                  </p>
+                  <button className="signupbtn" type="submit">
+                    {isLoading.email ? (
+                      <div className="dot-flashing"></div>
+                    ) : (
+                      'confirm'
+                    )}
+                  </button>
+                </form>
+              </div>
+            ) : tab === 'reset' ? (
               <div className="signupform">
                 <form
                   className="sform"
@@ -118,7 +185,7 @@ const ConfirmEmail = () => {
                       }}
                     />
                     <span className="sgnplholder">
-                      code <span>*</span>
+                      password <span>*</span>
                     </span>
                   </div>
                   <div className="signgroup">
@@ -133,15 +200,19 @@ const ConfirmEmail = () => {
                       }}
                     />
                     <span className="sgnplholder">
-                      code <span>*</span>
+                      Confirm password <span>*</span>
                     </span>
                   </div>
                   <button className="signupbtn" type="submit">
-                    {isLoading.email ? 'resetting...' : 'reset password'}
+                    {isLoading.email ? (
+                      <div className="dot-flashing"></div>
+                    ) : (
+                      'reset password'
+                    )}
                   </button>
                 </form>
               </div>
-            )}
+            ) : null}
           </div>
         </div>
       </div>
