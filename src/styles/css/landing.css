@@ -46,12 +46,13 @@
 @media (max-width: 1900px) {
   .landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text {
     font-size: 4rem;
+    line-height: 4rem;
   }
 }
 @media (max-width: 480px) {
   .landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 .landing .landingWrapper .landingContainer .landingTop .landingtexts .lndingtextswrapper .ct_lnd_text_p {

@@ -204,7 +204,7 @@ const ConfirmEmail = () => {
                     </span>
                   </div>
                   <button className="signupbtn" type="submit">
-                    {isLoading.email ? (
+                    {isLoading.reset ? (
                       <div className="dot-flashing"></div>
                     ) : (
                       'reset password'

@@ -26,8 +26,9 @@ const Signup = () => {
   const handleSignup = async (e: any) => {
     e.preventDefault()
     setIsLoading(true)
-    const res = await api('POST', 'auth/client/signup', data)
+    const res: any = await api('POST', 'auth/client/signup', data)
     setResponse(res.data)
+    console.log(res.data)
     setIsLoading(false)
     if (res.data.type === 'success') {
       session.saveem(res.headers.email)

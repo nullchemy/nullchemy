@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ReactComponent as Eye } from '../assets/svg/eye.svg'
 import { ReactComponent as EyeSlash } from '../assets/svg/eyeslash.svg'
 import api from '../api/axios'
+import session from '../utils/session'
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -23,10 +24,16 @@ const Signup = () => {
     setIsLoading(true)
     const res = await api('POST', 'auth/client/signin', data)
     setResponse(res.data)
+    console.log(res.data)
     setIsLoading(false)
     if (res.data.type === 'success') {
+      session.save(res.headers.authtoken, res.headers.refreshtoken)
+      setResponse({ message: 'Redirecting...' })
       navigate('/')
     }
+    setTimeout(() => {
+      setResponse({ message: '' })
+    }, 2000)
   }
   return (
     <Fragment>

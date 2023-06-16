@@ -3,9 +3,14 @@
   .signupcontainer {
     margin: 0 5%;
     padding-bottom: 54px;
+    @media (max-width: 480px) {
+    }
     .signupwrapper {
       width: 40%;
       margin: 0 auto;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
       .signupred {
         display: flex;
         align-items: center;
@@ -27,6 +32,11 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
+            .signgroup {
+              @media (max-width: 480px) {
+                width: 45%;
+              }
+            }
           }
           .signgroup {
             position: relative;

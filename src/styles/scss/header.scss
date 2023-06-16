@@ -75,7 +75,7 @@
         @media (max-width: 480px) {
           flex-direction: column;
           align-items: unset;
-          order: 2;
+          order: 1;
         }
         .hbranding {
           .headerlogo {
@@ -121,7 +121,7 @@
       .hright {
         margin-top: -20px;
         @media (max-width: 480px) {
-          order: 1;
+          order: 2;
         }
         .header-right {
           .header-right-flex {
@@ -129,7 +129,8 @@
             justify-content: flex-end;
             align-items: center;
             @media (max-width: 480px) {
-              flex-direction: column;
+              flex-direction: row;
+              justify-content: space-evenly;
               margin: 20px;
             }
             .ctahheadersignin {
@@ -147,11 +148,17 @@
               cursor: pointer;
               margin-right: 15px;
               font-family: 'VolteRounded-Bold' !important;
+              @media (max-width: 480px) {
+                margin-right: unset !important;
+                position: absolute;
+                bottom: 80px;
+              }
             }
             .header-search {
               margin-bottom: -2px;
               @media (max-width: 480px) {
                 margin: 20px;
+                margin-left: 0;
               }
               .searchLensh {
                 fill: var(--text-color);

@@ -3,19 +3,11 @@
 }
 .read .readContainer .readWrapper {
   display: flex;
+  justify-content: space-evenly;
 }
 @media (max-width: 480px) {
   .read .readContainer .readWrapper {
     flex-direction: column;
-  }
-}
-.read .readContainer .readWrapper .readSidebarLeft {
-  width: 15%;
-}
-@media (max-width: 480px) {
-  .read .readContainer .readWrapper .readSidebarLeft {
-    width: 100%;
-    order: 2;
   }
 }
 .read .readContainer .readWrapper .readContent {
@@ -97,18 +89,23 @@
   font-size: 1rem;
   margin-right: 10px;
   font-weight: 800;
+  color: var(--text-color);
 }
 .read .readContainer .readWrapper .readContent .readBreadCrumb .arrowright {
   height: 15px;
   width: 15px;
   margin-bottom: -2px;
   margin-right: 10px;
+  fill: var(--text-color);
 }
 .read .readContainer .readWrapper .readContent .readtitle {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 700;
-  font-family: "Assistant", "Arial";
   margin-bottom: 20px;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  color: var(--text-color);
+  text-transform: capitalize !important;
 }
 @media (max-width: 480px) {
   .read .readContainer .readWrapper .readContent .readtitle {
@@ -117,9 +114,11 @@
 }
 .read .readContainer .readWrapper .readContent .readSubTitle {
   font-size: 2rem;
-  font-family: "Assistant", "Arial";
   margin-bottom: 10px;
   font-weight: 700;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  text-transform: capitalize !important;
+  color: var(--text-color);
 }
 .read .readContainer .readWrapper .readContent .readImageContainer {
   height: 250px;
@@ -141,21 +140,58 @@
 }
 .read .readContainer .readWrapper .readContent .readParagraph {
   font-size: 1.2rem;
-  line-height: 32px;
-  font-family: Roboto;
+  line-height: 1.5rem;
   font-weight: 400;
   margin: 0 0 15px 0;
-  color: #000;
+  color: var(--text-color);
   max-width: initial;
 }
 .read .readContainer .readWrapper .readSidebarRight {
-  width: 15%;
+  width: 20%;
 }
 @media (max-width: 480px) {
   .read .readContainer .readWrapper .readSidebarRight {
-    width: 100;
-    order: 3;
+    width: 100%;
+    order: 2;
   }
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 997;
+  top: 110px;
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readTableofContents {
+  border: 1px solid #0088f0;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: rgba(20, 169, 255, 0.3411764706) 0px 10px 15px -3px, rgba(0, 136, 240, 0.5725490196) 0px 4px 6px -2px;
+  margin-bottom: 30px;
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readTableofContents h2 {
+  margin: 5px 0;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readTableofContents ul li {
+  padding: 3px 0;
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readTableofContents ul li a {
+  color: var(--text-color);
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readSocialIcons {
+  padding-bottom: 20px;
+  display: flex;
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readSocialIcons a {
+  margin: 10px;
+}
+.read .readContainer .readWrapper .readSidebarRight .ritemsStick .readSocialIcons a .rsocIc {
+  padding: 10px;
+  background-color: #0088f0;
+  border-radius: 50%;
+  fill: #fff;
+  height: 30px;
+  width: 30px;
 }
 
 .readContentInner {
@@ -168,9 +204,10 @@
 .readContentInner h5,
 .readContentInner h6 {
   font-size: 2rem;
-  font-family: "Assistant", "Arial";
+  font-family: "VolteRounded-Bold", Volte Rounded;
   margin-bottom: 10px;
   font-weight: 700;
+  color: var(--text-color);
 }
 @media (max-width: 480px) {
   .readContentInner h1,
@@ -184,11 +221,10 @@
 }
 .readContentInner p {
   font-size: 1.2rem;
-  line-height: 32px;
-  font-family: Roboto;
+  line-height: 1.5rem;
   font-weight: 400;
   margin: 0 0 15px 0;
-  color: #000;
+  color: var(--text-color);
   max-width: initial;
 }
 @media (max-width: 480px) {

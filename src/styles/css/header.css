@@ -90,7 +90,7 @@
   .header .hcontainer .hwrapper .hleft {
     flex-direction: column;
     align-items: unset;
-    order: 2;
+    order: 1;
   }
 }
 .header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
@@ -146,7 +146,7 @@
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hright {
-    order: 1;
+    order: 2;
   }
 }
 .header .hcontainer .hwrapper .hright .header-right .header-right-flex {
@@ -156,7 +156,8 @@
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hright .header-right .header-right-flex {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin: 20px;
   }
 }
@@ -172,12 +173,20 @@
   margin-right: 15px;
   font-family: "VolteRounded-Bold" !important;
 }
+@media (max-width: 480px) {
+  .header .hcontainer .hwrapper .hright .header-right .header-right-flex .ctahheadersignin {
+    margin-right: unset !important;
+    position: absolute;
+    bottom: 80px;
+  }
+}
 .header .hcontainer .hwrapper .hright .header-right .header-right-flex .header-search {
   margin-bottom: -2px;
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hright .header-right .header-right-flex .header-search {
     margin: 20px;
+    margin-left: 0;
   }
 }
 .header .hcontainer .hwrapper .hright .header-right .header-right-flex .header-search .searchLensh {

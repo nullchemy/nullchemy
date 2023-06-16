@@ -9,6 +9,11 @@
   width: 40%;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  .signup .signupcontainer .signupwrapper {
+    width: 100%;
+  }
+}
 .signup .signupcontainer .signupwrapper .signupred {
   display: flex;
   align-items: center;
@@ -28,6 +33,11 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+@media (max-width: 480px) {
+  .signup .signupcontainer .signupwrapper .signupform .sform .signgroupflex .signgroup {
+    width: 45%;
+  }
 }
 .signup .signupcontainer .signupwrapper .signupform .sform .signgroup {
   position: relative;

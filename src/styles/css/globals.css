@@ -175,6 +175,7 @@ body {
           text-size-adjust: none;
   direction: ltr;
   transition: background 2s;
+  position: relative;
 }
 
 .app {

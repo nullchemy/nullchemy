@@ -14,7 +14,7 @@
   }
 }
 .notfoundcontainer .notfoundwrapper .notfoundleft {
-  width: 50%;
+  width: 40%;
   height: 100%;
   position: relative;
 }
@@ -59,7 +59,7 @@
   font-weight: 800;
 }
 .notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper p {
   margin-top: 10px;
@@ -102,4 +102,4 @@
 }
 .notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper .nfbackhome.nfbackgreen:hover:before {
   width: 100%;
-}/*# sourceMappingURL=notfound.css.map */
+}/*# sourceMappingURL=errorboundary.css.map */

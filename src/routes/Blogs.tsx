@@ -25,9 +25,9 @@ const Blogs = () => {
   console.log(blogs)
 
   //handle blog click
-  const handleBlogRed = (blogid: string) => {
+  const handleBlogRed = (blogid: string, blogslug: string) => {
     window.sessionStorage.setItem('blogid', blogid)
-    navigate('/read')
+    navigate('/read/' + blogslug)
     window.scrollTo(0, 0)
   }
 
@@ -135,7 +135,7 @@ const Blogs = () => {
                     <div
                       className="highblogcard"
                       onClick={() => {
-                        handleBlogRed(i.BlogID)
+                        handleBlogRed(i.BlogID, i.BlogSlug)
                       }}
                       key={i.BlogID}
                     >

@@ -34,10 +34,11 @@
               user-select: none;
               @media (max-width: 1900px) {
                 font-size: 4rem;
+                line-height: 4rem;
               }
               @media (max-width: 480px) {
-                font-size: 3.5rem;
-                line-height: 4rem;
+                font-size: 3rem;
+                line-height: 3rem;
               }
             }
             .ct_lnd_text_p {

@@ -12,13 +12,18 @@ const ConfirmEmail = () => {
   const [response, setResponse] = useState({
     message: '',
   })
+  const email = session.getem()
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
   const handleSignin = async (e: any) => {
     e.preventDefault()
     setIsLoading(true)
-    const res = await api('POST', 'auth/client/confirmemail', data)
+    const res = await api('POST', 'auth/client/confirmemail', {
+      ...data,
+      email: email.email,
+    })
+    console.log(res.data)
     setResponse(res.data)
     setIsLoading(false)
     if (res.data.type === 'success') {

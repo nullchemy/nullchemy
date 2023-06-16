@@ -40,7 +40,11 @@ const router = createBrowserRouter(
         element={<Blogs />}
         errorElement={<ErrorBoundary />}
       />
-      <Route path="/read" element={<Read />} errorElement={<ErrorBoundary />} />
+      <Route
+        path="/read/:slug"
+        element={<Read />}
+        errorElement={<ErrorBoundary />}
+      />
       <Route path="/join" element={<Join />} errorElement={<ErrorBoundary />} />
       <Route
         path="/signup"
@@ -77,6 +81,7 @@ const router = createBrowserRouter(
         element={<CookiePolicy />}
         errorElement={<ErrorBoundary />}
       />
+      <Route path="/test" element={<ErrorBoundary />} errorElement={<ErrorBoundary />} />
       <Route path="*" element={<NotFound />} errorElement={<ErrorBoundary />} />
     </>
   )
