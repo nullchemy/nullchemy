@@ -1,0 +1,28 @@
+.whatwedo .wwdContainer {
+  margin: 0 5%;
+}
+.whatwedo .wwdContainer .wwdWrapper .wwdTitle {
+  text-align: center;
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1900px) {
+  .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}/*# sourceMappingURL=wwd.css.map */

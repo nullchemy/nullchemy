@@ -1,0 +1,46 @@
+.smslider {
+  color: var(--text-color);
+  width: 100%;
+  margin: 20px 0;
+  .smsliderContainer {
+    width: 100%;
+    .smSliderWrapper {
+      position: relative;
+      width: 100%;
+      overflow-x: hidden;
+      .smWrapOverlayLeft {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        z-index: 10;
+      }
+      .smWrapOverlayRight {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        z-index: 10;
+      }
+      .smSliderMain {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        overflow: hidden;
+        width: min-content;
+        transition: 0.9 ease-in-out;
+        .smCard {
+          width: 350px;
+          height: 200px;
+          background-color: #fff;
+          border: 1px solid #0088f0;
+          padding: 10px;
+          cursor: pointer;
+          box-shadow: #14a9ff57 0px 10px 15px -3px, #0088f092 0px 4px 6px -2px;
+        }
+      }
+    }
+  }
+}

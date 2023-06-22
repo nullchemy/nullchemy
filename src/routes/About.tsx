@@ -3,6 +3,7 @@ import '../styles/css/about.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import agility from '../assets/images/agility.png'
+import OurTeam from '../components/OurTeam'
 
 const About = () => {
   return (
@@ -39,6 +40,7 @@ const About = () => {
             </div>
           </div>
         </section>
+        <OurTeam />
         <section className="faqmainSection">
           <div className="faqsection">
             <div className="faqcontainer">

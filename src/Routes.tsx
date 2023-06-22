@@ -20,6 +20,7 @@ import Signup from './routes/Signup'
 import Signin from './routes/Signin'
 import ConfirmEmail from './routes/ConfirmEmail'
 import ResetPassword from './routes/ResetPassword'
+import Careers from './routes/Careers'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,11 @@ const router = createBrowserRouter(
       <Route
         path="/blogs"
         element={<Blogs />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/careers"
+        element={<Careers />}
         errorElement={<ErrorBoundary />}
       />
       <Route
@@ -81,7 +87,11 @@ const router = createBrowserRouter(
         element={<CookiePolicy />}
         errorElement={<ErrorBoundary />}
       />
-      <Route path="/test" element={<ErrorBoundary />} errorElement={<ErrorBoundary />} />
+      <Route
+        path="/test"
+        element={<ErrorBoundary />}
+        errorElement={<ErrorBoundary />}
+      />
       <Route path="*" element={<NotFound />} errorElement={<ErrorBoundary />} />
     </>
   )

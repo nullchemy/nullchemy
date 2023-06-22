@@ -1,0 +1,42 @@
+.ourteam {
+  .ourteamContainer {
+    margin: 0 5%;
+    .ourteamWrapper {
+      .otLeadership {
+        .otLtitle {
+          text-align: center;
+          font-size: 3rem;
+          font-family: 'VolteRounded-Bold', Volte Rounded;
+          color: var(--text-color);
+          margin-bottom: 20px;
+        }
+        .otLCont {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .otlCard {
+            margin: 20px;
+            cursor: pointer;
+            .otlTop {
+              overflow: hidden;
+              height: 300px;
+              .otlPhoto {
+                width: 250px;
+              }
+            }
+            .otlBtm {
+              .otlName {
+                font-size: 2rem;
+                color: var(--text-color);
+              }
+              .otlRole {
+                font-size: 1rem;
+                color: var(--text-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

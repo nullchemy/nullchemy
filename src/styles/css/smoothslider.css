@@ -1,0 +1,47 @@
+.smslider {
+  color: var(--text-color);
+  width: 100%;
+  margin: 20px 0;
+}
+.smslider .smsliderContainer {
+  width: 100%;
+}
+.smslider .smsliderContainer .smSliderWrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.smslider .smsliderContainer .smSliderWrapper .smWrapOverlayLeft {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: 10;
+}
+.smslider .smsliderContainer .smSliderWrapper .smWrapOverlayRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  z-index: 10;
+}
+.smslider .smsliderContainer .smSliderWrapper .smSliderMain {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  overflow: hidden;
+  width: -moz-min-content;
+  width: min-content;
+  transition: 0.9 ease-in-out;
+}
+.smslider .smsliderContainer .smSliderWrapper .smSliderMain .smCard {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #0088f0;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: rgba(20, 169, 255, 0.3411764706) 0px 10px 15px -3px, rgba(0, 136, 240, 0.5725490196) 0px 4px 6px -2px;
+}/*# sourceMappingURL=smoothslider.css.map */

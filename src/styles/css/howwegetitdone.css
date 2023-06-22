@@ -1,0 +1,93 @@
+.hwgitdone {
+  padding: 40px 0;
+}
+.hwgitdone .hwgiContainer {
+  margin: 0 5%;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper {
+  position: relative;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .pathone {
+  position: absolute;
+  top: 35rem;
+  left: 15rem;
+  fill: var(--text-color);
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .pathtwo {
+  position: absolute;
+  top: 15rem;
+  left: 13rem;
+  fill: var(--text-color);
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitTitle {
+  text-align: center;
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1900px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitTitle {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  height: 300px;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone {
+  width: 60%;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitsectitle {
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  color: var(--text-color);
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitPar {
+  font-family: Volte Rounded;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo {
+  flex: 1;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper {
+  position: relative;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwgitcircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #2e6aff;
+  color: #fff;
+  height: 150px;
+  width: 150px;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+}/*# sourceMappingURL=howwegetitdone.css.map */

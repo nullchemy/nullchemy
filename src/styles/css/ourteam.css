@@ -1,0 +1,34 @@
+.ourteam .ourteamContainer {
+  margin: 0 5%;
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLtitle {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLCont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLCont .otlCard {
+  margin: 20px;
+  cursor: pointer;
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLCont .otlCard .otlTop {
+  overflow: hidden;
+  height: 300px;
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLCont .otlCard .otlTop .otlPhoto {
+  width: 250px;
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLCont .otlCard .otlBtm .otlName {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+.ourteam .ourteamContainer .ourteamWrapper .otLeadership .otLCont .otlCard .otlBtm .otlRole {
+  font-size: 1rem;
+  color: var(--text-color);
+}/*# sourceMappingURL=ourteam.css.map */
