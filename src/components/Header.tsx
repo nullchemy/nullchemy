@@ -3,7 +3,7 @@ import '../styles/css/header.css'
 import { useAppDispatch, useAppSelector } from '../state/hooks'
 import { setTheme } from '../state/actions/themeAction'
 import Logo from '../assets/images/nullchemy_logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { ReactComponent as Github } from '../assets/svg/github.svg'
 import { ReactComponent as Bars } from '../assets/svg/bars.svg'
 import { ReactComponent as Times } from '../assets/svg/x-mark.svg'
@@ -14,6 +14,7 @@ const Header = () => {
 
   const [mobi, setMobi] = useState('')
   const [stick, setStick] = useState(false)
+  const navigate = useNavigate()
   window.addEventListener('scroll', () => {
     if (window.scrollY > SCROLL_OFFSET) {
       if (window.innerWidth >= 480) {
@@ -27,6 +28,9 @@ const Header = () => {
   //theme
   const dispatch = useAppDispatch()
   const theme = useAppSelector((state) => state.theme)
+  const openSearch = () => {
+    navigate('/search')
+  }
   return (
     <Fragment>
       <div className={stick ? 'header sticky_header' : 'header'}>
@@ -116,7 +120,7 @@ const Header = () => {
                   </Link>
                   <div className="header-search">
                     {/* lens search icon to appear here */}
-                    <Lens className="searchLensh" />
+                    <Lens className="searchLensh" onClick={openSearch} />
                   </div>
                   <div className="header-right-links">
                     <a

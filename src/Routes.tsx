@@ -21,6 +21,7 @@ import Signin from './routes/Signin'
 import ConfirmEmail from './routes/ConfirmEmail'
 import ResetPassword from './routes/ResetPassword'
 import Careers from './routes/Careers'
+import Search from './components/Search'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,11 @@ const router = createBrowserRouter(
       <Route
         path="/about"
         element={<About />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/search"
+        element={<Search />}
         errorElement={<ErrorBoundary />}
       />
       <Route

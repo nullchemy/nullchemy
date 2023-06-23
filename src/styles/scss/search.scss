@@ -1,0 +1,44 @@
+.search {
+  height: 100vh;
+  .serContainer {
+    height: 100%;
+    .serWrapper {
+      height: 100%;
+      position: relative;
+      .serForm {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        .serFormGroup {
+          position: relative;
+          width: 50%;
+          margin: 0 auto;
+          .serInput {
+            padding: 10px;
+            width: calc(100% - 20px);
+            outline: none;
+            border: none;
+            background-color: #ffffff00;
+            border-bottom: 2px solid #6a6a6a;
+            font-size: 2rem;
+          }
+          .serFLensIc {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            fill: #6a6a6a;
+          }
+        }
+      }
+      .serResults {
+        position: absolute;
+        top: 40%;
+        padding: 20px;
+        margin: 0 5%;
+      }
+    }
+  }
+}
