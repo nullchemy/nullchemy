@@ -1,76 +1,63 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useRef } from 'react'
 import '../styles/css/smoothslider.css'
-import { useSpring, animated } from 'react-spring'
+import { useSlider } from '../utils/UseSlider' // Update the path if necessary
 
-const SmoothSlider = () => {
-  const [hovered, setHovered] = useState({ state: false, sec: '' })
-  const [trs, setTrs] = useState('0%')
+interface SliderProps {
+  // Define any additional props for your slider component
+}
 
-  useEffect(() => {
-    hovered.sec !== ''
-      ? hovered.state
-        ? hovered.sec === 'right'
-          ? setTrs('-50%')
-          : hovered.sec === 'left'
-          ? setTrs('50%')
-          : setTrs('0%')
-        : setTrs('0%')
-      : setTrs('0%')
-    if (parseInt(trs.replace('%', '')) > 20) {
-      setHovered({ state: false, sec: '' })
-    }
-  }, [hovered.sec, hovered.state, trs])
-  const { transform } = useSpring({
-    transform: `translateX(${
-      hovered.sec === 'left' && trs === '0%' ? '0%' : trs
-    })`,
-    config: { tension: 600, friction: 500 },
+const Slider: React.FC<SliderProps> = () => {
+  const sliderRef = useRef<HTMLDivElement>(null)
+
+  // Call the useSlider hook within your component
+  useSlider({
+    selector: 'slider-container', // Update with your own class name or selector
+    wrapper: 'slider-wrapper', // Update with your own class name or selector
+    scroll: 'slider-scroll', // Update with your own class name or selector
+    scrollIndecator: 'slider-indicator', // Update with your own class name or selector
+    speed: 2, // Optional: Adjust the scrolling speed if needed
   })
+
+  // Additional component logic, rendering, and JSX
+
   return (
     <Fragment>
-      <div className="smslider">
-        <div className="smsliderContainer">
-          <div className="smSliderWrapper">
-            <div
-              className="smWrapOverlayLeft"
-              onMouseEnter={() => setHovered({ state: true, sec: 'left' })}
-            ></div>
-            <div
-              className="smWrapOverlayRight"
-              onMouseEnter={() => {
-                setHovered({ state: true, sec: 'right' })
-              }}
-            ></div>
-            <animated.div
-              className="smSliderMain"
-              style={{
-                transform,
-              }}
-            >
-              <div className="smCard">
-                <p>One</p>
-              </div>
-              <div className="smCard">
-                <p>Two</p>
-              </div>
-              <div className="smCard">
-                <p>Three</p>
-              </div>
-              <div className="smCard">
-                <p>Four</p>
-              </div>
-              <div className="smCard">
-                <p>Five</p>
-              </div>
-              <div className="smCard">
-                <p>Six</p>
-              </div>
-            </animated.div>
+      <div className="slider-container" ref={sliderRef}>
+        <div className="slider-wrapper">
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
+          </div>
+          <div className="slider-scroll">
+            <div className="slidercard"></div>
           </div>
         </div>
+      </div>
+      <div className="slider-indicator" style={{ left: '0px' }}>
+        <div className="indicator-inner" style={{ left: '0px' }}></div>
       </div>
     </Fragment>
   )
 }
 
-export default SmoothSlider
+export default Slider

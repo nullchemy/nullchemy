@@ -1,47 +1,50 @@
-.smslider {
-  color: var(--text-color);
-  width: 100%;
-  margin: 20px 0;
-}
-.smslider .smsliderContainer {
-  width: 100%;
-}
-.smslider .smsliderContainer .smSliderWrapper {
-  position: relative;
-  width: 100%;
-  overflow-x: hidden;
-}
-.smslider .smsliderContainer .smSliderWrapper .smWrapOverlayLeft {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  z-index: 10;
-}
-.smslider .smsliderContainer .smSliderWrapper .smWrapOverlayRight {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  z-index: 10;
-}
-.smslider .smsliderContainer .smSliderWrapper .smSliderMain {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
+.slider-container {
   overflow: hidden;
-  width: -moz-min-content;
-  width: min-content;
-  transition: 0.9 ease-in-out;
+  position: relative;
+  margin: 0 5%;
+  width: 88%;
+  margin-bottom: 20px;
 }
-.smslider .smsliderContainer .smSliderWrapper .smSliderMain .smCard {
-  width: 350px;
-  height: 200px;
-  background-color: #fff;
-  border: 1px solid #0088f0;
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: rgba(20, 169, 255, 0.3411764706) 0px 10px 15px -3px, rgba(0, 136, 240, 0.5725490196) 0px 4px 6px -2px;
+.slider-container .slider-wrapper {
+  padding: 40px 0px;
+  align-items: stretch;
+  display: flex;
+}
+.slider-container .slider-wrapper .slider-scroll {
+  position: relative;
+  height: 170px;
+}
+.slider-container .slider-wrapper .slider-scroll:nth-child(odd) {
+  top: 20px;
+}
+.slider-container .slider-wrapper .slider-scroll .slidercard {
+  height: 150px;
+  margin: 0px 25px;
+  min-width: 300px;
+  position: relative;
+  padding: 30px 18px 22px;
+  border-color: rgb(184, 234, 163);
+  padding: 21px 24px 23px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 18px 0px, rgba(0, 0, 0, 0.1) 0px 3px 5px -1px;
+  transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.slider-indicator {
+  left: 0;
+  width: 180px;
+  height: 1px;
+  margin: 20px auto 0px;
+  position: relative;
+}
+.slider-indicator .indicator-inner {
+  width: 40px;
+  height: 6px;
+  left: 0px;
+  position: absolute;
+  top: -6px;
+  background: rgb(61, 61, 61);
 }/*# sourceMappingURL=smoothslider.css.map */

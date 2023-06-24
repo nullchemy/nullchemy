@@ -22,6 +22,7 @@ import ConfirmEmail from './routes/ConfirmEmail'
 import ResetPassword from './routes/ResetPassword'
 import Careers from './routes/Careers'
 import Search from './components/Search'
+import Test from './routes/Test'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -93,11 +94,7 @@ const router = createBrowserRouter(
         element={<CookiePolicy />}
         errorElement={<ErrorBoundary />}
       />
-      <Route
-        path="/test"
-        element={<ErrorBoundary />}
-        errorElement={<ErrorBoundary />}
-      />
+      <Route path="/test" element={<Test />} errorElement={<ErrorBoundary />} />
       <Route path="*" element={<NotFound />} errorElement={<ErrorBoundary />} />
     </>
   )

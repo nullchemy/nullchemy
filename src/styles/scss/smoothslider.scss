@@ -1,46 +1,51 @@
-.smslider {
-  color: var(--text-color);
-  width: 100%;
-  margin: 20px 0;
-  .smsliderContainer {
-    width: 100%;
-    .smSliderWrapper {
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 5%;
+  width: calc(100% - 12%);
+  margin-bottom: 20px;
+  .slider-wrapper {
+    padding: 40px 0px;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    display: flex;
+    .slider-scroll {
       position: relative;
-      width: 100%;
-      overflow-x: hidden;
-      .smWrapOverlayLeft {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        z-index: 10;
+      height: 170px;
+      &:nth-child(odd) {
+        top: 20px;
       }
-      .smWrapOverlayRight {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 50%;
-        z-index: 10;
-      }
-      .smSliderMain {
+      .slidercard {
+        height: 150px;
+        margin: 0px 25px;
+        min-width: 300px;
+        position: relative;
+        padding: 30px 18px 22px;
+        border-color: rgb(184, 234, 163);
+        padding: 21px 24px 23px;
         display: flex;
-        gap: 20px;
-        flex-direction: row;
-        overflow: hidden;
-        width: min-content;
-        transition: 0.9 ease-in-out;
-        .smCard {
-          width: 350px;
-          height: 200px;
-          background-color: #fff;
-          border: 1px solid #0088f0;
-          padding: 10px;
-          cursor: pointer;
-          box-shadow: #14a9ff57 0px 10px 15px -3px, #0088f092 0px 4px 6px -2px;
-        }
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 18px 0px,
+          rgba(0, 0, 0, 0.1) 0px 3px 5px -1px;
+        transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        border: 1px solid rgb(255, 255, 255);
       }
     }
+  }
+}
+.slider-indicator {
+  left: 0;
+  width: 180px;
+  height: 1px;
+  margin: 20px auto 0px;
+  position: relative;
+  .indicator-inner {
+    width: 40px;
+    height: 6px;
+    left: 0px;
+    position: absolute;
+    top: -6px;
+    background: rgb(61, 61, 61);
   }
 }

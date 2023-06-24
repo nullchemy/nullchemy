@@ -3,8 +3,8 @@
 }
 .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
   text-align: center;
-  font-size: 5.375rem;
-  line-height: 5rem;
+  font-size: 4.375rem;
+  line-height: 4rem;
   letter-spacing: -0.05rem;
   color: var(--text-color);
   font-family: "VolteRounded-Bold", Volte Rounded;
@@ -16,13 +16,13 @@
 }
 @media (max-width: 1900px) {
   .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 @media (max-width: 480px) {
   .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }/*# sourceMappingURL=wwd.css.map */
