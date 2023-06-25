@@ -8,6 +8,7 @@ import { ReactComponent as Github } from '../assets/svg/github.svg'
 import { ReactComponent as Bars } from '../assets/svg/bars.svg'
 import { ReactComponent as Times } from '../assets/svg/x-mark.svg'
 import { ReactComponent as Lens } from '../assets/svg/lens.svg'
+import { ReactComponent as User } from '../assets/svg/user.svg'
 
 const Header = () => {
   const SCROLL_OFFSET: number = 100
@@ -28,9 +29,11 @@ const Header = () => {
   //theme
   const dispatch = useAppDispatch()
   const theme = useAppSelector((state) => state.theme)
+  const islogged = useAppSelector((state) => state.logged)
   const openSearch = () => {
     navigate('/search')
   }
+  console.log(islogged)
   return (
     <Fragment>
       <div className={stick ? 'header sticky_header' : 'header'}>
@@ -115,9 +118,16 @@ const Header = () => {
             <div className="hright">
               <div className="header-right">
                 <div className="header-right-flex">
-                  <Link to="/signin" className="ctahheadersignin">
-                    sign in
-                  </Link>
+                  {islogged ? (
+                    <div className="header-search">
+                      {/* user icon to appear here */}
+                      <User className="searchLensh" onClick={openSearch} />
+                    </div>
+                  ) : (
+                    <Link to="/signin" className="ctahheadersignin">
+                      sign in
+                    </Link>
+                  )}
                   <div className="header-search">
                     {/* lens search icon to appear here */}
                     <Lens className="searchLensh" onClick={openSearch} />

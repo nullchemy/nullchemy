@@ -14,6 +14,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState({
     data: [],
   })
+  const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
   useEffect(() => {
     const fetchBlog = async () => {
       const res = await api('GET', 'blog/all', {})
@@ -23,6 +24,14 @@ const Blogs = () => {
     fetchBlog()
   }, [])
   console.log(blogs)
+
+  const backend = (): string => {
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      return 'http://localhost:8000/'
+    } else {
+      return 'https://api.nullchemy.com/'
+    }
+  }
 
   //handle blog click
   const handleBlogRed = (blogid: string, blogslug: string) => {
@@ -131,6 +140,13 @@ const Blogs = () => {
             ) : (
               blogs.data.map((i: any) => {
                 if (blogs.data.length !== 0) {
+                  const previmage: string | undefined = JSON.parse(
+                    i.PreviewImage
+                  ).assets.find((element: string) => {
+                    return imageFormats.some((format: string) =>
+                      element.endsWith(format)
+                    )
+                  })
                   return (
                     <div
                       className="highblogcard"
@@ -140,7 +156,13 @@ const Blogs = () => {
                       key={i.BlogID}
                     >
                       <div className="bloghighImage">
-                        <img src={agility} alt="" />
+                        {JSON.parse(i.PreviewImage).assets.length !== 0 &&
+                        previmage ? (
+                          <img
+                            src={backend() + 'uploads/' + previmage}
+                            alt=""
+                          />
+                        ) : null}
                       </div>
                       <div className="bloghighTitle">
                         <h2>{i.Title}</h2>

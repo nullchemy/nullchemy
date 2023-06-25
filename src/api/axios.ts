@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
+import session from '../utils/session'
 
 const backend = (): string => {
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
@@ -11,15 +12,20 @@ const backend = (): string => {
 const api = async (
   method: string = 'GET',
   slug: string,
-  data: object = {}
+  data: object = {},
+  headers: object = {}
 ): Promise<AxiosResponse> => {
+  const { authToken, refreshToken } = session.get()
   try {
     const config = {
       method: method,
       maxBodyLength: Infinity,
       url: backend() + 'api/v1/' + slug,
       headers: {
-        'Content-Type': 'application/json',
+        ...headers,
+        authToken: authToken,
+        refreshToken: refreshToken,
+        Authorization: 'Bearer ' + authToken,
       },
       data: data,
     }

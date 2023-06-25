@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/read.css'
 import Header from '../components/Header'
-import agility from '../assets/images/agility.png'
 import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 import { ReactComponent as Facebook } from '../assets/svg/facebook.svg'
 import { ReactComponent as Twitter } from '../assets/svg/twitter.svg'
@@ -18,6 +17,15 @@ const Read = () => {
   const [blog, setBlog] = useState<any[]>([])
   const [error, setError] = useState(false)
   const blogid = window.sessionStorage.getItem('blogid')
+
+  const backend = (): string => {
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      return 'http://localhost:8000/'
+    } else {
+      return 'https://api.nullchemy.com/'
+    }
+  }
+
   useEffect(() => {
     let retryCount = 0
     const maxRetries = 3
@@ -49,6 +57,18 @@ const Read = () => {
     fetchBlog()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blogid, navigate, slug])
+  const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
+  console.log(blog)
+  const previmage: string | undefined =
+    blog.length !== 0
+      ? JSON.parse(blog[0].PreviewImage).assets.find((element: string) => {
+          return imageFormats.some((format: string) => element.endsWith(format))
+        })
+      : ''
+
+  //table of contents
+  const toc = blog.length !== 0 ? JSON.parse(blog[0].Toc).data : []
+  console.log(toc)
   return (
     <Fragment>
       <Header />
@@ -81,7 +101,16 @@ const Read = () => {
                 </div>
                 <h1 className="readtitle">{blog[0].Title}</h1>
                 <div className="readImageContainer">
-                  <img className="readImage" src={agility} alt="" />
+                  {blog.length !== 0 ? (
+                    JSON.parse(blog[0].PreviewImage).assets.length !== 0 &&
+                    previmage ? (
+                      <img
+                        className="readImage"
+                        src={backend() + 'uploads/' + previmage}
+                        alt=""
+                      />
+                    ) : null
+                  ) : null}
                 </div>
                 <div
                   className="readContentInner"
@@ -91,32 +120,22 @@ const Read = () => {
             )}
             <div className="readSidebarRight">
               <div className="ritemsStick">
-                <div className="readTableofContents">
-                  <h2>Table of contents</h2>
-                  <ul>
-                    <li>
-                      <a href="#t">What is Angular?</a>
-                    </li>
-                    <li>
-                      <a href="#t">Advantages of Angular</a>
-                    </li>
-                    <li>
-                      <a href="#t">What is React?</a>
-                    </li>
-                    <li>
-                      <a href="#t">Advantages of React</a>
-                    </li>
-                    <li>
-                      <a href="#t">Angular vs React: A quick comparison</a>
-                    </li>
-                    <li>
-                      <a href="#t">Detailed Comparison: React vs Angular</a>
-                    </li>
-                    <li>
-                      <a href="#t">Angular vs. React: When to choose which?</a>
-                    </li>
-                  </ul>
-                </div>
+                {toc.length !== 0 ? (
+                  <div className="readTableofContents">
+                    <h2>Table of contents</h2>
+                    <ul>
+                      {toc.length !== 0
+                        ? toc.map((i: any) => {
+                            return (
+                              <li key={i.key}>
+                                <a href={'#' + i.id}>{i.cont}</a>
+                              </li>
+                            )
+                          })
+                        : null}
+                    </ul>
+                  </div>
+                ) : null}
                 <div className="readSocialIcons">
                   <a
                     href="https://web.facebook.com/profile.php?id=100066602095876"

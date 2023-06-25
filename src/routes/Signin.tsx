@@ -6,6 +6,8 @@ import { ReactComponent as Eye } from '../assets/svg/eye.svg'
 import { ReactComponent as EyeSlash } from '../assets/svg/eyeslash.svg'
 import api from '../api/axios'
 import session from '../utils/session'
+import { setIsLogged } from '../state/actions/loggedAction'
+import { useAppDispatch } from '../state/hooks'
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -18,6 +20,7 @@ const Signup = () => {
   })
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
+  const dispatch = useAppDispatch()
 
   const handleSignin = async (e: any) => {
     e.preventDefault()
@@ -28,6 +31,7 @@ const Signup = () => {
     setIsLoading(false)
     if (res.data.type === 'success') {
       session.save(res.headers.authtoken, res.headers.refreshtoken)
+      dispatch(setIsLogged(true))
       setResponse({ message: 'Redirecting...' })
       navigate('/')
     }
