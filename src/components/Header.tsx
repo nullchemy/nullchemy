@@ -39,16 +39,21 @@ const Header = () => {
       <div className={stick ? 'header sticky_header' : 'header'}>
         <div className="hcontainer">
           <Bars className="mobiNavBars" onClick={() => setMobi('open')} />
-          <div className="Mobiheaderlogo">
-            <Link
-              to="/"
-              className="MobiheaderLogoLink"
-              onClick={() => {
-                window.scrollTo(0, 0)
-              }}
-            >
-              <img src={Logo} alt="" />
+          <div className="mobiheaderright">
+            <Link to="/signin" className="ctahheadersignin">
+              sign in
             </Link>
+            <div className="Mobiheaderlogo">
+              <Link
+                to="/"
+                className="MobiheaderLogoLink"
+                onClick={() => {
+                  window.scrollTo(0, 0)
+                }}
+              >
+                <img src={Logo} alt="" />
+              </Link>
+            </div>
           </div>
           <div
             className={

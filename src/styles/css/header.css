@@ -22,18 +22,40 @@
     display: none;
   }
 }
-.header .hcontainer .Mobiheaderlogo {
+.header .hcontainer .mobiheaderright {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .header .hcontainer .mobiheaderright {
+    display: none;
+  }
+}
+.header .hcontainer .mobiheaderright .ctahheadersignin {
+  all: unset;
+  padding: 10px 30px;
+  background-color: #fff;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  border-radius: 43px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  font-family: "VolteRounded-Bold" !important;
+}
+@media (max-width: 480px) {
+  .header .hcontainer .mobiheaderright .ctahheadersignin {
+    margin-right: unset !important;
+    bottom: 80px;
+  }
+}
+.header .hcontainer .mobiheaderright .Mobiheaderlogo {
   width: 60px;
   height: 40px;
   margin: 10px 20px;
 }
-.header .hcontainer .Mobiheaderlogo .MobiheaderLogoLink {
+.header .hcontainer .mobiheaderright .Mobiheaderlogo .MobiheaderLogoLink {
   width: 30px;
-}
-@media (min-width: 480px) {
-  .header .hcontainer .Mobiheaderlogo {
-    display: none;
-  }
 }
 @media (max-width: 480px) {
   .header .hcontainer .hidemobinav {

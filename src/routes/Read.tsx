@@ -26,6 +26,12 @@ const Read = () => {
     }
   }
 
+  function replaceWithPlaceholder(): void {
+    const image = document.getElementById('blgImage') as HTMLImageElement
+    image.src = backend() + 'nullchemy_placeholder.jpg'
+    image.onerror = null // To prevent an infinite loop in case the placeholder image is also missing
+  }
+
   useEffect(() => {
     let retryCount = 0
     const maxRetries = 3
@@ -105,8 +111,10 @@ const Read = () => {
                     JSON.parse(blog[0].PreviewImage).assets.length !== 0 &&
                     previmage ? (
                       <img
+                        id="blgImage"
                         className="readImage"
                         src={backend() + 'uploads/' + previmage}
+                        onError={replaceWithPlaceholder}
                         alt=""
                       />
                     ) : null

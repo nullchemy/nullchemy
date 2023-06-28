@@ -23,6 +23,7 @@ import ResetPassword from './routes/ResetPassword'
 import Careers from './routes/Careers'
 import Search from './components/Search'
 import Test from './routes/Test'
+import ClientDashboard from './routes/ClientDashboard'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -51,6 +52,11 @@ const router = createBrowserRouter(
       <Route
         path="/careers"
         element={<Careers />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/dash"
+        element={<ClientDashboard />}
         errorElement={<ErrorBoundary />}
       />
       <Route

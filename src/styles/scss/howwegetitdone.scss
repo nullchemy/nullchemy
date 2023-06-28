@@ -9,12 +9,18 @@
         top: 35rem;
         left: 15rem;
         fill: var(--text-color);
+        @media (max-width: 480px) {
+          display: none !important;
+        }
       }
       .pathtwo {
         position: absolute;
         top: 15rem;
         left: 13rem;
         fill: var(--text-color);
+        @media (max-width: 480px) {
+          display: none !important;
+        }
       }
       .hwgitTitle {
         text-align: center;
@@ -40,25 +46,64 @@
         align-items: center;
         margin: 20px 0;
         height: 300px;
+        &:nth-child(odd) {
+          .hwgitflxone {
+            order: 2;
+          }
+          .hwgitflxtwo {
+            order: 1;
+          }
+        }
+        &:nth-child(even) {
+          .hwgitflxone {
+            order: 1;
+          }
+          .hwgitflxtwo {
+            order: 2;
+          }
+        }
+        @media (max-width: 480px) {
+          flex-direction: column !important;
+          gap: 80px;
+          padding: 40px 0;
+        }
         .hwgitflxone {
           width: 60%;
+          @media (max-width: 480px) {
+            width: 100%;
+            order: 2 !important;
+          }
           .hwgitsectitle {
             font-size: 3rem;
             line-height: 3rem;
             letter-spacing: -0.05rem;
             font-family: 'VolteRounded-Bold', Volte Rounded;
             color: var(--text-color);
+            @media (max-width: 480px) {
+              font-size: 1.5rem;
+              line-height: 1.5rem;
+            }
           }
           .hwgitPar {
             font-family: Volte Rounded;
             color: var(--text-color);
             font-size: 2rem;
+            @media (max-width: 480px) {
+              font-size: 1rem;
+            }
           }
         }
         .hwgitflxtwo {
           flex: 1;
+          @media (max-width: 480px) {
+            order: 1 !important;
+          }
           .hwgitflxtwoWrapper {
             position: relative;
+            @media (max-width: 480px) {
+              width: 100%;
+              height: 100%;
+            }
             .hwgitcircle {
               position: absolute;
               top: 50%;

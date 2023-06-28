@@ -1,3 +1,6 @@
+.whatwedo {
+  overflow: hidden;
+}
 .whatwedo .wwdContainer {
   margin: 0 5%;
 }

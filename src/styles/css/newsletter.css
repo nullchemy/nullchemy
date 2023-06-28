@@ -92,27 +92,34 @@
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsinput {
   outline: none;
   border: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1rem;
+  padding: 10px 1rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   background-color: rgba(49, 49, 49, 0.707);
-  color: #e6e6e6;
-  height: 3.5rem;
+  color: #ffffff;
   margin-right: -10px;
   width: 300px;
 }
 @media (max-width: 480px) {
   .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsinput {
     width: 100%;
+    font-size: 0.9rem;
   }
 }
 .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsButton {
+  all: unset;
+  padding: 10px;
+  background-color: #fff;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  border-radius: 43px;
+  text-align: center;
+  color: #fff;
   cursor: pointer;
-  border-radius: 0.75rem;
-  background-color: cyan;
-  padding: 10px 20px;
-  font-weight: 600;
-  outline: none;
-  border: none;
+  margin-right: 15px;
+  font-family: "VolteRounded-Bold" !important;
+}
+@media (max-width: 480px) {
+  .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsButton {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=newsletter.css.map */

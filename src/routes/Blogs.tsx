@@ -33,6 +33,12 @@ const Blogs = () => {
     }
   }
 
+  function replaceWithPlaceholder(): void {
+    const image = document.getElementById('blgImage') as HTMLImageElement
+    image.src = backend() + 'nullchemy_placeholder.jpg'
+    image.onerror = null // To prevent an infinite loop in case the placeholder image is also missing
+  }
+
   //handle blog click
   const handleBlogRed = (blogid: string, blogslug: string) => {
     window.sessionStorage.setItem('blogid', blogid)
@@ -159,7 +165,9 @@ const Blogs = () => {
                         {JSON.parse(i.PreviewImage).assets.length !== 0 &&
                         previmage ? (
                           <img
+                            id="blgImage"
                             src={backend() + 'uploads/' + previmage}
+                            onError={replaceWithPlaceholder}
                             alt=""
                           />
                         ) : null}

@@ -7,7 +7,7 @@
   font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
   .fBackToTop {
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     background-color: #242424;
     cursor: pointer;
     border-top: 10px solid;
@@ -203,23 +203,32 @@
             display: flex;
 
             input {
-              padding: 10px;
+              padding: 10px 15px;
               width: 60%;
               margin-right: 10px;
               outline: none;
               border: none;
+              border-radius: 43px;
             }
 
             .fsubbtn {
-              padding: 0 20px;
-              text-transform: uppercase;
-              outline: none;
-              border: none;
-              background-color: rgb(90, 142, 255);
+              all: unset;
+              padding: 10px 30px;
+              background-color: #fff;
+              background: linear-gradient(
+                to bottom right,
+                #14a9ff,
+                #0088f0
+              ) !important;
+              border-radius: 43px;
+              text-align: center;
               color: #fff;
-              font-weight: 600;
-              border-radius: 2px;
               cursor: pointer;
+              margin-right: 15px;
+              font-family: 'VolteRounded-Bold' !important;
+              @media (max-width: 480px) {
+                margin-right: unset !important;
+              }
             }
           }
         }

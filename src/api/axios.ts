@@ -16,6 +16,7 @@ const api = async (
   headers: object = {}
 ): Promise<AxiosResponse> => {
   const { authToken, refreshToken } = session.get()
+  //const respip = await axios.get('https://api.ipify.org/?format=json')
   try {
     const config = {
       method: method,

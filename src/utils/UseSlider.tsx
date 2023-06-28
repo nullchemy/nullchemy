@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 interface UseSliderProps {
   selector: string
@@ -6,6 +6,8 @@ interface UseSliderProps {
   scroll: string
   scrollIndecator: string
   speed?: number
+  prevControl?: string
+  nextControl?: string
 }
 
 export const useSlider = ({
@@ -14,7 +16,10 @@ export const useSlider = ({
   scroll,
   scrollIndecator,
   speed = 2,
+  prevControl,
+  nextControl,
 }: UseSliderProps): void => {
+  const [slideIndex, setSlideIndex] = useState(0)
   useEffect(() => {
     let elem = document.querySelector(`.${selector}`) as HTMLElement
     let scrollbar = document.querySelector(`.${scroll}`) as HTMLElement
@@ -123,14 +128,89 @@ export const useSlider = ({
       mouseX = undefined
     }
 
+    // Function to move the slider by one slide
+    const moveBySlide = (direction: 'next' | 'prev') => {
+      let slides = elem.getElementsByClassName(wrapper)
+      if (slides.length === 0) return
+
+      let scrollWidth = elem.scrollWidth
+      let clientWidth = elem.clientWidth
+      let slideWidth = slides[0].clientWidth
+      let maxSlideIndex = Math.floor(scrollWidth / slideWidth) - 1
+
+      let newSlideIndex
+      if (direction === 'next') {
+        newSlideIndex = Math.min(slideIndex + 1, maxSlideIndex)
+      } else {
+        newSlideIndex = Math.max(slideIndex - 1, 0)
+      }
+
+      setSlideIndex(newSlideIndex)
+
+      let newScrollLeft = newSlideIndex * slideWidth
+      let percentageOriginal =
+        (newScrollLeft * 100) / (scrollWidth - clientWidth)
+      let newIndicatorLeft = (customScrollBarWidth * percentageOriginal) / 100
+
+      elem.scrollLeft = newScrollLeft
+      indicator.style.left = `${newIndicatorLeft}px`
+    }
+
+    // Add event listeners to the controls
+    const handleNextSlide = () => {
+      moveBySlide('next')
+    }
+
+    const handlePrevSlide = () => {
+      moveBySlide('prev')
+    }
+
+    if (prevControl) {
+      const prevButton = document.querySelector(prevControl)
+      if (prevButton) {
+        prevButton.addEventListener('click', handlePrevSlide)
+      }
+    }
+
+    if (nextControl) {
+      const nextButton = document.querySelector(nextControl)
+      if (nextButton) {
+        nextButton.addEventListener('click', handleNextSlide)
+      }
+    }
+
     elem.addEventListener('mousemove', mouseover)
     elem.addEventListener('mouseenter', mouseenter)
     elem.addEventListener('mouseleave', mouseleave)
 
     return () => {
+      // Remove event listeners
+      if (prevControl) {
+        const prevButton = document.querySelector(prevControl)
+        if (prevButton) {
+          prevButton.removeEventListener('click', handlePrevSlide)
+        }
+      }
+
+      if (nextControl) {
+        const nextButton = document.querySelector(nextControl)
+        if (nextButton) {
+          nextButton.removeEventListener('click', handleNextSlide)
+        }
+      }
+
       elem.removeEventListener('mousemove', mouseover)
       elem.removeEventListener('mouseenter', mouseenter)
       elem.removeEventListener('mouseleave', mouseleave)
     }
-  }, [scroll, scrollIndecator, selector, speed, wrapper])
+  }, [
+    nextControl,
+    prevControl,
+    scroll,
+    scrollIndecator,
+    selector,
+    slideIndex,
+    speed,
+    wrapper,
+  ])
 }

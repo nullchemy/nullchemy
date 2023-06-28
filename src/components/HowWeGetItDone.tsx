@@ -14,7 +14,7 @@ const HowWeGetItDone = () => {
             <PathTwo className="pathtwo" />
             <h1 className="hwgitTitle">How we get it done</h1>
             <div className="hwgitsec">
-              <div className="hwgitflxone" style={{ order: '1' }}>
+              <div className="hwgitflxone">
                 <h2 className="hwgitsectitle">
                   Discovery & Requirements gathering
                 </h2>
@@ -23,7 +23,7 @@ const HowWeGetItDone = () => {
                   objectives, target audience, and functional requirements.
                 </p>
               </div>
-              <div className="hwgitflxtwo" style={{ order: '2' }}>
+              <div className="hwgitflxtwo">
                 <div className="hwgitflxtwoWrapper">
                   <Circle className="hwgitcircle" />
                   <span>1</span>
@@ -31,7 +31,7 @@ const HowWeGetItDone = () => {
               </div>
             </div>
             <div className="hwgitsec">
-              <div className="hwgitflxone" style={{ order: '2' }}>
+              <div className="hwgitflxone">
                 <h2 className="hwgitsectitle">Wireframing and Prototyping</h2>
                 <p className="hwgitPar">
                   We create wireframes and interactive prototypes to visualize
@@ -40,7 +40,7 @@ const HowWeGetItDone = () => {
                   with you to ensure optimal usability and user experience
                 </p>
               </div>
-              <div className="hwgitflxtwo" style={{ order: '1' }}>
+              <div className="hwgitflxtwo">
                 <div className="hwgitflxtwoWrapper">
                   <Circle className="hwgitcircle" />
                   <span>2</span>
@@ -48,7 +48,7 @@ const HowWeGetItDone = () => {
               </div>
             </div>
             <div className="hwgitsec">
-              <div className="hwgitflxone" style={{ order: '1' }}>
+              <div className="hwgitflxone">
                 <h2 className="hwgitsectitle">User Interface (UI) Design</h2>
                 <p className="hwgitPar">
                   Our talented designers craft visually appealing designs that
@@ -56,7 +56,7 @@ const HowWeGetItDone = () => {
                   interface
                 </p>
               </div>
-              <div className="hwgitflxtwo" style={{ order: '2' }}>
+              <div className="hwgitflxtwo">
                 <div className="hwgitflxtwoWrapper">
                   <Circle className="hwgitcircle" />
                   <span>3</span>

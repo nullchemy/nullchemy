@@ -16,15 +16,39 @@
         display: none;
       }
     }
-    .Mobiheaderlogo {
-      width: 60px;
-      height: 40px;
-      margin: 10px 20px;
-      .MobiheaderLogoLink {
-        width: 30px;
-      }
+    .mobiheaderright {
+      display: flex;
+      align-items: center;
       @media (min-width: 480px) {
         display: none;
+      }
+      .ctahheadersignin {
+        all: unset;
+        padding: 10px 30px;
+        background-color: #fff;
+        background: linear-gradient(
+          to bottom right,
+          #14a9ff,
+          #0088f0
+        ) !important;
+        border-radius: 43px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 15px;
+        font-family: 'VolteRounded-Bold' !important;
+        @media (max-width: 480px) {
+          margin-right: unset !important;
+          bottom: 80px;
+        }
+      }
+      .Mobiheaderlogo {
+        width: 60px;
+        height: 40px;
+        margin: 10px 20px;
+        .MobiheaderLogoLink {
+          width: 30px;
+        }
       }
     }
     .hidemobinav {
