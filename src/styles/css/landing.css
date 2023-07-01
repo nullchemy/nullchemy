@@ -6,6 +6,7 @@
 }
 .landing .landingWrapper .landingContainer {
   margin: 2% 5%;
+  margin-top: 5%;
   height: 100%;
 }
 .landing .landingWrapper .landingContainer .landingTop {
@@ -111,6 +112,7 @@
 }
 .landing .landingWrapper .landingContainer .landingBottom {
   height: 100px;
+  margin-top: 60px;
 }
 .landing .landingWrapper .landingContainer .landingBottom .landingbtmpartners {
   display: flex;

@@ -1,9 +1,6 @@
 .whatwedo {
   overflow: hidden;
 }
-.whatwedo .wwdContainer {
-  margin: 0 5%;
-}
 .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
   text-align: center;
   font-size: 4.375rem;

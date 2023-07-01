@@ -4,8 +4,6 @@
 .smslidparent .slider-container {
   overflow: hidden;
   position: relative;
-  margin: 0 5%;
-  width: 88%;
   margin-bottom: 20px;
 }
 .smslidparent .slider-container .slider-wrapper {
@@ -94,6 +92,15 @@
 .smslidparent #nextButton::before {
   border-radius: 50% 0% 0% 50%;
 }
+.smslidparent .sliderLine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-35.2%);
+  height: 1px;
+  width: 257px;
+  background-color: #3d3d3d;
+}
 .smslidparent .slider-indicator {
   left: 0;
   width: 180px;
@@ -107,5 +114,5 @@
   left: 0px;
   position: absolute;
   top: -6px;
-  background: rgb(61, 61, 61);
+  background: #3d3d3d;
 }/*# sourceMappingURL=smoothslider.css.map */

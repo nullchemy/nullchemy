@@ -69,7 +69,7 @@
   }
 }
 .header .hcontainer .hwrapper {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,7 +139,9 @@
   }
 }
 .header .hcontainer .hwrapper .hleft .headerNavigation .headerLink {
-  margin: 0 20px;
+  padding: 10px 15px;
+  margin-bottom: -10px;
+  position: relative;
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hleft .headerNavigation .headerLink {
@@ -150,21 +152,43 @@
   }
 }
 .header .hcontainer .hwrapper .hleft .headerNavigation .headerLink .header_link_anchor {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   font-family: Apercu, Roboto;
   color: var(--text-color);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  white-space: nowrap;
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hleft .headerNavigation .headerLink .header_link_anchor {
     font-size: 2.5rem;
   }
 }
+.header .hcontainer .hwrapper .hleft .headerNavigation .headerLink .dropdown-content {
+  position: absolute;
+  margin-top: 10px;
+  height: 300px;
+  width: 500px;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: var(--background-modals);
+  border-radius: 5px;
+  padding: 5px;
+}
+.header .hcontainer .hwrapper .hleft .headerNavigation .headerBrandAware {
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: -10px;
+}
+.header .hcontainer .hwrapper .hleft .headerNavigation .headerBrandAware p {
+  white-space: nowrap;
+  color: #fff;
+}
 .header .hcontainer .hwrapper .hright {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hright {
@@ -295,7 +319,7 @@
 }
 .sticky_header .hcontainer .hwrapper {
   padding: 10px !important;
-  padding-top: 15px !important;
+  padding-top: 11.5px !important;
 }
 .sticky_header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
   width: 40px;

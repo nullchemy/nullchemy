@@ -9,10 +9,10 @@ const Slider: React.FC = () => {
 
   // Call the useSlider hook within your component
   useSlider({
-    selector: 'slider-container', // Update with your own class name or selector
-    wrapper: 'slider-wrapper', // Update with your own class name or selector
-    scroll: 'slider-scroll', // Update with your own class name or selector
-    scrollIndecator: 'slider-indicator', // Update with your own class name or selector
+    selector: 'slider-container',
+    wrapper: 'slider-wrapper',
+    scroll: 'slider-scroll',
+    scrollIndecator: 'slider-indicator',
     speed: 2, // Optional: Adjust the scrolling speed if needed
     prevControl: '#prevButton',
     nextControl: '#nextButton',
@@ -111,6 +111,7 @@ const Slider: React.FC = () => {
         <button id="nextButton">
           <ArrowRight className="Slidercontrols" />
         </button>
+        <div className="sliderLine"></div>
         <div className="slider-indicator" style={{ left: '0px' }}>
           <div className="indicator-inner" style={{ left: '0px' }}></div>
         </div>

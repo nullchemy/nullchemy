@@ -33,7 +33,15 @@ const Header = () => {
   const openSearch = () => {
     navigate('/search')
   }
-  console.log(islogged)
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false)
+
+  const handleMouseEnter = () => {
+    setIsDropdownVisible(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsDropdownVisible(false)
+  }
   return (
     <Fragment>
       <div className={stick ? 'header sticky_header' : 'header'}>
@@ -98,6 +106,48 @@ const Header = () => {
                 </li>
                 <li className="headerLink">
                   <Link
+                    to="/services"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li className="headerLink">
+                  <Link
+                    to="/use-cases"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
+                    Cases
+                  </Link>
+                </li>
+                <li
+                  className="headerLink"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <Link
+                    to="/solutions"
+                    className="header_link_anchor"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                    }}
+                  >
+                    Solutions
+                  </Link>
+                  {isDropdownVisible && (
+                    <div className="dropdown-content">
+                      <p>Drop Down Menu</p>
+                    </div>
+                  )}
+                </li>
+                <li className="headerLink">
+                  <Link
                     to="/blogs"
                     className="header_link_anchor"
                     onClick={() => {
@@ -118,6 +168,9 @@ const Header = () => {
                     Contact us
                   </Link>
                 </li>
+                <div className="headerBrandAware">
+                  <p>now developing faster with AI</p>
+                </div>
               </div>
             </div>
             <div className="hright">
@@ -126,10 +179,22 @@ const Header = () => {
                   {islogged ? (
                     <div className="header-search">
                       {/* user icon to appear here */}
-                      <User className="searchLensh" onClick={openSearch} />
+                      <User
+                        className="searchLensh"
+                        onClick={() => {
+                          openSearch()
+                          window.scrollTo(0, 0)
+                        }}
+                      />
                     </div>
                   ) : (
-                    <Link to="/signin" className="ctahheadersignin">
+                    <Link
+                      to="/signin"
+                      className="ctahheadersignin"
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                    >
                       sign in
                     </Link>
                   )}
