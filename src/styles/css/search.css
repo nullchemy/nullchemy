@@ -15,16 +15,21 @@
 }
 .search .serContainer .serWrapper .serForm .serFormGroup {
   position: relative;
+  width: calc(100% - 20px);
   width: 50%;
   margin: 0 auto;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 .search .serContainer .serWrapper .serForm .serFormGroup .serInput {
   padding: 10px;
-  width: calc(100% - 20px);
+  width: 90%;
   outline: none;
   border: none;
+  color: var(--text-color);
   background-color: rgba(255, 255, 255, 0);
-  border-bottom: 2px solid #6a6a6a;
   font-size: 2rem;
 }
 .search .serContainer .serWrapper .serForm .serFormGroup .serFLensIc {

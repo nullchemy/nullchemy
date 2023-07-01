@@ -24,6 +24,9 @@ import Careers from './routes/Careers'
 import Search from './components/Search'
 import Test from './routes/Test'
 import ClientDashboard from './routes/ClientDashboard'
+import Services from './routes/Services'
+import Cases from './routes/Cases'
+import Solutions from './routes/Solutions'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,6 +35,21 @@ const router = createBrowserRouter(
       <Route
         path="/about"
         element={<About />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/services"
+        element={<Services />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/our-cases"
+        element={<Cases />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/solutions"
+        element={<Solutions />}
         errorElement={<ErrorBoundary />}
       />
       <Route

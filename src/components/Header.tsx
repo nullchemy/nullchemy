@@ -117,7 +117,7 @@ const Header = () => {
                 </li>
                 <li className="headerLink">
                   <Link
-                    to="/use-cases"
+                    to="/our-cases"
                     className="header_link_anchor"
                     onClick={() => {
                       window.scrollTo(0, 0)

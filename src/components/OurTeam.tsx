@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import '../styles/css/ourteam.css'
 import kibet from '../assets/images/kibet.jpg'
+import Cynthia from '../assets/images/cynthia.jpg'
 import Wesh from '../assets/images/wesh.jpg'
 import Randwet from '../assets/images/randwet.jpg'
 
@@ -81,7 +82,7 @@ const OurTeam = () => {
                 <div className="otlCard">
                   <div className="otlTop">
                     <div className="otlPhoto">
-                      <img src={kibet} alt="" />
+                      <img src={Cynthia} alt="" />
                     </div>
                   </div>
                   <div className="otlBtm">

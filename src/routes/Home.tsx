@@ -8,6 +8,7 @@ import HowWeGetItDone from '../components/HowWeGetItDone'
 import session from '../utils/session'
 import api from '../api/axios'
 import { useAppDispatch } from '../state/hooks'
+import OurPrinciples from '../components/OurPrinciples'
 
 const Home = () => {
   const dispatch = useAppDispatch()
@@ -38,6 +39,7 @@ const Home = () => {
         <Landing />
       </div>
       <WhatWeDo />
+      <OurPrinciples />
       <HowWeGetItDone />
       <Newsletter />
       <Footer />
