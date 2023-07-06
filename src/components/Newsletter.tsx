@@ -1,7 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/css/newsletter.css'
+import api from '../api/axios'
+import { Store } from 'react-notifications-component'
 
 const Newsletter = () => {
+  const [email, setEmail] = useState('')
+
+  const subscribe = async (e: any) => {
+    e.preventDefault()
+    const res = await api('POST', 'subscribe', { email })
+    if (res.data.type !== 'error') {
+      Store.addNotification({
+        title: 'Subscribed Successfully!',
+        message: res.data.message,
+        type: 'success',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animate__animated', 'animate__fadeIn'],
+        animationOut: ['animate__animated', 'animate__fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      })
+    } else {
+      Store.addNotification({
+        title: 'Subscription Error!',
+        message: res.data.message,
+        type: 'danger',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animate__animated', 'animate__fadeIn'],
+        animationOut: ['animate__animated', 'animate__fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      })
+    }
+  }
   return (
     <>
       <section className="secNewsletter" id="newsletter">
@@ -16,12 +53,22 @@ const Newsletter = () => {
                   </p>
                 </div>
                 <div className="subnewsform">
-                  <form action="" className="subNewsFormf">
+                  <form
+                    className="subNewsFormf"
+                    onSubmit={(e) => {
+                      subscribe(e)
+                    }}
+                  >
                     <div className="subinputsFlex">
                       <input
                         type="text"
                         className="subnewsinput"
                         placeholder="your e-mail address"
+                        name="email"
+                        value={email}
+                        onChange={(e) => {
+                          setEmail(e.target.value)
+                        }}
                       />
                       <input
                         type="submit"

@@ -9,9 +9,46 @@ import { ReactComponent as Visa } from '../assets/svg/visa.svg'
 import { ReactComponent as Mpesa } from '../assets/svg/mpesa.svg'
 import { ReactComponent as MasterCard } from '../assets/svg/mastercard.svg'
 import { ReactComponent as AngleDown } from '../assets/svg/angle-down.svg'
+import api from '../api/axios'
+import { Store } from 'react-notifications-component'
 
 const Footer = () => {
   const [fsubdrop, setFsubdrop] = useState('')
+  const [email, setEmail] = useState('')
+
+  const subscribe = async (e: any) => {
+    e.preventDefault()
+    const res = await api('POST', 'subscribe', { email })
+    if (res.data.type !== 'error') {
+      Store.addNotification({
+        title: 'Subscribed Successfully!',
+        message: res.data.message,
+        type: 'success',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animate__animated', 'animate__fadeIn'],
+        animationOut: ['animate__animated', 'animate__fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      })
+    } else {
+      Store.addNotification({
+        title: 'Subscription Error!',
+        message: res.data.message,
+        type: 'danger',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animate__animated', 'animate__fadeIn'],
+        animationOut: ['animate__animated', 'animate__fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      })
+    }
+  }
 
   return (
     <Fragment>
@@ -363,12 +400,21 @@ const Footer = () => {
             <div className="fnewsletter">
               <h2>subcribe to our newsletter</h2>
               <p>stay up to date with latest offers and insights</p>
-              <form className="fnewsletterform">
+              <form
+                className="fnewsletterform"
+                onSubmit={(e) => {
+                  subscribe(e)
+                }}
+              >
                 <div className="subformgroup">
                   <input
                     type="email"
                     placeholder="Email address"
                     name="email"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value)
+                    }}
                   />
                   <button className="fsubbtn">subscribe</button>
                 </div>

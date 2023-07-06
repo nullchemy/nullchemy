@@ -142,7 +142,23 @@ const Header = () => {
                   </Link>
                   {isDropdownVisible && (
                     <div className="dropdown-content">
-                      <p>Drop Down Menu</p>
+                      <div className="dropdownwrapper">
+                        <div className="dropdownleft">
+                          <ul className="droplinks">
+                            <li className="dropdLink">
+                              AI driven software Dev
+                            </li>
+                            <li className="dropdLink">
+                              Custom Software Development
+                            </li>
+                            <li className="dropdLink">
+                              Enterprise Application Development
+                            </li>
+                            <li className="dropdLink">CMS Development</li>
+                          </ul>
+                        </div>
+                        <div className="dropdownright"></div>
+                      </div>
                     </div>
                   )}
                 </li>

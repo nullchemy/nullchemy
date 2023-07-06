@@ -145,14 +145,28 @@
             .dropdown-content {
               position: absolute;
               margin-top: 10px;
-              height: 300px;
-              width: 500px;
+              // height: 300px;
+              // width: 500px;
               z-index: 1000;
               box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
                 rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
               background-color: var(--background-modals);
               border-radius: 5px;
               padding: 5px;
+              .dropdownwrapper {
+                .dropdownleft {
+                  .droplinks {
+                    .dropdLink {
+                      padding: 10px;
+                      white-space: nowrap;
+                      cursor: pointer;
+                      &:hover {
+                        color: #0088f0;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
           .headerBrandAware {
