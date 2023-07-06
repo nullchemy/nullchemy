@@ -12,6 +12,9 @@ const App = () => {
   useEffect(() => {
     ReactGA.initialize('G-JXF0YL9XMJ')
     ReactGA.pageview(window.location.pathname + window.location.search)
+    setTimeout(() => {
+      setMod(true)
+    }, 2000)
   }, [])
   const theme = useAppSelector((state) => state.theme)
 
