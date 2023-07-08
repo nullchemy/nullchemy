@@ -25,6 +25,11 @@
           user-select: none;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .services .servicesContainer .servicesWrapper .servicesHeader {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 1900px) {
   .services .servicesContainer .servicesWrapper .servicesHeader {
     font-size: 4rem;
@@ -41,6 +46,11 @@
   width: 60%;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  .services .servicesContainer .servicesWrapper .serviceIntrowrapper {
+    width: 90%;
+  }
+}
 .services .servicesContainer .servicesWrapper .serviceIntrowrapper .serviceIntro {
   text-align: center;
   font-size: 1.4rem;
@@ -48,12 +58,24 @@
   letter-spacing: -0.05rem;
   color: var(--text-color);
 }
+@media (max-width: 480px) {
+  .services .servicesContainer .servicesWrapper .serviceIntrowrapper .serviceIntro {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+}
 .services .servicesContainer .servicesWrapper .servCardsFlex {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 4% 0;
   position: relative;
+}
+@media (max-width: 480px) {
+  .services .servicesContainer .servicesWrapper .servCardsFlex {
+    margin: 3% 0;
+    flex-direction: column;
+  }
 }
 .services .servicesContainer .servicesWrapper .servCardsFlex .servCard {
   padding: 10px 20px;
@@ -63,6 +85,13 @@
   background-color: var(--background-modals);
   box-shadow: rgba(50, 50, 93, 0.2509803922) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border: 1px solid rgba(50, 50, 93, 0.2509803922);
+}
+@media (max-width: 480px) {
+  .services .servicesContainer .servicesWrapper .servCardsFlex .servCard {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
 }
 .services .servicesContainer .servicesWrapper .servCardsFlex .servCard h2 {
   font-size: 3rem;
@@ -115,7 +144,7 @@
 @media (max-width: 480px) {
   .services .servicesContainer .servicesWrapper .servCardsFlex .servCard button {
     margin-right: unset !important;
-    bottom: 80px;
+    position: unset;
   }
 }
 .services .srvfllprojDevelopment {
@@ -123,6 +152,11 @@
   z-index: 20 !important;
   height: 1120px;
   overflow: hidden;
+}
+@media (max-width: 480px) {
+  .services .srvfllprojDevelopment {
+    height: 1420px;
+  }
 }
 .services .srvfllprojDevelopment .srvfllprojDevBgImage,
 .services .srvfllprojDevelopment .srvteamArgumentationBgImage {
@@ -188,6 +222,13 @@
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  .services .srvfllprojDevelopment .srvfllprojDevWrp p {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    width: 90%;
+  }
+}
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap {
   margin-top: 70px;
   width: 100%;
@@ -202,9 +243,19 @@
   border: 1px solid rgba(50, 50, 93, 0.2509803922);
   display: flex;
 }
+@media (max-width: 480px) {
+  .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards {
+    width: 90%;
+  }
+}
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdleft {
   width: 20%;
   position: relative;
+}
+@media (max-width: 480px) {
+  .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdleft {
+    display: none;
+  }
 }
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdleft .srcfldIc {
   position: absolute;
@@ -218,6 +269,11 @@
 }
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright {
   flex: 1;
+}
+@media (max-width: 480px) {
+  .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright {
+    padding: 10px;
+  }
 }
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright .srvlfdrighth2 {
   font-size: 3rem;
@@ -241,6 +297,7 @@
   .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright .srvlfdrighth2 {
     font-size: 2rem;
     line-height: 2rem;
+    margin: 10px 0;
   }
 }
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright .srvlfdrightp {
@@ -251,6 +308,12 @@
   text-align: unset;
   margin: unset;
   width: unset;
+}
+@media (max-width: 480px) {
+  .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright .srvlfdrightp {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
 }
 .services .srvfllprojDevelopment .srvfllprojDevWrp .fldevcardFlexWrap .srvfldcards .srvlfdright span {
   padding: 5px 10px;

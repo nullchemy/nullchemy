@@ -19,6 +19,9 @@
         margin-bottom: 2rem;
         user-select: none;
         text-align: center;
+        @media (max-width: 480px) {
+          margin-bottom: 10px;
+        }
         @media (max-width: 1900px) {
           font-size: 4rem;
           line-height: 4rem;
@@ -31,12 +34,19 @@
       .serviceIntrowrapper {
         width: 60%;
         margin: 0 auto;
+        @media (max-width: 480px) {
+          width: 90%;
+        }
         .serviceIntro {
           text-align: center;
           font-size: 1.4rem;
           line-height: 1.4rem;
           letter-spacing: -0.05rem;
           color: var(--text-color);
+          @media (max-width: 480px) {
+            font-size: 0.9rem;
+            line-height: 0.9rem;
+          }
         }
       }
       .servCardsFlex {
@@ -45,6 +55,10 @@
         justify-content: space-evenly;
         margin: 4% 0;
         position: relative;
+        @media (max-width: 480px) {
+          margin: 3% 0;
+          flex-direction: column;
+        }
         .servCard {
           padding: 10px 20px;
           width: 40%;
@@ -54,6 +68,11 @@
           box-shadow: #32325d40 0px 13px 27px -5px,
             rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           border: 1px solid #32325d40;
+          @media (max-width: 480px) {
+            width: 90%;
+            height: auto;
+            margin-bottom: 10px;
+          }
           h2 {
             font-size: 3rem;
             line-height: 3rem;
@@ -99,7 +118,7 @@
             font-family: 'VolteRounded-Bold' !important;
             @media (max-width: 480px) {
               margin-right: unset !important;
-              bottom: 80px;
+              position: unset;
             }
           }
         }
@@ -111,6 +130,9 @@
     z-index: 20 !important;
     height: 1120px;
     overflow: hidden;
+    @media (max-width: 480px) {
+      height: 1420px;
+    }
     .srvfllprojDevBgImage,
     .srvteamArgumentationBgImage {
       position: absolute;
@@ -169,6 +191,11 @@
         color: var(--text-color);
         width: 50%;
         margin: 0 auto;
+        @media (max-width: 480px) {
+          font-size: 1.3rem;
+          line-height: 1.3rem;
+          width: 90%;
+        }
       }
       .fldevcardFlexWrap {
         margin-top: 70px;
@@ -183,9 +210,15 @@
             rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           border: 1px solid #32325d40;
           display: flex;
+          @media (max-width: 480px) {
+            width: 90%;
+          }
           .srvlfdleft {
             width: 20%;
             position: relative;
+            @media (max-width: 480px) {
+              display: none;
+            }
             .srcfldIc {
               position: absolute;
               top: 50%;
@@ -199,6 +232,9 @@
           }
           .srvlfdright {
             flex: 1;
+            @media (max-width: 480px) {
+              padding: 10px;
+            }
             .srvlfdrighth2 {
               font-size: 3rem;
               line-height: 3rem;
@@ -215,6 +251,7 @@
               @media (max-width: 480px) {
                 font-size: 2rem;
                 line-height: 2rem;
+                margin: 10px 0;
               }
             }
             .srvlfdrightp {
@@ -225,6 +262,10 @@
               text-align: unset;
               margin: unset;
               width: unset;
+              @media (max-width: 480px) {
+                font-size: 0.9rem;
+                line-height: 0.9rem;
+              }
             }
             span {
               padding: 5px 10px;
