@@ -1,6 +1,9 @@
 .ourcases .ourcasesContainer {
   margin: 0 5%;
 }
+.ourcases .ourcasesContainer .ourcasesWrapper {
+  padding-top: 2%;
+}
 .ourcases .ourcasesContainer .ourcasesWrapper .ourcasesHeader {
   font-size: 5.375rem;
   line-height: 5rem;

@@ -161,7 +161,7 @@ const Footer = () => {
                       onClick={() => {
                         window.scrollTo(0, 0)
                       }}
-                      to="/about-us"
+                      to="/about"
                       className="fnavLnk"
                     >
                       About Us

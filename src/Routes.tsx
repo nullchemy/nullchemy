@@ -27,6 +27,7 @@ import ClientDashboard from './routes/ClientDashboard'
 import Services from './routes/Services'
 import Cases from './routes/Cases'
 import Solutions from './routes/Solutions'
+import Unsubscribe from './routes/Unsubscribe'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -116,6 +117,11 @@ const router = createBrowserRouter(
       <Route
         path="/cookie-policy"
         element={<CookiePolicy />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/unsubscribe"
+        element={<Unsubscribe />}
         errorElement={<ErrorBoundary />}
       />
       <Route path="/test" element={<Test />} errorElement={<ErrorBoundary />} />

@@ -3,6 +3,8 @@ import '../styles/css/ourteam.css'
 import kibet from '../assets/images/kibet.jpg'
 import Cynthia from '../assets/images/cynthia.jpg'
 import Wesh from '../assets/images/wesh.jpg'
+import oliver from '../assets/images/oliver.jpg'
+import Moses from '../assets/images/moses.jpg'
 import Randwet from '../assets/images/randwet.jpg'
 
 const OurTeam = () => {
@@ -56,7 +58,7 @@ const OurTeam = () => {
                 <div className="otlCard">
                   <div className="otlTop">
                     <div className="otlPhoto">
-                      <img src={kibet} alt="" />
+                      <img src={oliver} alt="" />
                     </div>
                   </div>
                   <div className="otlBtm">
@@ -69,7 +71,7 @@ const OurTeam = () => {
                 <div className="otlCard">
                   <div className="otlTop">
                     <div className="otlPhoto">
-                      <img src={kibet} alt="" />
+                      <img src={Moses} alt="" />
                     </div>
                   </div>
                   <div className="otlBtm">

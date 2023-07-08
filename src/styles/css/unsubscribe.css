@@ -1,10 +1,7 @@
-.solutions .solutionsContainer {
+.unsub .unsubContainer {
   margin: 0 5%;
 }
-.solutions .solutionsContainer .solutionsWrapper {
-  padding-top: 2%;
-}
-.solutions .solutionsContainer .solutionsWrapper .solutionsHeader {
+.unsub .unsubContainer .unsubWrapper .unsubHeader {
   font-size: 5.375rem;
   line-height: 5rem;
   letter-spacing: -0.05rem;
@@ -18,14 +15,14 @@
   text-align: center;
 }
 @media (max-width: 1900px) {
-  .solutions .solutionsContainer .solutionsWrapper .solutionsHeader {
+  .unsub .unsubContainer .unsubWrapper .unsubHeader {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 @media (max-width: 480px) {
-  .solutions .solutionsContainer .solutionsWrapper .solutionsHeader {
+  .unsub .unsubContainer .unsubWrapper .unsubHeader {
     font-size: 3rem;
     line-height: 3rem;
   }
-}/*# sourceMappingURL=solutions.css.map */
+}/*# sourceMappingURL=unsubscribe.css.map */

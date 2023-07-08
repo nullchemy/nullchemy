@@ -72,7 +72,6 @@ const Header = () => {
                 : 'hwrapper'
             }
           >
-            <Times className="mobiNavTimes" onClick={() => setMobi('close')} />
             <div className="hleft">
               <div className="hbranding">
                 <div className="headerlogo">
@@ -196,6 +195,7 @@ const Header = () => {
                     <div className="header-search">
                       {/* user icon to appear here */}
                       <User
+                        style={{ marginRight: '15px' }}
                         className="searchLensh"
                         onClick={() => {
                           openSearch()
@@ -216,7 +216,13 @@ const Header = () => {
                   )}
                   <div className="header-search">
                     {/* lens search icon to appear here */}
-                    <Lens className="searchLensh" onClick={openSearch} />
+                    <Lens
+                      className="searchLensh"
+                      onClick={() => {
+                        openSearch()
+                        window.scrollTo(0, 0)
+                      }}
+                    />
                   </div>
                   <div className="header-right-links">
                     <a
@@ -284,6 +290,149 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={
+          mobi === 'open'
+            ? 'mobileNavigation openmobinav'
+            : mobi === 'close'
+            ? 'mobileNavigation hidemobinav'
+            : 'mobileNavigation'
+        }
+      >
+        <div className="mnavWrapper">
+          <div className="mnavtop">
+            <div className="mobiheaderLeft">
+              <div className="Mobiheaderlogo">
+                <Link
+                  to="/"
+                  className="MobiheaderLogoLink"
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
+                >
+                  <img src={Logo} alt="" />
+                </Link>
+              </div>
+              {islogged ? (
+                <div className="mhLUser">
+                  {/* user icon to appear here */}
+                  <User
+                    style={{ marginRight: '15px' }}
+                    className="usrmhIcsh"
+                    onClick={() => {
+                      openSearch()
+                      window.scrollTo(0, 0)
+                    }}
+                  />
+                </div>
+              ) : (
+                <Link to="/signin" className="ctahheadersignin">
+                  sign in
+                </Link>
+              )}
+            </div>
+            <Times
+              className="mobiNavTimes"
+              onClick={() => {
+                setMobi('close')
+                window.scrollTo(0, 0)
+              }}
+            />
+          </div>
+          <div className="mobinavbtm">
+            <Link to="/" className="mnavLink">
+              Home
+            </Link>
+            <Link to="/about" className="mnavLink">
+              About
+            </Link>
+            <Link to="/services" className="mnavLink">
+              Services
+            </Link>
+            <Link to="/cases" className="mnavLink">
+              Our Cases
+            </Link>
+            <Link to="/solutions" className="mnavLink">
+              Solutions
+            </Link>
+            <Link to="/blog" className="mnavLink">
+              Blog
+            </Link>
+            <Link to="/contact" className="mnavLink">
+              Contact Us
+            </Link>
+          </div>
+          <div className="mhbtmlnks">
+            <a
+              href="https://github.com/nullchemy"
+              title="Follow us on github and give us a star"
+              rel="noreferrer"
+              target="_blank"
+              className="mhbtmanhr"
+            >
+              <Github className="header-mail-icon" />
+            </a>
+            <a
+              href="#newsletter"
+              title="Subscribe to our newsletter"
+              className="mhbtmanhr"
+            >
+              <svg
+                aria-hidden="true"
+                className="header-mail-icon"
+                viewBox="0 0 18 18"
+              >
+                <path d="M1 6l8 5 8-5V4L9 9 1 4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6z"></path>
+              </svg>
+            </a>
+            <div className="theme-controls">
+              {theme === 'dark' ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  onClick={() => {
+                    dispatch(setTheme('light'))
+                  }}
+                >
+                  <circle cx="12" cy="12" r="5" />
+                  <line x1="12" x2="12" y1="1" y2="3" />
+                  <line x1="12" x2="12" y1="21" y2="23" />
+                  <line x1="4.22" x2="5.64" y1="4.22" y2="5.64" />
+                  <line x1="18.36" x2="19.78" y1="18.36" y2="19.78" />
+                  <line x1="1" x2="3" y1="12" y2="12" />
+                  <line x1="21" x2="23" y1="12" y2="12" />
+                  <line x1="4.22" x2="5.64" y1="19.78" y2="18.36" />
+                  <line x1="18.36" x2="19.78" y1="5.64" y2="4.22" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  onClick={() => {
+                    dispatch(setTheme('dark'))
+                  }}
+                >
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+              )}
             </div>
           </div>
         </div>

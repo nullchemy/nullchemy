@@ -51,17 +51,6 @@
         }
       }
     }
-    .hidemobinav {
-      @media (max-width: 480px) {
-        margin-left: -100vh;
-        animation: slideOut 1s forwards;
-      }
-    }
-    .openmobinav {
-      @media (max-width: 480px) {
-        animation: slideIn 1s forwards;
-      }
-    }
     .hwrapper {
       padding: 10px 0;
       display: flex;
@@ -70,27 +59,7 @@
       position: relative;
       z-index: 999;
       @media (max-width: 480px) {
-        flex-direction: column;
-        align-items: unset;
-        justify-content: unset;
-        background-color: #fff;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 80vw;
-        margin-left: -100vh;
-      }
-      .mobiNavTimes {
-        position: absolute;
-        height: 30px;
-        width: 30px;
-        margin: 10px;
-        top: 0;
-        right: 0;
-        @media (min-width: 480px) {
-          display: none;
-        }
+        display: none;
       }
       .hleft {
         display: flex;
@@ -117,20 +86,10 @@
           flex-direction: row;
           align-items: center;
           margin-top: -10px;
-          @media (max-width: 480px) {
-            flex-direction: column;
-            align-items: unset;
-          }
           .headerLink {
             padding: 10px 15px;
             margin-bottom: -10px;
             position: relative;
-            @media (max-width: 480px) {
-              margin: 20px 40px;
-              &:nth-last-child(1) {
-                margin-bottom: 40px;
-              }
-            }
             .header_link_anchor {
               font-size: 1rem;
               font-weight: 300;
@@ -138,9 +97,6 @@
               color: var(--text-color);
               user-select: none;
               white-space: nowrap;
-              @media (max-width: 480px) {
-                font-size: 2.5rem;
-              }
             }
             .dropdown-content {
               position: absolute;
@@ -183,19 +139,11 @@
       }
       .hright {
         margin-top: -10px;
-        @media (max-width: 480px) {
-          order: 2;
-        }
         .header-right {
           .header-right-flex {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            @media (max-width: 480px) {
-              flex-direction: row;
-              justify-content: space-evenly;
-              margin: 20px;
-            }
             .ctahheadersignin {
               all: unset;
               padding: 10px 30px;
@@ -211,18 +159,9 @@
               cursor: pointer;
               margin-right: 15px;
               font-family: 'VolteRounded-Bold' !important;
-              @media (max-width: 480px) {
-                margin-right: unset !important;
-                position: absolute;
-                bottom: 80px;
-              }
             }
             .header-search {
               margin-bottom: -2px;
-              @media (max-width: 480px) {
-                margin: 20px;
-                margin-left: 0;
-              }
               .searchLensh {
                 fill: var(--text-color);
                 cursor: pointer;
@@ -239,9 +178,6 @@
               display: flex;
               align-content: center;
               align-items: center;
-              @media (max-width: 480px) {
-                margin-left: -30px;
-              }
               a {
                 margin-right: 15px;
 
@@ -277,6 +213,129 @@
         }
       }
     }
+  }
+}
+.mobileNavigation {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--background-modals);
+  margin-left: -100vh;
+  @media (min-width: 480px) {
+    display: none;
+  }
+  .mnavWrapper {
+    width: 100%;
+    .mnavtop {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+      .mobiheaderLeft {
+        display: flex;
+        align-items: center;
+        .Mobiheaderlogo {
+          width: 60px;
+          height: 40px;
+          margin: 10px 20px;
+          .MobiheaderLogoLink {
+            width: 30px;
+          }
+        }
+        .mhLUser {
+          .usrmhIcsh {
+            fill: var(--text-color);
+            height: 40px;
+            width: 40px;
+          }
+        }
+        .ctahheadersignin {
+          all: unset;
+          padding: 10px 30px;
+          background-color: #fff;
+          background: linear-gradient(
+            to bottom right,
+            #14a9ff,
+            #0088f0
+          ) !important;
+          border-radius: 43px;
+          text-align: center;
+          color: #fff;
+          cursor: pointer;
+          margin-right: 15px;
+          font-family: 'VolteRounded-Bold' !important;
+          @media (max-width: 480px) {
+            margin-right: unset !important;
+            bottom: 80px;
+          }
+        }
+      }
+      .mobiNavTimes {
+        height: 30px;
+        width: 40px;
+        fill: #0088f0;
+        cursor: pointer;
+      }
+    }
+    .mobinavbtm {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      .mnavLink {
+        padding: 15px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 22px;
+        color: var(--text-color);
+        margin: 0px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #e3e3e3;
+      }
+    }
+    .mhbtmlnks {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 20px;
+      .mhbtmanhr {
+        .header-mail-icon {
+          fill: var(--text-color);
+          cursor: pointer;
+          height: 18px;
+          width: 18px;
+          &:hover {
+            fill: var(--text-color);
+          }
+        }
+      }
+      .theme-controls {
+        svg {
+          stroke: var(--text-color);
+          cursor: pointer;
+          height: 18px;
+          width: 18px;
+          &:hover {
+            stroke: var(--text-color);
+          }
+        }
+      }
+    }
+  }
+}
+.hidemobinav {
+  @media (max-width: 480px) {
+    margin-left: -100vh;
+    animation: slideOut 1s forwards;
+  }
+}
+.openmobinav {
+  @media (max-width: 480px) {
+    animation: slideIn 1s forwards;
   }
 }
 @keyframes slideIn {
