@@ -31,6 +31,7 @@ import Unsubscribe from './routes/Unsubscribe'
 import WebDev from './routes/WebDev'
 import MobileDev from './routes/MobileDev'
 import DesktopDev from './routes/DesktopDev'
+import ProtectedRoutes from './utils/PrivateRoute'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -74,11 +75,6 @@ const router = createBrowserRouter(
       <Route
         path="/careers"
         element={<Careers />}
-        errorElement={<ErrorBoundary />}
-      />
-      <Route
-        path="/workspace"
-        element={<ClientDashboard />}
         errorElement={<ErrorBoundary />}
       />
       <Route
@@ -144,6 +140,13 @@ const router = createBrowserRouter(
       />
       <Route path="/test" element={<Test />} errorElement={<ErrorBoundary />} />
       <Route path="*" element={<NotFound />} errorElement={<ErrorBoundary />} />
+      <Route element={<ProtectedRoutes />}>
+        <Route
+          path="/workspace"
+          element={<ClientDashboard />}
+          errorElement={<ErrorBoundary />}
+        />
+      </Route>
     </>
   )
 )

@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import '../styles/css/signup.css'
 import Header from '../components/Header'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { ReactComponent as Eye } from '../assets/svg/eye.svg'
 import { ReactComponent as EyeSlash } from '../assets/svg/eyeslash.svg'
 import api from '../api/axios'
@@ -20,11 +20,13 @@ const Signup = () => {
   })
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
+  let location = useLocation()
   const dispatch = useAppDispatch()
 
   const handleSignin = async (e: any) => {
     e.preventDefault()
     setIsLoading(true)
+    let from = location.state?.from?.pathname || '/'
     const res = await api('POST', 'auth/client/signin', data)
     setResponse(res.data)
     console.log(res.data)
@@ -33,7 +35,7 @@ const Signup = () => {
       session.save(res.headers.authtoken, res.headers.refreshtoken)
       dispatch(setIsLogged(true))
       setResponse({ message: 'Redirecting...' })
-      navigate('/')
+      navigate(from, { replace: true })
     }
     setTimeout(() => {
       setResponse({ message: '' })
