@@ -9,9 +9,11 @@
 }
 .hwgitdone .hwgiContainer .hwgitWrapper .pathone {
   position: absolute;
-  top: 35rem;
-  left: 15rem;
+  top: 47rem;
+  left: 16rem;
   fill: var(--text-color);
+  height: 200px;
+  width: 700px;
 }
 @media (max-width: 480px) {
   .hwgitdone .hwgiContainer .hwgitWrapper .pathone {
@@ -20,9 +22,11 @@
 }
 .hwgitdone .hwgiContainer .hwgitWrapper .pathtwo {
   position: absolute;
-  top: 15rem;
-  left: 13rem;
+  top: 23rem;
+  left: 17rem;
   fill: var(--text-color);
+  height: 200px;
+  width: 700px;
 }
 @media (max-width: 480px) {
   .hwgitdone .hwgiContainer .hwgitWrapper .pathtwo {
@@ -57,8 +61,7 @@
 .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec {
   display: flex;
   align-items: center;
-  margin: 20px 0;
-  height: 300px;
+  margin-top: 2rem;
 }
 .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec:nth-child(odd) .hwgitflxone {
   order: 2;
@@ -81,6 +84,10 @@
 }
 .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone {
   width: 60%;
+  margin: 2rem 0;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone:nth-child(1) {
+  margin-top: 2rem;
 }
 @media (max-width: 480px) {
   .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone {
@@ -104,7 +111,9 @@
 .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitPar {
   font-family: Volte Rounded;
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  margin-top: 20px;
 }
 @media (max-width: 480px) {
   .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitPar {
@@ -127,6 +136,17 @@
     width: 100%;
     height: 100%;
   }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwditfleIc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 350px;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwditfleIc:nth-child(2) {
+  margin-top: 5rem;
 }
 .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwgitcircle {
   position: absolute;

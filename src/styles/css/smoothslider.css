@@ -51,9 +51,15 @@
 .smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard .slcardtexts .crdslTitle {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard .slcardtexts .crdslpar {
   font-size: 1rem;
+  font-family: sans-serif, monospace;
+  font-weight: 400;
 }
 .smslidparent .slider-container .slider-wrapper .slider-scroll .slidercardone:hover {
   background-color: #e6f9de;

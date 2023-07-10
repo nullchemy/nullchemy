@@ -46,9 +46,13 @@
             .crdslTitle {
               font-size: 1.4rem;
               margin-bottom: 10px;
+              font-family: 'VolteRounded-Bold', Volte Rounded;
+              user-select: none;
             }
             .crdslpar {
               font-size: 1rem;
+              font-family: sans-serif, monospace;
+              font-weight: 400;
             }
           }
         }

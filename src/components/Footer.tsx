@@ -240,7 +240,7 @@ const Footer = () => {
                       onClick={() => {
                         window.scrollTo(0, 0)
                       }}
-                      to="/sell"
+                      to="/web-design-and-development"
                       className="fnavLnk"
                     >
                       Web Design & Development
@@ -251,7 +251,7 @@ const Footer = () => {
                       onClick={() => {
                         window.scrollTo(0, 0)
                       }}
-                      to="/advertise-with-us"
+                      to="/mobile-app-development"
                       className="fnavLnk"
                     >
                       Mobile Application Development

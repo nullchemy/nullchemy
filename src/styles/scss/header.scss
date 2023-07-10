@@ -43,8 +43,7 @@
         }
       }
       .Mobiheaderlogo {
-        width: 60px;
-        height: 40px;
+        width: 40px;
         margin: 10px 20px;
         .MobiheaderLogoLink {
           width: 30px;
@@ -72,7 +71,7 @@
         }
         .hbranding {
           .headerlogo {
-            width: 70px;
+            width: 50px;
             @media (max-width: 480px) {
               margin: 20px 40px;
             }
@@ -239,8 +238,7 @@
         display: flex;
         align-items: center;
         .Mobiheaderlogo {
-          width: 60px;
-          height: 40px;
+          width: 40px;
           margin: 10px 20px;
           .MobiheaderLogoLink {
             width: 30px;
@@ -376,7 +374,7 @@
       .hleft {
         .hbranding {
           .headerlogo {
-            width: 40px;
+            width: 30px;
             .headerLogoLink {
               width: 50px;
             }

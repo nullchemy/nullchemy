@@ -50,8 +50,7 @@
   }
 }
 .header .hcontainer .mobiheaderright .Mobiheaderlogo {
-  width: 60px;
-  height: 40px;
+  width: 40px;
   margin: 10px 20px;
 }
 .header .hcontainer .mobiheaderright .Mobiheaderlogo .MobiheaderLogoLink {
@@ -83,7 +82,7 @@
   }
 }
 .header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
-  width: 70px;
+  width: 50px;
 }
 @media (max-width: 480px) {
   .header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
@@ -238,8 +237,7 @@
   align-items: center;
 }
 .mobileNavigation .mnavWrapper .mnavtop .mobiheaderLeft .Mobiheaderlogo {
-  width: 60px;
-  height: 40px;
+  width: 40px;
   margin: 10px 20px;
 }
 .mobileNavigation .mnavWrapper .mnavtop .mobiheaderLeft .Mobiheaderlogo .MobiheaderLogoLink {
@@ -366,7 +364,7 @@
   padding-top: 11.5px !important;
 }
 .sticky_header .hcontainer .hwrapper .hleft .hbranding .headerlogo {
-  width: 40px;
+  width: 30px;
 }
 .sticky_header .hcontainer .hwrapper .hleft .hbranding .headerlogo .headerLogoLink {
   width: 50px;

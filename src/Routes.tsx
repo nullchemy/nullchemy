@@ -28,6 +28,9 @@ import Services from './routes/Services'
 import Cases from './routes/Cases'
 import Solutions from './routes/Solutions'
 import Unsubscribe from './routes/Unsubscribe'
+import WebDev from './routes/WebDev'
+import MobileDev from './routes/MobileDev'
+import DesktopDev from './routes/DesktopDev'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -74,7 +77,7 @@ const router = createBrowserRouter(
         errorElement={<ErrorBoundary />}
       />
       <Route
-        path="/dash"
+        path="/workspace"
         element={<ClientDashboard />}
         errorElement={<ErrorBoundary />}
       />
@@ -102,6 +105,21 @@ const router = createBrowserRouter(
       <Route
         path="/reset-password"
         element={<ResetPassword />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/web-design-and-development"
+        element={<WebDev />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/mobile-app-development"
+        element={<MobileDev />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/desktop-app-development"
+        element={<DesktopDev />}
         errorElement={<ErrorBoundary />}
       />
       <Route

@@ -6,18 +6,22 @@
       position: relative;
       .pathone {
         position: absolute;
-        top: 35rem;
-        left: 15rem;
+        top: 47rem;
+        left: 16rem;
         fill: var(--text-color);
+        height: 200px;
+        width: 700px;
         @media (max-width: 480px) {
           display: none !important;
         }
       }
       .pathtwo {
         position: absolute;
-        top: 15rem;
-        left: 13rem;
+        top: 23rem;
+        left: 17rem;
         fill: var(--text-color);
+        height: 200px;
+        width: 700px;
         @media (max-width: 480px) {
           display: none !important;
         }
@@ -44,8 +48,7 @@
       .hwgitsec {
         display: flex;
         align-items: center;
-        margin: 20px 0;
-        height: 300px;
+        margin-top: 2rem;
         &:nth-child(odd) {
           .hwgitflxone {
             order: 2;
@@ -69,6 +72,10 @@
         }
         .hwgitflxone {
           width: 60%;
+          margin: 2rem 0;
+          &:nth-child(1) {
+            margin-top: 2rem;
+          }
           @media (max-width: 480px) {
             width: 100%;
             order: 2 !important;
@@ -87,7 +94,9 @@
           .hwgitPar {
             font-family: Volte Rounded;
             color: var(--text-color);
-            font-size: 2rem;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            margin-top: 20px;
             @media (max-width: 480px) {
               font-size: 1rem;
             }
@@ -103,6 +112,17 @@
             @media (max-width: 480px) {
               width: 100%;
               height: 100%;
+            }
+            .hwditfleIc {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              height: 350px;
+              width: 350px;
+              &:nth-child(2) {
+                margin-top: 5rem;
+              }
             }
             .hwgitcircle {
               position: absolute;

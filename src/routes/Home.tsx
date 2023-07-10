@@ -9,6 +9,7 @@ import session from '../utils/session'
 import api from '../api/axios'
 import { useAppDispatch } from '../state/hooks'
 import OurPrinciples from '../components/OurPrinciples'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
   const dispatch = useAppDispatch()
@@ -41,6 +42,7 @@ const Home = () => {
       <WhatWeDo />
       <OurPrinciples />
       <HowWeGetItDone />
+      <Testimonials />
       <Newsletter />
       <Footer />
     </Fragment>
