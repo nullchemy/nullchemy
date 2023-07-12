@@ -39,6 +39,10 @@ const api = async (
       // that falls out of the range of 2xx
       console.log(error.response.status)
       console.log(error.response.data)
+      return {
+        ...error.response,
+        data: { type: 'error', message: 'Something Wrong Happened' },
+      }
     } else if (error.request) {
       // The request was made but no response was received
       // `error.request` is an instance of XMLHttpRequest in the browser
@@ -52,7 +56,10 @@ const api = async (
       console.log('Error', error.message)
     }
     console.log(error.config)
-    return error.response
+    return {
+      ...error.response,
+      data: { type: 'error', message: 'Something Wrong Happened' },
+    }
   }
 }
 

@@ -32,6 +32,7 @@ import WebDev from './routes/WebDev'
 import MobileDev from './routes/MobileDev'
 import DesktopDev from './routes/DesktopDev'
 import ProtectedRoutes from './utils/PrivateRoute'
+import Profile from './routes/Profile'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -144,6 +145,11 @@ const router = createBrowserRouter(
         <Route
           path="/workspace"
           element={<ClientDashboard />}
+          errorElement={<ErrorBoundary />}
+        />
+        <Route
+          path="/profile"
+          element={<Profile />}
           errorElement={<ErrorBoundary />}
         />
       </Route>

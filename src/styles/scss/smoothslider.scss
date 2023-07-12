@@ -5,7 +5,7 @@
     position: relative;
     margin-bottom: 20px;
     .slider-wrapper {
-      padding: 40px 0px;
+      padding: 50px 0px;
       -webkit-box-align: stretch;
       align-items: stretch;
       display: flex;
@@ -36,7 +36,7 @@
           padding: 21px 24px 23px;
           display: flex;
           align-items: flex-start;
-          background-color: #ffffff;
+          background-color: var(--background-modals);
           box-shadow: #0000000f 0px 1px 18px 0px, #0000001a 0px 3px 5px -1px;
           transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
           border: 1px solid #ffffff;
@@ -48,19 +48,21 @@
               margin-bottom: 10px;
               font-family: 'VolteRounded-Bold', Volte Rounded;
               user-select: none;
+              color: var(--text-color);
             }
             .crdslpar {
               font-size: 1rem;
               font-family: sans-serif, monospace;
               font-weight: 400;
+              color: var(--text-color);
             }
           }
         }
-        .slidercardone {
-          &:hover {
-            background-color: #e6f9de;
-          }
-        }
+        // .slidercardone {
+        //   &:hover {
+        //     background-color: #e6f9de;
+        //   }
+        // }
       }
     }
   }

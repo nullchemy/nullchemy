@@ -9,6 +9,8 @@ import { ReactComponent as Bars } from '../assets/svg/bars.svg'
 import { ReactComponent as Times } from '../assets/svg/x-mark.svg'
 import { ReactComponent as Lens } from '../assets/svg/lens.svg'
 import { ReactComponent as User } from '../assets/svg/user.svg'
+import session from '../utils/session'
+import { setIsLogged } from '../state/actions/loggedAction'
 
 const Header = () => {
   const SCROLL_OFFSET: number = 100
@@ -33,14 +35,14 @@ const Header = () => {
   const openSearch = () => {
     navigate('/search')
   }
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false)
-
-  const handleMouseEnter = () => {
-    setIsDropdownVisible(true)
+  const openProfile = () => {
+    navigate('/profile')
   }
-
-  const handleMouseLeave = () => {
-    setIsDropdownVisible(false)
+  const [SolnsDrpVis, setSolnsDrpVis] = useState(false)
+  const [ProfDrpVis, setProfDrpVis] = useState(false)
+  const logout = () => {
+    session.destroy()
+    dispatch(setIsLogged(false))
   }
   return (
     <Fragment>
@@ -127,8 +129,8 @@ const Header = () => {
                 </li>
                 <li
                   className="headerLink"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
+                  onMouseEnter={() => setSolnsDrpVis(true)}
+                  onMouseLeave={() => setSolnsDrpVis(false)}
                 >
                   <Link
                     to="/solutions"
@@ -139,7 +141,7 @@ const Header = () => {
                   >
                     Solutions
                   </Link>
-                  {isDropdownVisible && (
+                  {SolnsDrpVis && (
                     <div className="dropdown-content">
                       <div className="dropdownwrapper">
                         <div className="dropdownleft">
@@ -192,16 +194,47 @@ const Header = () => {
               <div className="header-right">
                 <div className="header-right-flex">
                   {islogged ? (
-                    <div className="header-search">
+                    <div
+                      className="header-search"
+                      onMouseEnter={() => setProfDrpVis(true)}
+                      onMouseLeave={() => setProfDrpVis(false)}
+                    >
                       {/* user icon to appear here */}
                       <User
                         style={{ marginRight: '15px' }}
                         className="searchLensh"
-                        onClick={() => {
-                          openSearch()
-                          window.scrollTo(0, 0)
-                        }}
                       />
+                      {ProfDrpVis && (
+                        <div className="dropdown-content">
+                          <div className="dropdownwrapper">
+                            <div className="dropdownleft">
+                              <ul className="droplinks">
+                                <li
+                                  className="dropdLink"
+                                  onClick={() => {
+                                    openProfile()
+                                    window.scrollTo(0, 0)
+                                  }}
+                                >
+                                  Profile
+                                </li>
+                                <li
+                                  className="dropdLink"
+                                  onClick={() => {
+                                    navigate('/workspace')
+                                  }}
+                                >
+                                  Workspace
+                                </li>
+                                <li className="dropdLink" onClick={logout}>
+                                  Logout
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="dropdownright"></div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   ) : (
                     <Link

@@ -26,7 +26,7 @@ const Signup = () => {
   const handleSignin = async (e: any) => {
     e.preventDefault()
     setIsLoading(true)
-    let from = location.state?.from?.pathname || '/'
+    let from = location.state?.from?.pathname || '/workspace'
     const res = await api('POST', 'auth/client/signin', data)
     setResponse(res.data)
     console.log(res.data)

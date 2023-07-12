@@ -303,6 +303,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
+  color: var(--text-color);
   word-break: break-word;
   cursor: pointer;
 }

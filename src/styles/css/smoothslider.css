@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 }
 .smslidparent .slider-container .slider-wrapper {
-  padding: 40px 0px;
+  padding: 50px 0px;
   align-items: stretch;
   display: flex;
 }
@@ -43,7 +43,7 @@
   padding: 21px 24px 23px;
   display: flex;
   align-items: flex-start;
-  background-color: #ffffff;
+  background-color: var(--background-modals);
   box-shadow: rgba(0, 0, 0, 0.0588235294) 0px 1px 18px 0px, rgba(0, 0, 0, 0.1019607843) 0px 3px 5px -1px;
   transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
   border: 1px solid #ffffff;
@@ -55,14 +55,13 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  color: var(--text-color);
 }
 .smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard .slcardtexts .crdslpar {
   font-size: 1rem;
   font-family: sans-serif, monospace;
   font-weight: 400;
-}
-.smslidparent .slider-container .slider-wrapper .slider-scroll .slidercardone:hover {
-  background-color: #e6f9de;
+  color: var(--text-color);
 }
 .smslidparent #prevButton,
 .smslidparent #nextButton {

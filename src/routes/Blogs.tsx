@@ -12,14 +12,19 @@ import api from '../api/axios'
 const Blogs = () => {
   let navigate = useNavigate()
   const [blogs, setBlogs] = useState({
+    state: 'loading',
     data: [],
   })
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
   useEffect(() => {
     const fetchBlog = async () => {
       const res = await api('GET', 'blog/all', {})
-      setBlogs(res.data)
-      console.log(res.data)
+      if (res.data.type !== 'error') {
+        setBlogs({ ...res.data, state: 'success' })
+        console.log(res.data)
+      } else {
+        setBlogs({ data: [], state: 'error' })
+      }
     }
     fetchBlog()
   }, [])
@@ -134,7 +139,7 @@ const Blogs = () => {
             </div>
           </div>
           <div className="highflex">
-            {blogs.data.length === 0 ? (
+            {blogs.state === 'loading' ? (
               <div className="loadingAnim">
                 <div className="lds-ellipsis">
                   <div></div>
@@ -143,7 +148,7 @@ const Blogs = () => {
                   <div></div>
                 </div>
               </div>
-            ) : (
+            ) : blogs.state === 'success' && Array.isArray(blogs.data) ? (
               blogs.data.map((i: any) => {
                 if (blogs.data.length !== 0) {
                   const previmage: string | undefined = JSON.parse(
@@ -186,6 +191,10 @@ const Blogs = () => {
                 }
                 return ''
               })
+            ) : (
+              <div className="errFetchBlogs">
+                <p>Something Wrong Happened!</p>
+              </div>
             )}
           </div>
         </section>
