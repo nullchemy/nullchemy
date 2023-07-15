@@ -143,7 +143,10 @@
   --bg-overlay-color: #0e121b;
 }
 
-* {
+*,
+::after,
+::before {
+  position: relative;
   padding: 0;
   margin: 0;
   border-style: border-box;

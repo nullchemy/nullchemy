@@ -12,6 +12,7 @@ import OurPrinciples from '../components/OurPrinciples'
 import Testimonials from '../components/Testimonials'
 import OurBrands from '../components/OurBrands'
 import Ventures from '../components/Ventures'
+import BlogHighlights from '../components/BlogHighlights'
 
 const Home = () => {
   const dispatch = useAppDispatch()
@@ -47,6 +48,7 @@ const Home = () => {
       <HowWeGetItDone />
       <Testimonials />
       <OurBrands />
+      <BlogHighlights />
       <Newsletter />
       <Footer />
     </Fragment>
