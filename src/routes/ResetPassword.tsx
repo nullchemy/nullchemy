@@ -1,11 +1,15 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/signup.css'
 import Header from '../components/Header'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../api/axios'
 import session from '../utils/session'
+import ReactGA from 'react-ga'
 
 const ConfirmEmail = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   const [data, setData] = useState({
     email: '',
   })

@@ -10,9 +10,13 @@ import api from '../api/axios'
 import { AxiosError } from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
+import ReactGA from 'react-ga'
 
 const Read = () => {
   let navigate = useNavigate()
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   const { slug } = useParams()
   const [blog, setBlog] = useState<any[]>([])
   const [error, setError] = useState(false)

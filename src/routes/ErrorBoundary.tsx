@@ -3,8 +3,12 @@ import '../styles/css/errorboundary.css'
 import { ReactComponent as NotFImage } from '../assets/svg/notfound.svg'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
+import ReactGA from 'react-ga'
 
 const NotFound = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   try {
     useEffect(() => {
       gsap.set('svg', { visibility: 'visible' })

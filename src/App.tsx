@@ -7,14 +7,11 @@ import { ReactNotifications } from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 import Modal from './components/Modal'
 
+ReactGA.initialize('G-JXF0YL9XMJ')
 const App = () => {
   const [mod, setMod] = useState(false)
   useEffect(() => {
-    ReactGA.initialize('G-JXF0YL9XMJ')
     ReactGA.pageview(window.location.pathname + window.location.search)
-    // setTimeout(() => {
-    //   setMod(true)
-    // }, 2000)
   }, [])
   const theme = useAppSelector((state) => state.theme)
 

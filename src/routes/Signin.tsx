@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/signup.css'
 import Header from '../components/Header'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
@@ -8,8 +8,12 @@ import api from '../api/axios'
 import session from '../utils/session'
 import { setIsLogged } from '../state/actions/loggedAction'
 import { useAppDispatch } from '../state/hooks'
+import ReactGA from 'react-ga'
 
 const Signup = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   const [data, setData] = useState({
     email: '',
     password: '',

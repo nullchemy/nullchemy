@@ -1,10 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import '../styles/css/ourcases.css'
 import Header from '../components/Header'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
+import ReactGA from 'react-ga'
 
 const Cases: React.FC = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   return (
     <Fragment>
       <Header />

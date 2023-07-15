@@ -1,11 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import '../styles/css/about.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import agility from '../assets/images/agility.png'
 import OurTeam from '../components/OurTeam'
+import ReactGA from 'react-ga'
 
 const About = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   return (
     <Fragment>
       <Header />

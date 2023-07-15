@@ -8,8 +8,12 @@ import { ReactComponent as Filter } from '../assets/svg/filter.svg'
 import { useNavigate } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
 import api from '../api/axios'
+import ReactGA from 'react-ga'
 
 const Blogs = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   let navigate = useNavigate()
   const [blogs, setBlogs] = useState({
     state: 'loading',

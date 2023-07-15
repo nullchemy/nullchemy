@@ -13,9 +13,13 @@ import Testimonials from '../components/Testimonials'
 import OurBrands from '../components/OurBrands'
 import Ventures from '../components/Ventures'
 import BlogHighlights from '../components/BlogHighlights'
+import ReactGA from 'react-ga'
 
 const Home = () => {
   const dispatch = useAppDispatch()
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   useEffect(() => {
     console.log('ran')
 

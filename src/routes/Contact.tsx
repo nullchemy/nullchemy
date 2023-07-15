@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/contact.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -9,9 +9,13 @@ import { ReactComponent as Location } from '../assets/svg/location.svg'
 import Newsletter from '../components/Newsletter'
 import api from '../api/axios'
 import { Store } from 'react-notifications-component'
+import ReactGA from 'react-ga'
 
 const Contact = () => {
   const gaEventTracker = useAnalyticsEventTracker('Contact us')
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   const [status, setStatus] = useState('send')
   const [data, setData] = useState({
     name: '',

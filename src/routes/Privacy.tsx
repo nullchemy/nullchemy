@@ -1,9 +1,13 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import '../styles/css/terms.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ReactGA from 'react-ga'
 
 const Privacy = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   return (
     <Fragment>
       <Header />

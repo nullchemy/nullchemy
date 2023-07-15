@@ -1,13 +1,17 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/join.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import useAnalyticsEventTracker from '../components/useAnalyticsEventTracker'
 import api from '../api/axios'
 import { Store } from 'react-notifications-component'
+import ReactGA from 'react-ga'
 
 const Join = () => {
   const gaEventTracker = useAnalyticsEventTracker('Github Join Request')
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   const [status, setStatus] = useState('Request')
   const [data, setData] = useState({
     username: '',
