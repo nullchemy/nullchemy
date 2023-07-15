@@ -24,7 +24,9 @@
 .maintainance .maintcontainer .maintwrap .madmainttexts h2 {
   text-transform: uppercase;
   font-size: 2rem;
+  color: var(--text-color);
 }
 .maintainance .maintcontainer .maintwrap .madmainttexts p {
   margin-top: 10px;
+  color: var(--text-color);
 }/*# sourceMappingURL=maintainance.css.map */

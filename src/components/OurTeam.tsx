@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import '../styles/css/ourteam.css'
-import kibet from '../assets/images/kibet_no_bg_passport.png'
+import kibet from '../assets/images/kibet_abt.jpg'
 import Cynthia from '../assets/images/cynthia.jpg'
 
 const OurTeam = () => {

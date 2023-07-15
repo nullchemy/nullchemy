@@ -33,6 +33,11 @@ import MobileDev from './routes/MobileDev'
 import DesktopDev from './routes/DesktopDev'
 import ProtectedRoutes from './utils/PrivateRoute'
 import Profile from './routes/Profile'
+import HelpCenter from './routes/HelpCenter'
+import Feedback from './routes/Feedback'
+import DeploymentAndLaunch from './routes/DeploymentAndLaunch'
+import DisputeResolutionCenter from './routes/DisputeResolutionCenter'
+import ReportProductOrService from './routes/ReportProductOrService'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -137,6 +142,36 @@ const router = createBrowserRouter(
       <Route
         path="/unsubscribe"
         element={<Unsubscribe />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/help-center"
+        element={<HelpCenter />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/feedback"
+        element={<Feedback />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/deployment-and-launch"
+        element={<DeploymentAndLaunch />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/refund-policy"
+        element={<DeploymentAndLaunch />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/dispute-resoution-center"
+        element={<DisputeResolutionCenter />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/report-product"
+        element={<ReportProductOrService />}
         errorElement={<ErrorBoundary />}
       />
       <Route path="/test" element={<Test />} errorElement={<ErrorBoundary />} />

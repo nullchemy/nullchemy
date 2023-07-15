@@ -102,7 +102,7 @@ const Footer = () => {
                       onClick={() => {
                         window.scrollTo(0, 0)
                       }}
-                      to="/shipping-and-delivery"
+                      to="/deployment-and-launch"
                       className="fnavLnk"
                     >
                       Deployment and Launch
@@ -113,7 +113,7 @@ const Footer = () => {
                       onClick={() => {
                         window.scrollTo(0, 0)
                       }}
-                      to="/return-policy"
+                      to="/refund-policy"
                       className="fnavLnk"
                     >
                       Refund Policy
