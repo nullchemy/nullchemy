@@ -19,7 +19,13 @@ const About = () => {
           <div className="mission-wrapper">
             <div className="mission-images">
               <div className="miss-image-wrapper">
-                <img src={agility} alt="" />
+                {/* <img src={agility} alt="" /> */}
+                <div className="missGridWrapper">
+                  <div className="gridImgWrapItem"></div>
+                  <div className="gridImgWrapItem"></div>
+                  <div className="gridImgWrapItem"></div>
+                  <div className="gridImgWrapItem"></div>
+                </div>
               </div>
             </div>
             <div className="mission-texts">

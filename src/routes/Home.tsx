@@ -10,6 +10,8 @@ import api from '../api/axios'
 import { useAppDispatch } from '../state/hooks'
 import OurPrinciples from '../components/OurPrinciples'
 import Testimonials from '../components/Testimonials'
+import OurBrands from '../components/OurBrands'
+import Ventures from '../components/Ventures'
 
 const Home = () => {
   const dispatch = useAppDispatch()
@@ -41,8 +43,10 @@ const Home = () => {
       </div>
       <WhatWeDo />
       <OurPrinciples />
+      <Ventures />
       <HowWeGetItDone />
       <Testimonials />
+      <OurBrands />
       <Newsletter />
       <Footer />
     </Fragment>

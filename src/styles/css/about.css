@@ -36,7 +36,7 @@
   }
 }
 .aboutus .mission {
-  margin: 5% 10%;
+  margin: 5%;
 }
 .aboutus .mission .mission-wrapper {
   display: flex;
@@ -55,24 +55,36 @@
   }
 }
 .aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  position: relative;
+  height: 400px;
+  width: 400px;
   overflow: hidden;
+  margin: 0 auto;
   border-radius: 0% 50% 50% 50%;
 }
-@media (max-width: 480px) {
-  .aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-  }
+.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper .missGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
-.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper .missGridWrapper .gridImgWrapItem {
+  background-image: url("../../assets/images/unsplash/jason-goodman-square.jpg"), url("../../assets/images/unsplash/jason-goodman-square.jpg"), url("../../assets/images/unsplash/jason-goodman-square.jpg"), url("../../assets/images/unsplash/jason-goodman-square.jpg");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}
+.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper .missGridWrapper .gridImgWrapItem:nth-child(1) {
+  background-position: 0px 0px;
+}
+.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper .missGridWrapper .gridImgWrapItem:nth-child(2) {
+  background-position: -200px 0px;
+}
+.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper .missGridWrapper .gridImgWrapItem:nth-child(3) {
+  background-position: 0px -200px;
+}
+.aboutus .mission .mission-wrapper .mission-images .miss-image-wrapper .missGridWrapper .gridImgWrapItem:nth-child(4) {
+  background-position: -200px -200px;
 }
 .aboutus .mission .mission-wrapper .mission-texts {
   width: 50%;
@@ -83,13 +95,36 @@
   }
 }
 .aboutus .mission .mission-wrapper .mission-texts .sec-text {
-  color: var(--text-color);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  background: 0px 0px;
+  border: 1px solid rgba(19, 20, 38, 0.16);
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(94.67deg, #9935e8 0, #e85535 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .aboutus .mission .mission-wrapper .mission-texts h1 {
   color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  margin: 0.5rem 0;
 }
 .aboutus .mission .mission-wrapper .mission-texts p {
   color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 .aboutus .faqmainSection {
   margin: 4rem 0;

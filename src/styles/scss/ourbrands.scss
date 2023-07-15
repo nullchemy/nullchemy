@@ -1,0 +1,63 @@
+.ourbrands {
+  .ourbrandsContainer {
+    margin: 0 5%;
+    .ourbrandsWrapper {
+      .ourbrandstitle {
+        font-size: 5.375rem;
+        line-height: 5rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        font-family: 'VolteRounded-Bold', Volte Rounded;
+        font-weight: 800 !important;
+        margin-bottom: 2rem;
+        user-select: none;
+        text-align: center;
+        @media (max-width: 1900px) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
+      .ourbrandsFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+        .ourbrandsCards {
+          width: 200px;
+          cursor: pointer;
+          .ourBrandImageWrapper {
+            width: 100%;
+            height: min-content;
+            .orbrancIc {
+              fill: var(--text-color) !important;
+              stroke: var(--text-color) !important;
+              color: var(--text-color);
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .ourbrandTxts {
+            text-align: center;
+            h1 {
+              font-size: 1.4rem;
+              margin: 10px 0;
+              font-family: 'VolteRounded-Bold', Volte Rounded;
+              user-select: none;
+              color: var(--text-color);
+            }
+            p {
+              font-size: 1rem;
+              font-family: sans-serif, monospace;
+              font-weight: 400;
+              color: var(--text-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

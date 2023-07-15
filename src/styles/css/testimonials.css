@@ -1,0 +1,80 @@
+.testimonials .testimonialsContainer {
+  margin: 0 5%;
+}
+.testimonials .testimonialsContainer .testimonialWrapper {
+  padding: 20px 0;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialTitle {
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin: 2rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+@media (max-width: 1900px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialTitle {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsSubTitle {
+  color: var(--text-color);
+  text-align: center;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent {
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 23px;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards {
+  display: flex;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft {
+  flex: 1;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap {
+  overflow: hidden !important;
+  height: 300px;
+  width: 300px;
+  border-radius: 23px;
+  transform: rotate(45deg);
+  margin: 70px;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap img {
+  transform: rotate(-45deg) scale(1.414);
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright {
+  width: 62%;
+  padding: 20px;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlsrIC {
+  height: 70px;
+  width: 70px;
+  fill: var(--text-color) !important;
+  stroke: var(--text-color) !important;
+  color: var(--text-color);
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlTitle {
+  color: var(--text-color);
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlPar {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}/*# sourceMappingURL=testimonials.css.map */

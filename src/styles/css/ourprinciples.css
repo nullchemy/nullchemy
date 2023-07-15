@@ -1,0 +1,48 @@
+.ourprinciples .opcontainer {
+  margin: 5%;
+}
+.ourprinciples .opcontainer .opwrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+.ourprinciples .opcontainer .opwrapper .opcards {
+  width: calc(50% - 3rem);
+  height: 200px;
+  border-radius: 15px;
+  background-color: var(--background-modals);
+  position: relative;
+  padding: 10px;
+}
+.ourprinciples .opcontainer .opwrapper .opcards .optitle {
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-size: 3rem;
+  line-height: 4rem;
+  white-space: nowrap;
+}
+.ourprinciples .opcontainer .opwrapper .opcards .opitwrap {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  margin: 1rem;
+  margin-left: 2rem;
+}
+.ourprinciples .opcontainer .opwrapper .opcards .opitwrap span {
+  color: var(--text-color);
+  font-size: 2rem;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+.ourprinciples .opcontainer .opwrapper .opcards .opitwrap P {
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}/*# sourceMappingURL=ourprinciples.css.map */

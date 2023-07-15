@@ -5,8 +5,10 @@
   --background-color-three: #fff;
   --text-color: #2b2b2b;
   --text-color-inv: #e6e6e6;
-  --background-modals: #fff;
+  --background-modals: #ffffffa3;
+  --background-header: #ffffffcc;
   --landing-url: url('../../assets/images/background_bg_light.png');
+  --bg-overlay-color: #eef4ff;
 }
 
 //dark theme
@@ -16,6 +18,8 @@
   --background-color-three: #171c28;
   --text-color: #e6e6e6;
   --text-color-inv: #2b2b2b;
-  --background-modals: #2e2e2e;
+  --background-modals: #2e2e2ea3;
+  --background-header: #2e2e2ecc;
   --landing-url: url('../../assets/images/background_bg_dark.png');
+  --bg-overlay-color: #0e121b;
 }

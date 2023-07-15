@@ -1,11 +1,7 @@
 import React, { Fragment } from 'react'
 import '../styles/css/ourteam.css'
-import kibet from '../assets/images/kibet.jpg'
+import kibet from '../assets/images/kibet_no_bg_passport.png'
 import Cynthia from '../assets/images/cynthia.jpg'
-import Wesh from '../assets/images/wesh.jpg'
-import oliver from '../assets/images/oliver.jpg'
-import Moses from '../assets/images/moses.jpg'
-import Randwet from '../assets/images/randwet.jpg'
 
 const OurTeam = () => {
   return (
@@ -25,59 +21,7 @@ const OurTeam = () => {
                   <div className="otlBtm">
                     <h1 className="otlName">Dennis Kibet</h1>
                     <h2 className="otlRole">
-                      <span>-</span>CEO
-                    </h2>
-                  </div>
-                </div>
-                <div className="otlCard">
-                  <div className="otlTop">
-                    <div className="otlPhoto">
-                      <img src={Wesh} alt="" />
-                    </div>
-                  </div>
-                  <div className="otlBtm">
-                    <h1 className="otlName">Joseph Waweru</h1>
-                    <h2 className="otlRole">
-                      <span>-</span>CTO
-                    </h2>
-                  </div>
-                </div>
-                <div className="otlCard">
-                  <div className="otlTop">
-                    <div className="otlPhoto">
-                      <img src={Randwet} alt="" />
-                    </div>
-                  </div>
-                  <div className="otlBtm">
-                    <h1 className="otlName">Samwel Randwet</h1>
-                    <h2 className="otlRole">
-                      <span>-</span>COO
-                    </h2>
-                  </div>
-                </div>
-                <div className="otlCard">
-                  <div className="otlTop">
-                    <div className="otlPhoto">
-                      <img src={oliver} alt="" />
-                    </div>
-                  </div>
-                  <div className="otlBtm">
-                    <h1 className="otlName">Oliver Wanyoyi</h1>
-                    <h2 className="otlRole">
-                      <span>-</span>VP, Engineering
-                    </h2>
-                  </div>
-                </div>
-                <div className="otlCard">
-                  <div className="otlTop">
-                    <div className="otlPhoto">
-                      <img src={Moses} alt="" />
-                    </div>
-                  </div>
-                  <div className="otlBtm">
-                    <h1 className="otlName">Moses Kilonzo</h1>
-                    <h2 className="otlRole">
-                      <span>-</span>Head, Sales
+                      <span>-</span> Founder & CEO
                     </h2>
                   </div>
                 </div>
@@ -90,7 +34,7 @@ const OurTeam = () => {
                   <div className="otlBtm">
                     <h1 className="otlName">Cynthia Chelang'at</h1>
                     <h2 className="otlRole">
-                      <span>-</span>Head, Graphics and Design
+                      <span>-</span> Head, Graphics and Design
                     </h2>
                   </div>
                 </div>
