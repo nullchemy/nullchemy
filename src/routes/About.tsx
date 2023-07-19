@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import OurTeam from '../components/OurTeam'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   useEffect(() => {
@@ -11,6 +12,15 @@ const About = () => {
   }, [])
   return (
     <Fragment>
+      <Helmet>
+        <title>About Us | nullchemy</title>
+        <link rel="canonical" href="http://nullchemy.com/about" />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="aboutus">
         <section className="about-header">

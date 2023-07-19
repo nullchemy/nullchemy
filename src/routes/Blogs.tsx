@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
 import api from '../api/axios'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const Blogs = () => {
   useEffect(() => {
@@ -57,6 +58,15 @@ const Blogs = () => {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>About Us | nullchemy</title>
+        <link rel="canonical" href="http://nullchemy.com/blogs" />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="blog">
         <section className="blog-sec-top">

@@ -11,6 +11,7 @@ import { AxiosError } from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const Read = () => {
   let navigate = useNavigate()
@@ -81,6 +82,15 @@ const Read = () => {
   console.log(toc)
   return (
     <Fragment>
+      <Helmet>
+        <title>About Us | nullchemy</title>
+        <link rel="canonical" href={'http://nullchemy.com/read/' + slug} />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="read">
         <div className="readContainer">

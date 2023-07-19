@@ -10,6 +10,7 @@ import Newsletter from '../components/Newsletter'
 import api from '../api/axios'
 import { Store } from 'react-notifications-component'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const Contact = () => {
   const gaEventTracker = useAnalyticsEventTracker('Contact us')
@@ -58,6 +59,15 @@ const Contact = () => {
   }
   return (
     <Fragment>
+      <Helmet>
+        <title>About Us | nullchemy</title>
+        <link rel="canonical" href="http://nullchemy.com/contact" />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="contact">
         <div className="contactContainer">
