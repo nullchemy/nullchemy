@@ -60,7 +60,7 @@ const Contact = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
+        <title>Contact Us | nullchemy</title>
         <link rel="canonical" href="http://nullchemy.com/contact" />
         <script>
           window.dataLayer = window.dataLayer || []; function

@@ -9,6 +9,7 @@ import session from '../utils/session'
 import { setIsLogged } from '../state/actions/loggedAction'
 import { useAppDispatch } from '../state/hooks'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const Signup = () => {
   useEffect(() => {
@@ -47,6 +48,18 @@ const Signup = () => {
   }
   return (
     <Fragment>
+      <Helmet>
+        <title>Sign in | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="signup">
         <div className="signupcontainer">

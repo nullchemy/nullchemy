@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import api from '../api/axios'
 import session from '../utils/session'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const ConfirmEmail = () => {
   useEffect(() => {
@@ -41,6 +42,18 @@ const ConfirmEmail = () => {
   }
   return (
     <Fragment>
+      <Helmet>
+        <title>Confirm Your Email | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="signup">
         <div className="signupcontainer">

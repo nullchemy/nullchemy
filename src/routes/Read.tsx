@@ -83,8 +83,11 @@ const Read = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
-        <link rel="canonical" href={'http://nullchemy.com/read/' + slug} />
+        <title>{blog[0].Title} | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
         <script>
           window.dataLayer = window.dataLayer || []; function
           gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());

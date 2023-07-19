@@ -14,6 +14,7 @@ import OurBrands from '../components/OurBrands'
 import Ventures from '../components/Ventures'
 import BlogHighlights from '../components/BlogHighlights'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
   const dispatch = useAppDispatch()
@@ -43,6 +44,18 @@ const Home = () => {
   }, [dispatch])
   return (
     <Fragment>
+      <Helmet>
+        <title>Home | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <div className="homepage">
         <Landing />
       </div>

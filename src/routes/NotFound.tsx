@@ -4,6 +4,7 @@ import { ReactComponent as NotFImage } from '../assets/svg/notfound.svg'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const NotFound = () => {
   useEffect(() => {
@@ -109,6 +110,18 @@ const NotFound = () => {
   }
   return (
     <Fragment>
+      <Helmet>
+        <title>(404) Page Not Found | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <div className="notfoundcontainer">
         <div className="notfoundwrapper">
           <div className="notfoundleft">

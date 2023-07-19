@@ -6,6 +6,7 @@ import useAnalyticsEventTracker from '../components/useAnalyticsEventTracker'
 import api from '../api/axios'
 import { Store } from 'react-notifications-component'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const Join = () => {
   const gaEventTracker = useAnalyticsEventTracker('Github Join Request')
@@ -48,6 +49,18 @@ const Join = () => {
   }
   return (
     <Fragment>
+      <Helmet>
+        <title>Join Us | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="joingithub">
         <div className="jgcontainer">

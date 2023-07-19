@@ -13,7 +13,7 @@ const Careers = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
+        <title>Careers | nullchemy</title>
         <link rel="canonical" href="http://nullchemy.com/careers" />
         <script>
           window.dataLayer = window.dataLayer || []; function

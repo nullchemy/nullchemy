@@ -3,6 +3,7 @@ import '../styles/css/terms.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 const CookiePolicy = () => {
   useEffect(() => {
@@ -10,6 +11,15 @@ const CookiePolicy = () => {
   }, [])
   return (
     <Fragment>
+      <Helmet>
+        <title>Our Cookies Policy | nullchemy</title>
+        <link rel="canonical" href="http://nullchemy.com/cookie-policy" />
+        <script>
+          window.dataLayer = window.dataLayer || []; function
+          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
+          gtag('config', 'G-JXF0YL9XMJ');
+        </script>
+      </Helmet>
       <Header />
       <div className="content">
         <div className="terms">

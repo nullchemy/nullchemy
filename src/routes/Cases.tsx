@@ -13,7 +13,7 @@ const Cases: React.FC = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
+        <title>Our Cases | nullchemy</title>
         <link rel="canonical" href="http://nullchemy.com/cases" />
         <script>
           window.dataLayer = window.dataLayer || []; function

@@ -14,8 +14,11 @@ const Services: React.FC = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
-        <link rel="canonical" href="http://nullchemy.com/services" />
+        <title>Our Services | nullchemy</title>
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
         <script>
           window.dataLayer = window.dataLayer || []; function
           gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());

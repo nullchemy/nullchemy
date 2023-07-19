@@ -59,7 +59,7 @@ const Blogs = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
+        <title>Our Blogs | nullchemy</title>
         <link rel="canonical" href="http://nullchemy.com/blogs" />
         <script>
           window.dataLayer = window.dataLayer || []; function
