@@ -43,6 +43,11 @@
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards {
   display: flex;
 }
+@media (max-width: 480px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards {
+    flex-direction: column;
+  }
+}
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft {
   flex: 1;
 }
@@ -54,12 +59,23 @@
   transform: rotate(45deg);
   margin: 70px;
 }
+@media (max-width: 480px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap {
+    margin: 40px;
+  }
+}
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap img {
   transform: rotate(-45deg) scale(1.414);
 }
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright {
   width: 62%;
   padding: 20px;
+}
+@media (max-width: 480px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright {
+    width: 100%;
+    padding: 0;
+  }
 }
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlsrIC {
   height: 70px;
@@ -72,6 +88,12 @@
   color: var(--text-color);
   font-size: 3rem;
   line-height: 3rem;
+}
+@media (max-width: 480px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlTitle {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlPar {
   color: var(--text-color);

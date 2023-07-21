@@ -392,7 +392,7 @@ const Header = () => {
             <Link to="/solutions" className="mnavLink">
               Solutions
             </Link>
-            <Link to="/blog" className="mnavLink">
+            <Link to="/blogs" className="mnavLink">
               Blog
             </Link>
             <Link to="/contact" className="mnavLink">

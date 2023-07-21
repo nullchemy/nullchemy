@@ -172,7 +172,7 @@ const Footer = () => {
                       onClick={() => {
                         window.scrollTo(0, 0)
                       }}
-                      to="/blog"
+                      to="/blogs"
                       className="fnavLnk"
                     >
                       Blog

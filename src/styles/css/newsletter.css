@@ -97,8 +97,9 @@
   line-height: 1.5rem;
   background-color: rgba(49, 49, 49, 0.707);
   color: #ffffff;
-  margin-right: -10px;
   width: 300px;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
 }
 @media (max-width: 480px) {
   .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsinput {
@@ -111,12 +112,13 @@
   padding: 10px;
   background-color: #fff;
   background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
-  border-radius: 43px;
   text-align: center;
   color: #fff;
   cursor: pointer;
   margin-right: 15px;
   font-family: "VolteRounded-Bold" !important;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
 }
 @media (max-width: 480px) {
   .secNewsletter .newsletter .newslettercontainer .subnewsletter .subnewsFlex .subnewsform .subNewsFormf .subinputsFlex .subnewsButton {

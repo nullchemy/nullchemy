@@ -83,7 +83,9 @@ const Read = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>{blog[0].Title} | nullchemy</title>
+        <title>
+          {!error && blog.length !== 0 ? blog[0].Title : 'Blog'} | nullchemy
+        </title>
         <link
           rel="canonical"
           href={window.location.pathname + window.location.search}

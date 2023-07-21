@@ -5,8 +5,18 @@
   display: flex;
   width: 100%;
 }
+@media (max-width: 480px) {
+  .ventures .venturesContainer .venturesWrapper {
+    flex-direction: column;
+  }
+}
 .ventures .venturesContainer .venturesWrapper .venturesLeft {
   width: 50%;
+}
+@media (max-width: 480px) {
+  .ventures .venturesContainer .venturesWrapper .venturesLeft {
+    width: 100%;
+  }
 }
 .ventures .venturesContainer .venturesWrapper .venturesLeft span {
   display: inline-flex;
@@ -87,6 +97,11 @@
 }
 .ventures .venturesContainer .venturesWrapper .venturesRight {
   width: 50%;
+}
+@media (max-width: 480px) {
+  .ventures .venturesContainer .venturesWrapper .venturesRight {
+    display: none !important;
+  }
 }
 .ventures .venturesContainer .venturesWrapper .venturesRight .venturesRightWrapper {
   width: 90%;

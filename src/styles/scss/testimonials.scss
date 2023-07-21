@@ -33,6 +33,9 @@
         border-radius: 23px;
         .tstmlscards {
           display: flex;
+          @media (max-width: 480px) {
+            flex-direction: column;
+          }
           .tstmlsleft {
             flex: 1;
             .tstmlsleftimgWrap {
@@ -42,6 +45,9 @@
               border-radius: 23px;
               transform: rotate(45deg);
               margin: 70px;
+              @media (max-width: 480px) {
+                margin: 40px;
+              }
               img {
                 transform: rotate(-45deg) scale(1.414);
               }
@@ -50,6 +56,10 @@
           .tstmlsright {
             width: 62%;
             padding: 20px;
+            @media (max-width: 480px) {
+              width: 100%;
+              padding: 0;
+            }
             .tstmlsrIC {
               height: 70px;
               width: 70px;
@@ -61,6 +71,10 @@
               color: var(--text-color);
               font-size: 3rem;
               line-height: 3rem;
+              @media (max-width: 480px) {
+                font-size: 2rem;
+                line-height: 2rem;
+              }
             }
             .tstmlPar {
               color: var(--text-color);
