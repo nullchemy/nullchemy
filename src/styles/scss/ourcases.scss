@@ -22,6 +22,71 @@
           line-height: 3rem;
         }
       }
+      .caseWenotify {
+        border-radius: 23px;
+        height: 600px;
+        background-color: #cadd97;
+        padding: 4rem;
+        .caseWenLeft {
+          width: 50%;
+          .caseWenSubTitle {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: var(--text-color);
+            font-weight: 600;
+            font-family: 'BookerlyDisplay_W_Rg', Roboto, sans-serif;
+          }
+          .caseKeywords {
+            margin: 2rem 0;
+            span {
+              font-weight: 500;
+              font-size: 1rem;
+              line-height: 1rem;
+              text-transform: capitalize;
+              color: var(--text-color);
+              font-family: AEmb, Roboto, sans-serif;
+              background: rgba(19, 20, 38, 0.2);
+              margin: 0 10px;
+              padding: 5px 10px;
+              border-radius: 15px;
+              cursor: pointer;
+              &:nth-child(1) {
+                margin-left: 0;
+              }
+            }
+          }
+          .caseBranding {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            .caseBrandLogo {
+              fill: var(--text-color);
+              color: var(--text-color);
+              stroke: var(--text-color);
+              height: 100px;
+              width: 100px;
+            }
+            .caseBrandName {
+              font-size: 4rem;
+              font-family: 'BookerlyDisplay_W_Rg';
+              // font-family: 'Copperplate-Gothic-Bold', 'VolteRounded-Bold',
+              //   Volte Rounded;
+              font-weight: 800 !important;
+              user-select: none;
+              margin-left: 20px;
+            }
+          }
+          .caseExpPar {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text-color);
+          }
+        }
+        .caseWenRight {
+          width: 50%;
+        }
+      }
     }
   }
 }

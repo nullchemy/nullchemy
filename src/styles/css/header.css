@@ -262,7 +262,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: var(--background-modals);
+  background: linear-gradient(180deg, var(--background-color-one) 0%, var(--background-color-two) 20%, var(--background-color-three) 100%);
+  transition: all 0.3s ease-in-out 0s;
   margin-left: -100vh;
 }
 @media (min-width: 480px) {

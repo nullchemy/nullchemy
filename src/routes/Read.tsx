@@ -80,6 +80,19 @@ const Read = () => {
   //table of contents
   const toc = blog.length !== 0 ? JSON.parse(blog[0].Toc).data : []
   console.log(toc)
+  const scrollToCenter = (id: string) => {
+    const targetElement = document.getElementById(id)
+
+    if (targetElement) {
+      const targetRect = targetElement.getBoundingClientRect()
+      const centerY = window.innerHeight / 2
+      const offsetY = targetRect.top - centerY + targetRect.height / 2
+      window.scrollTo({
+        top: window.scrollY + offsetY,
+        behavior: 'smooth',
+      })
+    }
+  }
   return (
     <Fragment>
       <Helmet>
@@ -154,7 +167,12 @@ const Read = () => {
                       {toc.length !== 0
                         ? toc.map((i: any) => {
                             return (
-                              <li key={i.key}>
+                              <li
+                                key={i.key}
+                                onClick={() => {
+                                  scrollToCenter(i.id)
+                                }}
+                              >
                                 <a href={'#' + i.id}>{i.cont}</a>
                               </li>
                             )
