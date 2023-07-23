@@ -38,6 +38,7 @@ import Feedback from './routes/Feedback'
 import DeploymentAndLaunch from './routes/DeploymentAndLaunch'
 import DisputeResolutionCenter from './routes/DisputeResolutionCenter'
 import ReportProductOrService from './routes/ReportProductOrService'
+import WenotiFy from './routes/cases/WenotiFy'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -56,6 +57,11 @@ const router = createBrowserRouter(
       <Route
         path="/our-cases"
         element={<Cases />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/our-cases/wenotify"
+        element={<WenotiFy />}
         errorElement={<ErrorBoundary />}
       />
       <Route

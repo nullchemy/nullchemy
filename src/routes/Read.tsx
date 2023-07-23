@@ -82,7 +82,6 @@ const Read = () => {
   console.log(toc)
   const scrollToCenter = (id: string) => {
     const targetElement = document.getElementById(id)
-
     if (targetElement) {
       const targetRect = targetElement.getBoundingClientRect()
       const centerY = window.innerHeight / 2

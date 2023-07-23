@@ -30,6 +30,7 @@
   }
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify {
+  display: flex;
   border-radius: 23px;
   height: 600px;
   background-color: #cadd97;
@@ -93,4 +94,42 @@
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight {
   width: 50%;
+  position: relative;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenOne,
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenTwo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenOne {
+  transform: rotate(-25deg);
+  margin-top: -40%;
+  margin-left: -30%;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenTwo {
+  transform: rotate(20deg);
+  margin-top: -40%;
+  margin-left: -5%;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .wenCaseLearnMore {
+  all: unset;
+  position: absolute;
+  bottom: -10px;
+  right: 10%;
+  padding: 10px 30px;
+  background-color: #fff;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  border-radius: 43px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  font-family: "VolteRounded-Bold" !important;
 }/*# sourceMappingURL=ourcases.css.map */

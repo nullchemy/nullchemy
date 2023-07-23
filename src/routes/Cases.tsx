@@ -6,6 +6,11 @@ import Footer from '../components/Footer'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
 import { ReactComponent as Wenotify } from '../assets/svg/wenotify_kenya_shield.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+import SplashOne from '../assets/images/wenotify/splash_one.png'
+import SplashTwo from '../assets/images/wenotify/spalsh_two.png'
+import { Link } from 'react-router-dom'
 
 const Cases: React.FC = () => {
   useEffect(() => {
@@ -15,7 +20,7 @@ const Cases: React.FC = () => {
     <Fragment>
       <Helmet>
         <title>Our Cases | nullchemy</title>
-        <link rel="canonical" href="http://nullchemy.com/cases" />
+        <link rel="canonical" href="http://nullchemy.com/our-cases" />
         <script>
           window.dataLayer = window.dataLayer || []; function
           gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
@@ -55,7 +60,25 @@ const Cases: React.FC = () => {
                   creating a safer community through technology!
                 </p>
               </div>
-              <div className="caseWenRight"></div>
+              <div className="caseWenRight">
+                <LazyLoadImage
+                  className="caseWenSplashScreenOne"
+                  alt=""
+                  src={SplashOne} // use normal <img> attributes as props
+                />
+                <LazyLoadImage
+                  className="caseWenSplashScreenTwo"
+                  alt=""
+                  src={SplashTwo} // use normal <img> attributes as props
+                />
+                <Link
+                  to="/our-cases/wenotify"
+                  className="wenCaseLearnMore"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Learn More
+                </Link>
+              </div>
             </div>
           </div>
         </div>
