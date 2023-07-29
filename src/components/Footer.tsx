@@ -11,6 +11,7 @@ import { ReactComponent as MasterCard } from '../assets/svg/mastercard.svg'
 import { ReactComponent as AngleDown } from '../assets/svg/angle-down.svg'
 import api from '../api/axios'
 import { Store } from 'react-notifications-component'
+import { HashLink } from 'react-router-hash-link'
 
 const Footer = () => {
   const [fsubdrop, setFsubdrop] = useState('')
@@ -48,6 +49,12 @@ const Footer = () => {
         },
       })
     }
+  }
+
+  const scrollWithOffset = (el: any) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY
+    const yOffset = -150
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
   }
 
   return (
@@ -359,42 +366,34 @@ const Footer = () => {
             <div className="paymentMethods">
               <h2>our payment methods</h2>
               <div className="paymentMethods">
-                <Link
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                  to="/payment"
+                <HashLink
+                  to="/our-payment-methods#cash"
+                  scroll={(el) => scrollWithOffset(el)}
                   className="lnktoDeliv"
                 >
                   <PaymentOnDelivery className="PaymentOnDelivery" />
-                </Link>
-                <Link
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                  to="/payment"
+                </HashLink>
+                <HashLink
+                  to="/our-payment-methods#visa"
+                  scroll={(el) => scrollWithOffset(el)}
                   className="lnktoDeliv"
                 >
                   <Visa className="PaymentOnDelivery visa" />
-                </Link>
-                <Link
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                  to="/payment"
+                </HashLink>
+                <HashLink
+                  to="/our-payment-methods#m-pesa"
                   className="lnktoDeliv"
+                  scroll={(el) => scrollWithOffset(el)}
                 >
                   <Mpesa className="PaymentOnDelivery mpesaIc" />
-                </Link>
-                <Link
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                  to="/payment"
+                </HashLink>
+                <HashLink
+                  to="/our-payment-methods#master-card"
                   className="lnktoDeliv"
+                  scroll={(el) => scrollWithOffset(el)}
                 >
                   <MasterCard className="PaymentOnDelivery mastercardIc" />
-                </Link>
+                </HashLink>
               </div>
             </div>
             <div className="fnewsletter">

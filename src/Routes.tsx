@@ -39,6 +39,8 @@ import DeploymentAndLaunch from './routes/DeploymentAndLaunch'
 import DisputeResolutionCenter from './routes/DisputeResolutionCenter'
 import ReportProductOrService from './routes/ReportProductOrService'
 import WenotiFy from './routes/cases/WenotiFy'
+import Payment from './routes/Payment'
+import Gallery from './routes/Gallery'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -87,6 +89,11 @@ const router = createBrowserRouter(
       <Route
         path="/careers"
         element={<Careers />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/gallery"
+        element={<Gallery />}
         errorElement={<ErrorBoundary />}
       />
       <Route
@@ -143,6 +150,11 @@ const router = createBrowserRouter(
       <Route
         path="/cookie-policy"
         element={<CookiePolicy />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/our-payment-methods"
+        element={<Payment />}
         errorElement={<ErrorBoundary />}
       />
       <Route

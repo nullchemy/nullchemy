@@ -12,7 +12,10 @@ const WenotiFy = () => {
     <Fragment>
       <Helmet>
         <title>WenotiFy Kenya | nullchemy</title>
-        <link rel="canonical" href="http://nullchemy.com/our-cases/wenotify" />
+        <link
+          rel="canonical"
+          href={window.location.pathname + window.location.search}
+        />
         <script>
           window.dataLayer = window.dataLayer || []; function
           gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
