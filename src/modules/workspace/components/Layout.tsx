@@ -1,9 +1,30 @@
 import React, { Fragment, ReactNode } from 'react'
+import '../styles/css/layout.css'
 
-const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
+interface layout {
+  header: ReactNode
+  sidebar: ReactNode
+  playarea: ReactNode
+  footer: ReactNode
+}
+
+const Layout: React.FC<{ children: layout }> = ({ children }) => {
   return (
     <Fragment>
-      <main>{children}</main>
+      <div className="layout">
+        <div className="layoutContainer">
+          <div className="layoutWrapper">
+            <div className="layoutSidebar">
+              <aside>{children.sidebar}</aside>
+            </div>
+            <div className="layoutRight">
+              <header>{children.header}</header>
+              <main>{children.playarea}</main>
+              <footer>{children.footer}</footer>
+            </div>
+          </div>
+        </div>
+      </div>
     </Fragment>
   )
 }

@@ -1,6 +1,10 @@
 import React, { Fragment, useEffect } from 'react'
-import Maintainance from '../../../components/Maintainance'
 import ReactGA from 'react-ga'
+import Layout from '../components/Layout'
+import Header from '../components/Header'
+import Sidebar from '../components/Sidebar'
+import Playarea from '../components/Playarea'
+import Footer from '../components/Footer'
 
 const Home = () => {
   useEffect(() => {
@@ -9,9 +13,15 @@ const Home = () => {
   return (
     <Fragment>
       <div className="wsHome">
-        <h1 style={{ textAlign: 'center' }}>Your Workspace Home</h1>
+        <Layout
+          children={{
+            header: <Header />,
+            sidebar: <Sidebar />,
+            playarea: <Playarea />,
+            footer: <Footer />,
+          }}
+        />
       </div>
-      <Maintainance />
     </Fragment>
   )
 }

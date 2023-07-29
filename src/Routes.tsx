@@ -194,12 +194,12 @@ const router = createBrowserRouter(
       />
       <Route path="/test" element={<Test />} errorElement={<ErrorBoundary />} />
       <Route path="*" element={<NotFound />} errorElement={<ErrorBoundary />} />
+      <Route
+        path="/workspace"
+        element={<ClientDashboard />}
+        errorElement={<ErrorBoundary />}
+      />
       <Route element={<ProtectedRoutes />}>
-        <Route
-          path="/workspace"
-          element={<ClientDashboard />}
-          errorElement={<ErrorBoundary />}
-        />
         <Route
           path="/profile"
           element={<Profile />}
