@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
+import '../styles/css/playarea.css'
 
 const Playarea = () => {
   return (
     <Fragment>
-      <h1>Playarea</h1>
+      <div className="playarea"></div>
     </Fragment>
   )
 }

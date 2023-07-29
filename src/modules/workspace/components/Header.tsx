@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
+import '../styles/css/header.css'
 
 const Header = () => {
   return (
     <Fragment>
-      <h1>Header</h1>
+      <div className="header"></div>
     </Fragment>
   )
 }

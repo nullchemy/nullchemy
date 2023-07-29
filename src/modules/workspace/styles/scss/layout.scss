@@ -2,6 +2,12 @@
   .layoutContainer {
     .layoutWrapper {
       display: flex;
+      .layoutSidebar {
+        width: 200px;
+      }
+      .layoutRight {
+        flex: 1;
+      }
     }
   }
 }

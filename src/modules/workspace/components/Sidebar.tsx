@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react'
+import '../styles/css/sidebar.css'
 
 const Sidebar = () => {
   return (
     <Fragment>
-      <h1>Sidebar</h1>
+      <div className="sidebar">
+        <h1>Sidebar</h1>
+      </div>
     </Fragment>
   )
 }

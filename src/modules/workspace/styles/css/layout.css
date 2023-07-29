@@ -1,3 +1,9 @@
 .layout .layoutContainer .layoutWrapper {
   display: flex;
+}
+.layout .layoutContainer .layoutWrapper .layoutSidebar {
+  width: 200px;
+}
+.layout .layoutContainer .layoutWrapper .layoutRight {
+  flex: 1;
 }/*# sourceMappingURL=layout.css.map */
