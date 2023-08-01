@@ -2,4 +2,14 @@
   height: 100vh;
   width: 100%;
   background-color: #fff;
+  position: relative;
+}
+.sidebar .wkspaceAngles {
+  height: 20px;
+  width: 20px;
+  fill: var(--text-color);
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=sidebar.css.map */

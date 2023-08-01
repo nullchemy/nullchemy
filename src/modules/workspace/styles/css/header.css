@@ -1,5 +1,23 @@
-.header {
+.wksheader {
   height: 54px;
   width: 100%;
   background-color: #d7cdff;
+}
+.wksheader .wksContainer .wksWrapper .wksRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wksheader .wksContainer .wksWrapper .wksRight .wksHProfile {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wksheader .wksContainer .wksWrapper .wksRight .wksLogoutIc {
+  height: 20px;
+  width: 20px;
+  fill: var(--text-color);
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */

@@ -1,5 +1,29 @@
-.header {
+.wksheader {
   height: 54px;
   width: 100%;
   background-color: #d7cdff;
+  .wksContainer {
+    .wksWrapper {
+      .wksLeft {
+      }
+      .wksRight {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .wksHProfile {
+          height: 40px;
+          width: 40px;
+          background-color: #fff;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .wksLogoutIc {
+          height: 20px;
+          width: 20px;
+          fill: var(--text-color);
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
