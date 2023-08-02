@@ -3,10 +3,24 @@
   width: 100%;
   background-color: #d7cdff;
 }
+.wksheader .wksContainer .wksWrapper {
+  display: flex;
+  padding-top: 5px;
+}
+.wksheader .wksContainer .wksWrapper .wksLeft {
+  flex: 1;
+  padding-left: 20px;
+}
+.wksheader .wksContainer .wksWrapper .wksLeft .wksImgLogo {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
 .wksheader .wksContainer .wksWrapper .wksRight {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0 20px;
 }
 .wksheader .wksContainer .wksWrapper .wksRight .wksHProfile {
   height: 40px;

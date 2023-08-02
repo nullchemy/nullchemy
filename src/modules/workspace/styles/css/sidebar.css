@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #fff;
   position: relative;
+  transition: width 0.5s ease-in-out;
 }
 .sidebar .wkspaceAngles {
   height: 20px;
@@ -12,4 +13,8 @@
   top: 15px;
   right: 10px;
   cursor: pointer;
+}
+
+.sidebarMin {
+  width: 15%;
 }/*# sourceMappingURL=sidebar.css.map */
