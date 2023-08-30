@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>About Us | nullchemy</title>
+        <title>Workspace | nullchemy</title>
         <link
           rel="canonical"
           href={window.location.pathname + window.location.search}

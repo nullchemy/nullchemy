@@ -70,8 +70,9 @@ const OurPrinciples: React.FC = () => {
                 </div>
                 <div className="opitwrap">
                   <p>
-                    To be an exemplary regulator of water resources management
-                    and use.
+                    committed to creating a holistic ecosystem of software
+                    solutions that cater to diverse needs, putting the customer
+                    at the heart of everything we do
                   </p>
                 </div>
               </div>
