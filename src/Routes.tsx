@@ -41,6 +41,7 @@ import ReportProductOrService from './routes/ReportProductOrService'
 import WenotiFy from './routes/cases/WenotiFy'
 import Payment from './routes/Payment'
 import Gallery from './routes/Gallery'
+import ApplyJob from './routes/ApplyJob'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -89,6 +90,11 @@ const router = createBrowserRouter(
       <Route
         path="/careers"
         element={<Careers />}
+        errorElement={<ErrorBoundary />}
+      />
+      <Route
+        path="/careers/:slug"
+        element={<ApplyJob />}
         errorElement={<ErrorBoundary />}
       />
       <Route

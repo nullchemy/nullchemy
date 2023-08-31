@@ -38,7 +38,7 @@ const Header = () => {
   const openProfile = () => {
     navigate('/profile')
   }
-  const [SolnsDrpVis, setSolnsDrpVis] = useState(false)
+  //const [SolnsDrpVis, setSolnsDrpVis] = useState(false)
   const [ProfDrpVis, setProfDrpVis] = useState(false)
   const logout = () => {
     session.destroy()

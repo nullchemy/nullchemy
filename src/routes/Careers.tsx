@@ -50,7 +50,7 @@ const Careers = () => {
               <div
                 className="career_item"
                 onClick={() => {
-                  navigate('/career/senior-full-stack-developer-remote')
+                  navigate('/careers/senior-full-stack-developer-remote')
                 }}
               >
                 <h1>Senior Full-Stack Developer</h1>
@@ -65,7 +65,7 @@ const Careers = () => {
                   </div>
                   <div className="career_item_right">
                     <Link
-                      to="/career/senior-full-stack-developer-remote"
+                      to="/careers/senior-full-stack-developer-remote"
                       className="career_link_apply"
                     >
                       <span>See Job Description and Apply</span>
@@ -77,7 +77,7 @@ const Careers = () => {
               <div
                 className="career_item"
                 onClick={() => {
-                  navigate('/career/senior-full-stack-developer-remote')
+                  navigate('/careers/senior-full-stack-developer-remote')
                 }}
               >
                 <h1>Junior Full-Stack Developer</h1>
@@ -92,7 +92,7 @@ const Careers = () => {
                   </div>
                   <div className="career_item_right">
                     <Link
-                      to="/career/senior-full-stack-developer-remote"
+                      to="/careers/senior-full-stack-developer-remote"
                       className="career_link_apply"
                     >
                       <span>See Job Description and Apply</span>
@@ -104,7 +104,7 @@ const Careers = () => {
               <div
                 className="career_item"
                 onClick={() => {
-                  navigate('/career/senior-full-stack-developer-remote')
+                  navigate('/careers/senior-full-stack-developer-remote')
                 }}
               >
                 <h1>Senior Accountant</h1>
@@ -117,7 +117,7 @@ const Careers = () => {
                   </div>
                   <div className="career_item_right">
                     <Link
-                      to="/career/senior-full-stack-developer-remote"
+                      to="/careers/senior-full-stack-developer-remote"
                       className="career_link_apply"
                     >
                       <span>See Job Description and Apply</span>
