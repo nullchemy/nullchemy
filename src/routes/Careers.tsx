@@ -51,6 +51,7 @@ const Careers = () => {
                 className="career_item"
                 onClick={() => {
                   navigate('/careers/senior-full-stack-developer-remote')
+                  window.scrollTo(0, 0)
                 }}
               >
                 <h1>Senior Full-Stack Developer</h1>
@@ -78,6 +79,7 @@ const Careers = () => {
                 className="career_item"
                 onClick={() => {
                   navigate('/careers/senior-full-stack-developer-remote')
+                  window.scrollTo(0, 0)
                 }}
               >
                 <h1>Junior Full-Stack Developer</h1>
@@ -105,6 +107,7 @@ const Careers = () => {
                 className="career_item"
                 onClick={() => {
                   navigate('/careers/senior-full-stack-developer-remote')
+                  window.scrollTo(0, 0)
                 }}
               >
                 <h1>Senior Accountant</h1>

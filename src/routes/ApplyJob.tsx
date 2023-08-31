@@ -9,6 +9,7 @@ import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import ERecruit from '../components/ERecruit'
 
 const ApplyJob = () => {
   const jobdescr = `# Senior Full-Stack Software Developer
@@ -21,7 +22,7 @@ const ApplyJob = () => {
 <br>
 
 ## About Us:
-nullchemy is a dynamic and innovative technology company specializing in Software Development & Artificial intelligence. We are passionate about pushing the boundaries of technology and delivering exceptional products that make a meaningful impact on our clients' businesses. As we continue to grow, we are seeking an experienced Senior Full-Stack Software Developer to join our talented team and contribute to our exciting projects.
+nullchemy is a dynamic and innovative technology company specializing in Software Development & Artificial intelligence. We are passionate about pushing the boundaries of technology and delivering exceptional products that make a meaningful impact on our clients' businesses. As we applinue to grow, we are seeking an experienced Senior Full-Stack Software Developer to join our talented team and applribute to our exciting projects.
 
 <br>
 
@@ -39,7 +40,7 @@ As a Senior Full-Stack Software Developer at nullchemy, you will play a crucial 
 5. <span>5. </span>Participate in code reviews, providing constructive feedback to maintain high code quality and ensure consistent coding practices.
 6. <span>6. </span>Troubleshoot and resolve complex technical issues, identifying root causes and implementing effective solutions.
 7. <span>7. </span>Stay up-to-date with industry trends, emerging technologies, and software development best practices, and apply this knowledge to improve our processes and products.
-8. <span>8. </span>Contribute to the improvement of development methodologies, tools, and processes to enhance the team's efficiency and productivity.
+8. <span>8. </span>applribute to the improvement of development methodologies, tools, and processes to enhance the team's efficiency and productivity.
 9. <span>9. </span>Collaborate with cross-functional teams to ensure successful project delivery within established timelines and requirements.
 
 <br>
@@ -72,6 +73,7 @@ Join us at nullchemy and be part of a team that's shaping the future of [Your In
 *nullchemy* is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, or protected veteran status and will not be discriminated against on the basis of disability.
 
 `
+
   return (
     <Fragment>
       <Helmet>
@@ -117,6 +119,8 @@ Join us at nullchemy and be part of a team that's shaping the future of [Your In
                 {jobdescr}
               </ReactMarkdown>
             </div>
+            {/* application Form Bottom */}
+            <ERecruit />
           </div>
         </div>
       </div>
