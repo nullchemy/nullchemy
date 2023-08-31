@@ -87,6 +87,10 @@
           padding: 10px;
           border-radius: 10px;
           margin-bottom: 20px;
+          h1,
+          p {
+            color: var(--text-color);
+          }
           .career_item_bottom {
             display: flex;
             flex-direction: row;

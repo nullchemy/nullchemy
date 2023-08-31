@@ -61,13 +61,14 @@ const Careers = () => {
                   <div className="career_item_left">
                     <span>100% Remote</span>
                     <span>Full-Time</span>
+                    <span>Nairobi</span>
                   </div>
                   <div className="career_item_right">
                     <Link
                       to="/career/senior-full-stack-developer-remote"
                       className="career_link_apply"
                     >
-                      <span>Apply</span>
+                      <span>See Job Description and Apply</span>
                       <ArrowRight className="career_item_Ic" />
                     </Link>
                   </div>
@@ -79,21 +80,22 @@ const Careers = () => {
                   navigate('/career/senior-full-stack-developer-remote')
                 }}
               >
-                <h1>Senior Full-Stack Developer</h1>
+                <h1>Junior Full-Stack Developer</h1>
                 <p>
-                  We are looking for a Full-Time Senior Full-Stack Developer
+                  We are looking for a Full-Time Junior Full-Stack Developer
                 </p>
                 <div className="career_item_bottom">
                   <div className="career_item_left">
                     <span>100% Remote</span>
                     <span>Full-Time</span>
+                    <span>Nairobi</span>
                   </div>
                   <div className="career_item_right">
                     <Link
                       to="/career/senior-full-stack-developer-remote"
                       className="career_link_apply"
                     >
-                      <span>Apply</span>
+                      <span>See Job Description and Apply</span>
                       <ArrowRight className="career_item_Ic" />
                     </Link>
                   </div>
@@ -105,21 +107,20 @@ const Careers = () => {
                   navigate('/career/senior-full-stack-developer-remote')
                 }}
               >
-                <h1>Senior Full-Stack Developer</h1>
-                <p>
-                  We are looking for a Full-Time Senior Full-Stack Developer
-                </p>
+                <h1>Senior Accountant</h1>
+                <p>We are looking for a Full-Time Senior Accountant</p>
                 <div className="career_item_bottom">
                   <div className="career_item_left">
                     <span>100% Remote</span>
                     <span>Full-Time</span>
+                    <span>Nairobi</span>
                   </div>
                   <div className="career_item_right">
                     <Link
                       to="/career/senior-full-stack-developer-remote"
                       className="career_link_apply"
                     >
-                      <span>Apply</span>
+                      <span>See Job Description and Apply</span>
                       <ArrowRight className="career_item_Ic" />
                     </Link>
                   </div>
