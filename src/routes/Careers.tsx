@@ -5,11 +5,14 @@ import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
+import { Link, useNavigate } from 'react-router-dom'
+import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 
 const Careers = () => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
+  const navigate = useNavigate()
   return (
     <Fragment>
       <Helmet>
@@ -42,6 +45,86 @@ const Careers = () => {
               <span>Operations</span>
               <span>Finance</span>
               <span>Management</span>
+            </div>
+            <div className="careers_content">
+              <div
+                className="career_item"
+                onClick={() => {
+                  navigate('/career/senior-full-stack-developer-remote')
+                }}
+              >
+                <h1>Senior Full-Stack Developer</h1>
+                <p>
+                  We are looking for a Full-Time Senior Full-Stack Developer
+                </p>
+                <div className="career_item_bottom">
+                  <div className="career_item_left">
+                    <span>100% Remote</span>
+                    <span>Full-Time</span>
+                  </div>
+                  <div className="career_item_right">
+                    <Link
+                      to="/career/senior-full-stack-developer-remote"
+                      className="career_link_apply"
+                    >
+                      <span>Apply</span>
+                      <ArrowRight className="career_item_Ic" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="career_item"
+                onClick={() => {
+                  navigate('/career/senior-full-stack-developer-remote')
+                }}
+              >
+                <h1>Senior Full-Stack Developer</h1>
+                <p>
+                  We are looking for a Full-Time Senior Full-Stack Developer
+                </p>
+                <div className="career_item_bottom">
+                  <div className="career_item_left">
+                    <span>100% Remote</span>
+                    <span>Full-Time</span>
+                  </div>
+                  <div className="career_item_right">
+                    <Link
+                      to="/career/senior-full-stack-developer-remote"
+                      className="career_link_apply"
+                    >
+                      <span>Apply</span>
+                      <ArrowRight className="career_item_Ic" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="career_item"
+                onClick={() => {
+                  navigate('/career/senior-full-stack-developer-remote')
+                }}
+              >
+                <h1>Senior Full-Stack Developer</h1>
+                <p>
+                  We are looking for a Full-Time Senior Full-Stack Developer
+                </p>
+                <div className="career_item_bottom">
+                  <div className="career_item_left">
+                    <span>100% Remote</span>
+                    <span>Full-Time</span>
+                  </div>
+                  <div className="career_item_right">
+                    <Link
+                      to="/career/senior-full-stack-developer-remote"
+                      className="career_link_apply"
+                    >
+                      <span>Apply</span>
+                      <ArrowRight className="career_item_Ic" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

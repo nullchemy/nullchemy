@@ -1,5 +1,4 @@
 .careers {
-  height: 100vh;
   .careersContainer {
     margin: 0 5%;
     .careersWrapper {
@@ -78,6 +77,47 @@
           margin: 0 10px;
           &:nth-child(1) {
             background-color: #fff;
+          }
+        }
+      }
+      .careers_content {
+        padding: 3rem 0;
+        .career_item {
+          border: 1px solid var(--text-color);
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          .career_item_bottom {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0 10px 0;
+            .career_item_left {
+              span {
+                padding: 5px 10px;
+                border: 1px solid var(--text-color);
+                border-radius: 23px;
+                cursor: pointer;
+                margin-right: 10px;
+              }
+            }
+            .career_item_right {
+              padding-right: 0.6rem;
+              .career_link_apply {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #0088f0;
+                .career_item_Ic {
+                  height: 15px;
+                  width: 15px;
+                  fill: #0088f0;
+                  transform: rotate(-45deg);
+                  margin-left: 5px;
+                }
+              }
+            }
           }
         }
       }

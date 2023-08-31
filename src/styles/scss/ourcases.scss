@@ -22,18 +22,35 @@
           line-height: 3rem;
         }
       }
+      .wencase {
+        background-color: #cadd97;
+        background-image: url('../../assets/images/cartographer.png');
+      }
+      .wecarecase {
+        background: rgb(255, 171, 53);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 171, 53, 1) 0%,
+          rgba(255, 221, 107, 1) 56%,
+          rgba(255, 230, 62, 1) 100%
+        );
+      }
       .caseWenotify {
         display: flex;
         border-radius: 23px;
         height: 600px;
-        background-color: #cadd97;
         padding: 4rem;
+        margin-bottom: 3rem;
+        &::after,
+        &::before {
+          border-radius: 23px;
+        }
         .caseWenLeft {
           width: 50%;
           .caseWenSubTitle {
             font-size: 2rem;
             line-height: 2.4rem;
-            color: var(--text-color);
+            color: #2d2d2d;
             font-weight: 600;
             font-family: 'BookerlyDisplay_W_Rg', Roboto, sans-serif;
           }
@@ -44,7 +61,7 @@
               font-size: 1rem;
               line-height: 1rem;
               text-transform: capitalize;
-              color: var(--text-color);
+              color: #2d2d2d;
               font-family: AEmb, Roboto, sans-serif;
               background: rgba(19, 20, 38, 0.2);
               margin: 0 10px;
@@ -61,9 +78,9 @@
             align-items: center;
             margin-bottom: 2rem;
             .caseBrandLogo {
-              fill: var(--text-color);
-              color: var(--text-color);
-              stroke: var(--text-color);
+              fill: #2d2d2d;
+              color: #2d2d2d;
+              stroke: #2d2d2d;
               height: 100px;
               width: 100px;
             }
@@ -81,7 +98,7 @@
             font-size: 1.2rem;
             line-height: 1.4rem;
             font-family: Arial, Helvetica, sans-serif;
-            color: var(--text-color);
+            color: #2d2d2d;
           }
         }
         .caseWenRight {

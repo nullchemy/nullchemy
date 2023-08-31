@@ -204,10 +204,10 @@ const Footer = () => {
                       to="/terms-and-conditions"
                       className="fnavLnk"
                     >
-                      Terms and Conditions
+                      Legal
                     </Link>
                   </li>
-                  <li className="fnavLink">
+                  {/* <li className="fnavLink">
                     <Link
                       onClick={() => {
                         window.scrollTo(0, 0)
@@ -228,6 +228,28 @@ const Footer = () => {
                     >
                       Cookie Policy
                     </Link>
+                  </li> */}
+                  <li className="fnavLink">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/security"
+                      className="fnavLnk"
+                    >
+                      Security
+                    </Link>
+                  </li>
+                  <li className="fnavLink">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/cli-and-api"
+                      className="fnavLnk"
+                    >
+                      CLI & API
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -242,6 +264,17 @@ const Footer = () => {
                   <AngleDown className="ftrangledown" />
                 </div>
                 <ul className={fsubdrop === 'money' ? 'fnav' : 'fnav fnavhide'}>
+                  <li className="fnavLink">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                      to="/our-products"
+                      className="fnavLnk"
+                    >
+                      Our Products
+                    </Link>
+                  </li>
                   <li className="fnavLink">
                     <Link
                       onClick={() => {

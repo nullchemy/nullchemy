@@ -32,7 +32,7 @@ const Cases: React.FC = () => {
         <div className="ourcasesContainer">
           <div className="ourcasesWrapper">
             <h1 className="ourcasesHeader">Our Cases</h1>
-            <div className="caseWenotify">
+            <div className="caseWenotify wencase">
               <div className="caseWenLeft">
                 <h2 className="caseWenSubTitle">
                   we developed an application that can be used by the general
@@ -64,15 +64,64 @@ const Cases: React.FC = () => {
                 <LazyLoadImage
                   className="caseWenSplashScreenOne"
                   alt=""
-                  src={SplashOne} // use normal <img> attributes as props
+                  src={SplashOne}
                 />
                 <LazyLoadImage
                   className="caseWenSplashScreenTwo"
                   alt=""
-                  src={SplashTwo} // use normal <img> attributes as props
+                  src={SplashTwo}
                 />
                 <Link
                   to="/our-cases/wenotify"
+                  className="wenCaseLearnMore"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="caseWenotify wecarecase">
+              <div className="caseWenLeft">
+                <h2 className="caseWenSubTitle">
+                  we developed an application that can detect suicidal
+                  intentions and deploy preventive advice and assistance by the
+                  use ML & AI
+                </h2>
+                <div className="caseKeywords">
+                  <span>suicide</span>
+                  <span>healthcare</span>
+                  <span>public</span>
+                </div>
+                <div className="caseBranding">
+                  <Wenotify className="caseBrandLogo" />
+                  <h1 className="caseBrandName">WeCare</h1>
+                </div>
+                <p className="caseExpPar">
+                  This case study delves into the arising issue of depression
+                  and suicidal thoughts, exploring the challenges individuals
+                  face when seeking help and support. In response, we have
+                  designed a pioneering AI and ML-driven application dedicated
+                  to preventing and addressing suicidal ideation. Our
+                  application offers a comprehensive platform that aids in
+                  recognizing signs of distress, providing timely intervention,
+                  and fostering a supportive environment. Our mobile app enables
+                  users to connect anonymously with empathetic responders,
+                  ensuring immediate assistance during moments of crisis.
+                </p>
+              </div>
+              <div className="caseWenRight">
+                <LazyLoadImage
+                  className="caseWenSplashScreenOne"
+                  alt=""
+                  src={SplashOne}
+                />
+                <LazyLoadImage
+                  className="caseWenSplashScreenTwo"
+                  alt=""
+                  src={SplashTwo}
+                />
+                <Link
+                  to="/our-cases/wecare"
                   className="wenCaseLearnMore"
                   onClick={() => window.scrollTo(0, 0)}
                 >

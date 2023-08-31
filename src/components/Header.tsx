@@ -127,7 +127,7 @@ const Header = () => {
                     Cases
                   </Link>
                 </li>
-                <li
+                {/* <li
                   className="headerLink"
                   onMouseEnter={() => setSolnsDrpVis(true)}
                   onMouseLeave={() => setSolnsDrpVis(false)}
@@ -162,7 +162,7 @@ const Header = () => {
                       </div>
                     </div>
                   )}
-                </li>
+                </li> */}
                 <li className="headerLink">
                   <Link
                     to="/blogs"
