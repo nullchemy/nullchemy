@@ -42,11 +42,13 @@ import WenotiFy from './routes/cases/WenotiFy'
 import Payment from './routes/Payment'
 import Gallery from './routes/Gallery'
 import ApplyJob from './routes/ApplyJob'
+import Talk from './routes/Talk'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />} errorElement={<ErrorBoundary />} />
+      <Route path="/talk" element={<Talk />} errorElement={<ErrorBoundary />} />
       <Route
         path="/about"
         element={<About />}
