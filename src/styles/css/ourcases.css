@@ -37,6 +37,10 @@
   background: rgb(255, 171, 53);
   background: linear-gradient(90deg, rgb(255, 171, 53) 0%, rgb(255, 221, 107) 56%, rgb(255, 230, 62) 100%);
 }
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction {
+  background: #35ff5d;
+  background: linear-gradient(90deg, #35ff5d 0%, #6bff95 56%, #1bff8d 100%);
+}
 .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify {
   display: flex;
   border-radius: 23px;

@@ -35,6 +35,15 @@
           rgba(255, 230, 62, 1) 100%
         );
       }
+      .eoprediction {
+        background: #35ff5d;
+        background: linear-gradient(
+          90deg,
+          #35ff5d 0%,
+          #6bff95 56%,
+          #1bff8d 100%
+        );
+      }
       .caseWenotify {
         display: flex;
         border-radius: 23px;

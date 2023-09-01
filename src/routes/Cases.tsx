@@ -93,7 +93,7 @@ const Cases: React.FC = () => {
                   <span>public</span>
                 </div>
                 <div className="caseBranding">
-                  <Wenotify className="caseBrandLogo" />
+                  {/* <Wenotify className="caseBrandLogo" /> */}
                   <h1 className="caseBrandName">WeCare</h1>
                 </div>
                 <p className="caseExpPar">
@@ -107,6 +107,57 @@ const Cases: React.FC = () => {
                   and fostering a supportive environment. Our mobile app enables
                   users to connect anonymously with empathetic responders,
                   ensuring immediate assistance during moments of crisis.
+                </p>
+              </div>
+              <div className="caseWenRight">
+                <LazyLoadImage
+                  className="caseWenSplashScreenOne"
+                  alt=""
+                  src={SplashOne}
+                />
+                <LazyLoadImage
+                  className="caseWenSplashScreenTwo"
+                  alt=""
+                  src={SplashTwo}
+                />
+                <Link
+                  to="/our-cases/wecare"
+                  className="wenCaseLearnMore"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="caseWenotify eoprediction">
+              <div className="caseWenLeft">
+                <h2 className="caseWenSubTitle">
+                  we developed an application that analyzes health data and
+                  social trends to predict and prevent potential epidemic
+                  outbreaks.
+                </h2>
+                <div className="caseKeywords">
+                  <span>epidemic</span>
+                  <span>healthcare</span>
+                  <span>analysis</span>
+                  <span>prediction</span>
+                </div>
+                <div className="caseBranding">
+                  {/* <Wenotify className="caseBrandLogo" /> */}
+                  <h1 className="caseBrandName">E-O Prediction</h1>
+                </div>
+                <p className="caseExpPar">
+                  In this case study, we delve into the pressing issue of
+                  potential epidemic outbreaks and the intricate challenges
+                  faced in predicting and preventing them. In response, we have
+                  crafted an innovative AI and ML-driven application dedicated
+                  to analyzing health data and social trends, aiming to foresee
+                  and thwart potential outbreaks. Our application serves as a
+                  comprehensive platform that aids in early detection, offering
+                  timely intervention measures while fostering a vigilant and
+                  proactive environment. Our mobile app allows users to access
+                  real-time insights anonymously, ensuring swift responses to
+                  mitigate emerging health crises.
                 </p>
               </div>
               <div className="caseWenRight">
