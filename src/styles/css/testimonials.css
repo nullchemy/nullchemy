@@ -93,12 +93,12 @@
 }
 @media (max-width: 480px) {
   .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlTitle {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsright .tstmlPar {
   color: var(--text-color);
-  font-size: 1.6rem;
-  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }/*# sourceMappingURL=testimonials.css.map */

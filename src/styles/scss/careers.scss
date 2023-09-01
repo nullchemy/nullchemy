@@ -55,6 +55,7 @@
         @media (max-width: 480px) {
           font-size: 3rem;
           line-height: 3rem;
+          margin-bottom: 10px;
         }
       }
       .crslndpar {
@@ -67,8 +68,17 @@
         font-weight: 500 !important;
         margin-bottom: 1.5rem;
         user-select: none;
+        @media (max-width: 480px) {
+          width: 100%;
+          font-size: 1.15rem;
+        }
       }
       .crsjbcats {
+        @media (max-width: 480px) {
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 10px;
+        }
         span {
           padding: 5px 10px;
           border: 1px solid var(--text-color);
@@ -97,7 +107,16 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px 0 10px 0;
+            @media (max-width: 480px) {
+              flex-wrap: wrap;
+            }
             .career_item_left {
+              @media (max-width: 480px) {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                margin-bottom: 5px;
+              }
               span {
                 padding: 5px 10px;
                 border: 1px solid var(--text-color);

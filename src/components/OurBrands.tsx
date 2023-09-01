@@ -22,7 +22,9 @@ const OurBrands = () => {
               </div>
               <div className="ourbrandsCards">
                 <div className="ourBrandImageWrapper">
-                  <img className="orbrancIcImage" src={santos} alt="" />
+                  <div className="orbrancIcImage">
+                    <img className="" src={santos} alt="" />
+                  </div>
                 </div>
                 <div className="ourbrandTxts">
                   <h1>Santos All Stars</h1>

@@ -46,6 +46,10 @@
           overflow: hidden;
           margin: 0 auto;
           border-radius: 0% 50% 50% 50%;
+          @media (max-width: 480px) {
+            height: 250px;
+            width: 250px;
+          }
           .missGridWrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -59,6 +63,10 @@
               background-repeat: no-repeat;
               height: 200px;
               width: 200px;
+              @media (max-width: 480px) {
+                height: 125px;
+                width: 125px;
+              }
               &:nth-child(1) {
                 background-position: 0px 0px;
               }
@@ -70,6 +78,20 @@
               }
               &:nth-child(4) {
                 background-position: -200px -200px;
+              }
+              @media (max-width: 480px) {
+                &:nth-child(1) {
+                  background-position: 0px 0px;
+                }
+                &:nth-child(2) {
+                  background-position: -125px 0px;
+                }
+                &:nth-child(3) {
+                  background-position: 0px -125px;
+                }
+                &:nth-child(4) {
+                  background-position: -125px -125px;
+                }
               }
             }
           }

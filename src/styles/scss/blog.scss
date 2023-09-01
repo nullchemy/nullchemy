@@ -142,7 +142,10 @@
 
     .blogsFileters {
       display: flex;
-
+      @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .filter {
         padding: 8px 15px;
         border-radius: 23px;
@@ -151,13 +154,20 @@
         color: var(--text-color);
         margin-right: 20px;
         cursor: pointer;
-
         &:nth-child(1) {
-          margin-left: -20px !important;
+          margin-left: -20px;
         }
-
         &:hover {
           background-color: #505050;
+        }
+        @media (max-width: 480px) {
+          margin-right: 0;
+          margin-left: -20px;
+          display: none;
+          &:nth-child(1) {
+            margin-left: -10px;
+            display: unset;
+          }
         }
       }
 
