@@ -173,7 +173,7 @@ const Cases: React.FC = () => {
                   src={SplashTwo}
                 />
                 <Link
-                  to="/our-cases/wecare"
+                  to="/our-cases/eo-prediction"
                   className="wenCaseLearnMore"
                   onClick={() => window.scrollTo(0, 0)}
                 >

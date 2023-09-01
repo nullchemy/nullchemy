@@ -40,6 +40,7 @@
   background: linear-gradient(90deg, rgb(255, 171, 53) 0%, rgb(255, 221, 107) 56%, rgb(255, 230, 62) 100%);
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .eoprediction {
+  background: #000000;
   background-image: url("../../assets/images/patterns/inspiration-geometry.png");
   background-repeat: repeat;
   background-position: 0 0;
