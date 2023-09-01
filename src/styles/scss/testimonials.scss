@@ -46,7 +46,9 @@
               transform: rotate(45deg);
               margin: 70px;
               @media (max-width: 480px) {
-                margin: 40px;
+                margin: 35px;
+                height: 250px;
+                width: 250px;
               }
               img {
                 transform: rotate(-45deg) scale(1.414);

@@ -61,7 +61,9 @@
 }
 @media (max-width: 480px) {
   .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap {
-    margin: 40px;
+    margin: 35px;
+    height: 250px;
+    width: 250px;
   }
 }
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap img {
