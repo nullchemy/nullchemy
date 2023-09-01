@@ -32,14 +32,37 @@
 .ourcases .ourcasesContainer .ourcasesWrapper .wencase {
   background-color: #cadd97;
   background-image: url("../../assets/images/cartographer.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .wecarecase {
   background: rgb(255, 171, 53);
   background: linear-gradient(90deg, rgb(255, 171, 53) 0%, rgb(255, 221, 107) 56%, rgb(255, 230, 62) 100%);
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .eoprediction {
-  background: #35ff5d;
-  background: linear-gradient(90deg, #35ff5d 0%, #6bff95 56%, #1bff8d 100%);
+  background-image: url("../../assets/images/patterns/inspiration-geometry.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .ourcase_item_overlay {
+  background: rgba(0, 0, 0, 0.4509803922);
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseWenSubTitle {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseKeywords span {
+  background: rgba(41, 43, 88, 0.6862745098);
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseBranding .caseBrandLogo {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseBranding .caseBrandName {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseExpPar {
+  color: #fff !important;
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify {
   display: flex;
@@ -47,9 +70,18 @@
   height: 600px;
   padding: 4rem;
   margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify::after, .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify::before {
   border-radius: 23px;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .ourcase_item_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft {
   width: 50%;

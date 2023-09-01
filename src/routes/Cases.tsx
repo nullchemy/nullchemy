@@ -130,6 +130,7 @@ const Cases: React.FC = () => {
               </div>
             </div>
             <div className="caseWenotify eoprediction">
+              <div className="ourcase_item_overlay"></div>
               <div className="caseWenLeft">
                 <h2 className="caseWenSubTitle">
                   we developed an application that analyzes health data and

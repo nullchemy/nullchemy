@@ -25,6 +25,9 @@
       .wencase {
         background-color: #cadd97;
         background-image: url('../../assets/images/cartographer.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
       }
       .wecarecase {
         background: rgb(255, 171, 53);
@@ -36,13 +39,35 @@
         );
       }
       .eoprediction {
-        background: #35ff5d;
-        background: linear-gradient(
-          90deg,
-          #35ff5d 0%,
-          #6bff95 56%,
-          #1bff8d 100%
-        );
+        background-image: url('../../assets/images/patterns/inspiration-geometry.png');
+        background-repeat: repeat;
+        background-position: 0 0;
+        // background-size: cover;
+        .ourcase_item_overlay {
+          background: #00000073;
+        }
+        .caseWenLeft {
+          .caseWenSubTitle {
+            color: #fff !important;
+          }
+          .caseKeywords {
+            span {
+              background: #292b58af;
+              color: #fff !important;
+            }
+          }
+          .caseBranding {
+            .caseBrandLogo {
+              color: #fff !important;
+            }
+            .caseBrandName {
+              color: #fff !important;
+            }
+          }
+          .caseExpPar {
+            color: #fff !important;
+          }
+        }
       }
       .caseWenotify {
         display: flex;
@@ -50,9 +75,18 @@
         height: 600px;
         padding: 4rem;
         margin-bottom: 3rem;
+        position: relative;
+        overflow: hidden;
         &::after,
         &::before {
           border-radius: 23px;
+        }
+        .ourcase_item_overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
         }
         .caseWenLeft {
           width: 50%;
