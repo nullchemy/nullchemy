@@ -60,6 +60,7 @@ const Talk: React.FC = () => {
     }
 
     openCameraAndMicrophone()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVideoEnabled, isAudioEnabled])
 
   useEffect(() => {
@@ -67,7 +68,11 @@ const Talk: React.FC = () => {
     if (isVideoEnabled && videoStream && videoRef.current) {
       videoRef.current.srcObject = videoStream
     }
-  }, [isVideoEnabled, videoStream])
+    // Ensure audio works when audio is initially enabled
+    if (isAudioEnabled && audioStream && audioRef.current) {
+      audioRef.current.srcObject = audioStream
+    }
+  }, [audioStream, isAudioEnabled, isVideoEnabled, videoStream])
 
   return (
     <Fragment>
