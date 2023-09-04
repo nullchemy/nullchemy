@@ -3,7 +3,6 @@ import { QRCode } from 'react-qrcode-logo'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Newsletter from '../components/Newsletter'
-import nullchemyLogo from '../assets/images/nullchemy_new_logo_3d.png'
 
 const Qrcode = () => {
   return (
@@ -18,13 +17,11 @@ const Qrcode = () => {
         }}
       >
         <QRCode
-          value="https://github.com/gcoro/react-qrcode-logo"
-          bgColor="#fff"
-          logoImage={nullchemyLogo}
-          logoWidth={35}
-          logoHeight={35}
-          logoPadding={1}
+          value="https://denniskibet.netlify.app"
+          bgColor="transparent"
           removeQrCodeBehindLogo={true}
+          size={350}
+          eyeRadius={20}
         />
       </div>
       <Newsletter />

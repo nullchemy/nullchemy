@@ -47,7 +47,7 @@ const Careers = () => {
               <span>Management</span>
             </div>
             <div className="careers_content">
-              <div
+              {/* <div
                 className="career_item"
                 onClick={() => {
                   navigate('/careers/senior-full-stack-developer-remote')
@@ -74,60 +74,9 @@ const Careers = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div
-                className="career_item"
-                onClick={() => {
-                  navigate('/careers/senior-full-stack-developer-remote')
-                  window.scrollTo(0, 0)
-                }}
-              >
-                <h1>Junior Full-Stack Developer</h1>
-                <p>
-                  We are looking for a Full-Time Junior Full-Stack Developer
-                </p>
-                <div className="career_item_bottom">
-                  <div className="career_item_left">
-                    <span>100% Remote</span>
-                    <span>Full-Time</span>
-                    <span>Nairobi</span>
-                  </div>
-                  <div className="career_item_right">
-                    <Link
-                      to="/careers/senior-full-stack-developer-remote"
-                      className="career_link_apply"
-                    >
-                      <span>See Job Description and Apply</span>
-                      <ArrowRight className="career_item_Ic" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="career_item"
-                onClick={() => {
-                  navigate('/careers/senior-full-stack-developer-remote')
-                  window.scrollTo(0, 0)
-                }}
-              >
-                <h1>Senior Accountant</h1>
-                <p>We are looking for a Full-Time Senior Accountant</p>
-                <div className="career_item_bottom">
-                  <div className="career_item_left">
-                    <span>100% Remote</span>
-                    <span>Full-Time</span>
-                    <span>Nairobi</span>
-                  </div>
-                  <div className="career_item_right">
-                    <Link
-                      to="/careers/senior-full-stack-developer-remote"
-                      className="career_link_apply"
-                    >
-                      <span>See Job Description and Apply</span>
-                      <ArrowRight className="career_item_Ic" />
-                    </Link>
-                  </div>
-                </div>
+              </div> */}
+              <div className="no_current_oppenings">
+                <h3>There are no current oppenings</h3>
               </div>
             </div>
           </div>
