@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import '../styles/css/ventures.css'
 import { ReactComponent as Healthcare } from '../assets/svg/health.svg'
 import { ReactComponent as Technology } from '../assets/svg/technology.svg'
@@ -7,8 +7,10 @@ import { ReactComponent as Security } from '../assets/svg/security.svg'
 import { ReactComponent as Cart } from '../assets/svg/cart.svg'
 import { ReactComponent as Business } from '../assets/svg/business.svg'
 import { ReactComponent as Construction } from '../assets/svg/construction.svg'
+import venture from '../data/ventures.json'
 
 const Ventures = () => {
+  const [active, setActive] = useState('healthcare')
   return (
     <Fragment>
       <div className="ventures">
@@ -22,12 +24,27 @@ const Ventures = () => {
                 tailormade software solutions that we offer
               </p>
               <div className="venturesList">
-                <li className="ventLiIts ventLiItsActive">
+                <li
+                  className={
+                    active === 'healthcare'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('healthcare')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Healthcare className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Healthcare</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'healthcare'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -35,12 +52,27 @@ const Ventures = () => {
                     </div>
                   </div>
                 </li>
-                <li className="ventLiIts">
+                <li
+                  className={
+                    active === 'technology'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('technology')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Technology className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Technology</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'technology'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -48,12 +80,27 @@ const Ventures = () => {
                     </div>
                   </div>
                 </li>
-                <li className="ventLiIts">
+                <li
+                  className={
+                    active === 'finance'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('finance')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Finance className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Finance</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'finance'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -61,12 +108,27 @@ const Ventures = () => {
                     </div>
                   </div>
                 </li>
-                <li className="ventLiIts">
+                <li
+                  className={
+                    active === 'security'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('security')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Security className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Security</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'security'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -74,12 +136,27 @@ const Ventures = () => {
                     </div>
                   </div>
                 </li>
-                <li className="ventLiIts">
+                <li
+                  className={
+                    active === 'retail'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('retail')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Cart className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Retail & E-Commerce</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'retail'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -87,12 +164,27 @@ const Ventures = () => {
                     </div>
                   </div>
                 </li>
-                <li className="ventLiIts">
+                <li
+                  className={
+                    active === 'business'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('business')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Business className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Business Services</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'business'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -100,12 +192,27 @@ const Ventures = () => {
                     </div>
                   </div>
                 </li>
-                <li className="ventLiIts">
+                <li
+                  className={
+                    active === 'construction'
+                      ? 'ventLiIts ventLiItsActive'
+                      : 'ventLiIts'
+                  }
+                  onClick={() => {
+                    setActive('construction')
+                  }}
+                >
                   <div className="ventliItemWrapper">
                     <Construction className="vantiWIc" />
                     <div className="ventiItWTexts">
                       <h2>Construction and Infrastructure</h2>
-                      <p>
+                      <p
+                        className={
+                          active === 'construction'
+                            ? 'vantItPartext vantItPartextActive'
+                            : 'vantItPartext'
+                        }
+                      >
                         The Healthcare industry is increasingly dependent on
                         technology for improving patient care, operational
                         efficiency, and research advancements.
@@ -118,66 +225,70 @@ const Ventures = () => {
             <div className="venturesRight">
               <div className="venturesRightWrapper">
                 <div className="venturesRightContent">
-                  <div className="venturesRightItem">
-                    <h1 className="vrItemTitle">
-                      Electronic Health Records (EHR):
-                    </h1>
-                    <p className="vrItemPar">
-                      Develop secure, interoperable systems for managing patient
-                      records, including medical history, prescriptions, and lab
-                      results.
-                    </p>
-                  </div>
-                  <div className="venturesRightItem">
-                    <h1 className="vrItemTitle">
-                      Electronic Health Records (EHR):
-                    </h1>
-                    <p className="vrItemPar">
-                      Develop secure, interoperable systems for managing patient
-                      records, including medical history, prescriptions, and lab
-                      results.
-                    </p>
-                  </div>
-                  <div className="venturesRightItem">
-                    <h1 className="vrItemTitle">
-                      Electronic Health Records (EHR):
-                    </h1>
-                    <p className="vrItemPar">
-                      Develop secure, interoperable systems for managing patient
-                      records, including medical history, prescriptions, and lab
-                      results.
-                    </p>
-                  </div>
-                  <div className="venturesRightItem">
-                    <h1 className="vrItemTitle">
-                      Electronic Health Records (EHR):
-                    </h1>
-                    <p className="vrItemPar">
-                      Develop secure, interoperable systems for managing patient
-                      records, including medical history, prescriptions, and lab
-                      results.
-                    </p>
-                  </div>
-                  <div className="venturesRightItem">
-                    <h1 className="vrItemTitle">
-                      Electronic Health Records (EHR):
-                    </h1>
-                    <p className="vrItemPar">
-                      Develop secure, interoperable systems for managing patient
-                      records, including medical history, prescriptions, and lab
-                      results.
-                    </p>
-                  </div>
-                  <div className="venturesRightItem">
-                    <h1 className="vrItemTitle">
-                      Electronic Health Records (EHR):
-                    </h1>
-                    <p className="vrItemPar">
-                      Develop secure, interoperable systems for managing patient
-                      records, including medical history, prescriptions, and lab
-                      results.
-                    </p>
-                  </div>
+                  {active === 'healthcare'
+                    ? venture.healthcare.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : active === 'technology'
+                    ? venture.technology.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : active === 'finance'
+                    ? venture.finance.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : active === 'security'
+                    ? venture.security.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : active === 'retail'
+                    ? venture.retail.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : active === 'business'
+                    ? venture.business.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : active === 'construction'
+                    ? venture.construction.map((i) => {
+                        return (
+                          <div className="venturesRightItem">
+                            <h1 className="vrItemTitle">{i.title}</h1>
+                            <p className="vrItemPar">{i.preview}</p>
+                          </div>
+                        )
+                      })
+                    : ''}
                 </div>
               </div>
             </div>
