@@ -5,14 +5,14 @@ import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
-import { Link, useNavigate } from 'react-router-dom'
-import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
+// import { Link, useNavigate } from 'react-router-dom'
+// import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 
 const Careers = () => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   return (
     <Fragment>
       <Helmet>
