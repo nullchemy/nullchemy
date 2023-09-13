@@ -12,6 +12,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
+import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 
 const Read = () => {
   let navigate = useNavigate()
@@ -27,13 +28,14 @@ const Read = () => {
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
       return 'http://localhost:8000/'
     } else {
-      return 'https://api.nullchemy.com/'
+      return 'https://nullchemy-api.onrender.com/'
     }
   }
 
   function replaceWithPlaceholder(): void {
     const image = document.getElementById('blgImage') as HTMLImageElement
-    image.src = backend() + 'nullchemy_placeholder.jpg'
+    //image.src = backend() + 'nullchemy_placeholder.jpg'
+    image.src = PlaceHolder
     image.onerror = null // To prevent an infinite loop in case the placeholder image is also missing
   }
 
