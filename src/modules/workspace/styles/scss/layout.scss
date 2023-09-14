@@ -2,8 +2,9 @@
   .layoutContainer {
     .layoutWrapper {
       display: flex;
+      width: 100%;
       .layoutSidebar {
-        width: 200px;
+        width: min-content !important;
       }
       .layoutRight {
         flex: 1;
