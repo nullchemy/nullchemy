@@ -22,10 +22,10 @@ const Testimonials = () => {
                   <Wenotify className="tstmlsrIC" />
                   <h1 className="tstmlTitle">
                     “Now, our employees have instant, year-round access to their
-                    goals in UKG Pro..."
+                    goals in NBS Pro..."
                   </h1>
                   <p className="tstmlPar">
-                    As an employee-centric HR tool, UKG Pro helped the Miami
+                    As an employee-centric HR tool, NBS Pro helped the Miami
                     Dolphins improve employee engagement with a trackable,
                     transparent goal-setting process.
                   </p>

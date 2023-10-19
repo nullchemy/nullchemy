@@ -73,9 +73,8 @@ const Ventures = () => {
                             : 'vantItPartext'
                         }
                       >
-                        The Healthcare industry is increasingly dependent on
-                        technology for improving patient care, operational
-                        efficiency, and research advancements.
+                        The technology sector is increasingly vital for driving
+                        innovation, productivity, and research progress.
                       </p>
                     </div>
                   </div>
@@ -101,9 +100,9 @@ const Ventures = () => {
                             : 'vantItPartext'
                         }
                       >
-                        The Healthcare industry is increasingly dependent on
-                        technology for improving patient care, operational
-                        efficiency, and research advancements.
+                        The finance industry relies heavily on technology to
+                        enhance security, streamline transactions, and foster
+                        financial growth.
                       </p>
                     </div>
                   </div>
@@ -129,9 +128,9 @@ const Ventures = () => {
                             : 'vantItPartext'
                         }
                       >
-                        The Healthcare industry is increasingly dependent on
-                        technology for improving patient care, operational
-                        efficiency, and research advancements.
+                        The security sector increasingly leans on technology to
+                        safeguard assets, monitor threats, and ensure public
+                        safety.
                       </p>
                     </div>
                   </div>
@@ -157,9 +156,9 @@ const Ventures = () => {
                             : 'vantItPartext'
                         }
                       >
-                        The Healthcare industry is increasingly dependent on
-                        technology for improving patient care, operational
-                        efficiency, and research advancements.
+                        In retail and e-commerce, technology plays a pivotal
+                        role in optimizing customer experiences, managing
+                        inventory, and boosting sales.
                       </p>
                     </div>
                   </div>
@@ -185,9 +184,9 @@ const Ventures = () => {
                             : 'vantItPartext'
                         }
                       >
-                        The Healthcare industry is increasingly dependent on
-                        technology for improving patient care, operational
-                        efficiency, and research advancements.
+                        Technology empowers the business services sector to
+                        offer efficient solutions, improve customer
+                        satisfaction, and achieve organizational goals.
                       </p>
                     </div>
                   </div>
@@ -213,9 +212,10 @@ const Ventures = () => {
                             : 'vantItPartext'
                         }
                       >
-                        The Healthcare industry is increasingly dependent on
-                        technology for improving patient care, operational
-                        efficiency, and research advancements.
+                        The construction and infrastructure domain leverages
+                        technology for project management, precision
+                        engineering, and infrastructure development, ensuring
+                        progress and sustainability.
                       </p>
                     </div>
                   </div>
