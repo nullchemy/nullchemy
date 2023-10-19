@@ -6,6 +6,7 @@ import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
+import HowWeGetItDone from '../components/HowWeGetItDone'
 
 const Services: React.FC = () => {
   useEffect(() => {
@@ -222,6 +223,7 @@ const Services: React.FC = () => {
           </div>
         </div>
       </div>
+      <HowWeGetItDone />
       <Newsletter />
       <Footer />
     </Fragment>

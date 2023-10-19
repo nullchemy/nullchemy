@@ -4,7 +4,6 @@ import Landing from '../components/Landing'
 import Footer from '../components/Footer'
 import Newsletter from '../components/Newsletter'
 import WhatWeDo from '../components/WhatWeDo'
-import HowWeGetItDone from '../components/HowWeGetItDone'
 import session from '../utils/session'
 import api from '../api/axios'
 import { useAppDispatch } from '../state/hooks'
@@ -62,7 +61,7 @@ const Home = () => {
       <WhatWeDo />
       <OurPrinciples />
       <Ventures />
-      <HowWeGetItDone />
+
       <Testimonials />
       <OurBrands />
       <BlogHighlights />
