@@ -4,6 +4,7 @@ import ScrollReveal from 'scrollreveal'
 import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 import { useNavigate } from 'react-router-dom'
 import api from '../api/axios'
+import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 
 const BlogHighlights = () => {
   ScrollReveal().reveal('.blghlgCardItem', {
@@ -41,7 +42,7 @@ const BlogHighlights = () => {
 
   function replaceWithPlaceholder(): void {
     const image = document.getElementById('blgImage') as HTMLImageElement
-    image.src = backend() + 'nullchemy_placeholder.jpg'
+    image.src = PlaceHolder
     image.onerror = null // To prevent an infinite loop in case the placeholder image is also missing
   }
 

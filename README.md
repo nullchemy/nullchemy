@@ -9,3 +9,7 @@ https://nullchemy-api.onrender.com
 ```
 
 # degenerate era
+
+```
+https://nullchemy.com
+```

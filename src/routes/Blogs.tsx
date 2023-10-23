@@ -10,6 +10,7 @@ import Newsletter from '../components/Newsletter'
 import api from '../api/axios'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
+import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 
 const Blogs = () => {
   useEffect(() => {
@@ -45,7 +46,7 @@ const Blogs = () => {
 
   function replaceWithPlaceholder(): void {
     const image = document.getElementById('blgImage') as HTMLImageElement
-    image.src = backend() + 'nullchemy_placeholder.jpg'
+    image.src = PlaceHolder
     image.onerror = null // To prevent an infinite loop in case the placeholder image is also missing
   }
 
