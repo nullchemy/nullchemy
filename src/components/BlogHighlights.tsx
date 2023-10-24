@@ -17,6 +17,7 @@ const BlogHighlights = () => {
     state: 'loading',
     data: [],
   })
+  const [placeholder, setPlaceholder] = useState(false)
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
   useEffect(() => {
     const fetchBlog = async () => {
@@ -30,7 +31,6 @@ const BlogHighlights = () => {
     }
     fetchBlog()
   }, [])
-  console.log(blogs)
 
   const backend = (): string => {
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
@@ -38,12 +38,6 @@ const BlogHighlights = () => {
     } else {
       return 'https://nullchemy-api.onrender.com/'
     }
-  }
-
-  function replaceWithPlaceholder(): void {
-    const image = document.getElementById('blgImage') as HTMLImageElement
-    image.src = PlaceHolder
-    image.onerror = null // To prevent an infinite loop in case the placeholder image is also missing
   }
 
   //handle blog click
@@ -90,16 +84,21 @@ const BlogHighlights = () => {
                         key={i.BlogID}
                       >
                         <div className="blghlgCardItemTop">
-                          {/* <img src={agility} alt="" /> */}
-                          {JSON.parse(i.PreviewImage).assets.length !== 0 &&
-                          previmage ? (
+                          {placeholder ? (
+                            <img src={PlaceHolder} alt="" />
+                          ) : JSON.parse(i.PreviewImage).assets.length !== 0 &&
+                            previmage ? (
                             <img
                               id="blgImage"
                               src={backend() + 'uploads/' + previmage}
-                              onError={replaceWithPlaceholder}
+                              onError={() => {
+                                setPlaceholder(true)
+                              }}
                               alt=""
                             />
-                          ) : null}
+                          ) : (
+                            <img src={PlaceHolder} alt="" />
+                          )}
                         </div>
                         <div className="blghlgCardItemBtm">
                           <div className="bloghighTitle">
