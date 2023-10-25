@@ -211,28 +211,6 @@ const Footer = () => {
                       Legal
                     </Link>
                   </li>
-                  {/* <li className="fnavLink">
-                    <Link
-                      onClick={() => {
-                        window.scrollTo(0, 0)
-                      }}
-                      to="/privacy"
-                      className="fnavLnk"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li className="fnavLink">
-                    <Link
-                      onClick={() => {
-                        window.scrollTo(0, 0)
-                      }}
-                      to="/cookie-policy"
-                      className="fnavLnk"
-                    >
-                      Cookie Policy
-                    </Link>
-                  </li> */}
                   <li className="fnavLink">
                     <Link
                       onClick={() => {
