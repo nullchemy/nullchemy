@@ -16,11 +16,14 @@ import { HashLink } from 'react-router-hash-link'
 const Footer = () => {
   const [fsubdrop, setFsubdrop] = useState('')
   const [email, setEmail] = useState('')
+  const [isloading, setIsLoading] = useState(false)
 
   const subscribe = async (e: any) => {
     e.preventDefault()
+    setIsLoading(true)
     const res = await api('POST', 'subscribe', { email })
     if (res.data.type !== 'error') {
+      setIsLoading(false)
       Store.addNotification({
         title: 'Subscribed Successfully!',
         message: res.data.message,
@@ -35,6 +38,7 @@ const Footer = () => {
         },
       })
     } else {
+      setIsLoading(false)
       Store.addNotification({
         title: 'Subscription Error!',
         message: res.data.message,
@@ -448,7 +452,20 @@ const Footer = () => {
                       setEmail(e.target.value)
                     }}
                   />
-                  <button className="fsubbtn">subscribe</button>
+                  <button className="fsubbtn">
+                    {isloading ? (
+                      <div className="loadingAnim" style={{ width: '67px' }}>
+                        <div className="lds-ellipsis dot-flashing">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    ) : (
+                      'subscribe'
+                    )}
+                  </button>
                 </div>
               </form>
             </div>

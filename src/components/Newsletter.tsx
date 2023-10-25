@@ -5,11 +5,14 @@ import { Store } from 'react-notifications-component'
 
 const Newsletter = () => {
   const [email, setEmail] = useState('')
+  const [isloading, setIsLoading] = useState(false)
 
   const subscribe = async (e: any) => {
     e.preventDefault()
+    setIsLoading(true)
     const res = await api('POST', 'subscribe', { email })
     if (res.data.type !== 'error') {
+      setIsLoading(false)
       Store.addNotification({
         title: 'Subscribed Successfully!',
         message: res.data.message,
@@ -24,6 +27,7 @@ const Newsletter = () => {
         },
       })
     } else {
+      setIsLoading(false)
       Store.addNotification({
         title: 'Subscription Error!',
         message: res.data.message,
@@ -70,11 +74,23 @@ const Newsletter = () => {
                           setEmail(e.target.value)
                         }}
                       />
-                      <input
-                        type="submit"
-                        value="Subscribe"
-                        className="subnewsButton"
-                      />
+                      <button type="submit" className="subnewsButton">
+                        {isloading ? (
+                          <div
+                            className="loadingAnim"
+                            style={{ width: '67px' }}
+                          >
+                            <div className="lds-ellipsis dot-flashing">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                          </div>
+                        ) : (
+                          'subscribe'
+                        )}
+                      </button>
                     </div>
                   </form>
                 </div>

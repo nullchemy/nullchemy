@@ -19,11 +19,20 @@
   overflow: hidden;
   width: calc(50% - 3rem);
   height: 350px;
+  position: relative;
+  margin-top: 90px;
 }
 @media (max-width: 480px) {
   .ourprinciples .opcontainer .opwrapper .opleft {
     width: 100%;
   }
+}
+.ourprinciples .opcontainer .opwrapper .opleft img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
 }
 .ourprinciples .opcontainer .opwrapper .opright {
   width: calc(50% - 3rem);

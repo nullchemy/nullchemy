@@ -23,7 +23,21 @@
       }
       .paymentContent {
         .paymentMethod {
-          height: 100vh;
+          h1 {
+            color: var(--text-color);
+            margin-bottom: 20px;
+          }
+          .payment_method_expl {
+            color: var(--text-color);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            ul {
+              margin-left: 20px;
+            }
+            ul > li {
+              padding-bottom: 10px;
+            }
+          }
         }
       }
     }
