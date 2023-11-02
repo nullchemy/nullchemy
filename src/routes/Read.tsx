@@ -100,6 +100,42 @@ const Read = () => {
       })
     }
   }
+
+  // toc
+  const [tocLinks, setTocLinks] = useState('')
+  function generateLinkMarkup(contentElement: any) {
+    const headings = [
+      ...contentElement.querySelectorAll('h1, h2, h3, h4, h5, h6'),
+    ]
+    const parsedHeadings = headings.map((heading) => {
+      return {
+        title: heading.innerText,
+        depth: heading.nodeName.replace(/\D/g, ''),
+        id: heading.getAttribute('id'),
+      }
+    })
+    const htmlMarkup = parsedHeadings.map(
+      (h) => `
+      <li class="${h.depth > 1 ? 'pl-4' : ''}">
+        <a href="#${h.id}">${h.title}</a>
+      </li>
+      `
+    )
+    const finalMarkup = `
+    <ul>${htmlMarkup.join('')}</ul>
+  `
+    return finalMarkup
+  }
+
+  async function init() {
+    const main = document.querySelector('.readContentInner')
+    const linkHtml = generateLinkMarkup(main)
+    setTocLinks(linkHtml)
+  }
+
+  useEffect(() => {
+    init()
+  }, [blog])
   return (
     <Fragment>
       <Helmet>
@@ -159,10 +195,6 @@ const Read = () => {
                     ) : null
                   ) : null}
                 </div>
-                {/* <div
-                  className="readContentInner"
-                  dangerouslySetInnerHTML={{ __html: blog[0].Content }}
-                ></div> */}
                 <div className="readblgcontmd readContentInner">
                   <ReactMarkdown
                     rehypePlugins={[rehypeRaw]}
@@ -199,22 +231,21 @@ const Read = () => {
                 {toc.length !== 0 ? (
                   <div className="readTableofContents">
                     <h2>Table of contents</h2>
-                    <ul>
-                      {toc.length !== 0
-                        ? toc.map((i: any) => {
-                            return (
-                              <li
-                                key={i.key}
-                                onClick={() => {
-                                  scrollToCenter(i.id)
-                                }}
-                              >
-                                <a href={'#' + i.id}>{i.cont}</a>
-                              </li>
-                            )
-                          })
-                        : null}
-                    </ul>
+                    <div dangerouslySetInnerHTML={{ __html: tocLinks }}></div>
+                    {/* {toc.length !== 0
+                      ? toc.map((i: any) => {
+                          return (
+                            <li
+                              key={i.key}
+                              onClick={() => {
+                                scrollToCenter(i.id)
+                              }}
+                            >
+                              <a href={'#' + i.id}>{i.cont}</a>
+                            </li>
+                          )
+                        })
+                      : null} */}
                   </div>
                 ) : null}
                 <div className="readSocialIcons">
