@@ -3,7 +3,7 @@ import session from '../utils/session'
 
 const backend = (): string => {
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    return 'http://localhost:8000/'
+    return 'https://nullchemy-api.onrender.com/'
   } else {
     return 'https://nullchemy-api.onrender.com/'
   }
@@ -30,6 +30,7 @@ const api = async (
       },
       data: data,
     }
+    console.log(config)
     const res = await axios(config)
     return res
   } catch (error: any) {
@@ -41,7 +42,11 @@ const api = async (
       console.log(error.response.data)
       return {
         ...error.response,
-        data: { type: 'error', message: 'Something Wrong Happened' },
+        data: {
+          type: 'error',
+          message:
+            'Something Wrong Happened: status code falls out of the range of 2xx',
+        },
       }
     } else if (error.request) {
       // The request was made but no response was received
@@ -49,16 +54,22 @@ const api = async (
       console.log(error.request)
       return {
         ...error.response,
-        data: { type: 'error', message: 'Something Wrong Happened' },
+        data: {
+          type: 'error',
+          message:
+            'Something Wrong Happened: no response was received from the backend',
+        },
       }
     } else {
       // Something happened in setting up the request that triggered an Error
       console.log('Error', error.message)
-    }
-    console.log(error.config)
-    return {
-      ...error.response,
-      data: { type: 'error', message: 'Something Wrong Happened' },
+      return {
+        ...error.response,
+        data: {
+          type: 'error',
+          message: 'Something Wrong Happened: Error setting up the request',
+        },
+      }
     }
   }
 }

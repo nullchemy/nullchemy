@@ -13,6 +13,12 @@ import Newsletter from '../components/Newsletter'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
+import Comments from '../components/Comments'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 const Read = () => {
   let navigate = useNavigate()
@@ -153,10 +159,39 @@ const Read = () => {
                     ) : null
                   ) : null}
                 </div>
-                <div
+                {/* <div
                   className="readContentInner"
                   dangerouslySetInnerHTML={{ __html: blog[0].Content }}
-                ></div>
+                ></div> */}
+                <div className="readblgcontmd">
+                  <ReactMarkdown
+                    rehypePlugins={[rehypeRaw]}
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      code({ node, inline, className, children, ...props }) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                          <SyntaxHighlighter
+                            {...props}
+                            children={String(children).replace(/\n$/, '')}
+                            style={dracula}
+                            language={match[1]}
+                            PreTag="div"
+                          />
+                        ) : (
+                          <code {...props} className={className}>
+                            {children}
+                          </code>
+                        )
+                      },
+                    }}
+                  >
+                    {blog[0].Content === '' ? 'loading' : blog[0].Content}
+                  </ReactMarkdown>
+                </div>
+                <div className="r_blg_body_comments">
+                  <Comments />
+                </div>
               </div>
             )}
             <div className="readSidebarRight">

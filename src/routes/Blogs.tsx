@@ -26,6 +26,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       const res = await api('GET', 'blog/all', {})
+      console.log(res.data)
       if (res.data.type !== 'error') {
         setBlogs({ ...res.data, state: 'success' })
         console.log(res.data)
