@@ -204,7 +204,7 @@
 .readContentInner h4,
 .readContentInner h5,
 .readContentInner h6 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "VolteRounded-Bold", Volte Rounded;
   margin-bottom: 10px;
   font-weight: 700;
@@ -221,7 +221,7 @@
   }
 }
 .readContentInner p {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   line-height: 1.5rem;
   font-weight: 400;
   margin: 0 0 15px 0;

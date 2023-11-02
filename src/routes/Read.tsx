@@ -163,7 +163,7 @@ const Read = () => {
                   className="readContentInner"
                   dangerouslySetInnerHTML={{ __html: blog[0].Content }}
                 ></div> */}
-                <div className="readblgcontmd">
+                <div className="readblgcontmd readContentInner">
                   <ReactMarkdown
                     rehypePlugins={[rehypeRaw]}
                     remarkPlugins={[remarkGfm]}
