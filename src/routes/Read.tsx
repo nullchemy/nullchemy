@@ -19,6 +19,7 @@ import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import CodeCopyBtn from '../components/codeCopyBtn'
 
 const Read = () => {
   let navigate = useNavigate()
@@ -85,22 +86,6 @@ const Read = () => {
         })
       : ''
 
-  //table of contents
-  const toc = blog.length !== 0 ? JSON.parse(blog[0].Toc).data : []
-  console.log(toc)
-  const scrollToCenter = (id: string) => {
-    const targetElement = document.getElementById(id)
-    if (targetElement) {
-      const targetRect = targetElement.getBoundingClientRect()
-      const centerY = window.innerHeight / 2
-      const offsetY = targetRect.top - centerY + targetRect.height / 2
-      window.scrollTo({
-        top: window.scrollY + offsetY,
-        behavior: 'smooth',
-      })
-    }
-  }
-
   // toc
   const [tocLinks, setTocLinks] = useState('')
   function generateLinkMarkup(contentElement: any) {
@@ -116,14 +101,12 @@ const Read = () => {
     })
     const htmlMarkup = parsedHeadings.map(
       (h) => `
-      <li class="${h.depth > 1 ? 'pl-4' : ''}">
-        <a href="#${h.id}">${h.title}</a>
-      </li>
+        <li class="${h.depth > 1 ? 'pl-4' : ''}">
+          <a href="#${h.id}">${h.title}</a>
+        </li>
       `
     )
-    const finalMarkup = `
-    <ul>${htmlMarkup.join('')}</ul>
-  `
+    const finalMarkup = `<ul>${htmlMarkup.join('')}</ul>`
     return finalMarkup
   }
 
@@ -135,7 +118,15 @@ const Read = () => {
 
   useEffect(() => {
     init()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blog])
+
+  const Pre = ({ children }: any) => (
+    <pre className="blog-pre">
+      <CodeCopyBtn>{children}</CodeCopyBtn>
+      {children}
+    </pre>
+  )
   return (
     <Fragment>
       <Helmet>
@@ -200,6 +191,7 @@ const Read = () => {
                     rehypePlugins={[rehypeRaw]}
                     remarkPlugins={[remarkGfm]}
                     components={{
+                      pre: Pre,
                       code({ node, inline, className, children, ...props }) {
                         const match = /language-(\w+)/.exec(className || '')
                         return !inline && match ? (
@@ -228,26 +220,11 @@ const Read = () => {
             )}
             <div className="readSidebarRight">
               <div className="ritemsStick">
-                {toc.length !== 0 ? (
-                  <div className="readTableofContents">
-                    <h2>Table of contents</h2>
-                    <div dangerouslySetInnerHTML={{ __html: tocLinks }}></div>
-                    {/* {toc.length !== 0
-                      ? toc.map((i: any) => {
-                          return (
-                            <li
-                              key={i.key}
-                              onClick={() => {
-                                scrollToCenter(i.id)
-                              }}
-                            >
-                              <a href={'#' + i.id}>{i.cont}</a>
-                            </li>
-                          )
-                        })
-                      : null} */}
-                  </div>
-                ) : null}
+                <div className="readTableofContents">
+                  <h2>Table of contents</h2>
+                  <div dangerouslySetInnerHTML={{ __html: tocLinks }}></div>
+                </div>
+
                 <div className="readSocialIcons">
                   <a
                     href="https://web.facebook.com/profile.php?id=100066602095876"
