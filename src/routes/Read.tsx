@@ -127,6 +127,22 @@ const Read = () => {
       {children}
     </pre>
   )
+
+  function CustomHeadingRenderer(props: any) {
+    const children = React.Children.toArray(props.children)
+    const text: any = children.reduce((acc, child) => {
+      return typeof child === 'string' ? acc + child : acc
+    }, '')
+
+    const slug = text.toLowerCase().replace(/\W/g, '-')
+
+    return React.createElement(
+      `h${props.level}`,
+      { id: slug, className: 'your-heading-class' },
+      props.children
+    )
+  }
+
   return (
     <Fragment>
       <Helmet>
@@ -208,6 +224,10 @@ const Read = () => {
                           </code>
                         )
                       },
+                      h1: CustomHeadingRenderer,
+                      h2: CustomHeadingRenderer,
+                      h3: CustomHeadingRenderer,
+                      h4: CustomHeadingRenderer,
                     }}
                   >
                     {blog[0].Content === '' ? 'loading' : blog[0].Content}

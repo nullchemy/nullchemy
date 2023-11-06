@@ -235,6 +235,22 @@
       line-height: 20px;
     }
   }
+  ul,
+  ol {
+    margin-left: 20px;
+  }
+  li {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: var(--text-color);
+    max-width: initial;
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
+  }
 }
 
 .blog-pre {
