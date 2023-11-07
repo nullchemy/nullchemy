@@ -19,24 +19,36 @@ const Blogs = () => {
   let navigate = useNavigate()
   const [blogs, setBlogs] = useState({
     state: 'loading',
-    data: [],
+    data: Array<[]>,
   })
   const [placeholder, setPlaceholder] = useState(false)
+  const [spotBlog, setSpotBlog] = useState(2)
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
+
   useEffect(() => {
     const fetchBlog = async () => {
       const res = await api('GET', 'blog/all', {})
       console.log(res.data)
       if (res.data.type !== 'error') {
         setBlogs({ ...res.data, state: 'success' })
-        console.log(res.data)
+        const randomIndex = Math.floor(Math.random() * blogs.data.length)
+        setSpotBlog(randomIndex)
       } else {
-        setBlogs({ data: [], state: 'error' })
+        setBlogs({ data: Array<[]>, state: 'error' })
       }
     }
     fetchBlog()
-  }, [])
-  console.log(blogs)
+  }, [blogs.data.length])
+  const fetchBlog = async () => {
+    setBlogs({ data: Array<[]>, state: 'loading' })
+    const res = await api('GET', 'blog/all', {})
+    if (res.data.type !== 'error') {
+      setBlogs({ ...res.data, state: 'success' })
+      console.log(res.data)
+    } else {
+      setBlogs({ data: Array<[]>, state: 'error' })
+    }
+  }
 
   const backend = (): string => {
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
@@ -77,50 +89,55 @@ const Blogs = () => {
         </section>
         <section className="blog-landing">
           <div className="blog-landing-wrapper">
-            <div className="spot-blog">
-              <div className="spot-image">
-                <img src={agility} alt="" />
-              </div>
-              <div className="spot-texts">
-                <span className="spot-category">Web Development</span>{' '}
-                <span className="spot-date">june 22 2022</span>
-                <h2>
-                  <Link
-                    to="/read"
-                    onClick={() => {
-                      window.scrollTo(0, 0)
-                    }}
-                  >
-                    7 Frontend JavaScript Frameworks Loved by Developers in 2022
-                  </Link>
-                </h2>
-                <p>
-                  <Link
-                    to="/read"
-                    onClick={() => {
-                      window.scrollTo(0, 0)
-                    }}
-                  >
-                    is undoubtedly quite popular in building interactive and
-                    multimedia content. In 2021, it completed the ninth year in
-                    a row as the most commonly used programming language. A
-                    JavaScript frontend framework is a collection of JavaScript
-                    code libraries that helps developers with standard
-                    programming features and tasks. In addition, it offers
-                    reusable code components, a universal development
-                    environment, compilers, toolsets, code libraries, APIs,
-                    etc., to facilitate the app.
-                  </Link>
-                </p>
-                <div className="spot-author">
+            {blogs.state === 'loading' ? (
+              <p>Loading Spot Blog</p>
+            ) : blogs.state === 'success' &&
+              Array.isArray(blogs.data) &&
+              blogs.data.length > 0 ? (
+              <div className="spot-blog">
+                <div className="spot-image">
                   <img src={agility} alt="" />
-                  <div className="spot-author-name">
-                    <h4>Dennis Kibet</h4>
-                    <p>CEO</p>
+                </div>
+                <div className="spot-texts">
+                  <span className="spot-category">Web Development</span>{' '}
+                  <span className="spot-date">june 22 2022</span>
+                  <h2>
+                    <Link
+                      to="/read"
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                    >
+                      {blogs.data[spotBlog].Title}
+                    </Link>
+                  </h2>
+                  <p>
+                    <Link
+                      to="/read"
+                      onClick={() => {
+                        window.scrollTo(0, 0)
+                      }}
+                    >
+                      {blogs.data[spotBlog].Summary}
+                    </Link>
+                  </p>
+                  <div className="spot-author">
+                    <img src={agility} alt="" />
+                    <div className="spot-author-name">
+                      <h4>Dennis Kibet</h4>
+                      <p>CEO</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              <p>
+                Error{' '}
+                {blogs.state === 'success'
+                  ? 'no Blogs'
+                  : 'Fetching Spot Blog 1'}
+              </p>
+            )}
           </div>
         </section>
         <section className="blogs-showcase">
@@ -151,12 +168,30 @@ const Blogs = () => {
           </div>
           <div className="highflex">
             {blogs.state === 'loading' ? (
-              <div className="loadingAnim">
-                <div className="lds-ellipsis">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+              <div className="BloghlgloadingAnim">
+                <div className="blog-item loading">
+                  <div className="blog-preview-image"></div>
+                  <div className="blog-details">
+                    <div className="blog-title"></div>
+                    <div className="blog-preview-text"></div>
+                  </div>
+                  <div className="blog-date"></div>
+                </div>
+                <div className="blog-item loading">
+                  <div className="blog-preview-image"></div>
+                  <div className="blog-details">
+                    <div className="blog-title"></div>
+                    <div className="blog-preview-text"></div>
+                  </div>
+                  <div className="blog-date"></div>
+                </div>
+                <div className="blog-item loading">
+                  <div className="blog-preview-image"></div>
+                  <div className="blog-details">
+                    <div className="blog-title"></div>
+                    <div className="blog-preview-text"></div>
+                  </div>
+                  <div className="blog-date"></div>
                 </div>
               </div>
             ) : blogs.state === 'success' && Array.isArray(blogs.data) ? (
@@ -210,7 +245,16 @@ const Blogs = () => {
               })
             ) : (
               <div className="errFetchBlogs">
-                <p>Something Wrong Happened!</p>
+                <p>
+                  Could'nt get blogs!{' '}
+                  <span
+                    onClick={() => {
+                      fetchBlog()
+                    }}
+                  >
+                    retry
+                  </span>
+                </p>
               </div>
             )}
           </div>

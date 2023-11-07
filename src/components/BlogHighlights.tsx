@@ -25,6 +25,16 @@ const BlogHighlights = () => {
     }
     fetchBlog()
   }, [])
+  const fetchBlog = async () => {
+    setBlogs({ data: [], state: 'loading' })
+    const res = await api('GET', 'blog/all', {})
+    if (res.data.type !== 'error') {
+      setBlogs({ ...res.data, state: 'success' })
+      console.log(res.data)
+    } else {
+      setBlogs({ data: [], state: 'error' })
+    }
+  }
 
   const backend = (): string => {
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
@@ -51,12 +61,30 @@ const BlogHighlights = () => {
             </div>
             <div className="blghlgBtm">
               {blogs.state === 'loading' ? (
-                <div className="loadingAnim">
-                  <div className="lds-ellipsis">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className="BloghlgloadingAnim">
+                  <div className="blog-item loading">
+                    <div className="blog-preview-image"></div>
+                    <div className="blog-details">
+                      <div className="blog-title"></div>
+                      <div className="blog-preview-text"></div>
+                    </div>
+                    <div className="blog-date"></div>
+                  </div>
+                  <div className="blog-item loading">
+                    <div className="blog-preview-image"></div>
+                    <div className="blog-details">
+                      <div className="blog-title"></div>
+                      <div className="blog-preview-text"></div>
+                    </div>
+                    <div className="blog-date"></div>
+                  </div>
+                  <div className="blog-item loading">
+                    <div className="blog-preview-image"></div>
+                    <div className="blog-details">
+                      <div className="blog-title"></div>
+                      <div className="blog-preview-text"></div>
+                    </div>
+                    <div className="blog-date"></div>
                   </div>
                 </div>
               ) : blogs.state === 'success' && Array.isArray(blogs.data) ? (
@@ -112,7 +140,16 @@ const BlogHighlights = () => {
                 })
               ) : (
                 <div className="errFetchBlogs">
-                  <p>Something Wrong Happened!</p>
+                  <p>
+                    Could'nt get blogs!{' '}
+                    <span
+                      onClick={() => {
+                        fetchBlog()
+                      }}
+                    >
+                      retry
+                    </span>
+                  </p>
                 </div>
               )}
             </div>
