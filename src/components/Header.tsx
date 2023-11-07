@@ -386,7 +386,7 @@ const Header = () => {
             <Link to="/services" className="mnavLink">
               Services
             </Link>
-            <Link to="/cases" className="mnavLink">
+            <Link to="/our-cases" className="mnavLink">
               Our Cases
             </Link>
             <Link to="/solutions" className="mnavLink">

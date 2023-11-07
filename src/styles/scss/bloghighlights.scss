@@ -39,6 +39,9 @@
         justify-content: space-evenly;
         gap: 2rem;
         margin: 30px 0;
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
         .blghlgCardItem {
           width: 350px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,

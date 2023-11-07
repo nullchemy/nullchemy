@@ -26,6 +26,9 @@
         align-items: center;
         justify-content: space-evenly;
         gap: 2rem;
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
         .ourbrandsCards {
           width: 200px;
           cursor: pointer;

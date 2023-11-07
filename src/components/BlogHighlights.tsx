@@ -1,17 +1,11 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import '../styles/css/bloghighlights.css'
-import ScrollReveal from 'scrollreveal'
 import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 import { useNavigate } from 'react-router-dom'
 import api from '../api/axios'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 
 const BlogHighlights = () => {
-  ScrollReveal().reveal('.blghlgCardItem', {
-    delay: 500,
-    useDelay: 'onload',
-    reset: true,
-  })
   let navigate = useNavigate()
   const [blogs, setBlogs] = useState({
     state: 'loading',

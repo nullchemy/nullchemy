@@ -82,6 +82,11 @@
         &::before {
           border-radius: 23px;
         }
+        @media (max-width: 480px) {
+          flex-direction: column;
+          padding: 20px;
+          height: unset !important;
+        }
         .ourcase_item_overlay {
           position: absolute;
           top: 0;
@@ -91,15 +96,25 @@
         }
         .caseWenLeft {
           width: 50%;
+          @media (max-width: 480px) {
+            width: 100%;
+          }
           .caseWenSubTitle {
             font-size: 2rem;
             line-height: 2.4rem;
             color: #2d2d2d;
             font-weight: 600;
             font-family: 'BookerlyDisplay_W_Rg', Roboto, sans-serif;
+            @media (max-width: 480px) {
+              font-size: 1.3rem;
+              line-height: 1.5rem;
+            }
           }
           .caseKeywords {
             margin: 2rem 0;
+            @media (max-width: 480px) {
+              margin: 0.5rem 0;
+            }
             span {
               font-weight: 500;
               font-size: 1rem;
@@ -115,12 +130,19 @@
               &:nth-child(1) {
                 margin-left: 0;
               }
+              @media (max-width: 480px) {
+                font-size: 0.6rem;
+                line-height: 1rem;
+              }
             }
           }
           .caseBranding {
             display: flex;
             align-items: center;
             margin-bottom: 2rem;
+            @media (max-width: 480px) {
+              margin-bottom: 0.5rem;
+            }
             .caseBrandLogo {
               fill: #2d2d2d;
               color: #2d2d2d;
@@ -136,6 +158,9 @@
               font-weight: 800 !important;
               user-select: none;
               margin-left: 20px;
+              @media (max-width: 480px) {
+                font-size: 2rem;
+              }
             }
           }
           .caseExpPar {
@@ -143,11 +168,19 @@
             line-height: 1.4rem;
             font-family: Arial, Helvetica, sans-serif;
             color: #2d2d2d;
+            @media (max-width: 480px) {
+              font-size: 0.9rem;
+              line-height: 1.2rem;
+            }
           }
         }
         .caseWenRight {
           width: 50%;
           position: relative;
+          @media (max-width: 480px) {
+            width: 100%;
+            margin: 30px 0;
+          }
           .caseWenSplashScreenOne,
           .caseWenSplashScreenTwo {
             position: absolute;
@@ -159,6 +192,10 @@
             margin: 10px;
             border-radius: 5px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            @media (max-width: 480px) {
+              display: none;
+              height: 0px;
+            }
           }
           .caseWenSplashScreenOne {
             transform: rotate(-25deg);

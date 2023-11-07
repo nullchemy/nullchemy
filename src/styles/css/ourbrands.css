@@ -32,6 +32,11 @@
   justify-content: space-evenly;
   gap: 2rem;
 }
+@media (max-width: 480px) {
+  .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex {
+    flex-direction: column;
+  }
+}
 .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards {
   width: 200px;
   cursor: pointer;
