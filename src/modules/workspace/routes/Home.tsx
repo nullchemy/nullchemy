@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
 import Playarea from '../components/Playarea'
-import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet'
 
 const Home = () => {
@@ -31,7 +30,6 @@ const Home = () => {
             header: <Header />,
             sidebar: <Sidebar />,
             playarea: <Playarea />,
-            footer: <Footer />,
           }}
         />
       </div>

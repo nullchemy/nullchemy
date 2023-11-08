@@ -5,7 +5,6 @@ interface layout {
   header: ReactNode
   sidebar: ReactNode
   playarea: ReactNode
-  footer: ReactNode
 }
 
 const Layout: React.FC<{ children: layout }> = ({ children }) => {
@@ -20,7 +19,6 @@ const Layout: React.FC<{ children: layout }> = ({ children }) => {
             <div className="layoutRight">
               <header>{children.header}</header>
               <main>{children.playarea}</main>
-              <footer>{children.footer}</footer>
             </div>
           </div>
         </div>
