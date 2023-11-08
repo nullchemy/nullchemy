@@ -11,6 +11,7 @@ import api from '../api/axios'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
+import { backend } from '../utils/backend'
 
 const Blogs = () => {
   useEffect(() => {
@@ -47,14 +48,6 @@ const Blogs = () => {
       console.log(res.data)
     } else {
       setBlogs({ data: Array<[]>, state: 'error' })
-    }
-  }
-
-  const backend = (): string => {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-      return 'http://localhost:8000/'
-    } else {
-      return 'https://nullchemy-api.onrender.com/'
     }
   }
 

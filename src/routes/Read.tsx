@@ -20,6 +20,7 @@ import remarkGfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import CodeCopyBtn from '../components/codeCopyBtn'
+import { backend } from '../utils/backend'
 
 const Read = () => {
   let navigate = useNavigate()
@@ -30,14 +31,6 @@ const Read = () => {
   const [blog, setBlog] = useState<any[]>([])
   const [error, setError] = useState(false)
   const blogid = window.sessionStorage.getItem('blogid')
-
-  const backend = (): string => {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-      return 'http://localhost:8000/'
-    } else {
-      return 'https://nullchemy-api.onrender.com/'
-    }
-  }
 
   function replaceWithPlaceholder(): void {
     const image = document.getElementById('blgImage') as HTMLImageElement

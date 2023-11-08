@@ -4,6 +4,7 @@ import { ReactComponent as ArrowRight } from '../assets/svg/arrow-right.svg'
 import { useNavigate } from 'react-router-dom'
 import api from '../api/axios'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
+import { backend } from '../utils/backend'
 
 const BlogHighlights = () => {
   let navigate = useNavigate()
@@ -33,14 +34,6 @@ const BlogHighlights = () => {
       console.log(res.data)
     } else {
       setBlogs({ data: [], state: 'error' })
-    }
-  }
-
-  const backend = (): string => {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-      return 'http://localhost:8000/'
-    } else {
-      return 'https://nullchemy-api.onrender.com/'
     }
   }
 
