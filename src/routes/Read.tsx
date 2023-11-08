@@ -71,7 +71,6 @@ const Read = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blogid, navigate, slug])
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
-  console.log(blog)
   const previmage: string | undefined =
     blog.length !== 0
       ? JSON.parse(blog[0].PreviewImage).assets.find((element: string) => {
@@ -80,7 +79,7 @@ const Read = () => {
       : ''
 
   // toc
-  const [tocLinks, setTocLinks] = useState('')
+  const [tocLinks, setTocLinks] = useState<any>(null)
   function generateLinkMarkup(contentElement: any) {
     const headings = [
       ...contentElement.querySelectorAll('h1, h2, h3, h4, h5, h6'),
@@ -95,7 +94,9 @@ const Read = () => {
     const htmlMarkup = parsedHeadings.map(
       (h) => `
         <li class="${h.depth > 1 ? 'pl-4' : ''}">
-          <a href="#${h.id}">${h.title}</a>
+          <a href="#${h.id}"  onclick="scrollWithOffset(event, '${h.id}')">${
+        h.title
+      }</a>
         </li>
       `
     )
@@ -106,6 +107,7 @@ const Read = () => {
   async function init() {
     const main = document.querySelector('.readContentInner')
     const linkHtml = generateLinkMarkup(main)
+    console.log(linkHtml)
     setTocLinks(linkHtml)
   }
 
