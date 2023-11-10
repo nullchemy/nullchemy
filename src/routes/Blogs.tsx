@@ -1,9 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import '../styles/css/blog.css'
-import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import agility from '../assets/images/agility.png'
 import { ReactComponent as Filter } from '../assets/svg/filter.svg'
 import { useNavigate } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
@@ -12,6 +10,7 @@ import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 import { backend } from '../utils/backend'
+import SpotBlog from '../components/BlogSpot'
 
 const Blogs = () => {
   useEffect(() => {
@@ -23,7 +22,6 @@ const Blogs = () => {
     data: Array<[]>,
   })
   const [placeholder, setPlaceholder] = useState(false)
-  const [spotBlog, setSpotBlog] = useState(2)
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
 
   useEffect(() => {
@@ -32,8 +30,6 @@ const Blogs = () => {
       console.log(res.data)
       if (res.data.type !== 'error') {
         setBlogs({ ...res.data, state: 'success' })
-        const randomIndex = Math.floor(Math.random() * blogs.data.length)
-        setSpotBlog(randomIndex)
       } else {
         setBlogs({ data: Array<[]>, state: 'error' })
       }
@@ -82,55 +78,7 @@ const Blogs = () => {
         </section>
         <section className="blog-landing">
           <div className="blog-landing-wrapper">
-            {blogs.state === 'loading' ? (
-              <p>Loading Spot Blog</p>
-            ) : blogs.state === 'success' &&
-              Array.isArray(blogs.data) &&
-              blogs.data.length > 0 ? (
-              <div className="spot-blog">
-                <div className="spot-image">
-                  <img src={agility} alt="" />
-                </div>
-                <div className="spot-texts">
-                  <span className="spot-category">Web Development</span>{' '}
-                  <span className="spot-date">june 22 2022</span>
-                  <h2>
-                    <Link
-                      to="/read"
-                      onClick={() => {
-                        window.scrollTo(0, 0)
-                      }}
-                    >
-                      {blogs.data[spotBlog].Title}
-                    </Link>
-                  </h2>
-                  <p>
-                    <Link
-                      to="/read"
-                      onClick={() => {
-                        window.scrollTo(0, 0)
-                      }}
-                    >
-                      {blogs.data[spotBlog].Summary}
-                    </Link>
-                  </p>
-                  <div className="spot-author">
-                    <img src={agility} alt="" />
-                    <div className="spot-author-name">
-                      <h4>Dennis Kibet</h4>
-                      <p>CEO</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <p>
-                Error{' '}
-                {blogs.state === 'success'
-                  ? 'no Blogs'
-                  : 'Fetching Spot Blog 1'}
-              </p>
-            )}
+            <SpotBlog blogs={blogs} imageFormats={imageFormats} />
           </div>
         </section>
         <section className="blogs-showcase">

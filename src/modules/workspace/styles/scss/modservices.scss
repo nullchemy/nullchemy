@@ -24,7 +24,7 @@
       }
       .ms_wrap_flex_runtimes {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-gap: 20px;
         margin-top: 20px;
         .ms_serv_item {
@@ -32,9 +32,10 @@
           border-radius: 5px;
           border: 1px solid #000;
           cursor: pointer;
-          .ms_runtime_Ic {
-            height: 40px;
-            width: 40px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: unset;
           }
         }
       }

@@ -133,6 +133,26 @@
   font-size: 0.7rem;
   color: var(--text-color);
 }
+.blog-landing .blog-landing-wrapper .spot-blog-error {
+  text-align: center;
+}
+.blog-landing .blog-landing-wrapper .spot-blog-error img {
+  width: 100px;
+  height: auto;
+  margin: -60px 0 -30px 0;
+}
+.blog-landing .blog-landing-wrapper .spot-blog-error h1 {
+  margin-top: 1rem;
+  font-size: 35px;
+  font-family: "Fira Code", "Courier New", Courier, monospace;
+}
+.blog-landing .blog-landing-wrapper .spot-blog-error h1 span {
+  font-size: 60px;
+}
+.blog-landing .blog-landing-wrapper .spot-blog-error p {
+  font-family: "Fira Code", "Courier New", Courier, monospace;
+  margin-top: 1rem;
+}
 
 .blogs-showcase {
   margin: 0 5%;
@@ -165,7 +185,9 @@
   margin-left: -20px;
 }
 .blogs-showcase .bloghighHeader .blogsFileters .filter:hover {
-  background-color: #505050;
+  color: #fff;
+  font-weight: 500;
+  background-color: #0088f0;
 }
 @media (max-width: 480px) {
   .blogs-showcase .bloghighHeader .blogsFileters .filter {
@@ -180,6 +202,8 @@
 }
 .blogs-showcase .bloghighHeader .blogsFileters .activeFilter {
   background-color: #0088f0;
+  color: #fff;
+  font-weight: 500;
 }
 .blogs-showcase .bloghighHeader .blogsFileters .activeFilter:hover {
   background-color: #0088f0 !important;
@@ -327,4 +351,31 @@
 .blogs-showcase .highflex .highblogcard .bloghighInfo p {
   margin-left: 10px;
   color: var(--text-color);
+}
+.blogs-showcase .highflex .errFetchBlogs {
+  padding: 40px 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.blogs-showcase .highflex .errFetchBlogs p {
+  font-size: 4rem;
+  font-family: "BookerlyDisplay_W_Rg";
+  font-weight: 800 !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 20px;
+}
+@media (max-width: 480px) {
+  .blogs-showcase .highflex .errFetchBlogs p {
+    font-size: 2rem;
+  }
+}
+.blogs-showcase .highflex .errFetchBlogs p span {
+  text-decoration: underline;
+  color: #0088f0;
+  cursor: pointer;
 }/*# sourceMappingURL=blog.css.map */

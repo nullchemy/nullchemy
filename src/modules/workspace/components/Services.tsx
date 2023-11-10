@@ -1,5 +1,11 @@
 import React, { Fragment } from 'react'
 import '../styles/css/modservices.css'
+import NodeJs from '../assets/images/node.js.png'
+import Java from '../assets/images/java.png'
+import Php from '../assets/images/php.png'
+import Python from '../assets/images/python.png'
+import Ruby from '../assets/images/ruby.png'
+import Scala from '../assets/images/scala.png'
 
 const Services = () => {
   return (
@@ -59,7 +65,24 @@ const Services = () => {
           <div className="ms_wrap_inner_contr">
             <h2>Supported Runtimes</h2>
             <div className="ms_wrap_flex_runtimes">
-              <div className="ms_serv_item"></div>
+              <div className="ms_serv_item">
+                <img src={NodeJs} alt="" />
+              </div>
+              <div className="ms_serv_item">
+                <img src={Java} alt="" />
+              </div>
+              <div className="ms_serv_item">
+                <img src={Php} className="runtime_php" alt="" />
+              </div>
+              <div className="ms_serv_item">
+                <img src={Python} alt="" />
+              </div>
+              <div className="ms_serv_item">
+                <img src={Ruby} alt="" />
+              </div>
+              <div className="ms_serv_item">
+                <img src={Scala} alt="" />
+              </div>
             </div>
           </div>
         </div>
