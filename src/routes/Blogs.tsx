@@ -21,7 +21,7 @@ const Blogs = () => {
     state: 'loading',
     data: Array<[]>,
   })
-  const [placeholder, setPlaceholder] = useState(false)
+  const [placeholder, setPlaceholder] = useState({ key: '', status: false })
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
 
   useEffect(() => {
@@ -154,7 +154,7 @@ const Blogs = () => {
                       key={i.BlogID}
                     >
                       <div className="bloghighImage">
-                        {placeholder ? (
+                        {placeholder.key === i.BlogID && placeholder.status ? (
                           <img src={PlaceHolder} alt="" />
                         ) : JSON.parse(i.PreviewImage).assets.length !== 0 &&
                           previmage ? (
@@ -162,7 +162,7 @@ const Blogs = () => {
                             id="blgImage"
                             src={backend() + 'uploads/' + previmage}
                             onError={() => {
-                              setPlaceholder(true)
+                              setPlaceholder({ key: i.BlogID, status: true })
                             }}
                             alt=""
                           />
