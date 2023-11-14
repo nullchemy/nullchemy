@@ -107,7 +107,6 @@ const Read = () => {
   async function init() {
     const main = document.querySelector('.readContentInner')
     const linkHtml = generateLinkMarkup(main)
-    console.log(linkHtml)
     setTocLinks(linkHtml)
   }
 

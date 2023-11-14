@@ -21,18 +21,14 @@ const Home = () => {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
   useEffect(() => {
-    console.log('ran')
-
     const checkauth = async () => {
       if (!session.get().authToken || session.get().authToken === undefined) {
         // No token found, redirect to login page
-        console.log('not logged in (token not found)')
         dispatch(setIsLogged(false))
       } else {
         const token = session.get().authToken
         const res = await api('POST', 'auth/verify', { token })
         if (res.data.type === 'success') {
-          console.log('authenticated successfully')
           dispatch(setIsLogged(true))
         } else {
           console.log(res.data, token)

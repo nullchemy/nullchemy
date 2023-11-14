@@ -19,7 +19,6 @@ const BlogHighlights = () => {
       const res = await api('GET', 'blog/all', {})
       if (res.data.type !== 'error') {
         setBlogs({ ...res.data, state: 'success' })
-        console.log(res.data)
       } else {
         setBlogs({ data: [], state: 'error' })
       }
@@ -31,7 +30,6 @@ const BlogHighlights = () => {
     const res = await api('GET', 'blog/all', {})
     if (res.data.type !== 'error') {
       setBlogs({ ...res.data, state: 'success' })
-      console.log(res.data)
     } else {
       setBlogs({ data: [], state: 'error' })
     }

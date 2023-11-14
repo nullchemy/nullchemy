@@ -33,7 +33,6 @@ const Signup = () => {
     setIsLoading(true)
     const res: any = await api('POST', 'auth/client/signup', data)
     setResponse(res.data)
-    console.log(res.data)
     setIsLoading(false)
     if (res.data.type === 'success') {
       session.saveem(res.headers.email)

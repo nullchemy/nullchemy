@@ -29,22 +29,23 @@ const Contact = () => {
     e.preventDefault()
     setStatus('sending...')
     const res = await api('POST', 'contact', data)
-    console.log(res)
     setStatus('sent')
-    Store.addNotification({
-      title: 'Contact Success!',
-      message:
-        'your message was received successfully. you should get a response within a day or two',
-      type: 'success',
-      insert: 'top',
-      container: 'top-right',
-      animationIn: ['animate__animated', 'animate__fadeIn'],
-      animationOut: ['animate__animated', 'animate__fadeOut'],
-      dismiss: {
-        duration: 5000,
-        onScreen: true,
-      },
-    })
+    if (res.status) {
+      Store.addNotification({
+        title: 'Contact Success!',
+        message:
+          'your message was received successfully. you should get a response within a day or two',
+        type: 'success',
+        insert: 'top',
+        container: 'top-right',
+        animationIn: ['animate__animated', 'animate__fadeIn'],
+        animationOut: ['animate__animated', 'animate__fadeOut'],
+        dismiss: {
+          duration: 5000,
+          onScreen: true,
+        },
+      })
+    }
     gaEventTracker('contact')
     // clear the form
     setData({
