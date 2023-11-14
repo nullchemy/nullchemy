@@ -1,4 +1,5 @@
 .testimonials {
+  margin-bottom: 40px;
   .testimonialsContainer {
     margin: 0 5%;
     .testimonialWrapper {
@@ -36,13 +37,21 @@
           @media (max-width: 480px) {
             flex-direction: column;
           }
+          @media (min-width: 1380px) {
+            width: 80%;
+            margin: 0 auto;
+          }
           .tstmlsleft {
             flex: 1;
+            position: relative;
             .tstmlsleftimgWrap {
+              position: absolute;
+              left: 10%;
+              transform: translateX(-10%);
               overflow: hidden !important;
               height: 300px;
               width: 300px;
-              border-radius: 23px;
+              border-radius: 46px;
               transform: rotate(45deg);
               margin: 70px;
               @media (max-width: 480px) {
@@ -56,7 +65,7 @@
             }
           }
           .tstmlsright {
-            width: 62%;
+            width: 50%;
             padding: 20px;
             @media (max-width: 480px) {
               width: 100%;
@@ -68,11 +77,19 @@
               fill: var(--text-color) !important;
               stroke: var(--text-color) !important;
               color: var(--text-color);
+              margin-top: 30px;
+              @media (min-width: 1380px) {
+                margin-top: 20px;
+              }
             }
             .tstmlTitle {
-              color: var(--text-color);
-              font-size: 3rem;
-              line-height: 3rem;
+              color: #0088f0;
+              font-family: 'Volte-Rounded-Semibold';
+              font-size: 2rem;
+              line-height: 2rem;
+              font-weight: 300;
+              letter-spacing: 0.00625rem;
+              margin-top: 1rem;
               @media (max-width: 480px) {
                 font-size: 1.5rem;
                 line-height: 1.5rem;
@@ -80,8 +97,31 @@
             }
             .tstmlPar {
               color: var(--text-color);
-              font-size: 1.2rem;
-              margin-top: 1rem;
+              font-size: 1.3rem;
+              line-height: 2rem;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+            }
+            .tstmlreadMore {
+              all: unset;
+              padding: 10px 30px;
+              background-color: #fff;
+              background: linear-gradient(
+                to bottom right,
+                #14a9ff,
+                #0088f0
+              ) !important;
+              border-radius: 43px;
+              text-align: center;
+              color: #fff;
+              cursor: pointer;
+              margin-right: 15px;
+              font-family: 'VolteRounded-Bold' !important;
+
+              @media (max-width: 480px) {
+                margin-right: unset !important;
+                bottom: 80px;
+              }
             }
           }
         }

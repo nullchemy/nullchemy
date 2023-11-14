@@ -47,7 +47,7 @@ const BlogHighlights = () => {
         <div className="blghlgContainer">
           <div className="blghlgWrapper">
             <div className="blghlgTop">
-              <h1 className="blghlgTitle">Highlights from our Blog</h1>
+              <h1 className="blghlgTitle">Stay connected with us</h1>
               <ArrowRight className="blgHighArrRight" />
             </div>
             <div className="blghlgBtm">

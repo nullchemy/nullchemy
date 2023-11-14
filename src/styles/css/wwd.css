@@ -3,11 +3,11 @@
 }
 .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
   text-align: center;
-  font-size: 4.375rem;
+  font-size: 3.5rem;
   line-height: 4rem;
   letter-spacing: -0.05rem;
   color: var(--text-color);
-  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-family: "Volte-Rounded-Semibold", Apercu, Roboto;
   font-weight: 800 !important;
   margin-bottom: 2rem;
   -webkit-user-select: none;

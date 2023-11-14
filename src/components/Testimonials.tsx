@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import '../styles/css/testimonials.css'
+import { Link } from 'react-router-dom'
 import testimonial from '../assets/images/unsplash/jason-goodman.jpg'
 import { ReactComponent as Wenotify } from '../assets/svg/wenotify_kenya_shield.svg'
 
@@ -29,6 +30,9 @@ const Testimonials = () => {
                     Dolphins improve employee engagement with a trackable,
                     transparent goal-setting process.
                   </p>
+                  <Link to="/" className="tstmlreadMore">
+                    read more
+                  </Link>
                 </div>
               </div>
             </div>

@@ -160,13 +160,13 @@
   z-index: 19;
 }
 .services .srvfllprojDevelopment .srvfllprojDevBgImage {
-  background: linear-gradient(360deg, var(--bg-overlay-color), transparent), url("../../assets/images/unsplash/eng-explaining.jpg");
+  background: linear-gradient(to top, var(--bg-overlay-color), transparent), url("../../assets/images/unsplash/eng-explaining.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .services .srvfllprojDevelopment .srvteamArgumentationBgImage {
-  background: linear-gradient(360deg, var(--bg-overlay-color), transparent), url("../../assets/images/unsplash/jason-goodman.jpg");
+  background: linear-gradient(to top, var(--bg-overlay-color) 20%, transparent 80%), url("../../assets/images/unsplash/jason-goodman.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

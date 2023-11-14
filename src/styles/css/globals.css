@@ -114,6 +114,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Volte-Rounded-Semibold";
+  src: url(../../assets/fonts/Volte-Rounded/Volte-Rounded-Semibold.otf);
+  src: url(../../assets/fonts/Volte-Rounded/Volte-Rounded-Semibold.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "VolteRounded-Bold";
   src: url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.eot"); /* IE9*/
   src: url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.woff2") format("woff2"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.woff") format("woff"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.ttf") format("truetype"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.svg#VolteRounded-Bold") format("svg"); /* iOS 4.1- */
@@ -149,7 +156,7 @@
   --background-modals: #ffffffa3;
   --background-header: #ffffffcc;
   --landing-url: url("../../assets/images/background_bg_light.png");
-  --bg-overlay-color: #eef4ff;
+  --bg-overlay-color: #e3ebff;
 }
 
 [data-theme=dark] {
@@ -161,7 +168,7 @@
   --background-modals: #2e2e2ea3;
   --background-header: #2e2e2ecc;
   --landing-url: url("../../assets/images/background_bg_dark.png");
-  --bg-overlay-color: #0e121b;
+  --bg-overlay-color: #080b12;
 }
 
 *,

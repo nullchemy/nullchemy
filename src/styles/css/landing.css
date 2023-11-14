@@ -1,6 +1,3 @@
-.landing {
-  min-height: 100vh;
-}
 .landing .landingWrapper {
   height: 100%;
 }
@@ -22,6 +19,12 @@
     align-items: unset !important;
   }
 }
+@media (min-width: 1380px) {
+  .landing .landingWrapper .landingContainer .landingTop {
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+}
 .landing .landingWrapper .landingContainer .landingTop .landingtexts {
   flex: 1;
   height: 100%;
@@ -37,7 +40,7 @@
   line-height: 5rem;
   letter-spacing: -0.05rem;
   color: var(--text-color);
-  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-family: "VolteRounded-Bold", Apercu, Roboto;
   font-weight: 800 !important;
   margin-bottom: 2rem;
   -webkit-user-select: none;
@@ -112,7 +115,12 @@
 }
 .landing .landingWrapper .landingContainer .landingBottom {
   height: 100px;
-  margin-top: 60px;
+  margin-top: 50px;
+}
+@media (min-width: 1380px) {
+  .landing .landingWrapper .landingContainer .landingBottom {
+    margin-bottom: 40px;
+  }
 }
 .landing .landingWrapper .landingContainer .landingBottom .landingbtmpartners {
   display: flex;
@@ -132,7 +140,7 @@
 }
 .landing .landingWrapper .landingContainer .landingBottom .landingbtmtxt {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .landing .landingWrapper .landingContainer .landingBottom .landingbtmtxt p {
   text-transform: uppercase;
