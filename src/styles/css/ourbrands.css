@@ -54,6 +54,16 @@
   height: 100%;
   margin: 0 auto;
 }
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .tenafricIcsvg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .medgromartIcsvg {
+  stroke: none !important;
+}
 .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .orbrancIcImage {
   position: absolute;
   top: 50%;

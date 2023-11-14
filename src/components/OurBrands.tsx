@@ -1,9 +1,14 @@
 import React, { Fragment } from 'react'
 import '../styles/css/ourbrands.css'
 import { ReactComponent as Wenotify } from '../assets/svg/wenotify_solutions_black_shield.svg'
+import { ReactComponent as TenAfric } from '../assets/svg/tenafric.svg'
+import { ReactComponent as MedAndGromart } from '../assets/svg/med-and-gromart.svg'
 import santos from '../assets/images/santos_all_stars.png'
 
 const OurBrands = () => {
+  const gotobrand = (i: string) => {
+    window.open(i, '_blank')
+  }
   return (
     <Fragment>
       <div className="ourbrands">
@@ -20,6 +25,31 @@ const OurBrands = () => {
                   <p>Security Agency</p>
                 </div>
               </div>
+              <div
+                className="ourbrandsCards"
+                onClick={() => {
+                  gotobrand('https://nullcommerce.pages.dev')
+                }}
+              >
+                <div className="ourBrandImageWrapper">
+                  <MedAndGromart className="orbrancIc tenafricIcsvg medgromartIcsvg" />
+                </div>
+                <div className="ourbrandTxts">
+                  <h1>Med & Gromart</h1>
+                  <p>E-Commerce Company</p>
+                </div>
+              </div>
+              <div className="ourbrandsCards">
+                <div className="ourBrandImageWrapper">
+                  <div className="orbrancIcImage">
+                    <TenAfric className="orbrancIc tenafricIcsvg" />
+                  </div>
+                </div>
+                <div className="ourbrandTxts">
+                  <h1>tenAfric</h1>
+                  <p>consultancy firm</p>
+                </div>
+              </div>
               <div className="ourbrandsCards">
                 <div className="ourBrandImageWrapper">
                   <div className="orbrancIcImage">
@@ -27,7 +57,7 @@ const OurBrands = () => {
                   </div>
                 </div>
                 <div className="ourbrandTxts">
-                  <h1>Santos All Stars</h1>
+                  <h1>Santos FC</h1>
                   <p>Football club in Kenya</p>
                 </div>
               </div>

@@ -44,6 +44,16 @@
               height: 100%;
               margin: 0 auto;
             }
+            .tenafricIcsvg {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 250px;
+            }
+            .medgromartIcsvg {
+              stroke: none !important;
+            }
             .orbrancIcImage {
               position: absolute;
               top: 50%;
