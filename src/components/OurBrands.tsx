@@ -20,10 +20,6 @@ const OurBrands = () => {
                 <div className="ourBrandImageWrapper">
                   <Wenotify className="orbrancIc" />
                 </div>
-                <div className="ourbrandTxts">
-                  <h1>Wenotify Solutions</h1>
-                  <p>Security Agency</p>
-                </div>
               </div>
               <div
                 className="ourbrandsCards"
@@ -34,10 +30,6 @@ const OurBrands = () => {
                 <div className="ourBrandImageWrapper">
                   <MedAndGromart className="orbrancIc tenafricIcsvg medgromartIcsvg" />
                 </div>
-                <div className="ourbrandTxts">
-                  <h1>Med & Gromart</h1>
-                  <p>E-Commerce Company</p>
-                </div>
               </div>
               <div className="ourbrandsCards">
                 <div className="ourBrandImageWrapper">
@@ -45,20 +37,12 @@ const OurBrands = () => {
                     <TenAfric className="orbrancIc tenafricIcsvg" />
                   </div>
                 </div>
-                <div className="ourbrandTxts">
-                  <h1>tenAfric</h1>
-                  <p>consultancy firm</p>
-                </div>
               </div>
               <div className="ourbrandsCards">
                 <div className="ourBrandImageWrapper">
                   <div className="orbrancIcImage">
                     <img className="" src={santos} alt="" />
                   </div>
-                </div>
-                <div className="ourbrandTxts">
-                  <h1>Santos FC</h1>
-                  <p>Football club in Kenya</p>
                 </div>
               </div>
             </div>
