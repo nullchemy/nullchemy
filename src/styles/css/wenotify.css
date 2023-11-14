@@ -54,7 +54,6 @@
 }
 .wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenProdType .wenSubTitle {
   text-align: center;
-  font-family: "BookerlyLCD_W_Lt", "BookerlyLCD_W_BdIt";
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
@@ -67,7 +66,6 @@
 .wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenAppTagline {
   color: #fff;
   text-align: center;
-  font-family: "BookerlyLCD", "Roboto", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }

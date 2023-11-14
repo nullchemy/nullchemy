@@ -128,6 +128,7 @@
 .landing .landingWrapper .landingContainer .landingBottom .landingbtmpartners .lndngpartnerTenAfric {
   height: 40px;
   width: 120px;
+  fill: var(--text-color);
 }
 .landing .landingWrapper .landingContainer .landingBottom .landingbtmtxt {
   text-align: center;

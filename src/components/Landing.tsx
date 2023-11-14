@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import Header from './Header'
 import MadDesigner from '../assets/images/hero-bg.png'
 import DennisKibet from '../assets/images/dennis_kibet_logo.png'
-import TenAfric from '../assets/images/tenafric.png'
+// import TenAfric from '../assets/images/tenafric.png'
+import { ReactComponent as TenAfric } from '../assets/svg/tenafric.svg'
 
 const Landing = () => {
   return (
@@ -42,7 +43,8 @@ const Landing = () => {
             <div className="landingBottom">
               <div className="landingbtmpartners">
                 <img className="lndngpartnerdk" src={DennisKibet} alt="" />
-                <img className="lndngpartnerTenAfric" src={TenAfric} alt="" />
+                {/* <img className="lndngpartnerTenAfric" src={TenAfric} alt="" /> */}
+                <TenAfric className="lndngpartnerTenAfric" />
               </div>
               <div className="landingbtmtxt">
                 <p>trusted by top brands</p>
