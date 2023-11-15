@@ -21,7 +21,9 @@ const Blogs = () => {
     state: 'loading',
     data: Array<[]>,
   })
-  const [placeholder, setPlaceholder] = useState({ key: '', status: false })
+  const [placeholderStatus, setPlaceholderStatus] = useState<{
+    [key: string]: boolean
+  }>({})
   const imageFormats: string[] = ['.png', '.jpg', '.jpeg', '.gif']
 
   useEffect(() => {
@@ -50,6 +52,13 @@ const Blogs = () => {
     window.sessionStorage.setItem('blogid', blogid)
     navigate('/read/' + blogslug)
     window.scrollTo(0, 0)
+  }
+
+  const handleImageError = (blogID: string) => {
+    setPlaceholderStatus((prevStatus) => ({
+      ...prevStatus,
+      [blogID]: true,
+    }))
   }
 
   return (
@@ -143,6 +152,7 @@ const Blogs = () => {
                       element.endsWith(format)
                     )
                   })
+                  const isPlaceholder = placeholderStatus[i.BlogID]
                   return (
                     <div
                       className="highblogcard"
@@ -152,16 +162,14 @@ const Blogs = () => {
                       key={i.BlogID}
                     >
                       <div className="bloghighImage">
-                        {placeholder.key === i.BlogID && placeholder.status ? (
+                        {isPlaceholder ? (
                           <img src={PlaceHolder} alt="" />
                         ) : JSON.parse(i.PreviewImage).assets.length !== 0 &&
                           previmage ? (
                           <img
                             id="blgImage"
                             src={backend() + 'uploads/' + previmage}
-                            onError={() => {
-                              setPlaceholder({ key: i.BlogID, status: true })
-                            }}
+                            onError={() => handleImageError(i.BlogID)}
                             alt=""
                           />
                         ) : (
