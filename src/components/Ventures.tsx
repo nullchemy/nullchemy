@@ -228,7 +228,7 @@ const Ventures = () => {
                   {active === 'healthcare'
                     ? venture.healthcare.map((i) => {
                         return (
-                          <div className="venturesRightItem">
+                          <div className="venturesRightItem" key={i.title}>
                             <h1 className="vrItemTitle">{i.title}</h1>
                             <p className="vrItemPar">{i.preview}</p>
                           </div>

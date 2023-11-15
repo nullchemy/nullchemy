@@ -11,9 +11,9 @@ import OurPrinciples from '../components/OurPrinciples'
 import Testimonials from '../components/Testimonials'
 import OurBrands from '../components/OurBrands'
 import Ventures from '../components/Ventures'
-import BlogHighlights from '../components/BlogHighlights'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
+import Connect from '../components/Connect'
 
 const Home = () => {
   const dispatch = useAppDispatch()
@@ -57,10 +57,9 @@ const Home = () => {
       <WhatWeDo />
       <OurPrinciples />
       <Ventures />
-
       <Testimonials />
+      <Connect />
       <OurBrands />
-      <BlogHighlights />
       <Newsletter />
       <Footer />
     </Fragment>
