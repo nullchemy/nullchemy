@@ -11,7 +11,6 @@ import { AxiosError } from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
 import ReactGA from 'react-ga'
-import { Helmet } from 'react-helmet'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 import Comments from '../components/Comments'
 import ReactMarkdown from 'react-markdown'
@@ -21,6 +20,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import CodeCopyBtn from '../components/codeCopyBtn'
 import { backend } from '../utils/backend'
+import BlogMeta from '../components/BlogMeta'
 
 const Read = () => {
   let navigate = useNavigate()
@@ -139,20 +139,7 @@ const Read = () => {
 
   return (
     <Fragment>
-      <Helmet>
-        <title>
-          {!error && blog.length !== 0 ? blog[0].Title : 'Blog'} | nullchemy
-        </title>
-        <link
-          rel="canonical"
-          href={window.location.pathname + window.location.search}
-        />
-        <script>
-          window.dataLayer = window.dataLayer || []; function
-          gtag()&#123;dataLayer.push(arguments);&#125; gtag('js', new Date());
-          gtag('config', 'G-JXF0YL9XMJ');
-        </script>
-      </Helmet>
+      <BlogMeta blog={blog} error={error} />
       <Header />
       <div className="read">
         <div className="readContainer">
