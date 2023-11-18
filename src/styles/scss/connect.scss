@@ -39,8 +39,15 @@
       flex-direction: row;
       justify-content: space-between;
       padding-top: 2.5rem;
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
       .connect-highlight {
         width: 40%;
+        @media (max-width: 480px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
         cursor: pointer;
         .connect-high-image-wrapper {
           width: 100%;
@@ -76,13 +83,22 @@
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
+        @media (max-width: 480px) {
+          width: 100%;
+        }
         .conn-blg-item {
           display: flex;
           align-items: center;
           justify-content: space-between;
           cursor: pointer;
+          @media (max-width: 480px) {
+            flex-direction: column-reverse;
+          }
           .conn-item-texts {
             width: 60%;
+            @media (max-width: 480px) {
+              width: 100%;
+            }
             .conn-blg-item-title {
               font-family: 'VolteRounded-Semibold', 'VolteRounded-Bold', Apercu,
                 Roboto;
@@ -111,6 +127,9 @@
             width: 35%;
             border-radius: 10px;
             overflow: hidden;
+            @media (max-width: 480px) {
+              width: 100%;
+            }
           }
         }
         .conn-read-more {

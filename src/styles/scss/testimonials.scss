@@ -44,6 +44,9 @@
           .tstmlsleft {
             flex: 1;
             position: relative;
+            @media (max-width: 480px) {
+              display: none;
+            }
             .tstmlsleftimgWrap {
               position: absolute;
               left: 10%;

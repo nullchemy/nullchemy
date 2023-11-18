@@ -46,9 +46,20 @@
   justify-content: space-between;
   padding-top: 2.5rem;
 }
+@media (max-width: 480px) {
+  .connect-with-us .connect-wrapper .connect-body {
+    flex-direction: column;
+  }
+}
 .connect-with-us .connect-wrapper .connect-body .connect-highlight {
   width: 40%;
   cursor: pointer;
+}
+@media (max-width: 480px) {
+  .connect-with-us .connect-wrapper .connect-body .connect-highlight {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .connect-with-us .connect-wrapper .connect-body .connect-highlight .connect-high-image-wrapper {
   width: 100%;
@@ -83,14 +94,29 @@
   flex-direction: column;
   gap: 2.5rem;
 }
+@media (max-width: 480px) {
+  .connect-with-us .connect-wrapper .connect-body .connect-blg-items {
+    width: 100%;
+  }
+}
 .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-blg-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-blg-item {
+    flex-direction: column-reverse;
+  }
+}
 .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-blg-item .conn-item-texts {
   width: 60%;
+}
+@media (max-width: 480px) {
+  .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-blg-item .conn-item-texts {
+    width: 100%;
+  }
 }
 .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-blg-item .conn-item-texts .conn-blg-item-title {
   font-family: "VolteRounded-Semibold", "VolteRounded-Bold", Apercu, Roboto;
@@ -118,6 +144,11 @@
   width: 35%;
   border-radius: 10px;
   overflow: hidden;
+}
+@media (max-width: 480px) {
+  .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-blg-item .conn-item-image {
+    width: 100%;
+  }
 }
 .connect-with-us .connect-wrapper .connect-body .connect-blg-items .conn-read-more {
   all: unset;

@@ -61,6 +61,11 @@
   flex: 1;
   position: relative;
 }
+@media (max-width: 480px) {
+  .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft {
+    display: none;
+  }
+}
 .testimonials .testimonialsContainer .testimonialWrapper .testimonialsContent .tstmlscards .tstmlsleft .tstmlsleftimgWrap {
   position: absolute;
   left: 10%;
