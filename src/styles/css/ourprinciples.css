@@ -24,6 +24,11 @@
 }
 @media (max-width: 480px) {
   .ourprinciples .opcontainer .opwrapper .opleft {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .ourprinciples .opcontainer .opwrapper .opleft {
     width: 100%;
   }
 }

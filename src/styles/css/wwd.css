@@ -1,5 +1,7 @@
-.whatwedo {
-  overflow: hidden;
+@media (max-width: 480px) {
+  .whatwedo {
+    height: 480px;
+  }
 }
 .whatwedo .wwdContainer .wwdWrapper .wwdTitle {
   text-align: center;

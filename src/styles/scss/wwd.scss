@@ -1,5 +1,7 @@
 .whatwedo {
-  overflow: hidden;
+  @media (max-width: 480px) {
+    height: 480px;
+  }
   .wwdContainer {
     .wwdWrapper {
       .wwdTitle {

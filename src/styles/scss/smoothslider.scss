@@ -40,6 +40,10 @@
           box-shadow: #0000000f 0px 1px 18px 0px, #0000001a 0px 3px 5px -1px;
           transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
           border: 1px solid #ffffff;
+          margin-left: 5px;
+          // @media (max-width: 480px) {
+          //   margin-left: -5px;
+          // }
           .slcardIc {
           }
           .slcardtexts {
@@ -66,56 +70,41 @@
       }
     }
   }
-  #prevButton,
-  #nextButton {
-    all: unset;
-    width: 50px;
-    height: 50px;
-    border: none;
+  .Slidercontrols {
     position: absolute;
-    top: 120px;
-    overflow: hidden;
-    cursor: pointer;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: calc(100% - 4px);
-      height: calc(100% - 4px);
-      background-color: #ffffff;
-      border: 2px solid var(--text-color);
-    }
-    @media (min-width: 480px) {
-      display: none !important;
-    }
-    .Slidercontrols {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+    #prevButton,
+    #nextButton {
+      all: unset;
       width: 20px;
-      fill: var(--text-color);
+      height: 20px;
+      border: none;
+      overflow: hidden;
+      cursor: pointer !important;
+      @media (min-width: 480px) {
+        display: none !important;
+      }
     }
-  }
-  #prevButton {
-    left: 0px;
-    &::before {
-      border-radius: 0% 50% 50% 0%;
+    #prevButton {
+      &::before {
+        border-radius: 0% 50% 50% 0%;
+      }
     }
-  }
-  #nextButton {
-    right: 0px;
-    &::before {
-      border-radius: 50% 0% 0% 50%;
+    #nextButton {
+      &::before {
+        border-radius: 50% 0% 0% 50%;
+      }
     }
   }
   .sliderLine {
     position: absolute;
-    bottom: 0;
     left: 50%;
-    transform: translateX(-35.2%);
+    //transform: translateX(-35.2%);
+    transform: translateX(-50%);
     height: 1px;
     width: 257px;
     background-color: #3d3d3d;
@@ -126,6 +115,9 @@
     height: 1px;
     margin: 20px auto 0px;
     position: relative;
+    @media (max-width: 480px) {
+      width: 257px;
+    }
     .indicator-inner {
       width: 40px;
       height: 6px;
@@ -133,6 +125,9 @@
       position: absolute;
       top: -6px;
       background: #3d3d3d;
+      @media (max-width: 480px) {
+        width: 134px;
+      }
     }
   }
 }

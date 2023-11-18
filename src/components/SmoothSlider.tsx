@@ -7,18 +7,15 @@ import { useSlider } from '../utils/UseSlider'
 const Slider: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null)
 
-  // Call the useSlider hook within your component
   useSlider({
     selector: 'slider-container',
     wrapper: 'slider-wrapper',
     scroll: 'slider-scroll',
     scrollIndecator: 'slider-indicator',
-    speed: 2, // Optional: Adjust the scrolling speed if needed
+    speed: 2, // slider speed
     prevControl: '#prevButton',
     nextControl: '#nextButton',
   })
-
-  // Additional component logic, rendering, and JSX
 
   return (
     <Fragment>
@@ -105,15 +102,14 @@ const Slider: React.FC = () => {
             </div>
           </div>
         </div>
-        <button id="prevButton">
-          <ArrowLeft className="Slidercontrols" />
-        </button>
-        <button id="nextButton">
-          <ArrowRight className="Slidercontrols" />
-        </button>
         <div className="sliderLine"></div>
         <div className="slider-indicator" style={{ left: '0px' }}>
           <div className="indicator-inner" style={{ left: '0px' }}></div>
+        </div>
+
+        <div className="Slidercontrols">
+          <ArrowLeft id="prevButton" />
+          <ArrowRight id="nextButton" />
         </div>
       </div>
     </Fragment>

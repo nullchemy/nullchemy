@@ -133,7 +133,7 @@ export const useSlider = ({
       let slides = elem.getElementsByClassName(wrapper)
       if (slides.length === 0) return
 
-      let scrollWidth = elem.scrollWidth
+      let scrollWidth = elem.scrollWidth + 50
       let clientWidth = elem.clientWidth
       let slideWidth = slides[0].clientWidth
       let maxSlideIndex = Math.floor(scrollWidth / slideWidth) - 1
@@ -151,6 +151,7 @@ export const useSlider = ({
       let percentageOriginal =
         (newScrollLeft * 100) / (scrollWidth - clientWidth)
       let newIndicatorLeft = (customScrollBarWidth * percentageOriginal) / 100
+      console.log(newScrollLeft)
 
       elem.scrollLeft = newScrollLeft
       indicator.style.left = `${newIndicatorLeft}px`

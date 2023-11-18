@@ -47,6 +47,7 @@
   box-shadow: rgba(0, 0, 0, 0.0588235294) 0px 1px 18px 0px, rgba(0, 0, 0, 0.1019607843) 0px 3px 5px -1px;
   transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
   border: 1px solid #ffffff;
+  margin-left: 5px;
 }
 .smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard .slcardtexts .crdslTitle {
   font-size: 1.4rem;
@@ -63,61 +64,39 @@
   font-weight: 400;
   color: var(--text-color);
 }
-.smslidparent #prevButton,
-.smslidparent #nextButton {
-  all: unset;
-  width: 50px;
-  height: 50px;
-  border: none;
+.smslidparent .Slidercontrols {
   position: absolute;
-  top: 120px;
-  overflow: hidden;
-  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  display: flex;
+  gap: 2rem;
 }
-.smslidparent #prevButton::before,
-.smslidparent #nextButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-  background-color: #ffffff;
-  border: 2px solid var(--text-color);
+.smslidparent .Slidercontrols #prevButton,
+.smslidparent .Slidercontrols #nextButton {
+  all: unset;
+  width: 20px;
+  height: 20px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer !important;
 }
 @media (min-width: 480px) {
-  .smslidparent #prevButton,
-  .smslidparent #nextButton {
+  .smslidparent .Slidercontrols #prevButton,
+  .smslidparent .Slidercontrols #nextButton {
     display: none !important;
   }
 }
-.smslidparent #prevButton .Slidercontrols,
-.smslidparent #nextButton .Slidercontrols {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 20px;
-  width: 20px;
-  fill: var(--text-color);
-}
-.smslidparent #prevButton {
-  left: 0px;
-}
-.smslidparent #prevButton::before {
+.smslidparent .Slidercontrols #prevButton::before {
   border-radius: 0% 50% 50% 0%;
 }
-.smslidparent #nextButton {
-  right: 0px;
-}
-.smslidparent #nextButton::before {
+.smslidparent .Slidercontrols #nextButton::before {
   border-radius: 50% 0% 0% 50%;
 }
 .smslidparent .sliderLine {
   position: absolute;
-  bottom: 0;
   left: 50%;
-  transform: translateX(-35.2%);
+  transform: translateX(-50%);
   height: 1px;
   width: 257px;
   background-color: #3d3d3d;
@@ -129,6 +108,11 @@
   margin: 20px auto 0px;
   position: relative;
 }
+@media (max-width: 480px) {
+  .smslidparent .slider-indicator {
+    width: 257px;
+  }
+}
 .smslidparent .slider-indicator .indicator-inner {
   width: 40px;
   height: 6px;
@@ -136,4 +120,9 @@
   position: absolute;
   top: -6px;
   background: #3d3d3d;
+}
+@media (max-width: 480px) {
+  .smslidparent .slider-indicator .indicator-inner {
+    width: 134px;
+  }
 }/*# sourceMappingURL=smoothslider.css.map */
