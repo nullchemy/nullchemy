@@ -16,4 +16,4 @@ root.render(
   </Provider>
 )
 
-serviceWorkerRegistration.unregister()
+serviceWorkerRegistration.register()
