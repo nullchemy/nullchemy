@@ -66,6 +66,8 @@
   padding-right: 6px;
   color-scheme: light;
   background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 31px var(--background-color-two) inset !important;
+  -webkit-text-fill-color: var(--text-color) !important;
 }
 .signup .signupcontainer .signupwrapper .signupform .sform .signgroup .signinput:focus + .sgnplholder, .signup .signupcontainer .signupwrapper .signupform .sform .signgroup .signinput:not([value=""]) + .sgnplholder {
   top: 0px;
