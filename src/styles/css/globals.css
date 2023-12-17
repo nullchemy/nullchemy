@@ -295,4 +295,39 @@ input:-internal-autofill-selected {
   50%, 100% {
     background-color: rgba(255, 243, 243, 0.2);
   }
+}
+@keyframes loading-skeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.c-skeleton-line,
+.c-skeleton-circle,
+.c-skeleton-square {
+  background-color: #c2c2ff;
+  display: inline-flex;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.c-skeleton-line:after,
+.c-skeleton-circle:after,
+.c-skeleton-square:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, #c2c2ff, #d2d2ff, #c2c2ff);
+  transform: translateX(-100%);
+  animation-name: loading-skeleton;
+  animation-direction: normal;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }/*# sourceMappingURL=globals.css.map */

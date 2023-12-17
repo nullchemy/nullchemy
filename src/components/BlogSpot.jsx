@@ -16,7 +16,44 @@ const SpotBlog = ({ blogs, imageFormats }) => {
   }, [blogs])
 
   if (blogs.state === 'loading') {
-    return <p>Loading Spot Blog</p>
+    return (
+      <div style={{ display: 'flex', gap: '1rem', width: '100%' }}>
+        <div style={{ width: '50%' }}>
+          <div
+            className="c-skeleton-square"
+            style={{ height: '100%', width: '100%', borderRadius: '12px' }}
+          ></div>
+        </div>
+        <div style={{ width: '50%' }}>
+          <div
+            className="c-skeleton-square"
+            style={{
+              height: '50px',
+              width: '100%',
+              borderRadius: '12px',
+            }}
+          ></div>
+          <div
+            className="c-skeleton-square"
+            style={{
+              height: '160px',
+              width: '100%',
+              borderRadius: '12px',
+              marginTop: '10px',
+            }}
+          ></div>
+          <div
+            className="c-skeleton-square"
+            style={{
+              height: '30px',
+              width: '30%',
+              borderRadius: '12px',
+              marginTop: '10px',
+            }}
+          ></div>
+        </div>
+      </div>
+    )
   }
 
   if (

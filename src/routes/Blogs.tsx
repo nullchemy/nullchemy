@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet'
 import PlaceHolder from '../assets/images/nullchemy_placeholder.jpg'
 import { backend } from '../utils/backend'
 import SpotBlog from '../components/BlogSpot'
+import BlogsLoading from '../components/BlogsLoading'
 
 const Blogs = () => {
   useEffect(() => {
@@ -116,32 +117,7 @@ const Blogs = () => {
           </div>
           <div className="highflex">
             {blogs.state === 'loading' ? (
-              <div className="BloghlgloadingAnim">
-                <div className="blog-item loading">
-                  <div className="blog-preview-image"></div>
-                  <div className="blog-details">
-                    <div className="blog-title"></div>
-                    <div className="blog-preview-text"></div>
-                  </div>
-                  <div className="blog-date"></div>
-                </div>
-                <div className="blog-item loading">
-                  <div className="blog-preview-image"></div>
-                  <div className="blog-details">
-                    <div className="blog-title"></div>
-                    <div className="blog-preview-text"></div>
-                  </div>
-                  <div className="blog-date"></div>
-                </div>
-                <div className="blog-item loading">
-                  <div className="blog-preview-image"></div>
-                  <div className="blog-details">
-                    <div className="blog-title"></div>
-                    <div className="blog-preview-text"></div>
-                  </div>
-                  <div className="blog-date"></div>
-                </div>
-              </div>
+              <BlogsLoading />
             ) : blogs.state === 'success' && Array.isArray(blogs.data) ? (
               blogs.data.map((i: any) => {
                 if (blogs.data.length !== 0) {
