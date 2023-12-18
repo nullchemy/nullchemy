@@ -107,7 +107,7 @@
   font-style: italic;
 }
 @font-face {
-  font-family: Volte Rounded;
+  font-family: "Volte-Rounded-Regular";
   src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Regular.woff2);
   src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Regular.woff2) format("woff2");
   font-weight: 700;
