@@ -334,6 +334,7 @@
   word-break: break-word;
   cursor: pointer;
   color: var(--text-color);
+  font-family: "Volte-Rounded-Semibold";
 }
 .blogs-showcase .highflex .highblogcard .bloghighTitle h2:hover {
   transition: 0.3s;
