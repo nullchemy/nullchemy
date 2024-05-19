@@ -10,7 +10,7 @@ import { ReactComponent as Mpesa } from '../assets/svg/mpesa.svg'
 import { ReactComponent as MasterCard } from '../assets/svg/mastercard.svg'
 import { ReactComponent as AngleDown } from '../assets/svg/angle-down.svg'
 import api from '../api/axios'
-import { Store } from 'react-notifications-component'
+import { toast } from 'react-toastify'
 import { HashLink } from 'react-router-hash-link'
 
 const Footer = () => {
@@ -22,36 +22,12 @@ const Footer = () => {
     e.preventDefault()
     setIsLoading(true)
     const res = await api('POST', 'subscribe', { email })
+    setIsLoading(false)
     if (res.status === 200) {
-      setIsLoading(false)
-      Store.addNotification({
-        title: 'Subscribed Successfully!',
-        message: res.data.message,
-        type: 'success',
-        insert: 'top',
-        container: 'top-right',
-        animationIn: ['animate__animated', 'animate__fadeIn'],
-        animationOut: ['animate__animated', 'animate__fadeOut'],
-        dismiss: {
-          duration: 5000,
-          onScreen: true,
-        },
-      })
+      toast('Subscribed Successfully!', { type: 'success' })
     } else {
       setIsLoading(false)
-      Store.addNotification({
-        title: 'Subscription Error!',
-        message: res.data.message,
-        type: 'danger',
-        insert: 'top',
-        container: 'top-right',
-        animationIn: ['animate__animated', 'animate__fadeIn'],
-        animationOut: ['animate__animated', 'animate__fadeOut'],
-        dismiss: {
-          duration: 5000,
-          onScreen: true,
-        },
-      })
+      toast(res.data.message, { type: 'error' })
     }
   }
 

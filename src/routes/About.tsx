@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import OurTeam from '../components/OurTeam'
 import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
+import Newsletter from '../components/Newsletter'
 
 const About = () => {
   useEffect(() => {
@@ -189,40 +190,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="secNewsletter" id="newsletter">
-          <div className="newsletter">
-            <div className="newslettercontainer">
-              <div className="subnewsletter">
-                <div className="subnewsFlex">
-                  <div className="subNewstexts">
-                    <h3 className="subNewstitle">
-                      Subscribe to our newsletter
-                    </h3>
-                    <p className="subNewsTextsp">
-                      stay upto date with our latest blogs and news updates
-                    </p>
-                  </div>
-                  <div className="subnewsform">
-                    <form action="" className="subNewsFormf">
-                      <div className="subinputsFlex">
-                        <input
-                          type="text"
-                          className="subnewsinput"
-                          placeholder="your e-mail address"
-                        />
-                        <input
-                          type="submit"
-                          value="Subscribe"
-                          className="subnewsButton"
-                        />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Newsletter />
       </div>
       <Footer />
     </Fragment>
