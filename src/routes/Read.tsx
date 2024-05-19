@@ -110,7 +110,11 @@ const Read = () => {
       <BlogMeta blog={blog} error={error} />
       <Header />
       <div className="read">
-        {Array.isArray(blog[0].toc) && blog[0].toc.length !== 0 ? (
+        {Array.isArray(blog) &&
+        blog.length !== 0 &&
+        blog[0].toc &&
+        Array.isArray(blog[0].toc) &&
+        blog[0].toc.length !== 0 ? (
           <div className="toc_toggler">
             <button
               className="toggler_btn"
@@ -200,6 +204,8 @@ const Read = () => {
               </div>
             )}
             {sidebar &&
+            Array.isArray(blog) &&
+            blog.length !== 0 &&
             Array.isArray(blog[0].toc) &&
             blog[0].toc.length !== 0 ? (
               <div className="readSidebarRight">
