@@ -1,12 +1,27 @@
 .read {
+  .toc_toggler {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    .toggler_btn {
+      outline: none;
+      border: none;
+      background-color: #0088f0;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
   .readContainer {
     margin: 0 5%;
     .readWrapper {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 2rem;
       @media (max-width: 480px) {
         flex-direction: column;
       }
+
       .readContent {
         width: 70%;
         min-height: 70vh;
@@ -141,6 +156,7 @@
       }
       .readSidebarRight {
         width: 20%;
+        transition: all 2s ease-in-out;
         @media (max-width: 480px) {
           width: 100%;
           order: 2;

@@ -30,6 +30,7 @@ const Read = () => {
   const { slug } = useParams()
   const [blog, setBlog] = useState<any[]>([])
   const [error, setError] = useState(false)
+  const [sidebar, setSidebar] = useState(false)
 
   function replaceWithPlaceholder(): void {
     const image = document.getElementById('blgImage') as HTMLImageElement
@@ -109,6 +110,16 @@ const Read = () => {
       <BlogMeta blog={blog} error={error} />
       <Header />
       <div className="read">
+        <div className="toc_toggler">
+          <button
+            className="toggler_btn"
+            onClick={() => {
+              setSidebar(!sidebar)
+            }}
+          >
+            TOC
+          </button>
+        </div>
         <div className="readContainer">
           <div className="readWrapper">
             {error ? (
@@ -186,62 +197,64 @@ const Read = () => {
                 </div>
               </div>
             )}
-            <div className="readSidebarRight">
-              <div className="ritemsStick">
-                <div className="readTableofContents">
-                  <h2>Table of contents</h2>
-                  <ul>
-                    {Array.isArray(blog) &&
-                      blog.length !== 0 &&
-                      Array.isArray(blog[0].toc) &&
-                      blog[0].toc.map((item: any) => {
-                        return (
-                          <li key={item.id}>
-                            <a
-                              href={`#${item.title
-                                .toLowerCase()
-                                .replace(/\W/g, '-')}`}
-                              onClick={(e) => {
-                                scrollWithOffset(
-                                  e,
-                                  item.title.toLowerCase().replace(/\W/g, '-')
-                                )
-                              }}
-                            >
-                              {item.title}
-                            </a>
-                          </li>
-                        )
-                      })}
-                  </ul>
-                  {/* <div dangerouslySetInnerHTML={{ __html: tocLinks }}></div> */}
-                </div>
+            {sidebar ? (
+              <div className="readSidebarRight">
+                <div className="ritemsStick">
+                  <div className="readTableofContents">
+                    <h2>Table of contents</h2>
+                    <ul>
+                      {Array.isArray(blog) &&
+                        blog.length !== 0 &&
+                        Array.isArray(blog[0].toc) &&
+                        blog[0].toc.map((item: any) => {
+                          return (
+                            <li key={item.id}>
+                              <a
+                                href={`#${item.title
+                                  .toLowerCase()
+                                  .replace(/\W/g, '-')}`}
+                                onClick={(e) => {
+                                  scrollWithOffset(
+                                    e,
+                                    item.title.toLowerCase().replace(/\W/g, '-')
+                                  )
+                                }}
+                              >
+                                {item.title}
+                              </a>
+                            </li>
+                          )
+                        })}
+                    </ul>
+                    {/* <div dangerouslySetInnerHTML={{ __html: tocLinks }}></div> */}
+                  </div>
 
-                <div className="readSocialIcons">
-                  <a
-                    href="https://web.facebook.com/profile.php?id=100066602095876"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Facebook className="rsocIc" />
-                  </a>
-                  <a
-                    href="https://twitter.com/nullchemy"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Twitter className="rsocIc" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/_nullchemy_/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Instagram className="rsocIc" />
-                  </a>
+                  <div className="readSocialIcons">
+                    <a
+                      href="https://web.facebook.com/profile.php?id=100066602095876"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Facebook className="rsocIc" />
+                    </a>
+                    <a
+                      href="https://twitter.com/nullchemy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Twitter className="rsocIc" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/_nullchemy_/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Instagram className="rsocIc" />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : null}
           </div>
         </div>
       </div>

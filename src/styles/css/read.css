@@ -1,9 +1,23 @@
+.read .toc_toggler {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+.read .toc_toggler .toggler_btn {
+  outline: none;
+  border: none;
+  background-color: #0088f0;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
 .read .readContainer {
   margin: 0 5%;
 }
 .read .readContainer .readWrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 @media (max-width: 480px) {
   .read .readContainer .readWrapper {
@@ -151,6 +165,7 @@
 }
 .read .readContainer .readWrapper .readSidebarRight {
   width: 20%;
+  transition: all 2s ease-in-out;
 }
 @media (max-width: 480px) {
   .read .readContainer .readWrapper .readSidebarRight {
