@@ -189,6 +189,7 @@
 .read .readContainer .readWrapper .readSidebarRight .ritemsStick .readTableofContents h2 {
   margin: 5px 0;
   font-family: "VolteRounded-Bold", Volte Rounded;
+  color: var(--text-color);
 }
 .read .readContainer .readWrapper .readSidebarRight .ritemsStick .readTableofContents ul li {
   padding: 3px 0;

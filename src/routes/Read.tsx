@@ -110,16 +110,18 @@ const Read = () => {
       <BlogMeta blog={blog} error={error} />
       <Header />
       <div className="read">
-        <div className="toc_toggler">
-          <button
-            className="toggler_btn"
-            onClick={() => {
-              setSidebar(!sidebar)
-            }}
-          >
-            TOC
-          </button>
-        </div>
+        {Array.isArray(blog[0].toc) && blog[0].toc.length !== 0 ? (
+          <div className="toc_toggler">
+            <button
+              className="toggler_btn"
+              onClick={() => {
+                setSidebar(!sidebar)
+              }}
+            >
+              TOC
+            </button>
+          </div>
+        ) : null}
         <div className="readContainer">
           <div className="readWrapper">
             {error ? (
@@ -197,7 +199,9 @@ const Read = () => {
                 </div>
               </div>
             )}
-            {sidebar ? (
+            {sidebar &&
+            Array.isArray(blog[0].toc) &&
+            blog[0].toc.length !== 0 ? (
               <div className="readSidebarRight">
                 <div className="ritemsStick">
                   <div className="readTableofContents">
