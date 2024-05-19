@@ -1,0 +1,49 @@
+.search {
+  height: 100vh;
+  .serContainer {
+    height: 100%;
+    .serWrapper {
+      height: 100%;
+      position: relative;
+      .serForm {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        .serFormGroup {
+          position: relative;
+          width: calc(100% - 20px);
+          width: 50%;
+          margin: 0 auto;
+          border-bottom: 2px solid;
+          border-image-slice: 1;
+          border-width: 2px;
+          border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+          .serInput {
+            padding: 10px;
+            width: 90%;
+            outline: none;
+            border: none;
+            color: var(--text-color);
+            background-color: #ffffff00;
+            font-size: 2rem;
+          }
+          .serFLensIc {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            fill: #6a6a6a;
+          }
+        }
+      }
+      .serResults {
+        position: absolute;
+        top: 40%;
+        padding: 20px;
+        margin: 0 5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.ourbrands .ourbrandsContainer {
+  margin: 0 5%;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandstitle {
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+@media (max-width: 1900px) {
+  .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandstitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandstitle {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+@media (max-width: 480px) {
+  .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex {
+    flex-direction: column;
+  }
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards {
+  width: 200px;
+  cursor: pointer;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .orbrancIc {
+  fill: var(--text-color) !important;
+  stroke: var(--text-color) !important;
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .tenafricIcsvg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .medgromartIcsvg {
+  stroke: none !important;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .orbrancIcImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .orbrancIcImage {
+    height: 120px;
+    width: 120px;
+  }
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourBrandImageWrapper .orbrancIcImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourbrandTxts {
+  text-align: center;
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourbrandTxts h1 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: var(--text-color);
+}
+.ourbrands .ourbrandsContainer .ourbrandsWrapper .ourbrandsFlex .ourbrandsCards .ourbrandTxts p {
+  font-size: 1rem;
+  font-family: sans-serif, monospace;
+  font-weight: 400;
+  color: var(--text-color);
+}/*# sourceMappingURL=ourbrands.css.map */

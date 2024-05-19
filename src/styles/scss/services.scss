@@ -1,0 +1,302 @@
+.services {
+  .servicesContainer {
+    margin: 0 5%;
+    .servicesWrapper {
+      padding-top: 2%;
+      .servicesHeader {
+        font-size: 5.375rem;
+        line-height: 5rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        font-family: 'VolteRounded-Bold', Volte Rounded;
+        font-weight: 800 !important;
+        margin-bottom: 2rem;
+        user-select: none;
+        text-align: center;
+        @media (max-width: 480px) {
+          margin-bottom: 10px;
+        }
+        @media (max-width: 1900px) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
+      .serviceIntrowrapper {
+        width: 60%;
+        margin: 0 auto;
+        @media (max-width: 480px) {
+          width: 90%;
+        }
+        .serviceIntro {
+          text-align: center;
+          font-size: 1.4rem;
+          line-height: 1.4rem;
+          letter-spacing: -0.05rem;
+          color: var(--text-color);
+          @media (max-width: 480px) {
+            font-size: 0.9rem;
+            line-height: 0.9rem;
+          }
+        }
+      }
+      .servCardsFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 4% 0;
+        position: relative;
+        @media (max-width: 480px) {
+          margin: 3% 0;
+          flex-direction: column;
+        }
+        .servCard {
+          padding: 10px 20px;
+          width: 40%;
+          height: 250px;
+          border-radius: 10px;
+          background-color: var(--background-modals);
+          box-shadow: #32325d40 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          border: 1px solid #32325d40;
+          @media (max-width: 480px) {
+            width: 90%;
+            height: auto;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 3rem;
+            line-height: 3rem;
+            letter-spacing: -0.05rem;
+            color: var(--text-color);
+            font-family: 'VolteRounded-Bold', Volte Rounded;
+            font-weight: 800 !important;
+            margin: 1rem 0;
+            user-select: none;
+            @media (max-width: 1900px) {
+              font-size: 3rem;
+              line-height: 3rem;
+            }
+            @media (max-width: 480px) {
+              font-size: 2rem;
+              line-height: 2rem;
+            }
+          }
+          p {
+            font-size: 1.2rem;
+            user-select: none;
+            line-height: 1.2rem;
+            letter-spacing: -0.05rem;
+            color: var(--text-color);
+            margin-bottom: 20px;
+          }
+          button {
+            all: unset;
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 30px;
+            background-color: #fff;
+            background: linear-gradient(
+              to bottom right,
+              #14a9ff,
+              #0088f0
+            ) !important;
+            border-radius: 43px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 15px;
+            font-family: 'VolteRounded-Bold' !important;
+            @media (max-width: 480px) {
+              margin-right: unset !important;
+              position: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+  .srvfllprojDevelopment {
+    position: relative;
+    z-index: 20 !important;
+    height: 1200px;
+    overflow: hidden;
+    @media (max-width: 480px) {
+      height: 1420px;
+    }
+    .srvfllprojDevBgImage,
+    .srvteamArgumentationBgImage {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      z-index: 19;
+    }
+    .srvfllprojDevBgImage {
+      background: linear-gradient(to top, var(--bg-overlay-color), transparent),
+        url('../../assets/images/unsplash/eng-explaining.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .srvteamArgumentationBgImage {
+      background: linear-gradient(
+          to top,
+          var(--bg-overlay-color) 20%,
+          transparent 80%
+        ),
+        url('../../assets/images/unsplash/jason-goodman.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .srvfllprojDevWrp {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      z-index: 21;
+      h1 {
+        font-size: 5.375rem;
+        line-height: 5rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        font-family: 'VolteRounded-Bold', Volte Rounded;
+        font-weight: 800 !important;
+        margin: 3rem 0;
+        margin-top: 4rem;
+        user-select: none;
+        text-align: center;
+        @media (max-width: 1900px) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        width: 50%;
+        margin: 0 auto;
+        @media (max-width: 480px) {
+          font-size: 1.3rem;
+          line-height: 1.3rem;
+          width: 90%;
+        }
+      }
+      .fldevcardFlexWrap {
+        margin-top: 70px;
+        width: 100%;
+        .srvfldcards {
+          width: 80%;
+          margin: 0 auto;
+          border-radius: 15px;
+          background-color: var(--background-modals);
+          margin-bottom: 2rem;
+          box-shadow: #32325d40 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          border: 1px solid #32325d40;
+          display: flex;
+          @media (max-width: 480px) {
+            width: 90%;
+          }
+          .srvlfdleft {
+            width: 20%;
+            position: relative;
+            @media (max-width: 480px) {
+              display: none;
+            }
+            .srcfldIc {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: auto;
+              height: 200px;
+              fill: var(--text-color);
+              margin: 0 auto;
+            }
+          }
+          .srvlfdright {
+            flex: 1;
+            @media (max-width: 480px) {
+              padding: 10px;
+            }
+            .srvlfdrighth2 {
+              font-size: 3rem;
+              line-height: 3rem;
+              letter-spacing: -0.05rem;
+              color: var(--text-color);
+              font-family: 'VolteRounded-Bold', Volte Rounded;
+              font-weight: 800 !important;
+              margin: 1.2rem 0 !important;
+              user-select: none;
+              @media (max-width: 1900px) {
+                font-size: 2rem;
+                line-height: 2rem;
+              }
+              @media (max-width: 480px) {
+                font-size: 2rem;
+                line-height: 2rem;
+                margin: 10px 0;
+              }
+            }
+            .srvlfdrightp {
+              font-size: 1.2rem;
+              line-height: 1.2rem;
+              letter-spacing: -0.05rem;
+              color: var(--text-color);
+              text-align: unset;
+              margin: unset;
+              width: unset;
+              @media (max-width: 480px) {
+                font-size: 0.9rem;
+                line-height: 0.9rem;
+              }
+            }
+            span {
+              padding: 5px 10px;
+              border-radius: 23px;
+              background-color: #afdbe4;
+              margin: 10px;
+              cursor: pointer;
+            }
+            .srvfldcrdbtn {
+              all: unset;
+              padding: 10px 30px;
+              background-color: #fff;
+              background: linear-gradient(
+                to bottom right,
+                #14a9ff,
+                #0088f0
+              ) !important;
+              border-radius: 43px;
+              text-align: center;
+              color: #fff;
+              cursor: pointer;
+              margin-right: 15px;
+              font-family: 'VolteRounded-Bold' !important;
+              margin: 10px 0;
+              margin-top: 20px;
+              @media (max-width: 480px) {
+                margin-right: unset !important;
+                bottom: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.maintainance {
+  height: calc(100vh - 70px);
+  .maintcontainer {
+    position: relative;
+    height: 100%;
+    .maintwrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .madmaintimage {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .madmainttexts {
+        text-align: center;
+        margin-top: 20px;
+        h2 {
+          text-transform: uppercase;
+          font-size: 2rem;
+          color: var(--text-color);
+        }
+        p {
+          margin-top: 10px;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}

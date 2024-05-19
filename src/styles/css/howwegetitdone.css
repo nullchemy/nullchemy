@@ -1,0 +1,170 @@
+.hwgitdone {
+  padding: 40px 0;
+}
+.hwgitdone .hwgiContainer {
+  margin: 0 5%;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper {
+  position: relative;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .pathone {
+  position: absolute;
+  top: 47rem;
+  left: 16rem;
+  fill: var(--text-color);
+  height: 200px;
+  width: 700px;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .pathone {
+    display: none !important;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .pathtwo {
+  position: absolute;
+  top: 23rem;
+  left: 17rem;
+  fill: var(--text-color);
+  height: 200px;
+  width: 700px;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .pathtwo {
+    display: none !important;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitTitle {
+  text-align: center;
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1900px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitTitle {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec:nth-child(odd) .hwgitflxone {
+  order: 2;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec:nth-child(odd) .hwgitflxtwo {
+  order: 1;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec:nth-child(even) .hwgitflxone {
+  order: 1;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec:nth-child(even) .hwgitflxtwo {
+  order: 2;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec {
+    flex-direction: column !important;
+    gap: 80px;
+    padding: 40px 0;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone {
+  width: 60%;
+  margin: 2rem 0;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone:nth-child(1) {
+  margin-top: 2rem;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone {
+    width: 100%;
+    order: 2 !important;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitsectitle {
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  color: var(--text-color);
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitsectitle {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitPar {
+  font-family: Volte Rounded;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxone .hwgitPar {
+    font-size: 1rem;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo {
+  flex: 1;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo {
+    order: 1 !important;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper {
+  position: relative;
+}
+@media (max-width: 480px) {
+  .hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper {
+    width: 100%;
+    height: 180px;
+  }
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwditfleIc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 350px;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwditfleIc:nth-child(2) {
+  margin-top: 5rem;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper .hwgitcircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #2e6aff;
+  color: #fff;
+  height: 150px;
+  width: 150px;
+}
+.hwgitdone .hwgiContainer .hwgitWrapper .hwgitsec .hwgitflxtwo .hwgitflxtwoWrapper span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+}/*# sourceMappingURL=howwegetitdone.css.map */

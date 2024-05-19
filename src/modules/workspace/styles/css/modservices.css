@@ -1,0 +1,46 @@
+.mod_services {
+  height: -moz-min-content;
+  height: min-content;
+}
+.mod_services .ms_wrapper {
+  padding: 20px;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr {
+  margin-bottom: 20px;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_title {
+  font-size: 2rem;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_wrap_flex_row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_wrap_flex_row .ms_serv_item {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_wrap_flex_row .ms_serv_item h1 {
+  font-size: 1.5rem;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_wrap_flex_runtimes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_wrap_flex_runtimes .ms_serv_item {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.mod_services .ms_wrapper .ms_wrap_inner_contr .ms_wrap_flex_runtimes .ms_serv_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: unset;
+     object-fit: unset;
+}/*# sourceMappingURL=modservices.css.map */

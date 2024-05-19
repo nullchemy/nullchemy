@@ -1,0 +1,259 @@
+.ourcases {
+  .ourcasesContainer {
+    margin: 0 5%;
+    .ourcasesWrapper {
+      padding-top: 2%;
+      .ourcasesHeader {
+        font-size: 5.375rem;
+        line-height: 5rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        font-family: 'VolteRounded-Bold', Volte Rounded;
+        font-weight: 800 !important;
+        margin-bottom: 2rem;
+        user-select: none;
+        text-align: center;
+        @media (max-width: 1900px) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
+      .wencase {
+        background-color: #cadd97;
+        background-image: url('../../assets/images/cartographer.png');
+        background-repeat: repeat;
+        background-position: 0 0;
+        // background-size: cover;
+      }
+      .wecarecase {
+        background: rgb(255, 171, 53);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 171, 53, 1) 0%,
+          rgba(255, 221, 107, 1) 56%,
+          rgba(255, 230, 62, 1) 100%
+        );
+      }
+      .eoprediction {
+        background: #000000;
+        background-image: url('../../assets/images/patterns/inspiration-geometry.png');
+        background-repeat: repeat;
+        background-position: 0 0;
+        // background-size: cover;
+        .ourcase_item_overlay {
+          background: #00000073;
+        }
+        .caseWenLeft {
+          .caseWenSubTitle {
+            color: #fff !important;
+          }
+          .caseKeywords {
+            span {
+              background: #292b58af;
+              color: #fff !important;
+            }
+          }
+          .caseBranding {
+            .caseBrandLogo {
+              color: #fff !important;
+            }
+            .caseBrandName {
+              color: #fff !important;
+            }
+          }
+          .caseExpPar {
+            color: #fff !important;
+          }
+        }
+      }
+      .caseWenotify {
+        display: flex;
+        border-radius: 23px;
+        padding: 4rem;
+        margin-bottom: 3rem;
+        position: relative;
+        overflow: hidden;
+        &::after,
+        &::before {
+          border-radius: 23px;
+        }
+        @media (max-width: 480px) {
+          flex-direction: column;
+          padding: 20px;
+          height: unset !important;
+        }
+        .ourcase_item_overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        .case_lean_more {
+          position: absolute;
+          top: 40px;
+          right: 40px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .learn_more_btn {
+            all: unset;
+            padding: 5px 15px;
+            background-color: var(--text-color-inv);
+            border-radius: 23px;
+            cursor: pointer;
+            color: var(--text-color);
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            .goto_case_ic {
+              height: 15px;
+              width: 15px;
+              cursor: pointer;
+              fill: var(--text-color);
+              margin-left: 10px;
+              margin-bottom: -2px;
+            }
+          }
+        }
+        .caseWenLeft {
+          width: 50%;
+          @media (max-width: 480px) {
+            width: 100%;
+          }
+          .caseWenSubTitle {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: #2d2d2d;
+            font-weight: 600;
+            font-family: 'BookerlyDisplay_W_Rg', Roboto, sans-serif;
+            @media (max-width: 480px) {
+              font-size: 1.3rem;
+              line-height: 1.5rem;
+            }
+          }
+          .caseKeywords {
+            margin: 2rem 0;
+            @media (max-width: 480px) {
+              margin: 0.5rem 0;
+            }
+            span {
+              font-weight: 500;
+              font-size: 1rem;
+              line-height: 1rem;
+              text-transform: capitalize;
+              color: #2d2d2d;
+              font-family: AEmb, Roboto, sans-serif;
+              background: rgba(19, 20, 38, 0.2);
+              margin: 0 10px;
+              padding: 5px 10px;
+              border-radius: 15px;
+              cursor: pointer;
+              &:nth-child(1) {
+                margin-left: 0;
+              }
+              @media (max-width: 480px) {
+                font-size: 0.6rem;
+                line-height: 1rem;
+              }
+            }
+          }
+          .caseBranding {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            @media (max-width: 480px) {
+              margin-bottom: 0.5rem;
+            }
+            .caseBrandLogo {
+              fill: #2d2d2d;
+              color: #2d2d2d;
+              stroke: #2d2d2d;
+              height: 100px;
+              width: 100px;
+            }
+            .caseBrandName {
+              font-size: 4rem;
+              font-family: 'BookerlyDisplay_W_Rg';
+              // font-family: 'Copperplate-Gothic-Bold', 'VolteRounded-Bold',
+              //   Volte Rounded;
+              font-weight: 800 !important;
+              user-select: none;
+              margin-left: 20px;
+              @media (max-width: 480px) {
+                font-size: 2rem;
+              }
+            }
+          }
+          .caseExpPar {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2d2d2d;
+            @media (max-width: 480px) {
+              font-size: 0.9rem;
+              line-height: 1.2rem;
+            }
+          }
+        }
+        .caseWenRight {
+          width: 50%;
+          position: relative;
+          @media (max-width: 480px) {
+            width: 100%;
+            margin: 30px 0;
+          }
+          .caseWenSplashScreenOne,
+          .caseWenSplashScreenTwo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 450px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            @media (max-width: 480px) {
+              display: none;
+              height: 0px;
+            }
+          }
+          .caseWenSplashScreenOne {
+            transform: rotate(-25deg);
+            margin-top: -30%;
+            margin-left: -30%;
+          }
+          .caseWenSplashScreenTwo {
+            transform: rotate(20deg);
+            margin-top: -30%;
+            margin-left: -5%;
+          }
+          .wenCaseLearnMore {
+            all: unset;
+            position: absolute;
+            bottom: -10px;
+            right: 10%;
+            padding: 10px 30px;
+            background-color: #fff;
+            background: linear-gradient(
+              to bottom right,
+              #14a9ff,
+              #0088f0
+            ) !important;
+            border-radius: 43px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 15px;
+            font-family: 'VolteRounded-Bold' !important;
+          }
+        }
+      }
+    }
+  }
+}

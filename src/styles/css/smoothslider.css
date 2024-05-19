@@ -1,0 +1,128 @@
+.smslidparent {
+  position: relative;
+}
+.smslidparent .slider-container {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.smslidparent .slider-container .slider-wrapper {
+  padding: 50px 0px;
+  align-items: stretch;
+  display: flex;
+}
+@media (max-width: 480px) {
+  .smslidparent .slider-container .slider-wrapper {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.smslidparent .slider-container .slider-wrapper .slider-scroll {
+  position: relative;
+  height: 170px;
+}
+@media (max-width: 480px) {
+  .smslidparent .slider-container .slider-wrapper .slider-scroll {
+    scroll-snap-align: start;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+}
+.smslidparent .slider-container .slider-wrapper .slider-scroll:nth-child(odd) {
+  top: 20px;
+}
+.smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard {
+  height: 150px;
+  margin: 0px 25px;
+  min-width: 300px;
+  position: relative;
+  padding: 30px 18px 22px;
+  border: 1px solid #98ff6c;
+  padding: 21px 24px 23px;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--background-modals);
+  box-shadow: rgba(0, 0, 0, 0.0588235294) 0px 1px 18px 0px, rgba(0, 0, 0, 0.1019607843) 0px 3px 5px -1px;
+  transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  border: 1px solid #ffffff;
+  margin-left: 5px;
+}
+.smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard .slcardtexts .crdslTitle {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: var(--text-color);
+}
+.smslidparent .slider-container .slider-wrapper .slider-scroll .slidercard .slcardtexts .crdslpar {
+  font-size: 1rem;
+  font-family: sans-serif, monospace;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.smslidparent .Slidercontrols {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  display: flex;
+  gap: 2rem;
+}
+.smslidparent .Slidercontrols #prevButton,
+.smslidparent .Slidercontrols #nextButton {
+  all: unset;
+  width: 20px;
+  height: 20px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer !important;
+}
+@media (min-width: 480px) {
+  .smslidparent .Slidercontrols #prevButton,
+  .smslidparent .Slidercontrols #nextButton {
+    display: none !important;
+  }
+}
+.smslidparent .Slidercontrols #prevButton::before {
+  border-radius: 0% 50% 50% 0%;
+}
+.smslidparent .Slidercontrols #nextButton::before {
+  border-radius: 50% 0% 0% 50%;
+}
+.smslidparent .sliderLine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 257px;
+  background-color: #3d3d3d;
+}
+.smslidparent .slider-indicator {
+  left: 0;
+  width: 180px;
+  height: 1px;
+  margin: 20px auto 0px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .smslidparent .slider-indicator {
+    width: 257px;
+  }
+}
+.smslidparent .slider-indicator .indicator-inner {
+  width: 40px;
+  height: 6px;
+  left: 0px;
+  position: absolute;
+  top: -6px;
+  background: #3d3d3d;
+}
+@media (max-width: 480px) {
+  .smslidparent .slider-indicator .indicator-inner {
+    width: 134px;
+  }
+}/*# sourceMappingURL=smoothslider.css.map */

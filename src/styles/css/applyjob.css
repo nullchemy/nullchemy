@@ -1,0 +1,19 @@
+.applyjob {
+  padding: 20px 0;
+}
+.applyjob .applyjob_container {
+  margin: 0 5%;
+}
+.applyjob .applyjob_container .applyjob_wrapper {
+  margin: 0 5%;
+}
+.applyjob .applyjob_container .applyjob_wrapper .jbap_title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.applyjob .applyjob_container .applyjob_wrapper .apply_job_content {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-color);
+}/*# sourceMappingURL=applyjob.css.map */

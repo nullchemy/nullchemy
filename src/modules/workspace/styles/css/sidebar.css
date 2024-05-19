@@ -1,0 +1,89 @@
+.sidebar {
+  height: calc(100vh - 85px);
+  width: 150px;
+  padding: 5px;
+  background: linear-gradient(-45deg, rgba(0, 160, 255, 0.86), #0048a2);
+  position: relative;
+  transition: width 0.5s ease-in-out;
+  padding-top: 80px;
+  overflow: hidden;
+}
+.sidebar .wkspaceAngles {
+  height: 20px;
+  width: 20px;
+  fill: #e6e6e6;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.sidebar .wkspaceAngles:hover {
+  fill: #fff;
+}
+.sidebar .sidebar_navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_top .sidebar_nav_item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_top .sidebar_nav_item .sdbaric_cont {
+  height: 20px;
+  width: 20px;
+  padding: 5px 0;
+  margin-right: 15px;
+  margin-top: 0px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_top .sidebar_nav_item .sdbaric_cont .sidebarIc {
+  height: 20px;
+  width: 20px;
+  fill: #e6e6e6;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_top .sidebar_nav_item .sdbaric_cont .sidebarIc:hover {
+  fill: #fff;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_top .sidebar_nav_item .sdbarText {
+  font-size: 0.9rem;
+  font-weight: 800;
+  white-space: nowrap !important;
+  color: #e6e6e6;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_top .sidebar_nav_item .sdbarText:hover {
+  color: #fff;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_bottom .sidebarIc {
+  height: 20px;
+  width: 20px;
+  fill: #e6e6e6;
+}
+.sidebar .sidebar_navigation .sidebar_nav_wrapper .sidebar_bottom .sidebarIc:hover {
+  fill: #fff;
+}
+
+.sidebarMin {
+  width: 45px;
+}
+.sidebarMin .wkspaceAngles {
+  transform: rotateY(0deg);
+}/*# sourceMappingURL=sidebar.css.map */

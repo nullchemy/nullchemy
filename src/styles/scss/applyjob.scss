@@ -1,0 +1,20 @@
+.applyjob {
+  padding: 20px 0;
+  .applyjob_container {
+    margin: 0 5%;
+    .applyjob_wrapper {
+      margin: 0 5%;
+      .jbap_title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: var(--text-color);
+      }
+      .apply_job_content {
+        //font-family: Apercu, Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--text-color);
+      }
+    }
+  }
+}

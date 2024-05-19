@@ -1,0 +1,322 @@
+.erecruit .application_form_bottom {
+  padding-top: 2rem;
+}
+.erecruit .application_form_bottom .application_form_title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.erecruit .application_form_bottom .application_progress_indicator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.erecruit .application_form_bottom .application_progress_indicator .active-ind span {
+  background-color: #2ac6ff !important;
+}
+.erecruit .application_form_bottom .application_progress_indicator .ind_sec_item {
+  text-align: center;
+  cursor: pointer;
+}
+.erecruit .application_form_bottom .application_progress_indicator .ind_sec_item span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--text-color);
+  color: var(--text-color-inv);
+}
+.erecruit .application_form_bottom .application_progress_indicator .ind_sec_item p {
+  margin-top: 5px !important;
+  color: var(--text-color);
+}
+.erecruit .application_form_bottom .application_progress_indicator .ind_sec_item p:nth-child(3) {
+  margin-top: 1px !important;
+}
+.erecruit .application_form_bottom .application_progress_indicator .ind_sec_item span,
+.erecruit .application_form_bottom .application_progress_indicator .ind_sec_item p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page {
+  min-height: 100vh;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page {
+    margin: 0 5px;
+  }
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper {
+  padding: 20px;
+  height: -moz-min-content;
+  height: min-content;
+}
+@media (max-width: 480px) {
+  .erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper {
+    width: unset;
+  }
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .formNotifySucc {
+  padding: 10px;
+  width: 95%;
+  color: var(--text-color);
+  background-color: #34ff9a;
+  border-left: 7px solid #009431;
+  margin-bottom: 20px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .formNotify {
+  padding: 10px;
+  width: 95%;
+  color: var(--text-color);
+  background-color: #ff556b;
+  border-left: 7px solid #940000;
+  margin-bottom: 20px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec {
+  padding-top: 1rem;
+  margin-left: 15px;
+}
+@media (max-width: 480px) {
+  .erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec {
+    margin-left: -10px;
+    padding-top: 1rem;
+  }
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form h3 {
+  color: var(--text-color);
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group {
+  margin-bottom: 40px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .user-input-wrp {
+  position: relative;
+  width: 94%;
+  margin: 5px 0px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .user-input-wrp .inputText {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  outline: none;
+  border: 1px solid var(--text-color);
+  padding: 10px 13px;
+  box-shadow: none !important;
+  border-radius: 5px;
+  background-color: #e7f1ff;
+  display: unset !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .user-input-wrp .inputText:not([value=""]) {
+  background-color: rgb(255, 219, 166);
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .user-input-wrp .floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 27px;
+  left: 10px;
+  transition: 0.2s ease all;
+  opacity: 0.5;
+  color: rgb(95, 95, 95);
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .user-input-wrp .inputText:not([value=""]) ~ .floating-label,
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .user-input-wrp .inputText:focus ~ .floating-label {
+  top: 0px;
+  left: 8px;
+  font-size: 13px;
+  opacity: 1;
+  color: var(--text-color);
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .appl-gr-flex {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .appl-gr-flex .applPut {
+  width: 46%;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row {
+  display: flex;
+  margin-bottom: 22px;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row {
+  width: 98%;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row {
+    width: 100%;
+  }
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief {
+  display: flex;
+  padding: 18px 20px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px dashed var(--text-color);
+  border-radius: 5px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+}
+@media (max-width: 480px) {
+  .erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent {
+    width: 100%;
+  }
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent .icon {
+  margin-right: 15px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent .icon img {
+  max-width: 100%;
+  height: auto;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent .applent-label {
+  font-size: 13px;
+  letter-spacing: -0.17px;
+  line-height: 22px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 800px;
+  overflow-x: scroll;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent .applent-label::-webkit-scrollbar {
+  scrollbar-color: rgb(35, 42, 46);
+  width: 5px;
+  max-height: 3px;
+  border-radius: 23px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent .applent-label .filenames-list {
+  padding: 8px 15px;
+  border-radius: 23px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #eaeaea;
+  background-color: #505050;
+  margin-right: 3px;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .file-applent .applent-label .filenames-list:hover {
+  background-color: #797979;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .row-wrap {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .row-wrap {
+    display: none;
+  }
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .project_brief .row-wrap .button {
+  background: #2ac6ff;
+  border-radius: 4px;
+  padding: 9px 23px 11px;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 500;
+  z-index: unset !important;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-group .input-field-row .input-file-row .file-field {
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-page-btn {
+  border-radius: 4px;
+  padding: 13px 54px 15px;
+  background-color: #2ac6ff;
+  border: 1px solid #2ac6ff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  line-height: 19px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  transition: color 0.15s ease-in-out 0s;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl-page-wrapper .applFormSec form .appl-page-btn:hover {
+  color: rgb(109, 216, 255);
+  background-color: rgb(233, 233, 233);
+  transition: 0.3s;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals {
+  width: 40%;
+  padding-top: 4rem;
+  height: 650px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper {
+  position: sticky;
+  top: 20px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_t_high {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_t_high:nth-child(1) {
+  border-bottom: 1px solid #2ac6ff;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_t_high .appl_ic_wrapper {
+  margin: 0 auto;
+  height: 100px;
+  width: 200px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_t_high p {
+  color: var(--text-color);
+  text-align: center;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_t_high p a {
+  color: #006aff;
+  text-decoration: underline;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_socials {
+  padding: 1.5rem 0;
+  justify-content: center;
+  gap: 10px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_socials .appl_soc_item:nth-child(1) {
+  margin-bottom: -6px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_socials .appl_soc_item:nth-child(1) .appl_soc_ic {
+  height: 30px;
+  width: 30px;
+}
+.erecruit .application_form_bottom .apply_job_form .aplication_form_section .appl-page .appl_textuals .appl_textuals_wrapper .appl_socials .appl_soc_item .appl_soc_ic {
+  height: 25px;
+  width: 25px;
+  fill: var(--text-color);
+}/*# sourceMappingURL=erecruit.css.map */

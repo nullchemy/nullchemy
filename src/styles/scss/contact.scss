@@ -1,0 +1,138 @@
+.contact {
+  .contactContainer {
+    margin: 0 5%;
+    .contactWrapper {
+      .contHeader {
+        font-size: 4rem;
+        color: var(--text-color);
+        font-weight: 600;
+        line-height: 4rem;
+        text-transform: capitalize;
+        margin-left: 45px;
+        @media (max-width: 480px) {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          margin-left: 5px;
+        }
+      }
+      .contform {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
+        .contactForm {
+          width: 55%;
+          @media (max-width: 480px) {
+            width: 100%;
+          }
+          .contflex {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .contformgroup {
+              width: 100% !important;
+              label {
+                font-weight: 600;
+                margin-left: 3px;
+                color: var(--text-color);
+                span {
+                  color: red !important;
+                }
+              }
+              .continput {
+                width: calc(90% - 20px);
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #424242;
+              }
+            }
+          }
+          .contformgroup {
+            width: 100%;
+            margin-top: 20px;
+            label {
+              color: var(--text-color);
+              span {
+                color: red !important;
+              }
+            }
+            .continput {
+              width: calc(95% - 20px);
+              outline: none;
+              border: none;
+              border-radius: 5px;
+              padding: 10px;
+              margin-top: 5px;
+              border: 1px solid #424242;
+            }
+            .conttextarea {
+              width: calc(95% - 20px) !important;
+              height: 125px !important;
+              outline: none;
+              border: none;
+              border-radius: 5px;
+              padding: 10px;
+              margin-top: 5px;
+              resize: none;
+              border: 1px solid #424242;
+            }
+          }
+          .contsendbutton {
+            outline: none;
+            border: none;
+            background-color: #000000;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 10px 0;
+            padding: 10px 20px;
+            width: 200px;
+            cursor: pointer;
+          }
+        }
+        .contInfoBox {
+          width: 30%;
+          height: 500px;
+          @media (max-width: 480px) {
+            width: 100%;
+            margin-top: 50px;
+            height: unset;
+          }
+          h3 {
+            font-size: 2rem;
+            color: var(--text-color);
+            font-weight: 500;
+            line-height: 2rem;
+            text-transform: capitalize;
+          }
+          .continfodirect {
+            margin-top: 20px;
+            .continfoTouch {
+              display: flex;
+              align-items: center;
+              margin: 40px;
+              color: var(--text-color);
+              @media (max-width: 480px) {
+                margin: 20px;
+              }
+              .contInfoIc {
+                height: 20px;
+                width: 20px;
+                margin-right: 20px;
+                fill: var(--text-color);
+                span {
+                  color: var(--text-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

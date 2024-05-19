@@ -1,0 +1,23 @@
+:root {
+  --background-color-one: #e3e1ff;
+  --background-color-two: #e3edff;
+  --background-color-three: #fff;
+  --text-color: #2b2b2b;
+  --text-color-inv: #e6e6e6;
+  --background-modals: #ffffffa3;
+  --background-header: #ffffffcc;
+  --landing-url: url("../../assets/images/background_bg_light.png");
+  --bg-overlay-color: #e3ebff;
+}
+
+[data-theme=dark] {
+  --background-color-one: #000000;
+  --background-color-two: #090c14;
+  --background-color-three: #171c28;
+  --text-color: #e6e6e6;
+  --text-color-inv: #2b2b2b;
+  --background-modals: #2e2e2ea3;
+  --background-header: #2e2e2ecc;
+  --landing-url: url("../../assets/images/background_bg_dark.png");
+  --bg-overlay-color: #080b12;
+}/*# sourceMappingURL=variables.css.map */

@@ -1,0 +1,333 @@
+/* Apercu font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-Light.eot);
+  src: url(../../assets/fonts/apercu/Apercu-Light.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-Light.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-Light.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-Light.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-Light.svg#Apercu-Light) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-LightItalic.eot);
+  src: url(../../assets/fonts/apercu/Apercu-LightItalic.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-LightItalic.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-LightItalic.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-LightItalic.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-LightItalic.svg#Apercu-LightItalic) format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-Regular.eot);
+  src: url(../../assets/fonts/apercu/Apercu-Regular.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-Regular.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-Regular.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-Regular.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-Regular.svg#Apercu-Regular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-Italic.eot);
+  src: url(../../assets/fonts/apercu/Apercu-Italic.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-Italic.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-Italic.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-Italic.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-Italic.svg#Apercu-Italic) format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-Medium.eot);
+  src: url(../../assets/fonts/apercu/Apercu-Medium.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-Medium.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-Medium.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-Medium.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-Medium.svg#Apercu-Medium) format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-MediumItalic.eot);
+  src: url(../../assets/fonts/apercu/Apercu-MediumItalic.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-MediumItalic.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-MediumItalic.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-MediumItalic.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-MediumItalic.svg#Apercu-MediumItalic) format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-Bold.eot);
+  src: url(../../assets/fonts/apercu/Apercu-Bold.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-Bold.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-Bold.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-Bold.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-Bold.svg#Apercu-Bold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Apercu;
+  src: url(../../assets/fonts/apercu/Apercu-BoldItalic.eot);
+  src: url(../../assets/fonts/apercu/Apercu-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../../assets/fonts/apercu/Apercu-BoldItalic.woff2) format("woff2"), url(../../assets/fonts/apercu/Apercu-BoldItalic.woff) format("woff"), url(../../assets/fonts/apercu/Apercu-BoldItalic.ttf) format("truetype"), url(../../assets/fonts/apercu/Apercu-BoldItalic.svg#Apercu-BoldItalic) format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+/* Volte Rounded */
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Bold.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-BoldItalic.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-BoldItalic.woff2) format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Italic.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Italic.woff2) format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Light.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Light.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-LightItalic.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-LightItalic.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Medium.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Volte Rounded;
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-MediumItalic.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-MediumItalic.woff2) format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Volte-Rounded-Regular";
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Regular.woff2);
+  src: url(../../assets/fonts/Volte-Rounded/VolteRounded-Regular.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Volte-Rounded-Semibold";
+  src: url(../../assets/fonts/Volte-Rounded/Volte-Rounded-Semibold.otf);
+  src: url(../../assets/fonts/Volte-Rounded/Volte-Rounded-Semibold.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VolteRounded-Bold";
+  src: url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.eot"); /* IE9*/
+  src: url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.woff2") format("woff2"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.woff") format("woff"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.ttf") format("truetype"), url("../../assets/fonts/VolteRounded-Bold/@font-face/428912faef6cbf7a2c43c3952c8de813.svg#VolteRounded-Bold") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+}
+@font-face {
+  font-family: "BookerlyDisplay_W_Rg";
+  src: url("../../assets/fonts/BookerlyDisplay/BookerlyDisplay.eot");
+  src: url("../../assets/fonts/BookerlyDisplay/BookerlyDisplay.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BookerlyDisplay_W_Rg";
+  src: url("../../assets/fonts/BookerlyDisplay/BookerlyDisplay.woff");
+  src: url("../../assets/fonts/BookerlyDisplay/BookerlyDisplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BookerlyDisplay_W_Rg";
+  src: url("../../assets/fonts/BookerlyDisplay/BookerlyDisplay.woff2");
+  src: url("../../assets/fonts/BookerlyDisplay/BookerlyDisplay.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --background-color-one: #e3e1ff;
+  --background-color-two: #e3edff;
+  --background-color-three: #fff;
+  --text-color: #2b2b2b;
+  --text-color-inv: #e6e6e6;
+  --background-modals: #ffffffa3;
+  --background-header: #ffffffcc;
+  --landing-url: url("../../assets/images/background_bg_light.png");
+  --bg-overlay-color: #e3ebff;
+}
+
+[data-theme=dark] {
+  --background-color-one: #000000;
+  --background-color-two: #090c14;
+  --background-color-three: #171c28;
+  --text-color: #e6e6e6;
+  --text-color-inv: #2b2b2b;
+  --background-modals: #2e2e2ea3;
+  --background-header: #2e2e2ecc;
+  --landing-url: url("../../assets/images/background_bg_dark.png");
+  --bg-overlay-color: #080b12;
+}
+
+*,
+::after,
+::before {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-style: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  font-family: "Volte-Rounded-Regular", Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  direction: ltr;
+  transition: background 2s;
+  position: relative;
+}
+
+.app {
+  background: linear-gradient(180deg, var(--background-color-one) 0%, var(--background-color-two) 20%, var(--background-color-three) 100%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Remove increment and decrement buttons from number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:-internal-autofill-selected {
+  -webkit-appearance: menulist-button;
+     -moz-appearance: menulist-button;
+          appearance: menulist-button;
+  background: linear-gradient(180deg, var(--background-color-one) 0%, var(--background-color-two) 20%, var(--background-color-three) 100%) !important;
+  transition: all 0.3s ease-in-out 0s;
+  color: fieldtext !important;
+}
+
+/**
+ * ==============================================
+ * dot-flashing
+ * ==============================================
+ */
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ffffff;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  margin: 0 auto;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ffffff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ffffff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #ffffff;
+  }
+  50%, 100% {
+    background-color: rgba(255, 243, 243, 0.2);
+  }
+}
+@keyframes loading-skeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.c-skeleton-line,
+.c-skeleton-circle,
+.c-skeleton-square {
+  background-color: #c2c2ff;
+  display: inline-flex;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.c-skeleton-line:after,
+.c-skeleton-circle:after,
+.c-skeleton-square:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, #c2c2ff, #d2d2ff, #c2c2ff);
+  transform: translateX(-100%);
+  animation-name: loading-skeleton;
+  animation-direction: normal;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=globals.css.map */

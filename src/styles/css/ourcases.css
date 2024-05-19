@@ -1,0 +1,266 @@
+.ourcases .ourcasesContainer {
+  margin: 0 5%;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper {
+  padding-top: 2%;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .ourcasesHeader {
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+@media (max-width: 1900px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .ourcasesHeader {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .ourcasesHeader {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .wencase {
+  background-color: #cadd97;
+  background-image: url("../../assets/images/cartographer.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .wecarecase {
+  background: rgb(255, 171, 53);
+  background: linear-gradient(90deg, rgb(255, 171, 53) 0%, rgb(255, 221, 107) 56%, rgb(255, 230, 62) 100%);
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction {
+  background: #000000;
+  background-image: url("../../assets/images/patterns/inspiration-geometry.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .ourcase_item_overlay {
+  background: rgba(0, 0, 0, 0.4509803922);
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseWenSubTitle {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseKeywords span {
+  background: rgba(41, 43, 88, 0.6862745098);
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseBranding .caseBrandLogo {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseBranding .caseBrandName {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .eoprediction .caseWenLeft .caseExpPar {
+  color: #fff !important;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify {
+  display: flex;
+  border-radius: 23px;
+  padding: 4rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify::after, .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify::before {
+  border-radius: 23px;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify {
+    flex-direction: column;
+    padding: 20px;
+    height: unset !important;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .ourcase_item_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .case_lean_more {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .case_lean_more .learn_more_btn {
+  all: unset;
+  padding: 5px 15px;
+  background-color: var(--text-color-inv);
+  border-radius: 23px;
+  cursor: pointer;
+  color: var(--text-color);
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .case_lean_more .learn_more_btn .goto_case_ic {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  fill: var(--text-color);
+  margin-left: 10px;
+  margin-bottom: -2px;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft {
+  width: 50%;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft {
+    width: 100%;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseWenSubTitle {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #2d2d2d;
+  font-weight: 600;
+  font-family: "BookerlyDisplay_W_Rg", Roboto, sans-serif;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseWenSubTitle {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseKeywords {
+  margin: 2rem 0;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseKeywords {
+    margin: 0.5rem 0;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseKeywords span {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: capitalize;
+  color: #2d2d2d;
+  font-family: AEmb, Roboto, sans-serif;
+  background: rgba(19, 20, 38, 0.2);
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseKeywords span:nth-child(1) {
+  margin-left: 0;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseKeywords span {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseBranding {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseBranding {
+    margin-bottom: 0.5rem;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseBranding .caseBrandLogo {
+  fill: #2d2d2d;
+  color: #2d2d2d;
+  stroke: #2d2d2d;
+  height: 100px;
+  width: 100px;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseBranding .caseBrandName {
+  font-size: 4rem;
+  font-family: "BookerlyDisplay_W_Rg";
+  font-weight: 800 !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 20px;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseBranding .caseBrandName {
+    font-size: 2rem;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseExpPar {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2d2d2d;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenLeft .caseExpPar {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight {
+  width: 50%;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight {
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenOne,
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenTwo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media (max-width: 480px) {
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenOne,
+  .ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenTwo {
+    display: none;
+    height: 0px;
+  }
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenOne {
+  transform: rotate(-25deg);
+  margin-top: -30%;
+  margin-left: -30%;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .caseWenSplashScreenTwo {
+  transform: rotate(20deg);
+  margin-top: -30%;
+  margin-left: -5%;
+}
+.ourcases .ourcasesContainer .ourcasesWrapper .caseWenotify .caseWenRight .wenCaseLearnMore {
+  all: unset;
+  position: absolute;
+  bottom: -10px;
+  right: 10%;
+  padding: 10px 30px;
+  background-color: #fff;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  border-radius: 43px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  font-family: "VolteRounded-Bold" !important;
+}/*# sourceMappingURL=ourcases.css.map */

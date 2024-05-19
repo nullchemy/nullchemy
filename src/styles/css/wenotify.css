@@ -1,0 +1,75 @@
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper {
+  position: relative;
+  height: calc(100vh - 54px);
+  background-color: #0f0733;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenpoliceSceneBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding {
+  margin: 0 5%;
+  height: 100%;
+  position: relative;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenotifyTitle {
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: #fff;
+  font-family: "BookerlyDisplay_W_Rg";
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+@media (max-width: 1900px) {
+  .wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenotifyTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenotifyTitle {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenProdType {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenProdType .wenSubTitle {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenProdType span {
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  margin-top: -25px;
+  color: #fff;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyLandingWrapper .wenotifyLanding .wenLndCenterWrap .wenAppTagline {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.wenotify .wenotifyContainer .wenotifyWrapper .wenotifyContent {
+  margin: 0 5%;
+  height: 500px;
+}/*# sourceMappingURL=wenotify.css.map */

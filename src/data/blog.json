@@ -1,0 +1,8 @@
+{
+    "id": "ss9wys83js3js",
+    "title": "Getting Started with Flask, React and MySQL: Build a full application",
+    "author": "Dennis Kibet",
+    "readlength": "10",
+    "dateposted": "27-05-2023",
+    "content": "<h3 class='readSubTitle'>introduction</h3><p class='readParagraph'>In the ever-evolving landscape of web development, it's essential to stay up-to-date with the latest tools and frameworks that empower us to build robust and efficient applications.</p> <p class='readParagraph'>React, has gained immense popularity for its flexibility and performance. Flask, offers a simple yet powerful approach to backend development. </p><p class='readParagraph'>And SQLite, provides a seamless way to store and manage data within our applications.In this blog post, we will create a full stack web application with – React, Flask, and SQLite. We'll explore the unique strengths and features of each component and learn how they complement each other to build a dynamic and responsive application. </p>This tutorial will provide you with the knowledge and tools to embark on your next project with confidence.Getting started with react.<br/> To get started with React, begin by setting up a development environment with Node.js and npm installed. Then, create a new React project using a tool like Create React App, and you'll be ready to dive into building dynamic and interactive user interfaces with React's component-based architecture.npx create-react-app react-flask-app --template typescriptcd my-appnpm start"
+}

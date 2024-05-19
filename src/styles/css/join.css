@@ -1,0 +1,51 @@
+.joingithub {
+  height: 50vh;
+}
+.joingithub .jgcontainer {
+  margin: 0 5%;
+}
+.joingithub .jgcontainer .jgwrapper .jgTitle {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 4rem;
+  text-transform: capitalize;
+  margin-left: 45px;
+}
+.joingithub .jgcontainer .jgwrapper .jgform {
+  width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.joingithub .jgcontainer .jgwrapper .jgform .jgformGroup {
+  width: 100%;
+}
+.joingithub .jgcontainer .jgwrapper .jgform .jgformGroup label {
+  font-weight: 600;
+  margin-left: 3px;
+}
+.joingithub .jgcontainer .jgwrapper .jgform .jgformGroup label span {
+  color: red !important;
+}
+.joingithub .jgcontainer .jgwrapper .jgform .jgformGroup .jginputTextInput {
+  width: calc(90% - 20px);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #424242;
+}
+.joingithub .jgcontainer .jgwrapper .jgform .jgRequestBtn {
+  outline: none;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+}/*# sourceMappingURL=join.css.map */

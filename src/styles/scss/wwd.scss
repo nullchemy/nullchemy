@@ -1,0 +1,28 @@
+.whatwedo {
+  @media (max-width: 480px) {
+    height: 480px;
+  }
+  .wwdContainer {
+    .wwdWrapper {
+      .wwdTitle {
+        text-align: center;
+        font-size: 3.5rem;
+        line-height: 4rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        font-family: 'Volte-Rounded-Semibold', Apercu, Roboto;
+        font-weight: 800 !important;
+        margin-bottom: 2rem;
+        user-select: none;
+        @media (max-width: 1900px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 2rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}

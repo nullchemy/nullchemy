@@ -1,0 +1,28 @@
+.unsub .unsubContainer {
+  margin: 0 5%;
+}
+.unsub .unsubContainer .unsubWrapper .unsubHeader {
+  font-size: 5.375rem;
+  line-height: 5rem;
+  letter-spacing: -0.05rem;
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+@media (max-width: 1900px) {
+  .unsub .unsubContainer .unsubWrapper .unsubHeader {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .unsub .unsubContainer .unsubWrapper .unsubHeader {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}/*# sourceMappingURL=unsubscribe.css.map */

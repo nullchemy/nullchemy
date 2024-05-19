@@ -1,0 +1,236 @@
+.aboutus {
+  /*=== About us header===*/
+  .about-header {
+    margin: 5% 0;
+    margin-top: 2% !important;
+    .about-header-wrapper {
+      text-align: center;
+      h2 {
+        font-size: 5.375rem;
+        line-height: 5rem;
+        letter-spacing: -0.05rem;
+        color: var(--text-color);
+        font-family: 'VolteRounded-Bold', Volte Rounded;
+        font-weight: 800 !important;
+        margin-bottom: 2rem;
+        user-select: none;
+        text-align: center;
+        @media (max-width: 1900px) {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+  /*=== Our Mission ===*/
+  .mission {
+    margin: 5%;
+    .mission-wrapper {
+      display: flex;
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
+      .mission-images {
+        width: 50%;
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+        .miss-image-wrapper {
+          position: relative;
+          height: 400px;
+          width: 400px;
+          overflow: hidden;
+          margin: 0 auto;
+          border-radius: 0% 50% 50% 50%;
+          @media (max-width: 480px) {
+            height: 250px;
+            width: 250px;
+          }
+          .missGridWrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .gridImgWrapItem {
+              background-image: url('../../assets/images/unsplash/jason-goodman-square.jpg'),
+                url('../../assets/images/unsplash/jason-goodman-square.jpg'),
+                url('../../assets/images/unsplash/jason-goodman-square.jpg'),
+                url('../../assets/images/unsplash/jason-goodman-square.jpg');
+              background-size: 200%;
+              background-repeat: no-repeat;
+              height: 200px;
+              width: 200px;
+              @media (max-width: 480px) {
+                height: 125px;
+                width: 125px;
+              }
+              &:nth-child(1) {
+                background-position: 0px 0px;
+              }
+              &:nth-child(2) {
+                background-position: -200px 0px;
+              }
+              &:nth-child(3) {
+                background-position: 0px -200px;
+              }
+              &:nth-child(4) {
+                background-position: -200px -200px;
+              }
+              @media (max-width: 480px) {
+                &:nth-child(1) {
+                  background-position: 0px 0px;
+                }
+                &:nth-child(2) {
+                  background-position: -125px 0px;
+                }
+                &:nth-child(3) {
+                  background-position: 0px -125px;
+                }
+                &:nth-child(4) {
+                  background-position: -125px -125px;
+                }
+              }
+            }
+          }
+          // width: 250px;
+          // height: 250px;
+          // margin: 0 auto;
+          // overflow: hidden;
+          // border-radius: 0% 50% 50% 50%;
+          // @media (max-width: 480px) {
+          //   width: 200px;
+          //   height: 200px;
+          //   margin: 20px auto;
+          // }
+          // img {
+          //   width: 100%;
+          //   height: 100%;
+          //   object-fit: cover;
+          // }
+        }
+      }
+      .mission-texts {
+        width: 50%;
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+        .sec-text {
+          display: inline-flex;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 4px 12px;
+          background: 0px 0px;
+          border: 1px solid rgba(19, 20, 38, 0.16);
+          border-radius: 40px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          background: linear-gradient(94.67deg, #9935e8 0, #e85535 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        h1 {
+          color: var(--text-color);
+          font-family: 'VolteRounded-Bold', Volte Rounded;
+          font-size: 1.7rem;
+          line-height: 1.7rem;
+          margin: 0.5rem 0;
+        }
+        p {
+          color: var(--text-color);
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+  /* ======frequently asked questions stylings====== */
+  .faqmainSection {
+    margin: 4rem 0;
+    .faqsection {
+      .faqcontainer {
+        margin: 0 15%;
+        @media (max-width: 480px) {
+          margin: 0 2%;
+        }
+        .faqwrapper {
+          padding: 6rem;
+          padding-bottom: 4rem;
+          border-radius: 23px;
+          background: linear-gradient(
+            to bottom right,
+            rgb(11, 30, 41),
+            rgba(9, 20, 26, 1)
+          ) !important;
+          transition: 0.3s;
+          @media (max-width: 480px) {
+            padding: 2rem;
+            padding-bottom: 2rem;
+          }
+          .faqflex {
+            .faqtitle {
+              margin-bottom: 40px;
+              text-align: center;
+              font-weight: 700;
+              font-size: 32px;
+              color: #f6f6f6;
+              text-transform: uppercase;
+              @media (max-width: 480px) {
+                margin-bottom: 20px;
+              }
+            }
+            .faqdrop {
+              .faqdroptitle {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                cursor: pointer;
+                .faqText,
+                i {
+                  color: #f6f6f6;
+                  font-size: 20px;
+                  font-weight: 700;
+                  user-select: none;
+                  letter-spacing: 1.4;
+                }
+                .angleDown {
+                  transform: rotate(90deg);
+                  display: unset;
+                  transition-property: all;
+                  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                  transition-duration: 0.15s;
+                }
+              }
+              .faqdropcontents {
+                display: none;
+                .faqdroptexts {
+                  color: #f6f6f6;
+                  line-height: 1.5;
+                  margin-bottom: 10px;
+                }
+              }
+              .faqShow {
+                display: unset;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-duration: 0.15s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

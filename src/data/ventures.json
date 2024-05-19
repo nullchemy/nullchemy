@@ -1,0 +1,160 @@
+{
+  "healthcare": [
+    {
+      "title": "Electronic Health Records (EHR)",
+      "preview": "Develop secure, interoperable systems for managing patient records, including medical history, prescriptions, and lab results."
+    },
+    {
+      "title": "Telemedicine Applications:",
+      "preview": "Create mobile or web platforms for remote consultations, with features like video calling, secure messaging, and appointment scheduling."
+    },
+    {
+      "title": "Healthcare Analytics:",
+      "preview": "Leverage data to provide actionable insights, including predictive analytics for patient outcomes and operational efficiency."
+    },
+    {
+      "title": "Health Applications:",
+      "preview": "Design health and wellness apps, ranging from fitness tracking to chronic disease management, with wearable device integration."
+    },
+    {
+      "title": "AI in Diagnostics:",
+      "preview": "Build AI-powered tools for accurate and efficient diagnostics, such as image recognition software for medical scans."
+    },
+    {
+      "title": "IoT in Healthcare:",
+      "preview": "Implement Internet of Things (IoT) solutions for real-time patient monitoring, including wearable devices and connected medical equipment."
+    }
+  ],
+  "technology": [
+    {
+      "title": "SaaS Products:",
+      "preview": "Develop Software as a Service (SaaS) applications tailored to various business needs, such as inventory management, supply chain optimization, and equipment maintenance."
+    },
+    {
+      "title": "AI & Machine Learning Tools:",
+      "preview": "Create AI-driven tools for predictive maintenance, quality control, and process optimization in manufacturing."
+    },
+    {
+      "title": "Data Analytics Platforms:",
+      "preview": "Develop platforms that can process and analyze large volumes of production data, providing insights for decision-making and performance improvement."
+    },
+    {
+      "title": "IoT Solutions:",
+      "preview": "Build comprehensive Internet of Things solutions for real-time equipment monitoring, automated inventory management, and smart factory setups."
+    },
+    {
+      "title": "Cloud-Based Services:",
+      "preview": "Develop cloud-based applications for secure, scalable data storage and remote access to business applications."
+    }
+  ],
+  "finance": [
+    {
+      "title": "Mobile Banking Apps:",
+      "preview": "Develop secure, user-friendly mobile applications allowing customers to manage their finances, make transactions, and access various banking services."
+    },
+    {
+      "title": "Risk Management Systems:",
+      "preview": "Create systems that assess and manage various financial risks, using predictive analytics and machine learning to provide real-time insights."
+    },
+    {
+      "title": "Trading Platforms:",
+      "preview": "Build robust, intuitive platforms for trading in stocks, commodities, forex, and other financial instruments, with real-time market data and advanced analytics."
+    },
+    {
+      "title": "RegTech Solutions:",
+      "preview": "Implement technology solutions to meet regulatory compliance requirements, streamlining reporting and improving data accuracy."
+    },
+    {
+      "title": "AI in Finance:",
+      "preview": "Leverage AI and LLM to automate processes, enhance customer service through AI chatbots, and provide personalized financial advice."
+    },
+    {
+      "title": "Blockchain Applications:",
+      "preview": "Develop blockchain-based solutions for secure, transparent transactions, smart contracts, and decentralized finance (DeFi) applications."
+    }
+  ],
+  "security": [
+    {
+      "title": "Antimalware Applications",
+      "preview": "Develop software applications that protect computer systems from malware, viruses, and other malicious software."
+    },
+    {
+      "title": "AI & ML in Cybersecurity",
+      "preview": "Implement artificial intelligence and machine learning techniques to enhance cybersecurity measures, including threat detection and prevention."
+    }
+  ],
+  "retail": [
+    {
+      "title": "E-commerce Platforms:",
+      "preview": "Develop comprehensive e-commerce platforms with shopping carts, secure payment gateways, customer reviews, and efficient inventory management."
+    },
+    {
+      "title": "Mobile Shopping Apps:",
+      "preview": "Build mobile shopping applications with features like personalized recommendations, easy checkout, and real-time order tracking."
+    },
+    {
+      "title": "Inventory Management Systems:",
+      "preview": "Create systems for efficient inventory management, including features for stock tracking, forecasting, and reordering."
+    },
+    {
+      "title": "Customer Loyalty Apps:",
+      "preview": "Develop mobile applications to manage customer loyalty programs, including reward tracking, personalized offers, and customer engagement."
+    },
+    {
+      "title": "POS Systems:",
+      "preview": "Create Point of Sale systems with features like inventory management, sales reporting, and customer management."
+    },
+    {
+      "title": "AI-Powered Chatbots:",
+      "preview": "Develop AI-powered chatbots for customer service, capable of handling customer queries and providing personalized product recommendations."
+    }
+  ],
+  "business": [
+    {
+      "title": "Project Management Tools:",
+      "preview": "Develop robust project management software, helping businesses streamline their workflow, task tracking, and team collaboration."
+    },
+    {
+      "title": "CRM Systems:",
+      "preview": "Create Customer Relationship Management (CRM) solutions to manage sales pipelines, customer interactions, and support ticketing effectively."
+    },
+    {
+      "title": "ERP Solutions:",
+      "preview": "Develop comprehensive Enterprise Resource Planning (ERP) software to integrate and manage key business processes."
+    },
+    {
+      "title": "Business Intelligence Platforms:",
+      "preview": "Provide data analytics and business intelligence tools to help businesses visualize key performance metrics and make data-driven decisions."
+    },
+    {
+      "title": "AI & Machine Learning Tools:",
+      "preview": "Implement AI and machine learning for predictive analytics, automation, and personalization to enhance service offerings."
+    },
+    {
+      "title": "HR Management Software:",
+      "preview": "Build comprehensive human resource management systems for recruitment, onboarding, payroll, and performance management."
+    }
+  ],
+  "construction": [
+    {
+      "title": "Construction Management Software",
+      "preview": "Develop software solutions for project planning, scheduling, budgeting, and collaboration in construction projects."
+    },
+    {
+      "title": "Building Materials",
+      "preview": "Provide information about various construction materials, including types, specifications, and sustainable options."
+    },
+    {
+      "title": "Construction Equipment",
+      "preview": "Offer details on heavy machinery and equipment used in construction, including excavators, cranes, and bulldozers."
+    },
+    {
+      "title": "Green Building Practices",
+      "preview": "Promote eco-friendly construction practices, energy-efficient designs, and sustainable building materials."
+    },
+    {
+      "title": "Construction Safety",
+      "preview": "Address safety guidelines, regulations, and technologies for ensuring the well-being of construction workers and site visitors."
+    }
+  ]
+}

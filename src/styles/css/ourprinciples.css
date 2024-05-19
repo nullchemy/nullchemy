@@ -1,0 +1,108 @@
+.ourprinciples .opcontainer {
+  margin: 5%;
+}
+.ourprinciples .opcontainer .opwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .ourprinciples .opcontainer .opwrapper {
+    flex-direction: column !important;
+    gap: 0;
+  }
+}
+.ourprinciples .opcontainer .opwrapper .opleft {
+  overflow: hidden;
+  width: calc(50% - 3rem);
+  height: 350px;
+  position: relative;
+  margin-top: 90px;
+}
+@media (max-width: 480px) {
+  .ourprinciples .opcontainer .opwrapper .opleft {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .ourprinciples .opcontainer .opwrapper .opleft {
+    width: 100%;
+  }
+}
+.ourprinciples .opcontainer .opwrapper .opleft img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.ourprinciples .opcontainer .opwrapper .opright {
+  width: calc(50% - 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 480px) {
+  .ourprinciples .opcontainer .opwrapper .opright {
+    align-items: unset;
+    width: 100%;
+  }
+}
+.ourprinciples .opcontainer .opwrapper .opright .opCardsTitle {
+  color: var(--text-color);
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-size: 3rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcardmaxheight {
+  height: 150px !important;
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcards {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--background-modals);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+@media (max-width: 480px) {
+  .ourprinciples .opcontainer .opwrapper .opright .opcards {
+    width: calc(100% - 20px);
+  }
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcards .opitwrapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcards .opitwrapHeader span {
+  color: var(--text-color);
+  font-size: 2rem;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcards .opitwrapHeader .opCardPlusIc {
+  fill: var(--text-color);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcards .opitwrap {
+  padding: 10px 20px;
+}
+.ourprinciples .opcontainer .opwrapper .opright .opcards .opitwrap P {
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}/*# sourceMappingURL=ourprinciples.css.map */

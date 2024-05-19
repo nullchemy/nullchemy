@@ -1,0 +1,134 @@
+.signup {
+  min-height: calc(130vh - 54px) !important;
+  .signupcontainer {
+    margin: 0 5%;
+    padding-bottom: 54px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 480px) {
+    }
+    .signupwrapper {
+      width: 40%;
+      margin: 0 auto;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+      .signupred {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 23px;
+        padding: 10px 30px;
+        margin: 20px 0;
+        .lnktosignin {
+          font-weight: 400;
+          color: #5934ff;
+          font-family: 'VolteRounded-Bold' !important;
+        }
+      }
+      .signupform {
+        .sform {
+          .signgroupflex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .signgroup {
+              @media (max-width: 480px) {
+                width: 45%;
+              }
+            }
+          }
+          .signgroup {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 3px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: var(--text-color);
+            margin: 20px 0;
+            .signinput {
+              all: unset;
+              flex-grow: 1;
+              min-width: 0px;
+              color: var(--text-color);
+              font-size: 18px;
+              line-height: 26px;
+              transition-property: border-bottom-width;
+              transition-duration: 0.2s;
+              transition-timing-function: ease-out;
+              padding-top: 27px;
+              padding-bottom: 8px;
+              padding-left: 6px;
+              padding-right: 6px;
+              color-scheme: light;
+              background-color: transparent !important;
+              -webkit-box-shadow: 0 0 0 31px var(--background-color-two) inset !important;
+              -webkit-text-fill-color: var(--text-color) !important;
+              &:focus + .sgnplholder,
+              &:not([value='']) + .sgnplholder {
+                top: 0px;
+                font-size: 12px;
+                line-height: 18px;
+              }
+            }
+            .sgnplholder {
+              position: absolute;
+              margin-top: 8px;
+              margin-left: 6px;
+              top: 22px;
+              transition-property: top, font-size, line-height;
+              transition-duration: 0.2s;
+              transition-timing-function: ease-out;
+              color: var(--text-color);
+              user-select: none;
+              pointer-events: none;
+              span {
+                color: red;
+              }
+            }
+            .sgnpassvisibility {
+              height: 20px;
+              width: 20px;
+              fill: var(--text-color);
+              position: absolute;
+              right: 20px;
+              top: 30px;
+              cursor: pointer;
+            }
+          }
+          .sgnforgotpassword {
+            color: #0088f0;
+          }
+          .termsofengagement {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+          }
+          .signupbtn {
+            all: unset;
+            padding: 20px;
+            background-color: #fff;
+            width: calc(100% - 40px);
+            background: linear-gradient(
+              to bottom right,
+              #14a9ff,
+              #0088f0
+            ) !important;
+            border-radius: 43px;
+            margin: 20px 0;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'VolteRounded-Bold' !important;
+          }
+        }
+      }
+    }
+  }
+}

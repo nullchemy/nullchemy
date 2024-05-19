@@ -1,0 +1,13 @@
+.layout .layoutContainer .layoutWrapper {
+  display: flex;
+  width: 100%;
+}
+.layout .layoutContainer .layoutWrapper .layoutSidebar {
+  width: -moz-min-content !important;
+  width: min-content !important;
+}
+.layout .layoutContainer .layoutWrapper .layoutRight {
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+}/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,137 @@
+.ventures {
+  .venturesContainer {
+    margin: 0 4%;
+    .venturesWrapper {
+      display: flex;
+      width: 100%;
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
+      .venturesLeft {
+        width: 50%;
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+        span {
+          display: inline-flex;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 4px 12px;
+          background: 0 0;
+          border: 1px solid rgba(19, 20, 38, 0.16);
+          border-radius: 40px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          background: linear-gradient(94.67deg, #9935e8 0, #e85535 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .venturesTitle {
+          font-family: 'VolteRounded-Bold', Volte Rounded;
+          font-size: 3rem;
+          line-height: 4rem;
+          color: var(--text-color);
+        }
+        .ventIntroPar {
+          color: var(--text-color);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          margin-bottom: 40px;
+          max-width: 90%;
+        }
+        .venturesList {
+          .ventLiIts {
+            margin: 5px 0;
+            padding: 20px 32px 20px 0;
+            position: relative;
+            cursor: pointer;
+            border-radius: 5px;
+            .ventliItemWrapper {
+              display: flex;
+              align-items: center;
+              padding: 5px;
+              .vantiWIc {
+                height: 25px;
+                width: 25px;
+                fill: var(--text-color);
+                margin: 0 30px;
+              }
+              .ventiItWTexts {
+                width: 70%;
+                h2 {
+                  color: var(--text-color);
+                }
+                .vantItPartext {
+                  color: var(--text-color);
+                  display: none;
+                }
+                .vantItPartextActive {
+                  display: block !important;
+                }
+              }
+            }
+          }
+          .ventLiItsActive {
+            background: linear-gradient(
+              270deg,
+              #f3efff00 20%,
+              var(--background-modals) 100%
+            );
+            &::before {
+              position: absolute;
+              left: -1px;
+              bottom: -1px;
+              right: -1px;
+              top: -1px;
+              overflow: hidden !important;
+              content: ' ';
+              border-left: 1px solid var(--background-modals);
+              border-top: 1px solid var(--background-modals);
+              border-bottom: 1px solid var(--background-modals);
+              border-top-left-radius: 8px;
+              border-bottom-left-radius: 8px;
+            }
+          }
+        }
+      }
+      .venturesRight {
+        width: 50%;
+        @media (max-width: 480px) {
+          display: none !important;
+        }
+        .venturesRightWrapper {
+          width: 90%;
+          margin: 0 auto;
+          .venturesRightContent {
+            .venturesRightItem {
+              background: var(--background-modals);
+              border: 1px solid var(--text-color-inv);
+              border-radius: 8px;
+              padding: 32px;
+              margin-bottom: 12px;
+              .vrItemTitle {
+                color: var(--text-color);
+                line-height: 2.5rem;
+              }
+              .vrItemPar {
+                color: var(--text-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

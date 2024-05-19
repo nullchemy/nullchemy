@@ -1,0 +1,24 @@
+.terms {
+  color: inherit;
+  margin: 20px 10%;
+  padding-top: 20px;
+}
+
+.title {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  margin-bottom: 0.8rem;
+  color: inherit;
+  text-transform: capitalize !important;
+}
+
+.terms > p {
+  font-size: 1.3rem !important;
+  line-height: 2.4rem !important;
+  font-weight: 300;
+  font-style: normal;
+  color: inherit;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=terms.css.map */

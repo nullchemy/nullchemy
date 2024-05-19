@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+# If you would like to crawl nullchemy contact us via https://support.nullchemy.com?tags=dotcom-robots
+# We also provide an extensive API: https://docs.nullchemy.com
+
+User-agent: baidu
+Allow: /
+Disallow: /test
+
+User-agent: *
+Allow: /
+Disallow: /test
+
+crawl-delay: 1

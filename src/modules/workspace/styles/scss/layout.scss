@@ -1,0 +1,16 @@
+.layout {
+  .layoutContainer {
+    .layoutWrapper {
+      display: flex;
+      width: 100%;
+      .layoutSidebar {
+        width: min-content !important;
+      }
+      .layoutRight {
+        flex: 1;
+        height: 100vh;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.ventures .venturesContainer {
+  margin: 0 4%;
+}
+.ventures .venturesContainer .venturesWrapper {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .ventures .venturesContainer .venturesWrapper {
+    flex-direction: column;
+  }
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft {
+  width: 50%;
+}
+@media (max-width: 480px) {
+  .ventures .venturesContainer .venturesWrapper .venturesLeft {
+    width: 100%;
+  }
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft span {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  background: 0 0;
+  border: 1px solid rgba(19, 20, 38, 0.16);
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(94.67deg, #9935e8 0, #e85535 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesTitle {
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: var(--text-color);
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .ventIntroPar {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts {
+  margin: 5px 0;
+  padding: 20px 32px 20px 0;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts .ventliItemWrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts .ventliItemWrapper .vantiWIc {
+  height: 25px;
+  width: 25px;
+  fill: var(--text-color);
+  margin: 0 30px;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts .ventliItemWrapper .ventiItWTexts {
+  width: 70%;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts .ventliItemWrapper .ventiItWTexts h2 {
+  color: var(--text-color);
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts .ventliItemWrapper .ventiItWTexts .vantItPartext {
+  color: var(--text-color);
+  display: none;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiIts .ventliItemWrapper .ventiItWTexts .vantItPartextActive {
+  display: block !important;
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiItsActive {
+  background: linear-gradient(270deg, rgba(243, 239, 255, 0) 20%, var(--background-modals) 100%);
+}
+.ventures .venturesContainer .venturesWrapper .venturesLeft .venturesList .ventLiItsActive::before {
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  top: -1px;
+  overflow: hidden !important;
+  content: " ";
+  border-left: 1px solid var(--background-modals);
+  border-top: 1px solid var(--background-modals);
+  border-bottom: 1px solid var(--background-modals);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.ventures .venturesContainer .venturesWrapper .venturesRight {
+  width: 50%;
+}
+@media (max-width: 480px) {
+  .ventures .venturesContainer .venturesWrapper .venturesRight {
+    display: none !important;
+  }
+}
+.ventures .venturesContainer .venturesWrapper .venturesRight .venturesRightWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.ventures .venturesContainer .venturesWrapper .venturesRight .venturesRightWrapper .venturesRightContent .venturesRightItem {
+  background: var(--background-modals);
+  border: 1px solid var(--text-color-inv);
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 12px;
+}
+.ventures .venturesContainer .venturesWrapper .venturesRight .venturesRightWrapper .venturesRightContent .venturesRightItem .vrItemTitle {
+  color: var(--text-color);
+  line-height: 2.5rem;
+}
+.ventures .venturesContainer .venturesWrapper .venturesRight .venturesRightWrapper .venturesRightContent .venturesRightItem .vrItemPar {
+  color: var(--text-color);
+}/*# sourceMappingURL=ventures.css.map */

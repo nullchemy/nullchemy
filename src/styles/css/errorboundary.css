@@ -1,0 +1,105 @@
+:root {
+  --green: #14a9ff;
+  --white: #fff;
+}
+
+.notfoundcontainer .notfoundwrapper {
+  display: flex;
+  height: 100vh;
+}
+@media (max-width: 1100px) {
+  .notfoundcontainer .notfoundwrapper {
+    flex-direction: column;
+    height: 100vh !important;
+  }
+}
+.notfoundcontainer .notfoundwrapper .notfoundleft {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .notfoundcontainer .notfoundwrapper .notfoundleft {
+    height: 45vh;
+    width: 100%;
+  }
+}
+.notfoundcontainer .notfoundwrapper .notfoundleft .nfimager {
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  .notfoundcontainer .notfoundwrapper .notfoundleft .nfimager {
+    position: unset;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    transform: translate(0%, 0%);
+    display: block;
+  }
+}
+.notfoundcontainer .notfoundwrapper .notfoundright {
+  position: relative;
+  flex-grow: 1;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper h1 {
+  font-size: 5rem;
+  font-family: "VolteRounded-Bold", Volte Rounded;
+  font-weight: 800;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper h2 {
+  font-size: 1.5rem;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper p {
+  margin-top: 10px;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper .nfbackhome {
+  z-index: 1;
+  overflow: hidden !important;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+  text-transform: uppercase;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper .nfbackhome.nfbackgreen {
+  border: 4px solid var(--green);
+  color: var(--blue);
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper .nfbackhome.nfbackgreen:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--green);
+  z-index: -1;
+  transition: 0.2s ease;
+  border-radius: 30px;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper .nfbackhome.nfbackgreen:hover {
+  color: var(--white);
+  background: var(--green);
+  transition: 0.2s ease;
+}
+.notfoundcontainer .notfoundwrapper .notfoundright .nfrwrapper .nfbackhome.nfbackgreen:hover:before {
+  width: 100%;
+}/*# sourceMappingURL=errorboundary.css.map */

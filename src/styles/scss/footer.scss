@@ -1,0 +1,307 @@
+.footer {
+  width: 100%;
+  background-color: #000;
+  background: url(../../assets/images/black-felt.png), #000;
+  position: relative;
+  padding-bottom: 103px;
+  font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
+  .fBackToTop {
+    padding: 20px 0;
+    margin-bottom: 11px;
+    background-color: #242424;
+    cursor: pointer;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-radius: 5px;
+
+    p {
+      font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
+      color: #fff;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+
+  .fontainer {
+    margin: 0 5%;
+    height: 90%;
+    position: relative;
+
+    .fmiddle {
+      padding-top: 1.59rem;
+
+      @media (max-width: 480px) {
+        padding-top: 10px;
+      }
+
+      .fmidWrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
+
+        .fnavigation {
+          .fnavTitle {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+              color: #fff;
+              text-transform: uppercase;
+              font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+                sans-serif;
+
+              @media (max-width: 480px) {
+                font-size: 1rem;
+              }
+            }
+
+            .ftrangledown {
+              height: 20px;
+              width: 20px;
+              fill: #fff;
+
+              @media (min-width: 480px) {
+                display: none;
+              }
+            }
+          }
+
+          .fnav {
+            .fnavLink {
+              margin: 10px 0;
+
+              .fnavLnk {
+                text-decoration: none;
+                color: #fff;
+                font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+                  sans-serif;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .fnavhide {
+            @media (max-width: 480px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .fcenter {
+      display: flex;
+      margin-top: 30px;
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
+
+      .paymentMethods {
+        flex: 1;
+
+        h2 {
+          color: #fff;
+          font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+            sans-serif;
+          margin-bottom: 10px;
+        }
+
+        .paymentMethods {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          .lnktoDeliv {
+            margin-right: 20px;
+
+            .PaymentOnDelivery {
+              display: block;
+              height: 25px;
+              width: 40px;
+              fill: #fff;
+            }
+
+            .mpesaIc {
+              display: block;
+              height: 45px !important;
+              width: 45px !important;
+            }
+
+            .mastercardIc,
+            .visa {
+              width: 40px !important;
+            }
+          }
+        }
+      }
+
+      .fnewsletter {
+        width: 47%;
+        overflow: hidden;
+
+        @media (max-width: 480px) {
+          width: 100%;
+          margin-top: 20px;
+        }
+
+        h2 {
+          color: #fff;
+          font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+            sans-serif;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: #fff;
+          font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial,
+            sans-serif;
+          margin-bottom: 10px;
+        }
+
+        .fnewsletterform {
+          .newsinfobox {
+            width: 78.5%;
+            margin-bottom: 5px;
+
+            .subsuccess {
+              background-color: #00ff228b;
+              padding: 5px;
+              vertical-align: middle;
+              display: flex;
+              align-items: center;
+              border-radius: 2px;
+
+              P {
+                margin-bottom: 0;
+              }
+            }
+
+            .subError {
+              background-color: #ff00005f;
+              padding: 5px;
+              vertical-align: middle;
+              display: flex;
+              align-items: center;
+              border-radius: 2px;
+
+              P {
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .subformgroup {
+            display: flex;
+
+            input {
+              padding: 10px 15px;
+              width: 60%;
+              margin-right: 10px;
+              outline: none;
+              border: none;
+              border-radius: 43px;
+            }
+
+            .fsubbtn {
+              all: unset;
+              padding: 10px 30px;
+              background-color: #fff;
+              background: linear-gradient(
+                to bottom right,
+                #14a9ff,
+                #0088f0
+              ) !important;
+              border-radius: 43px;
+              text-align: center;
+              color: #fff;
+              cursor: pointer;
+              margin-right: 15px;
+              font-family: 'VolteRounded-Bold' !important;
+              @media (max-width: 480px) {
+                margin-right: unset !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fBottom {
+    margin: 0 5%;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 10%);
+
+    .fBrand {
+      margin: 20px 10px;
+
+      h3 {
+        color: #fff;
+        font-family: 'Itim', cursive;
+      }
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    .flanguage,
+    .fCurrency,
+    .fcountry {
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 7px 20px;
+      margin: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      .fLangIc {
+        height: 15px;
+        width: 15px;
+        fill: #fff;
+        margin-right: 10px;
+        margin-left: -5px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 100;
+        font-family: Volte Rounded, Apercu, Roboto, Helvetica, Arial, sans-serif;
+        text-transform: capitalize;
+      }
+    }
+
+    .fcountry {
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.fbtmcystomize {
+  padding-bottom: 115px;
+}

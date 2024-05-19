@@ -1,0 +1,76 @@
+.wenotify {
+  .wenotifyContainer {
+    .wenotifyWrapper {
+      .wenotifyLandingWrapper {
+        position: relative;
+        height: calc(100vh - 54px);
+        background-color: #0f0733;
+        .wenpoliceSceneBack {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0.5;
+        }
+        .wenotifyLanding {
+          margin: 0 5%;
+          height: 100%;
+          position: relative;
+          .wenLndCenterWrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .wenotifyTitle {
+              font-size: 5.375rem;
+              line-height: 5rem;
+              letter-spacing: -0.05rem;
+              color: #fff;
+              font-family: 'BookerlyDisplay_W_Rg';
+              //font-family: 'VolteRounded-Bold', Volte Rounded;
+              font-weight: 800 !important;
+              margin-bottom: 2rem;
+              user-select: none;
+              text-align: center;
+              @media (max-width: 1900px) {
+                font-size: 4rem;
+                line-height: 4rem;
+              }
+              @media (max-width: 480px) {
+                font-size: 3rem;
+                line-height: 3rem;
+              }
+            }
+            .wenProdType {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              margin-bottom: 6rem;
+              .wenSubTitle {
+                text-align: center;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: #fff;
+              }
+              span {
+                font-family: 'VolteRounded-Bold', Volte Rounded;
+                margin-top: -25px;
+                color: #fff;
+              }
+            }
+            .wenAppTagline {
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .wenotifyContent {
+        margin: 0 5%;
+        height: 500px;
+      }
+    }
+  }
+}
