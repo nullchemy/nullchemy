@@ -3,6 +3,7 @@ export const backend = (): string => {
     //return 'http://localhost:5000/'
     return 'https://nullchemy-api.onrender.com/'
   } else {
-    return 'https://nullchemy-api.onrender.com/'
+    // return 'https://nullchemy-api.onrender.com/'
+    return 'https://server.nullchemy.com/'
   }
 }
