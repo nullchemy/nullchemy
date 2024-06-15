@@ -83,22 +83,8 @@ const SpotBlog = ({ blogs }: { blogs: any }) => {
             })}{' '}
             . {blog.length} min read
           </span>
-          <h2>
-            <Link
-              to={`/read/${blog.slug}`}
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              {blog.title}
-            </Link>
-          </h2>
-          <p>
-            <Link
-              to={`/read/${blog.slug}`}
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              {blog.summary}
-            </Link>
-          </p>
+          <h2>{blog.title}</h2>
+          <p>{blog.summary}</p>
           <div className="spot-author">
             <img src={agility} alt="" />
             <div className="spot-author-name">
