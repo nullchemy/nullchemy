@@ -33,7 +33,7 @@ const Blogs = () => {
       }
     }
     fetchBlog()
-  }, [blogs.data.length])
+  }, [])
 
   const fetchBlog = async () => {
     setBlogs({ data: Array<[]>, state: 'loading' })
