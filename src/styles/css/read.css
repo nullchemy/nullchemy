@@ -311,8 +311,18 @@
   opacity: 0.9;
 }
 
-p > code {
-  background: rgba(0, 0, 0, 0.5333333333);
-  padding: 3px 10px;
+.read p > code,
+.read ul > li > strong > code {
+  background: rgba(0, 0, 0, 0.2666666667);
+  padding: 2px 8px;
   border-radius: 5px;
+}
+.read ul {
+  padding-left: 20px;
+}
+.read li {
+  list-style: circle;
+}
+.read .read-page-header {
+  color: inherit;
 }/*# sourceMappingURL=read.css.map */

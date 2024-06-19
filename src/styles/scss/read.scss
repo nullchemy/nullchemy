@@ -293,9 +293,21 @@
   transform: scale(1.1);
   opacity: 0.9;
 }
+.read {
+  p > code,
+  ul > li > strong > code {
+    background: #0004;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    list-style: circle;
+  }
 
-p > code {
-  background: #0008;
-  padding: 3px 10px;
-  border-radius: 5px;
+  .read-page-header {
+    color: inherit;
+  }
 }

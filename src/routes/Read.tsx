@@ -90,7 +90,7 @@ const Read = () => {
 
     return React.createElement(
       `h${props.level}`,
-      { id: slug, className: 'your-heading-class' },
+      { id: slug, className: 'read-page-header' },
       props.children
     )
   }
