@@ -261,7 +261,7 @@
   }
   li {
     font-size: 1.2rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     font-weight: 400;
     margin: 0 0 15px 0;
     color: var(--text-color);
@@ -292,4 +292,10 @@
 .code-copy-btn:hover {
   transform: scale(1.1);
   opacity: 0.9;
+}
+
+p > code {
+  background: #0008;
+  padding: 3px 10px;
+  border-radius: 5px;
 }
