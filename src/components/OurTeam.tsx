@@ -48,7 +48,7 @@ const OurTeam = () => {
                   <div className="otlBtm">
                     <h1 className="otlName">David Kamau</h1>
                     <h2 className="otlRole">
-                      <span>-</span> Head, Sales and Marketting
+                      <span>-</span> Head, Project Manager
                     </h2>
                   </div>
                 </div>
